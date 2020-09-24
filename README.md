@@ -3,3 +3,16 @@
 # DataCamp-Tracks
 DataCamp tracks road map for computer science students.
 
+## Python Courses
+
+## R Courses
+
+## SQL Courses
+
+## Theory Courses
+
+## Spreadsheets and Excel Courses
+
+## Tableau and Power BI Courses
+
+## Shell and Git Courses
