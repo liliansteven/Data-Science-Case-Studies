@@ -3,16 +3,16 @@
 # DataCamp-Tracks
 DataCamp tracks road map for computer science students.
 
-## Python Courses
+## [1. Python-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/1.Python-Courses)
 
-## R Courses
+## [2. R-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/2.R-Courses)
 
-## SQL Courses
+## [3. SQL-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/3.SQL-Courses)
 
-## Theory Courses
+## [4. Theory-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/4.Theory-Courses)
 
-## Spreadsheets and Excel Courses
+## [5. Spreadsheets-and-Excel-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/5.Spreadsheets-and-Excel-Courses)
 
-## Tableau and Power BI Courses
+## [6. Tableau-and-Power-BI-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/6.Tableau-and-Power-BI-Courses)
 
-## Shell and Git Courses
+## [7. Shell-and-Git-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/7.Shell-and-Git-Courses)
