@@ -46,22 +46,28 @@ Spreadsheets and Excel Tracks road map for computer science students, which incl
 	</thead>
 	<tbody>
 			<tr>
-				<td rowspan=1 align=center>
+				<td rowspan=2 align=center>
 <a href="https://learn.datacamp.com/courses/data-analysis-in-spreadsheets">Data Analysis in Spreadsheets</a><br>
-				<td align="left">Conditional functions and lookups</td>
-				<td rowspan=1 align="center">3</td>
-				<td rowspan=1 align="center">0</td>
-				<td rowspan=1 align="center">27</td>
+				<td align="left">Predefined functions</td>
+				<td rowspan=2 align="center">3</td>
+				<td rowspan=2 align="center">0</td>
+				<td rowspan=2 align="center">27</td>
 				</td>
 			</tr>
 			<tr>
-				<td rowspan=1 align=center>
+				<td align="left">Conditional functions and lookups</td>
+			</tr>
+			<tr>
+				<td rowspan=2 align=center>
 <a href="https://www.datacamp.com/courses/introduction-to-spreadsheets">Introduction to Spreadsheets</a><br>
-				<td align="left">References</td>
-				<td rowspan=1 align="center">2</td>
-				<td rowspan=1 align="center">0</td>
-				<td rowspan=1 align="center">23</td>
+				<td align="left">Getting started</td>
+				<td rowspan=2 align="center">2</td>
+				<td rowspan=2 align="center">0</td>
+				<td rowspan=2 align="center">23</td>
 				</td>
+			</tr>
+			<tr>
+				<td align="left">References</td>
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
