@@ -283,276 +283,6 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Analysis</summary><table>
-	<thead>
-		<tr>
-			<th width="40%">Course</th>
-			<th width="60%">Chapter</th>
-			<th>H</th>
-			<th>Videos</th>
-			<th>Exercises</th>
-		</tr>
-	</thead>
-	<tbody>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas">Analyzing Marketing Campaigns with pandas</a><br>
-				<td align="left">Exploratory Analysis & Summary Statistics</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Conversion Attribution</td>
-			</tr>
-			<tr>
-				<td align="left">Personalization A/B Test</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/analyzing-police-activity-with-pandas">Analyzing Police Activity with pandas</a><br>
-				<td align="left">Exploring the relationship between gender and policing</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">50</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Visual exploratory data analysis</td>
-			</tr>
-			<tr>
-				<td align="left">Analyzing the effect of weather on policing</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/analyzing-social-media-data-in-python">Analyzing Social Media Data in Python</a><br>
-				<td align="left">Processing Twitter text</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">51</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Twitter Networks</td>
-			</tr>
-			<tr>
-				<td align="left">Putting Twitter data on the map</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/arima-models-in-python">ARIMA Models in Python</a><br>
-				<td align="left">Fitting the Future</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">57</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">The Best of the Best Models</td>
-			</tr>
-			<tr>
-				<td align="left">Seasonal ARIMA Models</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/customer-segmentation-in-python">Customer Segmentation in Python</a><br>
-				<td align="left">Recency, Frequency, Monetary Value analysis</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">17</td>
-				<td rowspan=3 align="center">55</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Data pre-processing for clustering</td>
-			</tr>
-			<tr>
-				<td align="left">Customer Segmentation with K-means</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/market-basket-analysis-in-python">Market Basket Analysis in Python</a><br>
-				<td align="left">Association Rules</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Aggregation and Pruning</td>
-			</tr>
-			<tr>
-				<td align="left">Visualizing Rules</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/marketing-analytics-predicting-customer-churn-in-python">Marketing Analytics: Predicting Customer Churn in Python</a><br>
-				<td align="left">Preprocessing for Churn Modeling</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">13</td>
-				<td rowspan=3 align="center">45</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Churn Prediction</td>
-			</tr>
-			<tr>
-				<td align="left">Model Tuning</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/working-with-geospatial-data-in-python">Working with Geospatial Data in Python</a><br>
-				<td align="left">Spatial relationships</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Projecting and transforming geometries</td>
-			</tr>
-			<tr>
-				<td align="left">Putting it all together - Artisanal mining sites case study</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/supply-chain-analytics-in-python">Supply Chain Analytics in Python</a><br>
-				<td align="left">Modeling in PuLP</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">48</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Solve and evaluate model</td>
-			</tr>
-			<tr>
-				<td align="left">Sensitivity and simulation testing of model</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/intermediate-predictive-analytics-in-python">Intermediate Predictive Analytics in Python</a><br>
-				<td align="left">Creating variables</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">56</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Data preparation</td>
-			</tr>
-			<tr>
-				<td align="left">Advanced base table concepts</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/analyzing-us-census-data-in-python">Analyzing US Census Data in Python</a><br>
-				<td align="left">American Community Survey</td>
-				<td rowspan=3 align="center">5</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">57</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Measuring Segregation</td>
-			</tr>
-			<tr>
-				<td align="left">Exploring Census Topics</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-data-science-in-python">Introduction to Data Science in Python</a><br>
-				<td align="left">Loading Data in pandas</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">13</td>
-				<td rowspan=3 align="center">44</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Plotting Data with matplotlib</td>
-			</tr>
-			<tr>
-				<td align="left">Different Types of Plots</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/feature-engineering-for-machine-learning-in-python">Feature Engineering for Machine Learning in Python</a><br>
-				<td align="left">Dealing with Messy Data</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Conforming to Statistical Assumptions</td>
-			</tr>
-			<tr>
-				<td align="left">Dealing with Text Data</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/creating-robust-workflows-in-python">Creating Robust Workflows in Python</a><br>
-				<td align="left">Documentation and Tests</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">47</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Shell superpowers</td>
-			</tr>
-			<tr>
-				<td align="left">Projects, pipelines, and parallelism</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/python-for-spreadsheet-users">Python for Spreadsheet Users</a><br>
-				<td align="left">Pivoting in Python</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">13</td>
-				<td rowspan=3 align="center">48</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Working with Multiple Sheets</td>
-			</tr>
-			<tr>
-				<td align="left">Plotting Data</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/exploratory-data-analysis-in-python">Exploratory Data Analysis in Python</a><br>
-				<td align="left">Distributions</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Relationships</td>
-			</tr>
-			<tr>
-				<td align="left">Multivariate Thinking</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/winning-a-kaggle-competition-in-python">Winning a Kaggle Competition in Python</a><br>
-				<td align="left">Dive into the Competition</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Feature Engineering</td>
-			</tr>
-			<tr>
-				<td align="left">Modeling</td>
-			</tr>
-	</tbody>
-	</table>
-</details>
-<details>
 	<summary>Probability and Statistics</summary><table>
 	<thead>
 		<tr>
@@ -1162,6 +892,276 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
+	<summary>Data Analysis</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas">Analyzing Marketing Campaigns with pandas</a><br>
+				<td align="left">Exploratory Analysis & Summary Statistics</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Conversion Attribution</td>
+			</tr>
+			<tr>
+				<td align="left">Personalization A/B Test</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/analyzing-police-activity-with-pandas">Analyzing Police Activity with pandas</a><br>
+				<td align="left">Exploring the relationship between gender and policing</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">50</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Visual exploratory data analysis</td>
+			</tr>
+			<tr>
+				<td align="left">Analyzing the effect of weather on policing</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/analyzing-social-media-data-in-python">Analyzing Social Media Data in Python</a><br>
+				<td align="left">Processing Twitter text</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">51</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Twitter Networks</td>
+			</tr>
+			<tr>
+				<td align="left">Putting Twitter data on the map</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/arima-models-in-python">ARIMA Models in Python</a><br>
+				<td align="left">Fitting the Future</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">57</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">The Best of the Best Models</td>
+			</tr>
+			<tr>
+				<td align="left">Seasonal ARIMA Models</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/customer-segmentation-in-python">Customer Segmentation in Python</a><br>
+				<td align="left">Recency, Frequency, Monetary Value analysis</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">17</td>
+				<td rowspan=3 align="center">55</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Data pre-processing for clustering</td>
+			</tr>
+			<tr>
+				<td align="left">Customer Segmentation with K-means</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/market-basket-analysis-in-python">Market Basket Analysis in Python</a><br>
+				<td align="left">Association Rules</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Aggregation and Pruning</td>
+			</tr>
+			<tr>
+				<td align="left">Visualizing Rules</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/marketing-analytics-predicting-customer-churn-in-python">Marketing Analytics: Predicting Customer Churn in Python</a><br>
+				<td align="left">Preprocessing for Churn Modeling</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">13</td>
+				<td rowspan=3 align="center">45</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Churn Prediction</td>
+			</tr>
+			<tr>
+				<td align="left">Model Tuning</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/working-with-geospatial-data-in-python">Working with Geospatial Data in Python</a><br>
+				<td align="left">Spatial relationships</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Projecting and transforming geometries</td>
+			</tr>
+			<tr>
+				<td align="left">Putting it all together - Artisanal mining sites case study</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/supply-chain-analytics-in-python">Supply Chain Analytics in Python</a><br>
+				<td align="left">Modeling in PuLP</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">48</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Solve and evaluate model</td>
+			</tr>
+			<tr>
+				<td align="left">Sensitivity and simulation testing of model</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/intermediate-predictive-analytics-in-python">Intermediate Predictive Analytics in Python</a><br>
+				<td align="left">Creating variables</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">56</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Data preparation</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced base table concepts</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/analyzing-us-census-data-in-python">Analyzing US Census Data in Python</a><br>
+				<td align="left">American Community Survey</td>
+				<td rowspan=3 align="center">5</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">57</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Measuring Segregation</td>
+			</tr>
+			<tr>
+				<td align="left">Exploring Census Topics</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-data-science-in-python">Introduction to Data Science in Python</a><br>
+				<td align="left">Loading Data in pandas</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">13</td>
+				<td rowspan=3 align="center">44</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Plotting Data with matplotlib</td>
+			</tr>
+			<tr>
+				<td align="left">Different Types of Plots</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/feature-engineering-for-machine-learning-in-python">Feature Engineering for Machine Learning in Python</a><br>
+				<td align="left">Dealing with Messy Data</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Conforming to Statistical Assumptions</td>
+			</tr>
+			<tr>
+				<td align="left">Dealing with Text Data</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/creating-robust-workflows-in-python">Creating Robust Workflows in Python</a><br>
+				<td align="left">Documentation and Tests</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">47</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Shell superpowers</td>
+			</tr>
+			<tr>
+				<td align="left">Projects, pipelines, and parallelism</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/python-for-spreadsheet-users">Python for Spreadsheet Users</a><br>
+				<td align="left">Pivoting in Python</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">13</td>
+				<td rowspan=3 align="center">48</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Working with Multiple Sheets</td>
+			</tr>
+			<tr>
+				<td align="left">Plotting Data</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/exploratory-data-analysis-in-python">Exploratory Data Analysis in Python</a><br>
+				<td align="left">Distributions</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Relationships</td>
+			</tr>
+			<tr>
+				<td align="left">Multivariate Thinking</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/winning-a-kaggle-competition-in-python">Winning a Kaggle Competition in Python</a><br>
+				<td align="left">Dive into the Competition</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Feature Engineering</td>
+			</tr>
+			<tr>
+				<td align="left">Modeling</td>
+			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
 	<summary>Machine Learning</summary><table>
 	<thead>
 		<tr>
@@ -1546,156 +1546,6 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Natural Language Processing</summary><table>
-	<thead>
-		<tr>
-			<th width="40%">Course</th>
-			<th width="60%">Chapter</th>
-			<th>H</th>
-			<th>Videos</th>
-			<th>Exercises</th>
-		</tr>
-	</thead>
-	<tbody>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-natural-language-processing-in-python">Introduction to Natural Language Processing in Python</a><br>
-				<td align="left">Simple topic identification</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">51</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Named-entity recognition</td>
-			</tr>
-			<tr>
-				<td align="left">Building a "fake news" classifier</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/regular-expressions-in-python">Regular Expressions in Python</a><br>
-				<td align="left">Formatting Strings</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">54</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Regular Expressions for Pattern Matching</td>
-			</tr>
-			<tr>
-				<td align="left">Advanced Regular Expression Concepts</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/sentiment-analysis-in-python">Sentiment Analysis in Python</a><br>
-				<td align="left">Numeric Features from Reviews</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">60</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">More on Numeric Vectors: Transforming Tweets</td>
-			</tr>
-			<tr>
-				<td align="left">Let's Predict the Sentiment</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/natural-language-generation-in-python">Natural Language Generation in Python</a><br>
-				<td align="left">Write like Shakespeare</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">13</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Translate words to a different language</td>
-			</tr>
-			<tr>
-				<td align="left">Autocomplete your sentences</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/feature-engineering-for-nlp-in-python">Feature Engineering for NLP in Python</a><br>
-				<td align="left">Text preprocessing, POS tagging and NER</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">N-Gram models</td>
-			</tr>
-			<tr>
-				<td align="left">TF-IDF and similarity scores</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/machine-translation-in-python">Machine Translation in Python</a><br>
-				<td align="left">Implementing an encoder decoder model with Keras</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">58</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Training and generating translations</td>
-			</tr>
-			<tr>
-				<td align="left">Teacher Forcing and word embeddings</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/spoken-language-processing-in-python">Spoken Language Processing in Python</a><br>
-				<td align="left">Using the Python SpeechRecognition library</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Manipulating Audio Files with PyDub</td>
-			</tr>
-			<tr>
-				<td align="left">Processing text transcribed from spoken language</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/building-chatbots-in-python">Building Chatbots in Python</a><br>
-				<td align="left">Understanding natural language</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">49</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Building a virtual assistant</td>
-			</tr>
-			<tr>
-				<td align="left">Dialogue</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/advanced-nlp-with-spacy">Advanced NLP with spaCy</a><br>
-				<td align="left">Large-scale data analysis with spaCy</td>
-				<td rowspan=3 align="center">5</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">55</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Processing Pipelines</td>
-			</tr>
-			<tr>
-				<td align="left">Training a neural network model</td>
-			</tr>
-	</tbody>
-	</table>
-</details>
-<details>
 	<summary>Deep Learning</summary><table>
 	<thead>
 		<tr>
@@ -1856,6 +1706,156 @@ Python Tracks road map for computer science students, which including the follow
 			</tr>
 			<tr>
 				<td align="left">Multiple Outputs</td>
+			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
+	<summary>Natural Language Processing</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-natural-language-processing-in-python">Introduction to Natural Language Processing in Python</a><br>
+				<td align="left">Simple topic identification</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">51</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Named-entity recognition</td>
+			</tr>
+			<tr>
+				<td align="left">Building a "fake news" classifier</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/regular-expressions-in-python">Regular Expressions in Python</a><br>
+				<td align="left">Formatting Strings</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">54</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Regular Expressions for Pattern Matching</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced Regular Expression Concepts</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/sentiment-analysis-in-python">Sentiment Analysis in Python</a><br>
+				<td align="left">Numeric Features from Reviews</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">60</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">More on Numeric Vectors: Transforming Tweets</td>
+			</tr>
+			<tr>
+				<td align="left">Let's Predict the Sentiment</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/natural-language-generation-in-python">Natural Language Generation in Python</a><br>
+				<td align="left">Write like Shakespeare</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">13</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Translate words to a different language</td>
+			</tr>
+			<tr>
+				<td align="left">Autocomplete your sentences</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/feature-engineering-for-nlp-in-python">Feature Engineering for NLP in Python</a><br>
+				<td align="left">Text preprocessing, POS tagging and NER</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">N-Gram models</td>
+			</tr>
+			<tr>
+				<td align="left">TF-IDF and similarity scores</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/machine-translation-in-python">Machine Translation in Python</a><br>
+				<td align="left">Implementing an encoder decoder model with Keras</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">58</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Training and generating translations</td>
+			</tr>
+			<tr>
+				<td align="left">Teacher Forcing and word embeddings</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/spoken-language-processing-in-python">Spoken Language Processing in Python</a><br>
+				<td align="left">Using the Python SpeechRecognition library</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Manipulating Audio Files with PyDub</td>
+			</tr>
+			<tr>
+				<td align="left">Processing text transcribed from spoken language</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/building-chatbots-in-python">Building Chatbots in Python</a><br>
+				<td align="left">Understanding natural language</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">49</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Building a virtual assistant</td>
+			</tr>
+			<tr>
+				<td align="left">Dialogue</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/advanced-nlp-with-spacy">Advanced NLP with spaCy</a><br>
+				<td align="left">Large-scale data analysis with spaCy</td>
+				<td rowspan=3 align="center">5</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">55</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Processing Pipelines</td>
+			</tr>
+			<tr>
+				<td align="left">Training a neural network model</td>
 			</tr>
 	</tbody>
 	</table>
@@ -2208,3 +2208,6 @@ Python Tracks road map for computer science students, which including the follow
 	</tbody>
 </table>
 </details>
+
+**SKILLS YOU WILL GAIN:**<br>
+`object-oriented programming`, `practicing coding interview questions`, `databases`, `mongodb`, `data science toolbox`, `data types for data science`, `python for r users`, `python for matlab users`, `command line automation`, `aws boto`, `unit testing for data science`, `analyzing marketing campaigns pandas`, `analyzing police activity pandas`, `analyzing social media data`, `arima models`, `customer segmentation`, `market basket analysis`, `marketing analytics predicting customer churn`, `working geospatial data`, `supply chain analytics`, `analyzing us census data`, `data science`, `feature engineering`, `machine learning`, `robust workflows`, `python for spreadsheet users`, `exploratory data analysis`, `winning kaggle competition`, `probability`, `statistics`, `statistical simulation`, `statistical thinking`, `linear modeling`, `network analysis`, `generalized linear models`, `practicing statistics interview questions`, `experimental design`, `case studies statistical thinking`, `customer analytics a/b testing`, `time series analysis`, `importing data`, `streamlined data ingestion pandas`, `cleaning data`, `web scraping`, `data manipulation pandas`, `dealing missing data`, `joining data pandas`, `manipulating time series data`, `working dates times`, `writing efficient code pandas`, `pandas foundations`, `manipulating dataframes pandas`, `merging dataframes pandas`, `pandas joins for spreadsheet users`, `data visualization`, `data visualization matplotlib`, `data visualization seaborn`, `improving your data visualizations`, `interactive data visualization bokeh`, `visualizing geospatial data`, `visualizing time series data`, `ai fundamentals`, `software engineering for data scientists`, `preprocessing for machine learning`, `linear classifiers`, `unsupervised learning`, `supervised learning scikit-learn`, `machine learning tree-based models`, `predictive analytics`, `dimensionality reduction`, `designing machine learning workflows`, `machine learning for time series data`, `machine learning for marketing`, `human resources analytics predicting employee churn`, `machine learning for finance`, `extreme gradient boosting xgboost`, `parallel programming dask`, `fraud detection`, `cluster analysis`, `model validation`, `hyperparameter tuning`, `ensemble methods`, `practicing machine learning interview questions`, `analyzing iot data`, `natural language processing`, `regular expressions`, `sentiment analysis`, `natural language generation`, `feature engineering for nlp`, `machine translation`, `spoken language processing`, `building chatbots`, `advanced nlp spacy`, `deep learning`, `keras`, `pytorch`, `tensorflow`, `recurrent neural networks for language modeling`, `predicting ctr machine learning`, `image processing`, `biomedical image analysis`, `credit risk modeling`, `python for finance`  `financial concepts`, `portfolio analysis`, `portfolio risk management`, `importing managing financial data`, `garch models`, `quantitative risk management`, `financial forecasting`, `pyspark`, `data engineering`, `spark sql`, `big data fundamentals pyspark`, `feature engineering pyspark`, `cleaning data pyspark`, `machine learning pyspark`, `building recommendation engines pyspark`, `airflow`, `streaming data aws kinesis lambda`, `building data engineering pipelines`
