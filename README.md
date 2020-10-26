@@ -24,10 +24,41 @@ Python Tracks road map for computer science students, which including the follow
 
 ## [3. SQL-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/3.SQL-Courses)
 
+#### 3.1- SQL
+#### 3.2- SQL Server
+#### 3.3- PostgreSQL
+#### 3.4- Oracle SQL
+
+**SKILLS YOU WILL GAIN:**<br>
+`analyzing business data sql`, `sql`, `intermediate sql`, `exploratory data analysis sql`, `relational databases sql`, `joining data sql`, `reporting sql`, `applying sql real-world problems`, `database design`, `data-driven decision making sql`, `sql server`, `intermediate sql server`, `functions for manipulating data sql server`, `cleaning data sql server databases`, `hierarchical recursive queries sql server`, `time series analysis sql server`, `improving query performance sql server`, `writing functions stored procedures sql server`, `transactions error handling sql server`, `building optimizing triggers sql server`, `creating postgresql databases`, `functions for manipulating data postgresql`, `postgresql summary stats window functions`, `cleaning data postgresql databases`, `improving query performance postgresql`, `transactions error handling postgresql`, `oracle sql`
+
 ## [4. Theory-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/4.Theory-Courses)
+
+#### 4.1- Theory
+
+**SKILLS YOU WILL GAIN:**<br>
+`course name`, `data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`
 
 ## [5. Spreadsheets-and-Excel-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/5.Spreadsheets-and-Excel-Courses)
 
+#### 5.1- Excel
+#### 5.2- Spreadsheets
+
+**SKILLS YOU WILL GAIN:**<br>
+`data analysis excel`, `data analysis spreadsheets`, `spreadsheets`, `intermediate spreadsheets`, `statistics spreadsheets`, `error uncertainty spreadsheets`, `conditional formatting spreadsheets`, `pivot tables spreadsheets`, `data visualization spreadsheets`, `loan amortization spreadsheets`, `marketing analytics spreadsheets`, `financial analytics spreadsheets`, `financial modeling spreadsheets`, `options trading spreadsheets`
+
 ## [6. Tableau-and-Power-BI-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/6.Tableau-and-Power-BI-Courses)
 
+#### 6.1- Tableau
+#### 6.2- Power BI
+
+**SKILLS YOU WILL GAIN:**<br>
+`tableau`, `analyzing data tableau`, `power bi`
+
 ## [7. Shell-and-Git-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/7.Shell-and-Git-Courses)
+
+#### 7.1- Git
+#### 7.2- Shell
+
+**SKILLS YOU WILL GAIN:**<br>
+`git`, `bash scripting`, `shell` ,`conda essentials`, `building distributing packages conda`, `data processing shell`
