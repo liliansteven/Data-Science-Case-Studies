@@ -4,6 +4,7 @@
 DataCamp tracks road map for computer science students.
 
 ## [1. Python-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/1.Python-Courses)
+
 <details>
 	<summary>Programming</summary><table>
 	<thead>
@@ -357,81 +358,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with pandas</a><br>
-				<td align="left">Aggregating Data</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">56</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Slicing and Indexing</td>
-			</tr>
-			<tr>
-				<td align="left">Creating and Visualizing DataFrames</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/dealing-with-missing-data-in-python">Dealing with Missing Data in Python</a><br>
-				<td align="left">Does Missingness Have A Pattern?</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">46</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Imputation Techniques</td>
-			</tr>
-			<tr>
-				<td align="left">Advanced Imputation Techniques</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/feature-engineering-with-pyspark">Feature Engineering with PySpark</a><br>
-				<td align="left">Wrangling with Spark Functions</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">60</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Feature Engineering</td>
-			</tr>
-			<tr>
-				<td align="left">Building a Model</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/joining-data-with-pandas">Joining Data with pandas</a><br>
-				<td align="left">Merging Tables With Different Join Types</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Advanced Merging and Concatenating</td>
-			</tr>
-			<tr>
-				<td align="left">Merging Ordered and Time-Series Data</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/manipulating-time-series-data-in-python">Manipulating Time Series Data in Python</a><br>
-				<td align="left">Basic Time Series Metrics & Resampling</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">55</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Window Functions: Rolling & Expanding Metrics</td>
-			</tr>
-			<tr>
-				<td align="left">Putting it all together: Building a value-weighted index</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/market-basket-analysis-in-python">Market Basket Analysis in Python</a><br>
 				<td align="left">Association Rules</td>
 				<td rowspan=3 align="center">4</td>
@@ -460,36 +386,21 @@ DataCamp tracks road map for computer science students.
 			<tr>
 				<td align="left">Model Tuning</td>
 			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/working-with-dates-and-times-in-python">Working with Dates and Times in Python</a><br>
-				<td align="left">Combining Dates and Times</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">48</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Time Zones and Daylight Saving</td>
-			</tr>
-			<tr>
-				<td align="left">Easy and Powerful: Dates and Times in Pandas</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/writing-efficient-code-with-pandas">Writing Efficient Code with pandas</a><br>
-				<td align="left">Replacing values in a DataFrame</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">45</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Efficient iterating</td>
-			</tr>
-			<tr>
-				<td align="left">Data manipulation using .groupby()</td>
-			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
+	<summary>Programming</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course Name</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
 			<tr>
 				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/writing-efficient-python-code">Writing Efficient Python Code</a><br>
@@ -505,54 +416,21 @@ DataCamp tracks road map for computer science students.
 			<tr>
 				<td align="left">Basic pandas optimizations</td>
 			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/pandas-foundations">pandas Foundations</a><br>
-				<td align="left">Exploratory data analysis</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">62</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Time series in pandas</td>
-			</tr>
-			<tr>
-				<td align="left">Case Study - Sunlight in Austin</td>
-			</tr>
-			<tr>
-				<td rowspan=4 align=center>
-<a href="https://learn.datacamp.com/courses/manipulating-dataframes-with-pandas">Manipulating DataFrames with pandas</a><br>
-				<td align="left">Advanced indexing</td>
-				<td rowspan=4 align="center">4</td>
-				<td rowspan=4 align="center">19</td>
-				<td rowspan=4 align="center">75</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Rearranging and reshaping data</td>
-			</tr>
-			<tr>
-				<td align="left">Grouping data</td>
-			</tr>
-			<tr>
-				<td align="left">Bringing it all together</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/merging-dataframes-with-pandas">Merging DataFrames with pandas</a><br>
-				<td align="left">Concatenating data</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">14</td>
-				<td rowspan=3 align="center">56</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Merging data</td>
-			</tr>
-			<tr>
-				<td align="left">Case Study - Summer Olympics</td>
-			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
+	<summary>Data Analysis</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course Name</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
 			<tr>
 				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/working-with-geospatial-data-in-python">Working with Geospatial Data in Python</a><br>
@@ -702,21 +580,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td align="left">Modeling</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/pandas-joins-for-spreadsheet-users">Pandas Joins for Spreadsheet Users</a><br>
-				<td align="left">VLOOKUP-style joins</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">12</td>
-				<td rowspan=3 align="center">44</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">One-to-many joins</td>
-			</tr>
-			<tr>
-				<td align="left">Advanced joins</td>
 			</tr>
 	</tbody>
 	</table>
@@ -1023,21 +886,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/cleaning-data-with-pyspark">Cleaning Data with PySpark</a><br>
-				<td align="left">Manipulating DataFrames in the real world</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Improving Performance</td>
-			</tr>
-			<tr>
-				<td align="left">Complex processing and data pipelines</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/web-scraping-with-python">Web Scraping in Python</a><br>
 				<td align="left">XPaths and Selectors</td>
 				<td rowspan=3 align="center">4</td>
@@ -1050,6 +898,159 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td align="left">Spiders</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with pandas</a><br>
+				<td align="left">Aggregating Data</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">56</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Slicing and Indexing</td>
+			</tr>
+			<tr>
+				<td align="left">Creating and Visualizing DataFrames</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/dealing-with-missing-data-in-python">Dealing with Missing Data in Python</a><br>
+				<td align="left">Does Missingness Have A Pattern?</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">46</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Imputation Techniques</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced Imputation Techniques</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/joining-data-with-pandas">Joining Data with pandas</a><br>
+				<td align="left">Merging Tables With Different Join Types</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced Merging and Concatenating</td>
+			</tr>
+			<tr>
+				<td align="left">Merging Ordered and Time-Series Data</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/manipulating-time-series-data-in-python">Manipulating Time Series Data in Python</a><br>
+				<td align="left">Basic Time Series Metrics & Resampling</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">55</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Window Functions: Rolling & Expanding Metrics</td>
+			</tr>
+			<tr>
+				<td align="left">Putting it all together: Building a value-weighted index</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/working-with-dates-and-times-in-python">Working with Dates and Times in Python</a><br>
+				<td align="left">Combining Dates and Times</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">48</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Time Zones and Daylight Saving</td>
+			</tr>
+			<tr>
+				<td align="left">Easy and Powerful: Dates and Times in Pandas</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/writing-efficient-code-with-pandas">Writing Efficient Code with pandas</a><br>
+				<td align="left">Replacing values in a DataFrame</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">45</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Efficient iterating</td>
+			</tr>
+			<tr>
+				<td align="left">Data manipulation using .groupby()</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/pandas-foundations">pandas Foundations</a><br>
+				<td align="left">Exploratory data analysis</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">62</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Time series in pandas</td>
+			</tr>
+			<tr>
+				<td align="left">Case Study - Sunlight in Austin</td>
+			</tr>
+			<tr>
+				<td rowspan=4 align=center>
+<a href="https://learn.datacamp.com/courses/manipulating-dataframes-with-pandas">Manipulating DataFrames with pandas</a><br>
+				<td align="left">Advanced indexing</td>
+				<td rowspan=4 align="center">4</td>
+				<td rowspan=4 align="center">19</td>
+				<td rowspan=4 align="center">75</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Rearranging and reshaping data</td>
+			</tr>
+			<tr>
+				<td align="left">Grouping data</td>
+			</tr>
+			<tr>
+				<td align="left">Bringing it all together</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/merging-dataframes-with-pandas">Merging DataFrames with pandas</a><br>
+				<td align="left">Concatenating data</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">14</td>
+				<td rowspan=3 align="center">56</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Merging data</td>
+			</tr>
+			<tr>
+				<td align="left">Case Study - Summer Olympics</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/pandas-joins-for-spreadsheet-users">Pandas Joins for Spreadsheet Users</a><br>
+				<td align="left">VLOOKUP-style joins</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">12</td>
+				<td rowspan=3 align="center">44</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">One-to-many joins</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced joins</td>
 			</tr>
 	</tbody>
 	</table>
@@ -1332,21 +1333,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/machine-learning-with-pyspark">Machine Learning with PySpark</a><br>
-				<td align="left">Classification</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">56</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Regression</td>
-			</tr>
-			<tr>
-				<td align="left">Ensembles & Pipelines</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/dimensionality-reduction-in-python">Dimensionality Reduction in Python</a><br>
 				<td align="left">Feature selection I, selecting for feature information</td>
 				<td rowspan=3 align="center">4</td>
@@ -1515,21 +1501,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-spark-sql-in-python">Introduction to Spark SQL in Python</a><br>
-				<td align="left">Using window function sql for natural language processing</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">52</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Caching, Logging, and the Spark UI</td>
-			</tr>
-			<tr>
-				<td align="left">Text classification</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/model-validation-in-python">Model Validation in Python</a><br>
 				<td align="left">Validation Basics</td>
 				<td rowspan=3 align="center">4</td>
@@ -1603,81 +1574,21 @@ DataCamp tracks road map for computer science students.
 			<tr>
 				<td align="left">Machine learning for IoT</td>
 			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/machine-translation-in-python">Machine Translation in Python</a><br>
-				<td align="left">Implementing an encoder decoder model with Keras</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">58</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Training and generating translations</td>
-			</tr>
-			<tr>
-				<td align="left">Teacher Forcing and word embeddings</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-tensorflow-in-python">Introduction to TensorFlow in Python</a><br>
-				<td align="left">Linear models</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">51</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Neural Networks</td>
-			</tr>
-			<tr>
-				<td align="left">High Level APIs</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-pyspark">Introduction to PySpark</a><br>
-				<td align="left">Manipulating data</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">0</td>
-				<td rowspan=3 align="center">45</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Getting started with machine learning pipelines</td>
-			</tr>
-			<tr>
-				<td align="left">Model tuning and selection</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/big-data-fundamentals-with-pyspark">Big Data Fundamentals with PySpark</a><br>
-				<td align="left">Programming in PySpark RDD’s</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">16</td>
-				<td rowspan=3 align="center">55</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">PySpark SQL & DataFrames</td>
-			</tr>
-			<tr>
-				<td align="left">Machine Learning with PySpark Mllib</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/recommendation-engines-in-pyspark">Building Recommendation Engines with PySpark</a><br>
-				<td align="left">How does ALS work?</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">56</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Recommending Movies</td>
-			</tr>
-			<tr>
-				<td align="left">What if you don't have customer ratings?</td>
-			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
+	<summary>Natural Language Processing</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course Name</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
 			<tr>
 				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/introduction-to-natural-language-processing-in-python">Introduction to Natural Language Processing in Python</a><br>
@@ -1755,6 +1666,21 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/machine-translation-in-python">Machine Translation in Python</a><br>
+				<td align="left">Implementing an encoder decoder model with Keras</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">58</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Training and generating translations</td>
+			</tr>
+			<tr>
+				<td align="left">Teacher Forcing and word embeddings</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/spoken-language-processing-in-python">Spoken Language Processing in Python</a><br>
 				<td align="left">Using the Python SpeechRecognition library</td>
 				<td rowspan=3 align="center">4</td>
@@ -1797,6 +1723,81 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td align="left">Training a neural network model</td>
+			</tr>
+	</tbody>
+	</table>
+</details>
+<details>
+	<summary>Deep Learning</summary><table>
+	<thead>
+		<tr>
+			<th width="40%">Course Name</th>
+			<th width="60%">Chapter</th>
+			<th>H</th>
+			<th>Videos</th>
+			<th>Exercises</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-in-python">Introduction to Deep Learning in Python</a><br>
+				<td align="left">Optimizing a neural network with backward propagation</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">17</td>
+				<td rowspan=3 align="center">50</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Building deep learning models with keras</td>
+			</tr>
+			<tr>
+				<td align="left">Fine-tuning keras models</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-with-keras">Introduction to Deep Learning with Keras</a><br>
+				<td align="left">Going Deeper</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">59</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Improving Your Model Performance</td>
+			</tr>
+			<tr>
+				<td align="left">Advanced Model Architectures</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-with-pytorch">Introduction to Deep Learning with PyTorch</a><br>
+				<td align="left">Artificial Neural Networks</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">17</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Convolutional Neural Networks (CNNs)</td>
+			</tr>
+			<tr>
+				<td align="left">Using Convolutional Neural Networks</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-tensorflow-in-python">Introduction to TensorFlow in Python</a><br>
+				<td align="left">Linear models</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">51</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Neural Networks</td>
+			</tr>
+			<tr>
+				<td align="left">High Level APIs</td>
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
@@ -1860,48 +1861,18 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-in-python">Introduction to Deep Learning in Python</a><br>
-				<td align="left">Optimizing a neural network with backward propagation</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">17</td>
-				<td rowspan=3 align="center">50</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Building deep learning models with keras</td>
-			</tr>
-			<tr>
-				<td align="left">Fine-tuning keras models</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-with-keras">Introduction to Deep Learning with Keras</a><br>
-				<td align="left">Going Deeper</td>
+<a href="https://learn.datacamp.com/courses/biomedical-image-analysis-in-python">Biomedical Image Analysis in Python</a><br>
+				<td align="left">Masks and Filters</td>
 				<td rowspan=3 align="center">4</td>
 				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">59</td>
+				<td rowspan=3 align="center">54</td>
 				</td>
 			</tr>
 			<tr>
-				<td align="left">Improving Your Model Performance</td>
+				<td align="left">Measurement</td>
 			</tr>
 			<tr>
-				<td align="left">Advanced Model Architectures</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-deep-learning-with-pytorch">Introduction to Deep Learning with PyTorch</a><br>
-				<td align="left">Artificial Neural Networks</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">17</td>
-				<td rowspan=3 align="center">53</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Convolutional Neural Networks (CNNs)</td>
-			</tr>
-			<tr>
-				<td align="left">Using Convolutional Neural Networks</td>
+				<td align="left">Image Comparison</td>
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
@@ -1917,21 +1888,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td align="left">Multiple Outputs</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/biomedical-image-analysis-in-python">Biomedical Image Analysis in Python</a><br>
-				<td align="left">Masks and Filters</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">54</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Measurement</td>
-			</tr>
-			<tr>
-				<td align="left">Image Comparison</td>
 			</tr>
 	</tbody>
 	</table>
@@ -2118,6 +2074,126 @@ DataCamp tracks road map for computer science students.
 	<tbody>
 			<tr>
 				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-pyspark">Introduction to PySpark</a><br>
+				<td align="left">Manipulating data</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">0</td>
+				<td rowspan=3 align="center">45</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Getting started with machine learning pipelines</td>
+			</tr>
+			<tr>
+				<td align="left">Model tuning and selection</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-data-engineering">Introduction to Data Engineering</a><br>
+				<td align="left">Data engineering toolbox</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">57</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Extract, Transform and Load (ETL)</td>
+			</tr>
+			<tr>
+				<td align="left">Case Study: DataCamp</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/introduction-to-spark-sql-in-python">Introduction to Spark SQL in Python</a><br>
+				<td align="left">Using window function sql for natural language processing</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">52</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Caching, Logging, and the Spark UI</td>
+			</tr>
+			<tr>
+				<td align="left">Text classification</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/big-data-fundamentals-with-pyspark">Big Data Fundamentals with PySpark</a><br>
+				<td align="left">Programming in PySpark RDD’s</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">55</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">PySpark SQL & DataFrames</td>
+			</tr>
+			<tr>
+				<td align="left">Machine Learning with PySpark Mllib</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/feature-engineering-with-pyspark">Feature Engineering with PySpark</a><br>
+				<td align="left">Wrangling with Spark Functions</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">60</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Feature Engineering</td>
+			</tr>
+			<tr>
+				<td align="left">Building a Model</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/cleaning-data-with-pyspark">Cleaning Data with PySpark</a><br>
+				<td align="left">Manipulating DataFrames in the real world</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">53</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Improving Performance</td>
+			</tr>
+			<tr>
+				<td align="left">Complex processing and data pipelines</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/machine-learning-with-pyspark">Machine Learning with PySpark</a><br>
+				<td align="left">Classification</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">16</td>
+				<td rowspan=3 align="center">56</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Regression</td>
+			</tr>
+			<tr>
+				<td align="left">Ensembles & Pipelines</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/recommendation-engines-in-pyspark">Building Recommendation Engines with PySpark</a><br>
+				<td align="left">How does ALS work?</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">15</td>
+				<td rowspan=3 align="center">56</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Recommending Movies</td>
+			</tr>
+			<tr>
+				<td align="left">What if you don't have customer ratings?</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/introduction-to-airflow-in-python">Introduction to Airflow in Python</a><br>
 				<td align="left">Implementing Airflow DAGs</td>
 				<td rowspan=3 align="center">4</td>
@@ -2160,21 +2236,6 @@ DataCamp tracks road map for computer science students.
 			</tr>
 			<tr>
 				<td align="left">Managing and orchestrating a workflow</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/introduction-to-data-engineering">Introduction to Data Engineering</a><br>
-				<td align="left">Data engineering toolbox</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">15</td>
-				<td rowspan=3 align="center">57</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Extract, Transform and Load (ETL)</td>
-			</tr>
-			<tr>
-				<td align="left">Case Study: DataCamp</td>
 			</tr>
 	</tbody>
 </table>
