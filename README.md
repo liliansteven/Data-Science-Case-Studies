@@ -4,6 +4,18 @@
 DataCamp tracks road map for computer science students.
 
 ## [1. Python-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/1.Python-Courses)
+Python Tracks road map for computer science students, which including the following main topics:
+
+### 1.1- Programming
+### 1.2- Data Analysis
+### 1.3- Probability and Statistics
+### 1.4- Data Preprocessing
+### 1.5- Data Visualization
+### 1.6- Machine Learning
+### 1.7- Natural Language Processing
+### 1.8- Deep Learning
+### 1.9- Applied Finance
+### 1.10- Data Engineering
 
 ## [2. R-Courses](https://github.com/cs-MohamedAyman/DataCamp-Tracks/tree/master/2.R-Courses)
 
