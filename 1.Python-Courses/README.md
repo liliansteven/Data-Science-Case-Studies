@@ -404,6 +404,21 @@ Python Tracks road map for computer science students, which including the follow
 			</tr>
 			<tr>
 				<td rowspan=3 align=center>
+<a href="https://learn.datacamp.com/courses/intermediate-network-analysis-in-python">Intermediate Network Analysis in Python</a><br>
+				<td align="left">Graph projections</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">13</td>
+				<td rowspan=3 align="center">46</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Comparing graphs & time-dynamic graphs</td>
+			</tr>
+			<tr>
+				<td align="left">Tying it up!</td>
+			</tr>
+			<tr>
+				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/generalized-linear-models-in-python">Generalized Linear Models in Python</a><br>
 				<td align="left">Modeling Binary Data</td>
 				<td rowspan=3 align="center">5</td>
@@ -497,21 +512,6 @@ Python Tracks road map for computer science students, which including the follow
 			</tr>
 			<tr>
 				<td align="left">Putting It All Together</td>
-			</tr>
-			<tr>
-				<td rowspan=3 align=center>
-<a href="https://learn.datacamp.com/courses/intermediate-network-analysis-in-python">Intermediate Network Analysis in Python</a><br>
-				<td align="left">Graph projections</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">13</td>
-				<td rowspan=3 align="center">46</td>
-				</td>
-			</tr>
-			<tr>
-				<td align="left">Comparing graphs & time-dynamic graphs</td>
-			</tr>
-			<tr>
-				<td align="left">Tying it up!</td>
 			</tr>
 	</tbody>
 	</table>
