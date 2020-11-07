@@ -34,13 +34,16 @@ Tableau-and-Power-BI Tracks road map for computer science students, which includ
 				<td align="left">Presenting Your Data</td>
 			</tr>
 			<tr>
-				<td rowspan=3 align=center>
+				<td rowspan=4 align=center>
 <a href="https://learn.datacamp.com/courses/analyzing-data-in-tableau">Analyzing Data in Tableau</a><br>
-				<td align="left">Exploring Visualizations</td>
-				<td rowspan=3 align="center">4</td>
-				<td rowspan=3 align="center">24</td>
-				<td rowspan=3 align="center">69</td>
+				<td align="left">Preparing for Analysis</td>
+				<td rowspan=4 align="center">4</td>
+				<td rowspan=4 align="center">24</td>
+				<td rowspan=4 align="center">69</td>
 				</td>
+			</tr>
+			<tr>
+				<td align="left">Exploring Visualizations</td>
 			</tr>
 			<tr>
 				<td align="left">Mapping Analysis</td>
@@ -64,13 +67,16 @@ Tableau-and-Power-BI Tracks road map for computer science students, which includ
 	</thead>
 	<tbody>
 			<tr>
-				<td rowspan=2 align=center>
+				<td rowspan=3 align=center>
 <a href="https://learn.datacamp.com/courses/introduction-to-power-bi">Introduction to Power BI</a><br>
-				<td align="left">Visualizing Data</td>
-				<td rowspan=2 align="center">4</td>
-				<td rowspan=2 align="center">19</td>
-				<td rowspan=2 align="center">55</td>
+				<td align="left">Getting Started with Power BI</td>
+				<td rowspan=3 align="center">4</td>
+				<td rowspan=3 align="center">19</td>
+				<td rowspan=3 align="center">55</td>
 				</td>
+			</tr>
+			<tr>
+				<td align="left">Visualizing Data</td>
 			</tr>
 			<tr>
 				<td align="left">Creating Calculations with DAX</td>
