@@ -530,11 +530,13 @@ print(P_King_or_Queen)
 ### Video: Conditional probabilities
 ### Delayed flights
 - A certain airline offers flights departing to New York on Tuesdays and Fridays, but sometimes the flights are delayed:
+
 |       | Delayed   | On time   | Total     |
 | ------|:---------:|:---------:|:---------:|
 | Tuesday  | 24 | 114 | 138 |
 | Friday   | 11 | 127 | 138 |
 | Total    | 35 | 241 | 276 |
+
 - At the bottom of the Delayed column you have a total of 35, which means there were 35 delayed flights out of the total of 276 departures in the sample. Of these, 24 were on Tuesday and 11 on Friday.
 - Given the table, answer the following questions:
 #### Question 1
@@ -598,11 +600,13 @@ print(P_Delayed_g_Friday)
 ```
 ### Contingency table
 - The following table shows the numbers of red and black cards in a deck that are Aces and non-Aces:
+
 |       | Red   | Black   | Total     |
 | ------|:-----:|:-------:|:---------:|
 | Ace       | 2  | 2  | 4  |
 | Non Ace   | 24 | 24 | 48 |
 | Total     | 26 | 26 | 52 |
+
 - The total in the Red column is 26, which means there are 26 red cards in the deck. Of these, 2 are Aces and 24 are non-Aces. There are 52 cards in a deck. Use the values in the table to calculate some conditional probabilities.
 #### Question 1
 Calculate P(Ace|Red).
