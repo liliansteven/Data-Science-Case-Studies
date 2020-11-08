@@ -461,6 +461,7 @@ print(P_fails_or_works)
 ```
 ### Deck of cards
 - In this exercise, you'll use the following deck of cards to calculate some probabilities in each step:
+- <image>
 #### Question 1
 Calculate the probability of not getting an Ace.
 ```python
@@ -670,6 +671,7 @@ print(P_Red_given_Non_ace)
 ```
 ### More cards
 - Now let's use the deck of cards to calculate some conditional probabilities.
+- <image>
 #### Question 1
 Calculate the probability of getting two Jacks (P(Jack and Jack)).
 ```python
