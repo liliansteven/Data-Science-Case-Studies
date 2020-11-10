@@ -617,3 +617,564 @@ print("Probability of losing money = {}".format(frac))
 Probability of losing money = 0.4659
 ```
 
+## `Chapter 3` Resampling methods
+
+### Video: Introduction to resampling methods
+#### Sampling with replacement
+- In this example, you will review the np.random.choice() function that you've already seen in the previous chapters. You are given multiple variations of np.random.choice() for sampling from arrays. Look at each variation carefully and use the console to test out the options. Select the option that could generate ['a', 'c', 'c'] as an output.
+```
+np.random.choice(['a', 'b', 'c'], size=3, replace=False)
+np.random.choice(['a', 'b', 'c', 'd', 'e'], size=5, replace=True)[:3]
+np.random.choice(['a', 'b', 'c', 'd', 'e'], size=5, replace=False)[:3]
+np.random.choice(['a', 'b'], size=3, replace=True)
+```
+```
+np.random.choice(['a', 'b', 'c', 'd', 'e'], size=5, replace=True)[:3]
+```
+### Probability example
+- In this exercise, we will review the difference between sampling with and without replacement. We will calculate the probability of an event using simulation, but vary our sampling method to see how it impacts probability.
+- Consider a bowl filled with colored candies - three blue, two green, and five yellow. Draw three candies, one at a time, with replacement and without replacement. You want to calculate the probability that all three candies are yellow.
+#### Question 1
+- Set up your bowl as a list having three blue 'b', two green 'g' and five yellow 'y' candies.
+- Draw a sample of three candies with replacement (sample_rep) and without replacement (sample_no_rep).
+- For the sample with replacement, if there are no 'b' or 'g' candies in sample_rep, increment success_rep. Similarly, incrementsuccess_no_rep when there are no 'b' or 'g' candies in sample_no_rep.
+- Calculate the respective probabilities as successes divided by number of iterations.
+```python
+# Set up the bowl
+success_rep, success_no_rep, sims = 0, 0, 10000
+bowl = list('b'*3 + 'g'*2 + 'y'*5)
+
+for i in range(sims):
+    # Sample with and without replacement & increment success counters
+    sample_rep = np.random.choice(bowl, size=3, replace=True)
+    sample_no_rep = np.random.choice(bowl, size=3, replace=False)
+    if ('b' not in sample_rep) & ('g' not in sample_rep) : 
+        success_rep += 1
+    if ('b' not in sample_no_rep) & ('g' not in sample_no_rep) : 
+        success_no_rep += 1
+
+# Calculate probabilities
+prob_with_replacement = success_rep/sims
+prob_without_replacement = success_no_rep/sims
+print("Probability with replacement = {}, without replacement = {}".format(prob_with_replacement, prob_without_replacement))
+```
+```
+Probability with replacement = 0.126, without replacement = 0.0809
+```
+
+### Video: Bootstrapping
+### Running a simple bootstrap
+- Welcome to the first exercise in the bootstrapping section. We will work through an example where we learn to run a simple bootstrap. As we saw in the video, the main idea behind bootstrapping is sampling with replacement.
+- Suppose you own a factory that produces wrenches. You want to be able to characterize the average length of the wrenches and ensure that they meet some specifications. Your factory produces thousands of wrenches every day, but it's infeasible to measure the length of each wrench. However, you have access to a representative sample of 100 wrenches. Let's use bootstrapping to get the 95% confidence interval (CI) for the average lengths.
+- Examine the list wrench_lengths, which has 100 observed lengths of wrenches, in the shell.
+#### Question 1
+- Draw a random sample with replacement from wrench_lengths and store it in temp_sample. Set size = len(wrench_lengths).
+- Calculate the mean length of each sample, assign it to sample_mean, and then append it to mean_lengths.
+- Calculate the bootstrapped mean (boot_mean) and bootstrapped 95% confidence interval (boot_95_ci) by using np.percentile().
+```python
+# Draw some random sample with replacement and append mean to mean_lengths.
+mean_lengths, sims = [], 1000
+for i in range(sims):
+    temp_sample = np.random.choice(wrench_lengths, replace=True, size=len(wrench_lengths))
+    sample_mean = np.mean(temp_sample)
+    mean_lengths.append(sample_mean)
+    
+# Calculate bootstrapped mean and 95% confidence interval.
+boot_mean = np.mean(mean_lengths)
+boot_95_ci = np.percentile(mean_lengths, [2.5, 97.5])
+print("Bootstrapped Mean Length = {}, 95% CI = {}".format(boot_mean, boot_95_ci))
+```
+```
+Bootstrapped Mean Length = 10.027059690070363, 95% CI = [ 9.78662216 10.24854356]
+```
+### Non-standard estimators
+- In the last exercise, you ran a simple bootstrap that we will now modify for more complicated estimators.
+- Suppose you are studying the health of students. You are given the height and weight of 1000 students and are interested in the median height as well as the correlation between height and weight and the associated 95% CI for these quantities. Let's use bootstrapping.
+- Examine the pandas DataFrame df with the heights and weights of 1000 students. Using this, calculate the 95% CI for both the median height as well as the correlation between height and weight.
+#### Question 1
+- Use the .sample() method ondf to generate a sample of the data with replacement and assign it to tmp_df.
+- For each generated dataset in tmp_df, calculate the median heights and correlation between heights and weights using .median() and .corr().
+- Append the median heights to height_medians and correlation to hw_corr.
+- Finally calculate the 95% ([2.5, 97.5]) confidence intervals for each of the above quantities using np.percentile().
+```python
+# Sample with replacement and calculate quantities of interest
+sims, data_size, height_medians, hw_corr = 1000, df.shape[0], [], []
+for i in range(sims):
+    tmp_df = df.sample(n=data_size, replace=True)
+    height_medians.append(tmp_df['heights'].median())
+    hw_corr.append(tmp_df.weights.corr(tmp_df.heights))
+
+# Calculate confidence intervals
+height_median_ci = np.percentile(height_medians, [2.5, 97.5])
+height_weight_corr_ci = np.percentile(hw_corr, [2.5, 97.5])
+print("Height Median CI = {} \nHeight Weight Correlation CI = {}".format( height_median_ci, height_weight_corr_ci))
+```
+```
+Height Median CI = [5.25262253 5.55928686] 
+Height Weight Correlation CI = [0.93892136 0.95103152]
+```
+### Bootstrapping regression
+- Now let's see how bootstrapping works with regression. Bootstrapping helps estimate the uncertainty of non-standard estimators. Consider the R2 statistic associated with a regression. When you run a simple least squares regression, you get a value for R2. But let's see how can we get a 95% CI for R2.
+- Examine the DataFrame df with a dependent variable y and two independent variables X1 and X2 using df.head(). We've already fit this regression with statsmodels (sm) using:
+- reg_fit = sm.OLS(df['y'], df.iloc[:,1:]).fit()
+- Examine the result using reg_fit.summary() to find that R2=0.3504. Use bootstrapping to calculate the 95% CI.
+#### Question 3
+- Draw a bootstrap sample from the original dataset using the sample() method of a pandas DataFrame. The number of rows should be the same as that of the original DataFrame.
+- Fit a regression similar to reg_fit() using sm.OLS() and extract the R2 statistic using the parameter rsquared.
+- Append the R2 to the list rsquared_boot.
+- Calculate 95% CI for rsquared_boot as r_sq_95_ci using np.percentile().
+```python
+rsquared_boot, coefs_boot, sims = [], [], 1000
+reg_fit = sm.OLS(df['y'], df.iloc[:,1:]).fit()
+
+# Run 1K iterations
+for i in range(sims):
+    # First create a bootstrap sample with replacement with n=df.shape[0]
+    bootstrap = df.sample(n=df.shape[0], replace=True)
+    # Fit the regression and append the r square to rsquared_boot
+    rsquared_boot.append(sm.OLS(bootstrap['y'],bootstrap.iloc[:,1:]).fit().rsquared)
+
+# Calculate 95% CI on rsquared_boot
+r_sq_95_ci = np.percentile(rsquared_boot, [2.5, 97.5])
+print("R Squared 95% CI = {}".format(r_sq_95_ci))
+```
+```
+R Squared 95% CI = [0.31089312 0.40543591]
+```
+
+### Video: Jackknife resampling
+### Basic jackknife estimation - mean
+- Jackknife resampling is an older procedure, which isn't used as often compared as bootstrapping. However, it's still useful to know how to run a basic jackknife estimation procedure. In this first exercise, we will calculate the jackknife estimate for the mean. Let's return to the wrench factory.
+- You own a wrench factory and want to measure the average length of the wrenches to ensure that they meet some specifications. Your factory produces thousands of wrenches every day, but it's infeasible to measure the length of each wrench. However, you have access to a representative sample of 100 wrenches. Let's use jackknife estimation to get the average lengths.
+- Examine the variable wrench_lengths in the shell.
+#### Question 1
+- Get a jackknife sample by iteratively leaving one observation out of wrench_lengths and assigning it to jk_sample.
+- Calculate the mean of jk_sample and append it to mean_lengths.
+- Finally, calculate the jackknife estimate mean_lengths_jk as the mean of the mean_lengths array.
+```python
+# Leave one observation out from wrench_lengths to get the jackknife sample and store the mean length
+mean_lengths, n = [], len(wrench_lengths)
+index = np.arange(n)
+
+for i in range(n):
+    jk_sample = wrench_lengths[index != i]
+    mean_lengths.append(np.mean(jk_sample))
+
+# The jackknife estimate is the mean of the mean lengths from each sample
+mean_lengths_jk = np.mean(np.array(mean_lengths))
+print("Jackknife estimate of the mean = {}".format(mean_lengths_jk))
+```
+```
+Jackknife estimate of the mean = 10.02710907349036
+```
+### Jackknife confidence interval for the median
+- In this exercise, we will calculate the jackknife 95% CI for a non-standard estimator. Here, we will look at the median. Keep in mind that the variance of a jackknife estimator is n-1 times the variance of the individual jackknife sample estimates where n is the number of observations in the original sample.
+- Returning to the wrench factory, you are now interested in estimating the median length of the wrenches along with a 95% CI to ensure that the wrenches are within tolerance.
+- Let's revisit the code from the previous exercise, but this time in the context of median lengths. By the end of this exercise, you will have a much better idea of how to use jackknife resampling to calculate confidence intervals for non-standard estimators.
+#### Question 2
+- Append the median length of each jackknife sample to median_lengths.
+- Calculate the mean of the jackknife estimate of median_length and assign to jk_median_length.
+- Calculate the upper 95% confidence interval jk_upper_ci and lower 95% confidence intervals of the median jk_lower_ci using 1.96*np.sqrt(jk_var).
+```python
+# Leave one observation out to get the jackknife sample and store the median length
+median_lengths = []
+for i in range(n):
+    jk_sample = wrench_lengths[index != i]
+    median_lengths.append(np.median(jk_sample))
+
+median_lengths = np.array(median_lengths)
+
+# Calculate jackknife estimate and it's variance
+jk_median_length = np.mean(median_lengths)
+jk_var = (n-1)*np.var(median_lengths)
+
+# Assuming normality, calculate lower and upper 95% confidence intervals
+jk_lower_ci = jk_median_length - 1.96*np.sqrt(jk_var)
+jk_upper_ci = jk_median_length + 1.96*np.sqrt(jk_var)
+print("Jackknife 95% CI lower = {}, upper = {}".format(jk_lower_ci, jk_upper_ci))
+```
+```
+Jackknife 95% CI lower = 9.138592467547202, upper = 10.754868069037098
+```
+
+### Video: Permutation testing
+### Generating a single permutation
+- In the next few exercises, we will run a significance test using permutation testing. As discussed in the video, we want to see if there's any difference in the donations generated by the two designs - A and B. Suppose that you have been running both the versions for a few days and have generated 500 donations on A and 700 donations on B, stored in the variables donations_A and donations_B.
+- We first need to generate a null distribution for the difference in means. We will achieve this by generating multiple permutations of the dataset and calculating the difference in means for each case.
+- First, let's generate one permutation and calculate the difference in means for the permuted dataset.
+#### Question 1
+- Concatenate the two arrays donations_A and donations_B using np.concatenate() and assign to data.
+- Get a single permutation using np.random.permutation() and assign it to perm.
+- Calculate the difference in the mean values of permuted_A and permuted_B as diff_in_means.
+```python
+# Concatenate the two arrays donations_A and donations_B into data
+len_A, len_B = len(donations_A), len(donations_B)
+data = np.concatenate([donations_A, donations_B])
+
+# Get a single permutation of the concatenated length
+perm = np.random.permutation(len(donations_A) + len(donations_B))
+
+# Calculate the permutated datasets and difference in means
+permuted_A = data[perm[:len(donations_A)]]
+permuted_B = data[perm[len(donations_A):]]
+diff_in_means = np.mean(permuted_A) - np.mean(permuted_B)
+print("Difference in the permuted mean values = {}.".format(diff_in_means))
+```
+```
+Difference in the permuted mean values = -0.13886241452516757.
+```
+### Hypothesis testing - Difference of means
+- We want to test the hypothesis that there is a difference in the average donations received from A and B. Previously, you learned how to generate one permutation of the data. Now, we will generate a null distribution of the difference in means and then calculate the p-value.
+- For the null distribution, we first generate multiple permuted datasets and store the difference in means for each case. We then calculate the test statistic as the difference in means with the original dataset. Finally, we approximate the p-value by calculating twice the fraction of cases where the difference is greater than or equal to the absolute value of the test statistic (2-sided hypothesis). A p-value of less than say 0.05 could then determine statistical significance.
+#### Question 1
+- Generate multiple permutations of donations_A & donations_B & assign it to perm.
+- Set samples equal to the difference in means of permuted_A_datasets & permuted_B_datasets. We set axis=1 to have a mean for each dataset instead of an overall mean.
+- Set test_stat equal to the difference in means of donations_A & donations_B.
+- Calculate p-value p_val as twice the fraction of samples greater than or equal to the absolute value of test_stat.
+```python
+# Generate permutations equal to the number of repetitions
+perm = np.array([np.random.permutation(len(donations_A) + len(donations_B)) for i in range(reps)])
+permuted_A_datasets = data[perm[:, :len(donations_A)]]
+permuted_B_datasets = data[perm[:, len(donations_A):]]
+
+# Calculate the difference in means for each of the datasets
+samples = np.mean(permuted_A_datasets, axis=1) - np.mean(permuted_B_datasets, axis=1)
+
+# Calculate the test statistic and p-value
+test_stat = np.mean(donations_A) - np.mean(donations_B)
+p_val = 2*np.sum(samples >= np.abs(test_stat))/reps
+print("p-value = {}".format(p_val))
+```
+```
+p-value = 0.002
+```
+### Hypothesis testing - Non-standard statistics
+- In the previous two exercises, we ran a permutation test for the difference in mean values. Now let's look at non-standard statistics.
+- Suppose that you're interested in understanding the distribution of the donations received from websites A and B. For this, you want to see if there's a statistically significant difference in the median and the 80th percentile of the donations. Permutation testing gives you a wonderfully flexible framework for attacking such problems.
+- Let's go through running a test to see if there's a difference in the median and the 80th percentile of the distribution of donations. As before, you're given the donations from the websites A and B in the variables donations_A and donations_B respectively.
+#### Question 1
+Set samples_percentile and samples_median equal to the difference in the 80th percentile and medians of permuted_A_datasets and permuted_B_datasets, respectively.
+```python
+# Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
+samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
+samples_median = np.median(permuted_A_datasets, axis=1) - np.median(permuted_B_datasets, axis=1)
+```
+#### Question 2
+Set test_stat_percentile equal to the difference in 80th percentile and test_stat_median equal to the difference in medians of donations_A and donations_B. The variables donations_A and donations_B have been pre-loaded.
+```python
+# Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
+samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
+samples_median = np.median(permuted_A_datasets, axis=1) - np.median(permuted_B_datasets, axis=1)
+
+# Calculate the test statistic from the original dataset and corresponding p-values
+test_stat_percentile = np.percentile(donations_A, 80) - np.percentile(donations_B, 80)
+test_stat_median = np.median(donations_A) - np.median(donations_B)
+```
+#### Question 3
+Calculate p_val_median as 2 × fraction of cases where sample median is greater than or equal to the median test statistic. Perform a similar calculation for p_val_percentile.
+```python
+# Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
+samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
+samples_median = np.median(permuted_A_datasets, axis=1) - np.median(permuted_B_datasets, axis=1)
+
+# Calculate the test statistic from the original dataset and corresponding p-values
+test_stat_percentile = np.percentile(donations_A, 80) - np.percentile(donations_B, 80)
+test_stat_median = np.median(donations_A) - np.median(donations_B)
+p_val_percentile = 2*np.sum(samples_percentile >= np.abs(test_stat_percentile))/reps
+p_val_median = 2*np.sum(samples_median >= np.abs(test_stat_median))/reps
+
+print("80th Percentile: test statistic = {}, p-value = {}".format(test_stat_percentile, p_val_percentile))
+print("Median: test statistic = {}, p-value = {}".format(test_stat_median, p_val_median))
+```
+```
+80th Percentile: test statistic = 1.6951624543447839, p-value = 0.026
+Median: test statistic = 0.6434965714975927, p-value = 0.014
+```
+
+## `Chapter 4` Advanced Applications of Simulation
+
+### Video: Simulation for Business Planning
+### Modeling Corn Production
+- Suppose that you manage a small corn farm and are interested in optimizing your costs. In this illustrative exercise, we will model the production of corn. We'll abstract away from details like units and focus on the process.
+- For simplicity, let's assume that corn production depends on only two factors: rain, which you don't control, and cost, which you control. Rain is normally distributed with mean 50 and standard deviation 15. For now, let's fix cost at 5,000. Let's assume that corn produced in any season is a Poisson random variable and that the average corn production is governed by the equation:
+- 100×(cost)^0.1×(rain)^0.2
+- Let's model this production function and simulate one outcome.
+#### Question 1
+- Initialize rain as a Normal random variable with mean 50 and standard deviation 15.
+- In the corn_produced() function, model mean_corn as 100×cost0.1×rain0.2.
+- Model corn as a Poisson random variable with mean mean_corn.
+- Simulate one outcome by storing the result of calling corn_produced() in corn_result and print your results.
+```python
+# Initialize variables
+cost = 5000
+rain = np.random.normal(50, 15)
+
+# Corn Production Model
+def corn_produced(rain, cost):
+  mean_corn = 100*(cost**0.1)*(rain**0.2)
+  corn = np.random.poisson(mean_corn)
+  return corn
+
+# Simulate and print corn production
+corn_result = corn_produced(rain, cost)
+print("Simulated Corn Production = {}".format(corn_result))
+```
+```
+Simulated Corn Production = 560
+```
+### Modeling Profits
+- In the previous exercise, you built a model of corn production. For a small farm, you typically have no control over the price or demand for corn. Suppose that price is normally distributed with mean 40 and standard deviation 10. You are given a function corn_demanded(), which takes the price and determines the demand for corn. This is reasonable because demand is usually determined by the market and is not in your control.
+- In this exercise, you will work on a function to calculate the profit by pulling together all the other simulated variables. The only input to this function will be the fixed cost of production. Upon completion, you'll have a function that gives one simulated profit outcome for a given cost. This function can then be used for planning your costs.
+#### Question 1
+- Model the price as a normal random variable with mean 40 and standard deviation 10.
+- Get the corn supply by calling the function corn_produced(rain, cost), which you designed in the previous exercise.
+- Call the corn_demanded() function with input price to get demand.
+- Profit = quantity × price − cost. If more corn is produced than demanded (supply > demand), then quantity sold will be demand, else it will be supply.
+```python
+# Function to calculate profits
+def profits(cost):
+    rain = np.random.normal(50, 15)
+    price = np.random.normal(40, 10)
+    supply = corn_produced(rain, cost)
+    demand = corn_demanded(price)
+    equil_short = supply <= demand
+    if equil_short == True:
+        tmp = supply*price - cost
+        return tmp
+    else:
+        tmp2 = demand*price - cost
+        return tmp2
+result = profits(cost)
+print("Simulated profit = {}".format(result))
+```
+```
+Simulated profit = 20675.3291075312
+```
+### Optimizing Costs
+- Now we will use the functions you've built to optimize our cost of production. We are interested in maximizing average profits. However, our profits depend on a number of factors, while we only control cost. Thus, we can simulate the uncertainty in the other factors and vary cost to see how our profits are impacted.
+- Since you manage the small corn farm, you have the ability to choose your cost - from $100 to $5,000. You want to choose the cost that gives you the maximum average profit. In this exercise, we will simulate multiple outcomes for each cost level and calculate an average. We will then choose the cost that gives us the maximum mean profit. Upon completion, you will have a framework for selecting optimal inputs for business decisions.
+#### Question 1
+- Initialize the empty dictionary results.
+- For each cost level, simulate profits using the pre-loaded profits() function and append them to tmp_profits.
+- Store the average of tmp_profits for each cost level in the results dictionary.
+- Find the cost level cost_max that has the maximum average profit by running results through the list comprehension.
+```python
+# Initialize results and cost_levels variables
+sims, results = 1000, {}
+cost_levels = np.arange(100, 5100, 100)
+
+# For each cost level, simulate profits and store mean profit
+for cost in cost_levels:
+    tmp_profits = []
+    for i in range(sims):
+        tmp_profits.append(profits(cost))
+    results[cost] = np.mean(tmp_profits)
+    
+# Get the cost that maximizes average profit
+cost_max = [x for x in results.keys() if results[x] == max(results.values())][0]
+print("Average profit is maximized when cost = {}".format(cost_max))
+```
+```
+Average profit is maximized when cost = 1400
+```
+
+### Video: Monte Carlo Integration
+### Integrating a Simple Function
+- This is a simple exercise introducing the concept of Monte Carlo Integration.
+- Here we will evaluate a simple integral ∫10xexdx. We know that the exact answer is 1, but simulation will give us an approximate solution, so we can expect an answer close to 1. As we saw in the video, it's a simple process. For a function of a single variable f(x):
+  - Get the limits of the x-axis (xmin,xmax) and y-axis (max(f(x)),min(min(f(x)),0)).
+  - Generate a number of uniformly distributed point in this box.
+  - Multiply the area of the box ((max(f(x)−min(f(x))×(xmax−xmin)) by the fraction of points that lie below f(x).
+- Upon completion, you will have a framework for handling definite integrals using Monte Carlo Integration.
+#### Question 1
+- In the sim_integrate() function, generate uniform random numbers between xmin and xmax and assign to x.
+- Generate uniform random numbers between min(min(f(x)),0) and max(f(x)) and assign to y.
+- Return the fraction of points less than f(x) multiplied by area ((max(f(x)−min(f(x))×(xmax−xmin)) .
+- Finally, use lambda function to define func as xex.
+```python
+# Define the sim_integrate function
+def sim_integrate(func, xmin, xmax, sims):
+    x = np.random.uniform(xmin, xmax, sims)
+    y = np.random.uniform(min(min(func(x)), 0), max(func(x)), sims)
+    area = (max(y) - min(y))*(xmax-xmin)
+    result = area * sum(abs(y) < abs(func(x)))/sims
+    return result
+
+# Call the sim_integrate function and print results
+result = sim_integrate(func = lambda x: x*np.exp(x), xmin = 0, xmax = 1, sims = 50)
+print("Simulated answer = {}, Actual Answer = 1".format(result))
+```
+```
+Simulated answer = 0.7240166789450252, Actual Answer = 1
+```
+### Calculating the value of pi
+- Now we work through a classic example - estimating the value of π.
+- Imagine a square of side 2 with the origin (0,0) as its center and the four corners having coordinates (1,1),(1,−1),(−1,1),(−1,−1). The area of this square is 2×2=4. Now imagine a circle of radius 1 with its center at the origin fitting perfectly inside this square. The area of the circle will be π×radius2=π.
+- To estimate π, we randomly sample multiple points in this square & get the fraction of points inside the circle (x2+y2<=1). The area of the circle then is 4 times this fraction, which gives us our estimate of π.
+- After this exercise, you'll have a grasp of how to use simulation for computation.
+#### Question 2
+- Examine the true value of π using np.pi in the console. Initialize sims to 10000 and circle_points to 0.
+- Within the for loop, generate a point (x & y coordinates) using np.random.uniform() between -1 and 1, having size=2.
+- Check if the point lies within the unit circle with the equation x2+y2<=1, assign to within_circle, and increment circle_points accordingly.
+- Print the estimate of π pi_sim as 4 times the fraction of points that lie within the circle.
+```python
+# Initialize sims and circle_points
+sims, circle_points = 10000, 0 
+
+for i in range(sims):
+    # Generate the two coordinates of a point
+    point = np.random.uniform(-1, 1, 2)
+    # if the point lies within the unit circle, increment counter
+    within_circle = point[0]**2 + point[1]**2 <= 1
+    if within_circle == True:
+        circle_points +=1
+        
+# Estimate pi as 4 times the avg number of points in the circle.
+pi_sim = 4*circle_points/sims
+print("Simulated value of pi = {}".format(pi_sim))
+```
+```
+Simulated value of pi = 3.1468
+```
+
+### Video: Simulation for Power Analysis
+#### Factors influencing Statistical Power
+- In this exercise, you will refresh some basic concepts to test your understanding of statistical power. It is very important to understand statistical power, especially if you are designing an A/B test.
+- Consider the following four options and select the factor that does not influence the statistical power of an experiment:
+```
+Magnitude of the effect / Effect size
+Sample Size
+Statistical Significance Level (α)
+Number of Simulations
+```
+```
+Number of Simulations
+```
+### Power Analysis - Part I
+- Now we turn to power analysis. You typically want to ensure that any experiment or A/B test you run has at least 80% power. One way to ensure this is to calculate the sample size required to achieve 80% power.
+- Suppose that you are in charge of a news media website and you are interested in increasing the amount of time users spend on your website. Currently, the time users spend on your website is normally distributed with a mean of 1 minute and a standard deviation of 0.5 minutes. Suppose that you are introducing a feature that loads pages faster and want to know the sample size required to measure a 5% increase in time spent on the website.
+- In this exercise, we will set up the framework to run one simulation, run a t-test, & calculate the p-value.
+#### Question 1
+- Initialize effect_size to 5%, control_mean to 1 and control_sd to 0.5.
+- Using np.random.normal(), simulate one drawing of control_time_spent and treatment_time_spent using the values you initialized.
+- Run a t-test on treatment_time_spent and control_time_spent using st.ttest_ind() where st is scipy.stats, which is already imported.
+- Statistical significance stat_sig should be True if p_value is less than 0.05, otherwise it should be False.
+```python
+# Initialize effect_size, sample_size, control_mean, control_sd
+effect_size, sample_size, control_mean, control_sd = 0.05, 50, 1, 0.5
+
+# Simulate control_time_spent and treatment_time_spent, assuming equal variance
+control_time_spent = np.random.normal(loc=control_mean, scale=control_sd, size=sample_size)
+treatment_time_spent = np.random.normal(loc=control_mean*(1+effect_size), scale=control_sd, size=sample_size)
+
+# Run the t-test and get the p_value
+t_stat, p_value = st.ttest_ind(treatment_time_spent, control_time_spent)
+stat_sig = p_value < 0.05
+print("P-value: {}, Statistically Significant? {}".format(p_value, stat_sig))
+```
+```
+P-value: 0.5766409395002308, Statistically Significant? False
+```
+### Power Analysis - Part II
+- Previously, we simulated one instance of the experiment & generated a p-value. We will now use this framework to calculate statistical power. Power of an experiment is the experiment's ability to detect a difference between treatment & control if the difference really exists. It's good statistical hygiene to strive for 80% power.
+- For our website, suppose we want to know how many people need to visit each variant, such that we can detect a 10% increase in time spent with 80% power. For this, we start with a small sample (50), simulate multiple instances of this experiment & check power. If 80% power is reached, we stop. If not, we increase the sample size & try again.
+#### Question 1
+- For the time_spent random variables, set size as tuples such that shape is sample_size × sims.
+- Calculate power as a fraction of p-values less than 0.05 (statistically significant).
+- If power is greater than or equal to 80%, break out of the while loop. Else, keep incrementing sample_size by 10.
+```python
+sample_size = 50
+
+# Keep incrementing sample size by 10 till we reach required power
+while 1:
+    control_time_spent = np.random.normal(loc=control_mean, scale=control_sd, size=(sample_size, sims))
+    treatment_time_spent = np.random.normal(loc=control_mean*(1+effect_size), scale=control_sd, size=(sample_size, sims))
+    t, p = st.ttest_ind(treatment_time_spent, control_time_spent)
+    
+    # Power is the fraction of times in the simulation when the p-value was less than 0.05
+    power = (p < 0.05).sum()/sims
+    if power >= 0.8: 
+        break
+    else: 
+        sample_size += 10
+print("For 80% power, sample size required = {}".format(sample_size))
+```
+```
+For 80% power, sample size required = 360
+```
+### Portfolio Simulation - Part I
+- In the next few exercises, you will calculate the expected returns of a stock portfolio & characterize its uncertainty.
+- Suppose you have invested $10,000 in your portfolio comprising of multiple stocks. You want to evaluate the portfolio's performance over 10 years. You can tweak your overall expected rate of return and volatility (standard deviation of the rate of return). Assume the rate of return follows a normal distribution.
+- First, let's write a function that takes the principal (initial investment), number of years, expected rate of return and volatility as inputs and returns the portfolio's total value after 10 years.
+- Upon completion of this exercise, you will have a function you can call to determine portfolio performance.
+#### Question 1
+- In the function definition, accept four arguments: number of years yrs, the expected rate of return avg_return, volatility sd_of_return, and principal (initial investment) principal as inputs.
+- Simulate rates of return for each year as a normal random variable.
+- Initialize end_return to the principal input. In the for loop, end_return is scaled up by the rate each year.
+- Use portfolio_return() to calculate and print result.
+```python
+# rates is a Normal random variable and has size equal to number of years
+def portfolio_return(yrs, avg_return, sd_of_return, principal):
+    np.random.seed(123)
+    rates = np.random.normal(loc=avg_return, scale=sd_of_return, size=yrs)
+    # Calculate the return at the end of the period
+    end_return = principal
+    for x in rates:
+        end_return = end_return*(1+x)
+    return end_return
+
+result = portfolio_return(yrs = 5, avg_return = 0.07, sd_of_return = 0.15, principal = 1000)
+print("Portfolio return after 5 years = {}".format(result))
+```
+```
+Portfolio return after 5 years = 1021.4013412039292
+```
+### Portfolio Simulation - Part II
+- Now we will use the simulation function you built to evaluate 10-year returns.
+- Your stock-heavy portfolio has an initial investment of $10,000, an expected return of 7% and a volatility of 30%. You want to get a 95% confidence interval of what your investment will be worth in 10 years. We will simulate multiple samples of 10-year returns and calculate the confidence intervals on the distribution of returns.
+- By the end of this exercise, you will have run a complete portfolio simulation.
+- The function portfolio_return() from the previous exercise is already initialized in the environment.
+#### Question 1
+- Initialize sims to 1,000.
+- Enter the appropriate values for the portfolio_return() function parameters.
+- Calculate the 95% confidence interval lower (lower_ci) and upper limits (upper_ci).
+```python
+# Run 1,000 iterations and store the results
+sims, rets = 1000, []
+
+for i in range(sims):
+    rets.append(portfolio_return(yrs = 10, avg_return = 0.07, 
+                                 volatility = 0.3, principal = 10000))
+
+# Calculate the 95% CI
+lower_ci = np.percentile(rets, 2.5) 
+upper_ci = np.percentile(rets, 97.5)
+print("95% CI of Returns: Lower = {}, Upper = {}".format(lower_ci, upper_ci))
+```
+```
+95% CI of Returns: Lower = 1556.1891551961562, Upper = 72680.387716237
+```
+### Portfolio Simulation - Part III
+- Previously, we ran a complete simulation to get a distribution for 10-year returns. Now we will use simulation for decision making.
+- Let's go back to your stock-heavy portfolio with an expected return of 7% and a volatility of 30%. You have the choice of rebalancing your portfolio with some bonds such that the expected return is 4% & volatility is 10%. You have a principal of $10,000. You want to select a strategy based on how much your portfolio will be worth in 10 years. Let's simulate returns for both the portfolios and choose based on the least amount you can expect with 75% probability (25th percentile).
+- Upon completion, you will know how to use a portfolio simulation for investment decisions.
+- The portfolio_return() function is again pre-loaded in the environment.
+#### Question 1
+Set avg_return and volatility parameters to 0.07 and 0.3, respectively, for the stock portfolio.
+Set avg_return and volatility parameters to 0.04 and 0.1, respectively, for the bond portfolio.
+Calculate the 25th percentile of the distribution of returns for the stock rets_stock_perc and bond rets_bond_perc portfolios.
+Calculate and print how much additional returns additional_returns you would lose or gain by sticking with stocks instead of going to bonds.
+```python
+for i in range(sims):
+    rets_stock.append(portfolio_return(yrs = 10, avg_return = 0.07, volatility = 0.3, principal = 10000))
+    rets_bond.append(portfolio_return(yrs = 10, avg_return = 0.04, volatility = 0.1, principal = 10000))
+
+# Calculate the 25th percentile of the distributions and the amount you'd lose or gain
+rets_stock_perc = np.percentile(rets_stock, 25)
+rets_bond_perc = np.percentile(rets_bond, 25)
+additional_returns = rets_stock_perc - rets_bond_perc
+print("Sticking to stocks gets you an additional return of {}".format(additional_returns))
+```
+```
+Sticking to stocks gets you an additional return of -5518.530403193416
+```
