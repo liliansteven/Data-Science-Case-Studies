@@ -28,7 +28,7 @@ print(coin_flip)
 [0]
 ```
 #### Question 2
-Use bernoulli.rvs() and sum() to get the number of heads after 10 coin flips with 35% chance of getting heads.
+- Use bernoulli.rvs() and sum() to get the number of heads after 10 coin flips with 35% chance of getting heads.
 ```python
 # Import the bernoulli object from scipy.stats
 from scipy.stats import bernoulli
@@ -45,7 +45,7 @@ print(coin_flips_sum)
 4
 ```
 #### Question 3
-Using bernoulli.rvs() and sum(), try to get the number of heads after 5 flips with a 50% chance of getting heads.
+- Using bernoulli.rvs() and sum(), try to get the number of heads after 5 flips with a 50% chance of getting heads.
 ```python
 # Import the bernoulli object from scipy.stats
 from scipy.stats import bernoulli
@@ -65,7 +65,7 @@ print(coin_flips_sum)
 - Previously, you simulated 10 coin flips with a 35% chance of getting heads using bernoulli.rvs().
 - This exercise loads the binom object from scipy.stats so you can use binom.rvs() to simulate 20 trials of 10 coin flips with a 35% chance of getting heads on each coin flip.
 #### Question 1
-Use the binom.rvs() function to simulate 20 trials of 10 coin flips with a 35% chance of getting heads.
+- Use the binom.rvs() function to simulate 20 trials of 10 coin flips with a 35% chance of getting heads.
 ```python
 # Set the random seed to reproduce the results
 np.random.seed(42)
@@ -88,8 +88,8 @@ binom.pmf() calculates the probability of having exactly k heads out of n coin f
 binom.cdf() calculates the probability of having k heads or less out of n coin flips.
 binom.sf() calculates the probability of having more than k heads out of n coin flips.
 #### Question 1
-Let's answer a simple question before we start calculating probabilities:
-What is the probability of getting more than 20 heads from a fair coin after 30 coin flips?
+- Let's answer a simple question before we start calculating probabilities:
+- What is the probability of getting more than 20 heads from a fair coin after 30 coin flips?
 ```
 binom.pmf(k=20, n=30, p=0.5)
 1 - binom.pmf(k=20, n=30, p=0.5)
@@ -100,8 +100,8 @@ binom.cdf(k=20, n=30, p=0.5)
 binom.sf(k=20, n=30, p=0.5)
 ```
 #### Question 2
-Let's get started with our model for defective components.
-First, calculate the probability of getting exactly 1 defective component.
+- Let's get started with our model for defective components.
+- First, calculate the probability of getting exactly 1 defective component.
 ```python
 # Probability of getting exactly 1 defective component
 prob_one_defect = binom.pmf(k=1, n=50, p=0.02)
@@ -111,7 +111,7 @@ print(prob_one_defect)
 0.37160171437461204
 ```
 #### Question 3
-Next, calculate the probability of not getting any defective components.
+- Next, calculate the probability of not getting any defective components.
 ```python
 # Probability of not getting any defective components
 prob_no_defects = binom.pmf(k=0, n=50, p=0.02)
@@ -121,7 +121,7 @@ print(prob_no_defects)
 0.3641696800871171
 ```
 #### Question 4
-Now calculate the probability of getting 2 or fewer defective components out of 50.
+- Now calculate the probability of getting 2 or fewer defective components out of 50.
 ```python
 # Probability of getting 2 or less defective components
 prob_two_or_less_defects = binom.cdf(k=2, n=50, p=0.02)
@@ -135,7 +135,7 @@ print(prob_two_or_less_defects)
 - We load the binom object from scipy.stats with the following code: from scipy.stats import binom
 - Answer the following questions using pmf(), cdf(), and sf().
 #### Question 1
-Calculate the probability of getting exactly 5 yes responses.
+- Calculate the probability of getting exactly 5 yes responses.
 ```python
 # Calculate the probability of getting exactly 5 yes responses
 prob_five_yes = binom.pmf(k=5, n=8, p=0.65)
@@ -145,7 +145,7 @@ print(prob_five_yes)
 0.27858577906250004
 ```
 #### Question 2
-Calculate the probability of getting 3 or fewer no responses.
+- Calculate the probability of getting 3 or fewer no responses.
 ```python
 # Calculate the probability of getting 3 or less no responses
 prob_three_or_less_no = 1-binom.cdf(k=3, n=8, p=0.65)
@@ -155,7 +155,7 @@ print(prob_three_or_less_no)
 0.8939090951171875
 ```
 #### Question 3
-Calculate the probability of getting more than 3 yes responses using binom.sf().
+- Calculate the probability of getting more than 3 yes responses using binom.sf().
 ```python
 # Calculate the probability of getting more than 3 yes responses
 prob_more_than_three_yes = binom.sf(k=3, n=8, p=0.65)
@@ -169,7 +169,7 @@ print(prob_more_than_three_yes)
 - The binom object from scipy.stats has been loaded for your convenience.
 - Imagine that in your town there are many crimes, including burglaries, but only 20% of them get solved. Last week, there were 9 burglaries. Answer the following questions.
 #### Question 1
-What is the probability of solving exactly 4 of the 9 total burglaries?
+- What is the probability of solving exactly 4 of the 9 total burglaries?
 ```python
 # What is the probability of solving 4 burglaries?
 four_solved = binom.pmf(k=4, n=9, p=0.2)
@@ -179,7 +179,7 @@ print(four_solved)
 0.06606028799999998
 ```
 #### Question 2
-What is the probability of solving more than 3 of the 9 burglaries?
+- What is the probability of solving more than 3 of the 9 burglaries?
 ```python
 # What is the probability of solving more than 3 burglaries?
 more_than_three_solved = binom.sf(k=3, n=9, p=0.2)
@@ -189,7 +189,7 @@ print(more_than_three_solved)
 0.08564172800000006
 ```
 #### Question 3
-What is the probability of solving exactly 2 or 3 of the 9 burglaries?
+- What is the probability of solving exactly 2 or 3 of the 9 burglaries?
 ```python
 # What is the probability of solving 2 or 3 burglaries?
 two_or_three_solved = binom.pmf(k=2, n=9, p=0.2) + binom.pmf(k=3, n=9, p=0.2)
@@ -199,7 +199,7 @@ print(two_or_three_solved)
 0.47815065599999973
 ```
 #### Question 4
-What is the probability of solving 1 or fewer or more than 7 of the 9 burglaries?
+- What is the probability of solving 1 or fewer or more than 7 of the 9 burglaries?
 ```python
 # What is the probability of solving 1 or fewer or more than 7 burglaries?
 tail_probabilities = binom.cdf(k=1, n=9, p=0.2) + binom.sf(k=7, n=9, p=0.2)
@@ -211,7 +211,7 @@ print(tail_probabilities)
 
 ### Video: Expected value, mean, and variance
 #### Calculating the expected value and variance
-How do you calculate the expected value and the variance from a binomial distribution with parameters n=10 and p=0.25?
+- How do you calculate the expected value and the variance from a binomial distribution with parameters n=10 and p=0.25?
 ```
 binom.stats(n=10, p=0.25)
 binom.pmf(k=5, n=10,p=0.25)
@@ -225,7 +225,7 @@ binom.stats(n=10, p=0.25)
 - Simulation involves generating samples and then measuring. In this exercise, we'll generate some samples and calculate the sample mean with the describe() method. See what you observe about the sample mean as the number of samples increases.
 - We've preloaded the binom object and the describe() method from scipy.stats for you, so you can calculate some values.
 #### Question 1
-Generate a sample of 100 fair coin flips using .rvs() and calculate the sample mean using describe().
+- Generate a sample of 100 fair coin flips using .rvs() and calculate the sample mean using describe().
 ```python
 # Sample mean from a generated sample of 100 fair coin flips
 sample_of_100_flips = binom.rvs(n=1, p=0.5, size=100)
@@ -236,7 +236,7 @@ print(sample_mean_100_flips)
 0.47
 ```
 #### Question 2
-Generate a sample of 1,000 fair coin flips and calculate the sample mean.
+- Generate a sample of 1,000 fair coin flips and calculate the sample mean.
 ```python
 # Sample mean from a generated sample of 1,000 fair coin flips
 sample_mean_1000_flips = describe(binom.rvs(n=1, p=0.5, size=1000)).mean
@@ -246,7 +246,7 @@ print(sample_mean_1000_flips)
 0.497
 ```
 #### Question 3
-Generate a sample of 2,000 fair coin flips and calculate the sample mean.
+- Generate a sample of 2,000 fair coin flips and calculate the sample mean.
 ```python
 # Sample mean from a generated sample of 2,000 fair coin flips
 sample_mean_2000_flips = describe(binom.rvs(n=1, p=0.5, size=2000)).mean
@@ -259,9 +259,9 @@ print(sample_mean_2000_flips)
 - Now try generating some samples and calculating the expected value and variance yourself, then using the method provided by binom to check if the sample values match the theoretical values.
 - The binom object and describe() method from scipy.stats are already loaded, so you can make the calculations.
 #### Question 1
-Calculate the sample mean and variance of the sample variable.
-Calculate the expected value using n=10 and p=0.3, and calculate the variance using mean, and 1 - p.
-Use a binom method to get the expected value and variance for 10 coin flips with p=0.3.
+- Calculate the sample mean and variance of the sample variable.
+- Calculate the expected value using n=10 and p=0.3, and calculate the variance using mean, and 1 - p.
+- Use a binom method to get the expected value and variance for 10 coin flips with p=0.3.
 ```python
 sample = binom.rvs(n=10, p=0.3, size=2000)
 
@@ -286,7 +286,7 @@ print(sample_describe.mean, sample_describe.variance, mean, variance, binom_stat
 - Now that you're familiar with working with coin flips using the binom object and calculating the mean and variance, let's try simulating a larger number of coin flips and calculating the sample mean and variance. Comparing this with the theoretical mean and variance will allow you to check if your simulated data follows the distribution you want.
 - We've preloaded the binom object and the describe() method from scipy.stats for you, as well as creating an empty list called averages to store the mean of the sample variable and a variable called variances to store the variance of the sample variable.
 #### Question 1
-Inside a loop, create a sample variable with 10 trials of 10 coin flips with 25% probability of getting heads.
+- Inside a loop, create a sample variable with 10 trials of 10 coin flips with 25% probability of getting heads.
 ```python
 for i in range(0, 1500):
     # 10 trials of 10 coin flips with 25% probability of heads
@@ -296,8 +296,8 @@ for i in range(0, 1500):
     variances.append(describe(sample).variance)
 ```
 #### Question 2
-Using the describe() function, calculate the mean of the provided averages array.
-Using the describe() function, calculate the mean of the provided variances array.
+- Using the describe() function, calculate the mean of the provided averages array.
+- Using the describe() function, calculate the mean of the provided variances array.
 ```python
 for i in range(0, 1500):
 	# 10 draws of 10 coin flips with 25% probability of heads
@@ -317,7 +317,7 @@ Mean 2.485066666666667
 Variance 1.8856000000000004
 ```
 #### Question 3
-Using the binom.stats() function, calculate the theoretical mean and variance using 10 coin flips and a 25% probability of getting heads and compare your results from the previous exercise to the expected values for the mean and variance.
+- Using the binom.stats() function, calculate the theoretical mean and variance using 10 coin flips and a 25% probability of getting heads and compare your results from the previous exercise to the expected values for the mean and variance.
 ```python
 for i in range(0, 1500):
 	# 10 draws of 10 coin flips with 25% probability of heads
@@ -344,8 +344,8 @@ Variance 1.8856000000000004
 
 ### Video: Calculating probabilities of two events
 #### Any overlap?
-When you calculate probabilities for multiple events the most important thing to notice is the relation between the events, in particular, if there is any overlap between any two events.
-What would be the formula to calculate the probability of A or B, given that A and B are not mutually exclusive?
+- When you calculate probabilities for multiple events the most important thing to notice is the relation between the events, in particular, if there is any overlap between any two events.
+- What would be the formula to calculate the probability of A or B, given that A and B are not mutually exclusive?
 ```
 P(A and B) = P(A) + P(B)
 P(A or B) = P(A) - P(B) + P(A and B)
@@ -360,7 +360,7 @@ P(A or B) = P(A) + P(B) - P(A and B)
 - The array sample_of_two_coin_flips has 1,000 experiments, each consisting of two fair coin flips. For each experiment, we record the number of heads out of the two coin flips: 0, 1, or 2.
 - We've preloaded the binom object and the find_repeats() and relfreq() methods from the scipy.stats library for you. You'll need these to calculate the probabilities in this exercise.
 #### Question 1
-From the provided samples in sample_of_two_coin_flips, get the probability of having 2 heads out of the 1,000 trials.
+- From the provided samples in sample_of_two_coin_flips, get the probability of having 2 heads out of the 1,000 trials.
 ```python
 # Count how many times you got 2 heads from the sample data
 count_2_heads = find_repeats(sample_of_two_coin_flips).counts[2]
@@ -375,7 +375,7 @@ print(prob_2_heads)
 0.243
 ```
 #### Question 2
-Calculate the relative frequency from sample_of_two_coin_flips, set numbins as 3, and extract frequency.
+- Calculate the relative frequency from sample_of_two_coin_flips, set numbins as 3, and extract frequency.
 ```python
 # Get the relative frequency from sample_of_two_coin_flips
 # Set numbins as 3
@@ -387,7 +387,7 @@ print(rel_freq)
 [0.269 0.488 0.243]
 ```
 #### Question 3
-Calculate the probability of getting 0, 1, or 2 from a binomial distribution with n=2 and p=0.5.
+- Calculate the probability of getting 0, 1, or 2 from a binomial distribution with n=2 and p=0.5.
 ```python
 # Probability of getting 0, 1, or 2 from the distribution
 probabilities = binom.pmf([0,1,2], n=2, p=0.5)
@@ -403,7 +403,7 @@ Fails	0.01		0.005
 Works	0.99		0.995
 - Take the values from the table, create variables, and calculate the probability of the event in each step.
 #### Question 1
-Calculate the probability that the engine and gear box both work.
+- Calculate the probability that the engine and gear box both work.
 ```python
 # Individual probabilities
 P_Eng_works = 0.99
@@ -418,7 +418,7 @@ print(P_both_works)
 0.98505
 ```
 #### Question 2
-Calculate the probability that one fails -- either engine or gear box -- but not both.
+- Calculate the probability that one fails -- either engine or gear box -- but not both.
 ```python
 # Individual probabilities
 P_Eng_fails = 0.01
@@ -439,7 +439,7 @@ print(P_one_fails)
 0.0149
 ```
 #### Question 3
-What is the probability that either both work or both fail?
+- What is the probability that either both work or both fail?
 ```python
 # Individual probabilities
 P_Eng_fails = 0.01
@@ -463,7 +463,7 @@ print(P_fails_or_works)
 - In this exercise, you'll use the following deck of cards to calculate some probabilities in each step:
 - <image>
 #### Question 1
-Calculate the probability of not getting an Ace.
+- Calculate the probability of not getting an Ace.
 ```python
 # Ace probability
 P_Ace = 4/52
@@ -477,7 +477,7 @@ print(P_not_Ace)
 0.9230769230769231
 ```
 #### Question 2
-Calculate the probability of getting a red card.
+- Calculate the probability of getting a red card.
 ```python
 # Figure probabilities
 P_Hearts = 13/52
@@ -492,7 +492,7 @@ print(P_Red)
 0.5
 ```
 #### Question 3
-Calculate the probability of getting a Jack or a spade.
+- Calculate the probability of getting a Jack or a spade.
 ```python
 # Figure probabilities
 P_Jack = 4/52
@@ -510,7 +510,7 @@ print(P_Jack_or_Spade)
 0.3076923076923077
 ```
 #### Question 4
-Calculate the probability of getting a King or a Queen.
+- Calculate the probability of getting a King or a Queen.
 ```python
 # Figure probabilities
 P_King = 4/52
@@ -541,7 +541,7 @@ print(P_King_or_Queen)
 - At the bottom of the Delayed column you have a total of 35, which means there were 35 delayed flights out of the total of 276 departures in the sample. Of these, 24 were on Tuesday and 11 on Friday.
 - Given the table, answer the following questions:
 #### Question 1
-What is the probability of a flight being on time?
+- What is the probability of a flight being on time?
 ```python
 # Needed quantities
 On_time = 241
@@ -556,7 +556,7 @@ print(P_On_time)
 0.8731884057971014
 ```
 #### Question 2
-Every departure is on time with probability P_On_time. What is the probability of a flight being delayed?
+- Every departure is on time with probability P_On_time. What is the probability of a flight being delayed?
 ```python
 # Needed quantities
 P_On_time = 241 / 276
@@ -570,7 +570,7 @@ print(P_Delayed)
 0.12681159420289856
 ```
 #### Question 3
-Given that it's Tuesday, what is the probability of a flight being delayed (P(Delayed|Tuesday))?
+- Given that it's Tuesday, what is the probability of a flight being delayed (P(Delayed|Tuesday))?
 ```python
 # Needed quantities
 Delayed_on_Tuesday = 24
@@ -585,7 +585,7 @@ print(P_Delayed_g_Tuesday)
 0.17391304347826086
 ```
 #### Question 4
-Given that it's Friday, what is the probability of a flight being delayed (P(Delayed|Friday))?
+- Given that it's Friday, what is the probability of a flight being delayed (P(Delayed|Friday))?
 ```python
 # Needed quantities
 Delayed_on_Friday = 11
@@ -610,7 +610,7 @@ print(P_Delayed_g_Friday)
 
 - The total in the Red column is 26, which means there are 26 red cards in the deck. Of these, 2 are Aces and 24 are non-Aces. There are 52 cards in a deck. Use the values in the table to calculate some conditional probabilities.
 #### Question 1
-Calculate P(Ace|Red).
+- Calculate P(Ace|Red).
 ```python
 # Individual probabilities
 P_Red = 26/52
@@ -625,7 +625,7 @@ print(P_Ace_given_Red)
 0.07692307692307693
 ```
 #### Question 2
-Calculate P(Black|Ace).
+- Calculate P(Black|Ace).
 ```python
 # Individual probabilities
 P_Ace = 4/52
@@ -640,7 +640,7 @@ print(P_Black_given_Ace)
 0.5
 ```
 #### Question 3
-Calculate P(Non Ace|Black).
+- Calculate P(Non Ace|Black).
 ```python
 # Individual probabilities
 P_Black = 26/52
@@ -655,7 +655,7 @@ print(P_Non_ace_given_Black)
 0.9230769230769231
 ```
 #### Question 4
-Calculate P(Red|Non Ace).
+- Calculate P(Red|Non Ace).
 ```python
 # Individual probabilities
 P_Non_ace = 48/52
@@ -673,7 +673,7 @@ print(P_Red_given_Non_ace)
 - Now let's use the deck of cards to calculate some conditional probabilities.
 - <image>
 #### Question 1
-Calculate the probability of getting two Jacks (P(Jack and Jack)).
+- Calculate the probability of getting two Jacks (P(Jack and Jack)).
 ```python
 # Needed probabilities
 P_first_Jack = 4/52
@@ -688,7 +688,7 @@ print(P_two_Jacks)
 0.004524886877828055
 ```
 #### Question 2
-Calculate P(Ace|Spade).
+- Calculate P(Ace|Spade).
 ```python
 # Needed probabilities
 P_Spade = 13/52
@@ -703,7 +703,7 @@ print(P_Ace_given_Spade)
 0.07692307692307693
 ```
 #### Question 3
-Calculate P(Queen|Face card).
+- Calculate P(Queen|Face card).
 ```python
 # Needed probabilities
 P_Face_card = 12/52
@@ -754,7 +754,7 @@ print(P_last_5000)
   - 32% of the voters support John Doe in state Z.
 - Given that a voter supports John Doe, answer the following questions.
 #### Question 1
-What is the probability that the voter lives in state X and supports John Doe?
+- What is the probability that the voter lives in state X and supports John Doe?
 ```python
 # Individual probabilities
 P_X = 0.43
@@ -770,7 +770,7 @@ print(P_X_n_Support)
 0.22790000000000002
 ```
 #### Question 2
-What is the probability that the voter lives in state Z and does not support John Doe?
+- What is the probability that the voter lives in state Z and does not support John Doe?
 ```python
 # Individual probabilities
 P_Z = 0.32
@@ -787,7 +787,7 @@ print(P_Z_n_NoSupport)
 0.2176
 ```
 #### Question 3
-What is the total percentage of voters that support John Doe?
+- What is the total percentage of voters that support John Doe?
 ```python
 # Individual probabilities
 P_X = 0.43
@@ -826,7 +826,7 @@ It allows you to calculate conditional probabilities for events that can be part
 - Half of the parts are produced by V1, 25% by V2, and the rest by V3. The probability of a part being damaged given that it was produced by V1 is 1%, while it's 2% for V2 and 3% for V3.
 - If a part taken at random is damaged, answer the following questions.
 #### Question 1
-What is the probability that the part was manufactured by V1?
+- What is the probability that the part was manufactured by V1?
 ```python
 # Individual probabilities & conditional probabilities
 P_V1 = 0.5
@@ -848,7 +848,7 @@ print(P_V1_g_D)
 0.2857142857142857
 ```
 #### Question 2
-What is the probability that it was manufactured by V2?
+- What is the probability that it was manufactured by V2?
 ```python
 # Individual probabilities & conditional probabilities
 P_V1 = 0.5
@@ -870,7 +870,7 @@ print(P_V2_g_D)
 0.2857142857142857
 ```
 #### Question 3
-What is the probability that the part was manufactured by V3?
+- What is the probability that the part was manufactured by V3?
 ```python
 # Individual probabilities & conditional probabilities
 P_V1 = 0.5
@@ -895,7 +895,7 @@ print(P_V3_g_D)
 - You go to the doctor about a strong headache. The doctor randomly selects you for a blood test for swine flu, which is suspected to affect 1 in 9,000 people in your city. The accuracy of the test is 99%, meaning that the probability of a false positive is 1%. The probability of a false negative is zero.
 - Given that you test positive, answer the following questions.
 #### Question 1
-What is the probability that you have swine flu given that your test outcome is positive?
+- What is the probability that you have swine flu given that your test outcome is positive?
 ```python
 # Probability of having Swine_flu
 P_Swine_flu = 1./9000
@@ -918,7 +918,7 @@ print(P_Swine_flu_g_Positive)
 0.010990218705352238
 ```
 #### Question 2
-You went to Miami and 1 in 350 people came back with swine flu. Calculate the new probability that you'll test positive.
+- You went to Miami and 1 in 350 people came back with swine flu. Calculate the new probability that you'll test positive.
 ```python
 # Individual probabilities & conditional probabilities
 P_Swine_flu = 1./350
@@ -938,7 +938,7 @@ print(P_Swine_flu_g_Positive)
 0.22271714922048996
 ```
 #### Question 3
-If the probability of a false positive is 2%, what is the new probability that you have swine flu after your vacation?
+- If the probability of a false positive is 2%, what is the new probability that you have swine flu after your vacation?
 ```python
 # Individual probabilities & conditional probabilities
 P_Swine_flu = 1./350
@@ -993,7 +993,7 @@ sns.distplot(sample)
 plt.show()
 ```
 #### Within three standard deviations
-The heights of every employee in a company have been measured, and they are distributed normally with a mean of 168 cm and a standard deviation of 12 cm.
+- The heights of every employee in a company have been measured, and they are distributed normally with a mean of 168 cm and a standard deviation of 12 cm.
 What is the probability of getting a height within three standard deviations of the mean?
 ```
 68%
@@ -1009,7 +1009,7 @@ What is the probability of getting a height within three standard deviations of 
 - Let's go back to the example of the restaurant chain that has been collecting data about customer spending. Recall that the data shows that the spending is approximately normally distributed, with a mean of 3.15 and a standard deviation of 1.5 per customer, as pictured in the plot.
 - We can use the already imported norm object from scipy.stats to answer several questions about customer spending at this restaurant chain.
 #### Question 1
-What is the probability that a customer will spend $3 or less?
+- What is the probability that a customer will spend $3 or less?
 ```python
 # Probability of spending $3 or less
 spending = norm.cdf(3, loc=3.15, scale=1.5)
@@ -1019,7 +1019,7 @@ print(spending)
 0.46017216272297107
 ```
 #### Question 2
-What is the probability that a customer will spend more than $5?
+- What is the probability that a customer will spend more than $5?
 ```python
 # Probability of spending more than $5
 spending = norm.sf(5, loc=3.15, scale=1.5)
@@ -1029,7 +1029,7 @@ print(spending)
 0.10872571321259111
 ```
 #### Question 3
-What is the probability that a customer will spend more than $2.15 and $4.15 or less?
+- What is the probability that a customer will spend more than $2.15 and $4.15 or less?
 ```python
 # Probability of spending more than $2.15 and $4.15 or less
 spending_4 = norm.cdf(4.15, loc=3.15, scale=1.5)
@@ -1040,7 +1040,7 @@ print(spending_4 - spending_2)
 0.4950149249061543
 ```
 #### Question 4
-What is the probability that a customer will spend $2.15 or less or more than $4.15?
+- What is the probability that a customer will spend $2.15 or less or more than $4.15?
 ```python
 # Probability of spending $2.15 or less or more than $4.15
 spending_2 = norm.cdf(2.15, loc=3.15, scale=1.5)
@@ -1056,7 +1056,7 @@ print(spending_2 + spending_over_4)
 - A friend wants to buy a smartphone and is asking you the following questions.
 norm is already imported from scipy.stats.
 #### Question 1
-What is the probability that the battery will last less than 3 hours?
+- What is the probability that the battery will last less than 3 hours?
 ```python
 # Probability that battery will last less than 3 hours
 less_than_3h = norm.cdf(3, loc=5, scale=1.5)
@@ -1066,7 +1066,7 @@ print(less_than_3h)
 0.09121121972586788
 ```
 #### Question 2
-What is the probability that the battery will last more than 3 hours?
+- What is the probability that the battery will last more than 3 hours?
 ```python
 # Probability that battery will last more than 3 hours
 more_than_3h = norm.sf(3, loc=5, scale=1.5)
@@ -1076,7 +1076,7 @@ print(more_than_3h)
 0.9087887802741321
 ```
 #### Question 3
-What is the probability that the battery will last between 5 and 7 hours?
+- What is the probability that the battery will last between 5 and 7 hours?
 ```python
 # Probability that battery will last between 5 and 7 hours
 P_less_than_7h = norm.cdf(7, loc=5, scale=1.5)
@@ -1091,7 +1091,7 @@ print(P_less_than_7h - P_less_than_5h)
 - Using the previous information, complete the following exercises.
 - For your convenience, norm has been imported from the library scipy.stats.
 #### Question 1
-Print the range of female heights one standard deviation from the mean.
+- Print the range of female heights one standard deviation from the mean.
 ```python
 # Values one standard deviation from mean height for females
 interval = norm.interval(0.68, loc=65, scale=3.5)
@@ -1101,7 +1101,7 @@ print(interval)
 (61.51939740876586, 68.48060259123413)
 ```
 #### Question 2
-Print the value where the tallest males fall with 0.01 probability.
+- Print the value where the tallest males fall with 0.01 probability.
 ```python
 # Value where the tallest males fall with 0.01 probability
 tallest = norm.ppf(0.99, loc=70, scale=4)
@@ -1111,7 +1111,7 @@ print(tallest)
 79.30539149616337
 ```
 #### Question 3
-Print the probability of being taller than 73 inches for a male and for a female.
+- Print the probability of being taller than 73 inches for a male and for a female.
 ```python
 # Probability of being taller than 73 inches for males and females
 P_taller_male = norm.sf(73, loc=70, scale=4)
@@ -1122,7 +1122,7 @@ print(P_taller_male, P_taller_female)
 0.2266273523768682 0.011135489479616392
 ```
 #### Question 4
-Print the probability of being shorter than 61 inches for a male and for a female.
+- Print the probability of being shorter than 61 inches for a male and for a female.
 ```python
 # Probability of being shorter than 61 inches for males and females
 P_shorter_male = norm.cdf(61, loc=70, scale=4)
@@ -1160,7 +1160,7 @@ print(probability)
 - For your convenience, the poisson object has already been imported from the scipy.stats library.
 - Aiming to improve road safety, the transportation agency of the regional government has assigned you the following tasks.
 #### Question 1
-Determine and print the probability of there being 5 accidents on any day.
+- Determine and print the probability of there being 5 accidents on any day.
 ```python
 # Import the poisson object
 from scipy.stats import poisson
@@ -1175,7 +1175,7 @@ print(P_five_accidents)
 0.03608940886309672
 ```
 #### Question 2
-Determine and print the probability of having 4 or 5 accidents on any day.
+- Determine and print the probability of having 4 or 5 accidents on any day.
 ```python
 # Import the poisson object
 from scipy.stats import poisson
@@ -1191,7 +1191,7 @@ print(P_less_than_6 - P_less_than_4)
 0.12631293102083851
 ```
 #### Question 3
-Determine and print the probability of having more than 3 accidents on any day.
+- Determine and print the probability of having more than 3 accidents on any day.
 ```python
 # Import the poisson object
 from scipy.stats import poisson
@@ -1206,7 +1206,7 @@ print(P_more_than_3)
 0.14287653950145296
 ```
 #### Question 4
-Determine and print the number of accidents that is likely to happen with 0.75 probability.
+- Determine and print the number of accidents that is likely to happen with 0.75 probability.
 ```python
 # Import the poisson object
 from scipy.stats import poisson
@@ -1247,7 +1247,7 @@ plt.show()
 - We can model a grizzly bear catching salmon with a geometric distribution.
 - For the following exercises, the geom object from scipy.stats has already been loaded for your convenience.
 #### Question 1
-Calculate and print the probability that the bear will catch a salmon on its third attempt, after failing two times.
+- Calculate and print the probability that the bear will catch a salmon on its third attempt, after failing two times.
 ```python
 # Getting a salmon on the third attempt
 probability = geom.pmf(k=3, p=0.0333)
@@ -1259,7 +1259,7 @@ print(probability)
 0.031119146037000004
 ```
 #### Question 2
-Calculate and print the probability that the bear will get a salmon in less than 5 attempts.
+- Calculate and print the probability that the bear will get a salmon in less than 5 attempts.
 ```python
 # Probability of getting a salmon in less than 5 attempts
 probability = geom.cdf(k=4, p=0.0333)
@@ -1271,7 +1271,7 @@ print(probability)
 0.12669313451096792
 ```
 #### Question 3
-Calculate and print the probability that the bear will get a salmon in less than 21 attempts.
+- Calculate and print the probability that the bear will get a salmon in less than 21 attempts.
 ```python
 # Probability of getting a salmon in less than 21 attempts
 probability = geom.cdf(k=20, p=0.0333)
@@ -1283,7 +1283,7 @@ print(probability)
 0.4920343187252892
 ```
 #### Question 4
-Calculate and print how many attempts the bear has to make to have a 0.9 probability of catching a salmon.
+- Calculate and print how many attempts the bear has to make to have a 0.9 probability of catching a salmon.
 ```python
 # Attempts for 0.9 probability of catching a salmon
 attempts = geom.ppf(q=0.9, p=0.0333)
@@ -1367,7 +1367,7 @@ print(sample)
 - Using the sample variable you just created, you'll calculate the sample means of the first 10, 50, and 250 samples.
 - The binom object and describe() method from scipy.stats have been imported for your convenience.
 #### Question 1
-Print the sample mean of the first 10 samples.
+- Print the sample mean of the first 10 samples.
 ```python
 # Print the sample mean of the first 10 samples
 print(describe(sample[0:10]).mean)
@@ -1376,7 +1376,7 @@ print(describe(sample[0:10]).mean)
 0.4
 ```
 #### Question 2
-Print the sample mean of the first 50 samples.
+- Print the sample mean of the first 50 samples.
 ```python
 # Print the sample mean of the first 50 samples
 print(describe(sample[0:50]).mean)
@@ -1385,7 +1385,7 @@ print(describe(sample[0:50]).mean)
 0.56
 ```
 #### Question 3
-Print the sample mean of the first 250 samples.
+- Print the sample mean of the first 250 samples.
 ```python
 # Print the sample mean of the first 250 samples
 print(describe(sample[0:250]).mean)
@@ -1397,7 +1397,7 @@ print(describe(sample[0:250]).mean)
 - Now let's plot the sample mean, so you can see more clearly how it evolves as more data becomes available.
 - For this exercise we'll again use the sample you generated earlier, which is available in the sample variable. The binom object and describe() function have already been imported for you from scipy.stats, and matplotlib.pyplot is available as plt.
 #### Question 1
-In a for statement for i in a range that goes from 2 to 251, do the following:
+- In a for statement for i in a range that goes from 2 to 251, do the following:
 - Calculate the sample mean for the first i values.
 - Use append to add the value to the averages array.
 ```python
@@ -1407,7 +1407,7 @@ for i in range(2, 251):
     averages.append(describe(sample[0:i]).mean)
 ```
 #### Question 2
-Add a horizontal line at the mean value of the binomial distribution with n=1 and p=0.505.
+- Add a horizontal line at the mean value of the binomial distribution with n=1 and p=0.505.
 ```python
 # Calculate sample mean and store it on averages array
 averages = []
@@ -1419,7 +1419,7 @@ plt.axhline(binom.mean(n=1, p=0.505), color='red')
 plt.plot(averages, '-')
 ```
 #### Question 3
-Print the sample mean of the first 250 samples.
+- Print the sample mean of the first 250 samples.
 ```python
 # Calculate sample mean and store it on averages array
 averages = []
@@ -1440,7 +1440,7 @@ plt.show()
 - An important result in probability and statistics is that the shape of the distribution of the means of random variables tends to a normal distribution, which happens when you add random variables with any distribution with the same expected value and variance.
 - For your convenience, we've loaded binom and describe() from the scipy.stats library and imported matplotlib.pyplot as plt and numpy as np. We generated a simulated population with size 1,000 that follows a binomial distribution for 10 fair coin flips and is available in the population variable.
 #### Question 1
-Select 20 random values from the population using np.random.choice().
+- Select 20 random values from the population using np.random.choice().
 ```python
 # Create list for sample means
 sample_means = []
@@ -1449,7 +1449,7 @@ for _ in range(1500):
     sample = np.random.choice(population, 20)
 ```
 #### Question 2
-Plot a histogram of the sample_means list.
+- Plot a histogram of the sample_means list.
 ```python
 # Create list for sample means
 sample_means = []
@@ -1460,7 +1460,7 @@ for _ in range(1500):
     sample_means.append(describe(sample).mean)
 ```
 #### Question 3
-Inspecting the plot, what is the distribution of the sample mean?
+- Inspecting the plot, what is the distribution of the sample mean?
 ```
 Same as the generated sample
 Binomial
@@ -1474,7 +1474,7 @@ Normal
 - From the scipy.stats library, we've loaded the poisson and geom objects and the describe() function. We've also imported matplotlib.pyplot as plt and numpy as np.
 - As you'll see, the shape of the distribution of the means is the same even though the samples are generated from different distributions.
 #### Question 1
-Select 20 values from the population, add the sample mean to the sample_means list, and plot a histogram.
+- Select 20 values from the population, add the sample mean to the sample_means list, and plot a histogram.
 ```python
 # Generate the population
 population = geom.rvs(p=0.5, size=1000)
@@ -1492,7 +1492,7 @@ plt.hist(sample_means)
 plt.show()
 ```
 #### Question 2
-Select 20 values from the population, populate the sample_means list, and plot a histogram.
+- Select 20 values from the population, populate the sample_means list, and plot a histogram.
 ```python
 # Generate the population
 population = poisson.rvs(mu=2, size=1000)
@@ -1513,7 +1513,7 @@ plt.show()
 - To illustrate the central limit theorem, we are going to work with dice rolls. We'll generate the samples and then add them to plot the outcome.
 - You're provided with a function named roll_dice() that will generate the sample dice rolls. numpy is already imported as np for your convenience: you have to use np.add(sample1, sample2) to add samples. Also, matplotlib.pyplot is imported as plt so you can plot the histograms.
 #### Question 1
-Generate a sample of 2000 dice rolls using roll_dice() and plot a histogram of the sample.
+- Generate a sample of 2000 dice rolls using roll_dice() and plot a histogram of the sample.
 ```python
 # Configure random generator
 np.random.seed(42)
@@ -1526,7 +1526,7 @@ plt.hist(sample1, bins=range(1, 8), width=0.9)
 plt.show()
 ```
 #### Question 2
-Add sample1 and sample2 using np.add(), store the result in the variable sum_of_1_and_2, then plot sum_of_1_and_2.
+- Add sample1 and sample2 using np.add(), store the result in the variable sum_of_1_and_2, then plot sum_of_1_and_2.
 ```python
 # Configure random generator
 np.random.seed(42)
@@ -1543,7 +1543,7 @@ plt.hist(sum_of_1_and_2, bins=range(2, 14), width=0.9)
 plt.show()
 ```
 #### Question 3
-Add sum_of_1_and_2 and sample3 using np.add() and store the result in sum_of_3_samples. Then plot sum_of_3_samples.
+- Add sum_of_1_and_2 and sample3 using np.add() and store the result in sum_of_3_samples. Then plot sum_of_3_samples.
 ```python
 # Configure random generator
 np.random.seed(42)
@@ -1591,7 +1591,7 @@ intercept: 48.27076128780868
 - With the relationship between the hours of study and the scores that students got on a given test, you already got the parameters of a linear model, slope and intercept. With those parameters, let's predict the test score for a student who studies for 10 hours.
 - For this exercise, the linregress() function has been imported for you from scipy.stats.
 #### Question 1
-Predict the test score for 10 hours of study using the provided parameters in slope and intercept, then print the score.
+- Predict the test score for 10 hours of study using the provided parameters in slope and intercept, then print the score.
 ```python
 # Get the predicted test score for given hours of study
 score = slope*10 + intercept
@@ -1601,7 +1601,7 @@ print('score:', score)
 score: 65.42335979737958
 ```
 #### Question 2
-Now predict the score for 9 hours of study using the parameters in slope and intercept, then print the score.
+- Now predict the score for 9 hours of study using the parameters in slope and intercept, then print the score.
 ```python
 # Get the predicted test score for given hours of study
 score = slope*9 + intercept
@@ -1611,7 +1611,7 @@ print('score:', score)
 score: 63.708099946422486
 ```
 #### Question 3
-Lastly, predict the score for 12 hours of study using the same parameters, and print the score.
+- Lastly, predict the score for 12 hours of study using the same parameters, and print the score.
 ```python
 # Get the predicted test score for given hours of study
 score = slope*12 + intercept
@@ -1629,7 +1629,7 @@ score: 68.85387949929375
 - We will work with data of test scores for two schools, A and B, on the same subject. model_A and model_B were fitted with hours_of_study_A and test_scores_A and hours_of_study_B and test_scores_B, respectively.
 matplotlib.pyplot has been imported as plt, numpy as np and LinearRegression from sklearn.linear_model.
 #### Question 1
-Make a scatter of hours_of_study_A and test_scores_A and plot hours_of_study_values_A and the outcomes from model_A.
+- Make a scatter of hours_of_study_A and test_scores_A and plot hours_of_study_values_A and the outcomes from model_A.
 ```python
 # Scatterplot of hours of study and test scores
 plt.scatter(hours_of_study_A, test_scores_A)
@@ -1640,7 +1640,7 @@ plt.title("Model A", fontsize=25)
 plt.show()
 ```
 #### Question 2
-Subtract the predicted values and test_scores_A, then make a scatterplot with hours_of_study_A and residuals_A.
+- Subtract the predicted values and test_scores_A, then make a scatterplot with hours_of_study_A and residuals_A.
 ```python
 # Calculate the residuals
 residuals_A = model_A.predict(hours_of_study_A) - test_scores_A
@@ -1654,7 +1654,7 @@ plt.title("Residuals plot of Model A", fontsize=25)
 plt.show()
 ```
 #### Question 3
-Make a scatter of hours_of_study_B and test_scores_B and plot hours_of_study_values_B and the outcomes from model_B.
+- Make a scatter of hours_of_study_B and test_scores_B and plot hours_of_study_values_B and the outcomes from model_B.
 ```python
 # Scatterplot of hours of study and test scores
 plt.scatter(hours_of_study_B, test_scores_B)
@@ -1665,7 +1665,7 @@ plt.title("Model B", fontsize=25)
 plt.show()
 ```
 #### Question 4
-Subtract the predicted values and test_scores_B, then make a scatterplot with hours_of_study_B and residuals_B.
+- Subtract the predicted values and test_scores_B, then make a scatterplot with hours_of_study_B and residuals_B.
 ```python
 # Calculate the residuals
 residuals_B = model_B.predict(hours_of_study_B) - test_scores_B
@@ -1734,7 +1734,7 @@ Probability of passing test  [0.40884325]
 - Put yourself in the shoes of one of the university students. You have two tests coming up in different subjects, and you're running out of time to study. You want to know how much time you have to study each subject to maximize the probability of passing both tests. Fortunately, there's data that you can use.
 - For subject A, you already fitted a logistic model in model_A, and for subject B you fitted a model in model_B. As well as preloading LogisticRegression from sklearn.linear_model and numpy as np, expit(), the inverse of the logistic function, has been imported for you from scipy.special.
 #### Question 1
-Use model_A to predict if you'll pass the test with 6, 7, 8, 9, or 10 hours of study and model_B with 3, 4, 5, or 6.
+- Use model_A to predict if you'll pass the test with 6, 7, 8, 9, or 10 hours of study and model_B with 3, 4, 5, or 6.
 ```python
 # Specify values to predict
 hours_of_study_test_A = [[6], [7], [8], [9], [10]]
@@ -1755,7 +1755,7 @@ print(predicted_outcomes_B)
 [False False  True  True]
 ```
 #### Question 2
-Get the probability of passing for test A with 8.6 hours of study and test B with 4.7 hours of study.
+- Get the probability of passing for test A with 8.6 hours of study and test B with 4.7 hours of study.
 ```python
 # Set value in array
 value_A = np.asarray(8.6).reshape(-1,1)
@@ -1772,7 +1772,7 @@ The probability of passing test A with 8.6 hours of study is  [0.74226823]
 The probability of passing test B with 4.7 hours of study is  [0.9400506]
 ```
 #### Question 3
-Calculate the hours you need to study to have 0.5 probability of passing the test using the formula -intercept/slope.
+- Calculate the hours you need to study to have 0.5 probability of passing the test using the formula -intercept/slope.
 ```python
 # Print the hours required to have 0.5 probability on model_A
 print("Minimum hours of study for test A are ", -model_A.intercept_/model_A.coef_)
@@ -1785,7 +1785,7 @@ Minimum hours of study for test A are  [[8.49401055]]
 Minimum hours of study for test B are  [[4.5376007]]
 ```
 #### Question 4
-Calculate the joint probability of passing test A and test B.
+- Calculate the joint probability of passing test A and test B.
 ```python
 # Probability calculation for each value of study_hours
 prob_passing_A = model_A.predict_proba(study_hours_A.reshape(-1,1))[:,1]
