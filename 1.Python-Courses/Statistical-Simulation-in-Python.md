@@ -407,7 +407,7 @@ def birthday_sim(people):
     return out
 ```
 #### Question 2
-Call birthday_sim() in a while loop and break when the probability is greater than 0.5.
+- Call birthday_sim() in a while loop and break when the probability is greater than 0.5.
 ```python
 # Break out of the loop if probability greater than 0.5
 while (people > 0):
@@ -718,7 +718,7 @@ Height Weight Correlation CI = [0.93892136 0.95103152]
 - Examine the DataFrame df with a dependent variable y and two independent variables X1 and X2 using df.head(). We've already fit this regression with statsmodels (sm) using:
 - reg_fit = sm.OLS(df['y'], df.iloc[:,1:]).fit()
 - Examine the result using reg_fit.summary() to find that R2=0.3504. Use bootstrapping to calculate the 95% CI.
-#### Question 3
+#### Question 1
 - Draw a bootstrap sample from the original dataset using the sample() method of a pandas DataFrame. The number of rows should be the same as that of the original DataFrame.
 - Fit a regression similar to reg_fit() using sm.OLS() and extract the R2 statistic using the parameter rsquared.
 - Append the R2 to the list rsquared_boot.
@@ -853,14 +853,14 @@ p-value = 0.002
 - Suppose that you're interested in understanding the distribution of the donations received from websites A and B. For this, you want to see if there's a statistically significant difference in the median and the 80th percentile of the donations. Permutation testing gives you a wonderfully flexible framework for attacking such problems.
 - Let's go through running a test to see if there's a difference in the median and the 80th percentile of the distribution of donations. As before, you're given the donations from the websites A and B in the variables donations_A and donations_B respectively.
 #### Question 1
-Set samples_percentile and samples_median equal to the difference in the 80th percentile and medians of permuted_A_datasets and permuted_B_datasets, respectively.
+- Set samples_percentile and samples_median equal to the difference in the 80th percentile and medians of permuted_A_datasets and permuted_B_datasets, respectively.
 ```python
 # Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
 samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
 samples_median = np.median(permuted_A_datasets, axis=1) - np.median(permuted_B_datasets, axis=1)
 ```
 #### Question 2
-Set test_stat_percentile equal to the difference in 80th percentile and test_stat_median equal to the difference in medians of donations_A and donations_B. The variables donations_A and donations_B have been pre-loaded.
+- Set test_stat_percentile equal to the difference in 80th percentile and test_stat_median equal to the difference in medians of donations_A and donations_B. The variables donations_A and donations_B have been pre-loaded.
 ```python
 # Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
 samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
@@ -871,7 +871,7 @@ test_stat_percentile = np.percentile(donations_A, 80) - np.percentile(donations_
 test_stat_median = np.median(donations_A) - np.median(donations_B)
 ```
 #### Question 3
-Calculate p_val_median as 2 × fraction of cases where sample median is greater than or equal to the median test statistic. Perform a similar calculation for p_val_percentile.
+- Calculate p_val_median as 2 × fraction of cases where sample median is greater than or equal to the median test statistic. Perform a similar calculation for p_val_percentile.
 ```python
 # Calculate the difference in 80th percentile and median for each of the permuted datasets (A and B)
 samples_percentile = np.percentile(permuted_A_datasets, 80, axis=1) - np.percentile(permuted_B_datasets, 80, axis=1)
@@ -1012,7 +1012,7 @@ Simulated answer = 0.7240166789450252, Actual Answer = 1
 - Imagine a square of side 2 with the origin (0,0) as its center and the four corners having coordinates (1,1),(1,−1),(−1,1),(−1,−1). The area of this square is 2×2=4. Now imagine a circle of radius 1 with its center at the origin fitting perfectly inside this square. The area of the circle will be π×radius2=π.
 - To estimate π, we randomly sample multiple points in this square & get the fraction of points inside the circle (x2+y2<=1). The area of the circle then is 4 times this fraction, which gives us our estimate of π.
 - After this exercise, you'll have a grasp of how to use simulation for computation.
-#### Question 2
+#### Question 1
 - Examine the true value of π using np.pi in the console. Initialize sims to 10000 and circle_points to 0.
 - Within the for loop, generate a point (x & y coordinates) using np.random.uniform() between -1 and 1, having size=2.
 - Check if the point lies within the unit circle with the equation x2+y2<=1, assign to within_circle, and increment circle_points accordingly.
@@ -1160,10 +1160,10 @@ print("95% CI of Returns: Lower = {}, Upper = {}".format(lower_ci, upper_ci))
 - Upon completion, you will know how to use a portfolio simulation for investment decisions.
 - The portfolio_return() function is again pre-loaded in the environment.
 #### Question 1
-Set avg_return and volatility parameters to 0.07 and 0.3, respectively, for the stock portfolio.
-Set avg_return and volatility parameters to 0.04 and 0.1, respectively, for the bond portfolio.
-Calculate the 25th percentile of the distribution of returns for the stock rets_stock_perc and bond rets_bond_perc portfolios.
-Calculate and print how much additional returns additional_returns you would lose or gain by sticking with stocks instead of going to bonds.
+- Set avg_return and volatility parameters to 0.07 and 0.3, respectively, for the stock portfolio.
+- Set avg_return and volatility parameters to 0.04 and 0.1, respectively, for the bond portfolio.
+- Calculate the 25th percentile of the distribution of returns for the stock rets_stock_perc and bond rets_bond_perc portfolios.
+- Calculate and print how much additional returns additional_returns you would lose or gain by sticking with stocks instead of going to bonds.
 ```python
 for i in range(sims):
     rets_stock.append(portfolio_return(yrs = 10, avg_return = 0.07, volatility = 0.3, principal = 10000))
