@@ -54,7 +54,7 @@ Zip code
 ```
 
 ### Video: Measures of center
-#### Data Used (food_consumption.csv)
+#### Data File (food_consumption.csv)
 ### Mean and median
 - In this chapter, you'll be working with the 2018 Food Carbon Footprint Index from nu3. The food_consumption dataset contains information about the kilograms of food consumed per person per year in each country in each food category (consumption) as well as information about the carbon footprint of that food category (co2_emissions) measured in kilograms of carbon dioxide, or CO2, per person per year in each country.
 - In this exercise, you'll compute measures of center to compare food consumption in the US and Belgium using your pandas and numpy skills.
@@ -337,7 +337,7 @@ Randomly selecting 5 products from the assembly line to test for quality assuran
 Randomly picking 3 people to work on the weekend from a group of 20 people
 ```
 ### Calculating probabilities
-#### Data Used (amir_deals.csv)
+#### Data File (amir_deals.csv)
 - You're in charge of the sales team, and it's time for performance reviews, starting with Amir. As part of the review, you want to randomly select a few of the deals that he's worked on over the past year so that you can look at them more deeply. Before you start selecting deals, you'll first figure out what the chances are of selecting certain deals.
 - Recall that the probability of an event can be calculated by
 - P(event) = (# ways event can happen) / (total # of possible outcomes)
@@ -451,7 +451,7 @@ It doesn't matter
 Without replacement
 ```
 ### Video: Discrete distributions
-#### Data Used (restaurant_groups.csv)
+#### Data File (restaurant_groups.csv)
 ### Creating a probability distribution
 - A new restaurant opened a few months ago, and the restaurant's management wants to optimize its seating space based on the size of the groups that come most often. On one night, there are 10 groups of people waiting to be seated at the restaurant, but instead of being called in the order they arrived, they will be called randomly. In this exercise, you'll investigate the probability of groups of different sizes getting picked first. Data on each of the ten groups is contained in the restaurant_groups DataFrame.
 - Remember that expected value can be calculated by multiplying each possible outcome with its corresponding probability and taking the sum. The restaurant_groups data is available. pandas is loaded as pd, numpy is loaded as np, and matplotlib.pyplot is loaded as plt.
@@ -919,7 +919,7 @@ None of the above
 - In this exercise, you'll focus on the sample mean and see the central limit theorem in action while examining the num_users column of amir_deals more closely, which contains the number of people who intend to use the product Amir is selling.
 - pandas as pd, numpy as np, and matplotlib.pyplot as plt are loaded and amir_deals is available.
 #### Question 1
-Create a histogram of the num_users column of amir_deals and show the plot.
+- Create a histogram of the num_users column of amir_deals and show the plot.
 ```python
 # Create a histogram of num_users and show
 amir_deals['num_users'].hist()
@@ -996,7 +996,7 @@ sample_means_series.hist()
 plt.show()
 ```
 ### The mean of means
-#### Data Used (all_deals.csv)
+#### Data File (all_deals.csv)
 - You want to know what the average number of users (num_users) is per deal, but you want to know this number for the entire company so that you can see if Amir's deals have more or fewer users than the company's average deal. The problem is that over the past year, the company has worked on more than ten thousand deals, so it's not realistic to compile all the data. Instead, you'll estimate the mean by taking several random samples of deals, since this is much easier than collecting data from everyone in the company.
 - amir_deals is available and the user data for all the company's deals is available in all_deals. Both pandas as pd and numpy as np are loaded.
 #### Question 1
@@ -1173,7 +1173,7 @@ The t-distribution is skewed.
 ## `Chapter 4` Correlation and Experimental Design
 
 ### Video: Correlation
-#### Data Used (world_happiness.csv)
+#### Data File (world_happiness.csv)
 ### Guess the correlation
 - On the right, use the scatterplot to estimate what the correlation is between the variables x and y. Once you've guessed it correctly, use the New Plot button to try out a few more scatterplots. When you're ready, answer the question below to continue to the next exercise.
 #### Question 1
