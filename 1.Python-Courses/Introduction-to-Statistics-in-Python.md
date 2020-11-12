@@ -9,7 +9,7 @@
 ### Descriptive and inferential statistics
 - Statistics can be used to answer lots of different types of questions, but being able to identify which type of statistics is needed is essential to drawing accurate conclusions. In this exercise, you'll sharpen your skills by identifying which type is needed to answer each question.
 #### Question 1
-Identify which questions can be answered with descriptive statistics and which questions can be answered with inferential statistics.
+- Identify which questions can be answered with descriptive statistics and which questions can be answered with inferential statistics.
 ```
 Given data on every customer service request made, what's the average time it took to respond?
 After interviewing 100 customers, what precent of all your customers are satisfied with your product?
@@ -28,7 +28,7 @@ Given data on 20 fish caught in a lake, what's the average weight of all fish in
 ### Data type classification
 - In the video, you learned about two main types of data: numeric and categorical. Numeric variables can be classified as either discrete or continuous, and categorical variables can be classified as either nominal or ordinal. These characteristics of a variable determine which ways of summarizing your data will work best.
 #### Question 1
-Map each variable to its data type by dragging each item and dropping it into the correct data type.
+- Map each variable to its data type by dragging each item and dropping it into the correct data type.
 ```
 Number of items in stock
 Brand of a product
@@ -126,7 +126,7 @@ rice_consumption['co2_emission'].hist()
 plt.show()
 ```
 #### Question 2
-Take a look at the histogram you just created of different countries' CO2 emissions for rice. Which of the following terms best describes the shape of the data?
+- Take a look at the histogram you just created of different countries' CO2 emissions for rice. Which of the following terms best describes the shape of the data?
 ```
 No skew
 Left-skewed
@@ -136,7 +136,7 @@ Right-skewed
 Right-skewed
 ```
 #### Question 3
-Use .agg() to calculate the mean and median of co2_emission for rice.
+- Use .agg() to calculate the mean and median of co2_emission for rice.
 ```python
 # Subset for food_category equals rice
 rice_consumption = food_consumption[food_consumption['food_category'] == 'rice']
@@ -150,7 +150,7 @@ median    15.200000
 Name: co2_emission, dtype: float64
 ```
 #### Question 4
-Given the skew of this data, what measure of central tendency best summarizes the kilograms of CO2 emissions per person per year for rice?
+- Given the skew of this data, what measure of central tendency best summarizes the kilograms of CO2 emissions per person per year for rice?
 ```
 Mean
 Median
@@ -166,7 +166,7 @@ Median
 - In this exercise, you'll calculate quartiles, quintiles, and deciles, which split up a dataset into 4, 5, and 10 pieces, respectively.
 - Both pandas as pd and numpy as np are loaded and food_consumption is available.
 #### Question 1
-Calculate the quartiles of the co2_emission column of food_consumption.
+- Calculate the quartiles of the co2_emission column of food_consumption.
 ```python
 # Calculate the quartiles of co2_emission
 print(np.quantile(food_consumption['co2_emission'], [0, 0.25, 0.5, 0.75, 1]))
@@ -175,7 +175,7 @@ print(np.quantile(food_consumption['co2_emission'], [0, 0.25, 0.5, 0.75, 1]))
 [   0.        5.21     16.53     62.5975 1712.    ]
 ```
 #### Question 2
-Calculate the six quantiles that split up the data into 5 pieces (quintiles) of the co2_emission column of food_consumption.
+- Calculate the six quantiles that split up the data into 5 pieces (quintiles) of the co2_emission column of food_consumption.
 ```python
 # Calculate the quintiles of co2_emission
 print(np.quantile(food_consumption['co2_emission'], [0, 0.2, 0.4, 0.6, 0.8, 1]))
@@ -184,7 +184,7 @@ print(np.quantile(food_consumption['co2_emission'], [0, 0.2, 0.4, 0.6, 0.8, 1]))
 [   0.       3.54    11.026   25.59    99.978 1712.   ]
 ```
 #### Question 3
-Calculate the eleven quantiles of co2_emission that split up the data into ten pieces (deciles).
+- Calculate the eleven quantiles of co2_emission that split up the data into ten pieces (deciles).
 ```python
 # Calculate the deciles of co2_emission
 print(np.quantile(food_consumption['co2_emission'], np.linspace(0, 1, 10)))
@@ -239,7 +239,7 @@ wheat             71.023937    8.427570
 - <Image>
 - In this exercise, you'll calculate IQR and use it to find some outliers. pandas as pd and numpy as np are loaded and food_consumption is available.
 #### Question 1
-Calculate the total co2_emission per country by grouping by country and taking the sum of co2_emission. Store the resulting DataFrame as emissions_by_country.
+- Calculate the total co2_emission per country by grouping by country and taking the sum of co2_emission. Store the resulting DataFrame as emissions_by_country.
 ```python
 # Calculate total co2_emission per country: emissions_by_country
 emissions_by_country = food_consumption.groupby('country')['co2_emission'].sum()
@@ -261,8 +261,8 @@ Zambia                     225.30
 Zimbabwe                   350.33
 ```
 #### Question 2
-Compute the first and third quartiles of emissions_by_country and store these as q1 and q3.
-Calculate the interquartile range of emissions_by_country and store it as iqr.
+- Compute the first and third quartiles of emissions_by_country and store these as q1 and q3.
+- Calculate the interquartile range of emissions_by_country and store it as iqr.
 ```python
 # Calculate total co2_emission per country: emissions_by_country
 emissions_by_country = food_consumption.groupby('country')['co2_emission'].sum()
@@ -273,7 +273,7 @@ q3 = np.quantile(emissions_by_country, 0.75)
 iqr = q3 - q1
 ```
 #### Question 3
-Calculate the lower and upper cutoffs for outliers of emissions_by_country, and store these as lower and upper.
+- Calculate the lower and upper cutoffs for outliers of emissions_by_country, and store these as lower and upper.
 ```python
 # Calculate total co2_emission per country: emissions_by_country
 emissions_by_country = food_consumption.groupby('country')['co2_emission'].sum()
@@ -288,7 +288,7 @@ lower = q1 - 1.5 * iqr
 upper = q3 + 1.5 * iqr
 ```
 #### Question 4
-Subset emissions_by_country to get countries with a total emission greater than the upper cutoff or a total emission less than the lower cutoff.
+- Subset emissions_by_country to get countries with a total emission greater than the upper cutoff or a total emission less than the lower cutoff.
 ```python
 # Calculate total co2_emission per country: emissions_by_country
 emissions_by_country = food_consumption.groupby('country')['co2_emission'].sum()
@@ -318,7 +318,7 @@ Name: co2_emission, dtype: float64
 ### With or without replacement?
 - In the video, you learned about two different ways of taking samples: with replacement and without replacement. Although it isn't always easy to tell which best fits various situations, it's important to correctly identify this so that any probabilities you report are accurate. In this exercise, you'll put your new knowledge to the test and practice figuring this out.
 #### Question 1
-For each scenario, decide whether it's sampling with replacement or sampling without replacement.
+- For each scenario, decide whether it's sampling with replacement or sampling without replacement.
 ```
 From a deck of cards, dealing 3 players 7 cards each
 Flipping a coin 3 times
@@ -343,7 +343,7 @@ Randomly picking 3 people to work on the weekend from a group of 20 people
 - P(event) = (# ways event can happen) / (total # of possible outcomes)
 - Both pandas as pd and numpy as np are loaded and amir_deals is available.
 #### Question 1
-Count the number of deals Amir worked on for each product type and store in counts.
+- Count the number of deals Amir worked on for each product type and store in counts.
 ```python
 # Count the deals for each product
 counts = amir_deals['product'].value_counts()
@@ -364,7 +364,7 @@ Product G     2
 Name: product, dtype: int64
 ```
 #### Question 2
-Calculate the probability of selecting a deal for the different product types by dividing the counts by the total number of deals Amir worked on. Save this as probs.
+- Calculate the probability of selecting a deal for the different product types by dividing the counts by the total number of deals Amir worked on. Save this as probs.
 ```python
 # Count the deals for each product
 counts = amir_deals['product'].value_counts()
@@ -388,7 +388,7 @@ Product G    0.011236
 Name: product, dtype: float64
 ```
 #### Question 3
-If you randomly select one of Amir's deals, what's the probability that the deal will involve Product C?
+- If you randomly select one of Amir's deals, what's the probability that the deal will involve Product C?
 ```
 15%
 80.43%
@@ -404,7 +404,7 @@ If you randomly select one of Amir's deals, what's the probability that the deal
 - Additionally, you want to make sure this is done randomly and that it can be reproduced in case you get asked how you chose the deals, so you'll need to set the random seed before sampling from the deals.
 - Both pandas as pd and numpy as np are loaded and amir_deals is available.
 #### Question 1
-Set the random seed to 24.
+- Set the random seed to 24.
 Take a sample of 5 deals without replacement and store them as sample_without_replacement.
 ```python
 # Set random seed
@@ -423,7 +423,7 @@ print(sample_without_replacement)
 166         167  Product C      New   Lost  3779.86         11
 ```
 #### Question 2
-Take a sample of 5 deals with replacement and save as sample_with_replacement.
+- Take a sample of 5 deals with replacement and save as sample_with_replacement.
 ```python
 # Set random seed
 np.random.seed(24)
@@ -441,7 +441,7 @@ print(sample_with_replacement)
 145         146  Product A  Current    Won  4682.94         63
 ```
 #### Question 3
-What type of sampling is better to use for this situation?
+- What type of sampling is better to use for this situation?
 ```
 With replacement
 Without replacement
@@ -456,14 +456,14 @@ Without replacement
 - A new restaurant opened a few months ago, and the restaurant's management wants to optimize its seating space based on the size of the groups that come most often. On one night, there are 10 groups of people waiting to be seated at the restaurant, but instead of being called in the order they arrived, they will be called randomly. In this exercise, you'll investigate the probability of groups of different sizes getting picked first. Data on each of the ten groups is contained in the restaurant_groups DataFrame.
 - Remember that expected value can be calculated by multiplying each possible outcome with its corresponding probability and taking the sum. The restaurant_groups data is available. pandas is loaded as pd, numpy is loaded as np, and matplotlib.pyplot is loaded as plt.
 #### Question 1
-Create a histogram of the group_size column of restaurant_groups, setting bins to [2, 3, 4, 5, 6]. Remember to show the plot.
+- Create a histogram of the group_size column of restaurant_groups, setting bins to [2, 3, 4, 5, 6]. Remember to show the plot.
 ```python
 # Create a histogram of restaurant_groups and show plot
 restaurant_groups['group_size'].hist(bins=np.linspace(2,6,5))
 plt.show()
 ```
 #### Question 2
-Count the number of each group_size in restaurant_groups, then divide by the number of rows in restaurant_groups to calculate the probability of randomly selecting a group of each size. Save as size_dist.
+- Count the number of each group_size in restaurant_groups, then divide by the number of rows in restaurant_groups to calculate the probability of randomly selecting a group of each size. Save as size_dist.
 ```python
 # Create probability distribution
 size_dist = restaurant_groups['group_size'].value_counts() / restaurant_groups.shape[0]
@@ -482,7 +482,7 @@ print(size_dist)
 3           3   0.1
 ```
 #### Question 3
-Calculate the expected value of the size_distribution, which represents the expected group size, by multiplying the group_size by the prob and taking the sum.
+- Calculate the expected value of the size_distribution, which represents the expected group size, by multiplying the group_size by the prob and taking the sum.
 ```python
 # Create probability distribution
 size_dist = restaurant_groups['group_size'].value_counts() / restaurant_groups.shape[0]
@@ -498,7 +498,7 @@ print(expected_value)
 2.9000000000000004
 ```
 #### Question 4
-Calculate the probability of randomly picking a group of 4 or more people by subsetting for groups of size 4 or more and summing the probabilities of selecting those groups.
+- Calculate the probability of randomly picking a group of 4 or more people by subsetting for groups of size 4 or more and summing the probabilities of selecting those groups.
 ```python
 # Create probability distribution
 size_dist = restaurant_groups['group_size'].value_counts() / restaurant_groups.shape[0]
@@ -520,7 +520,7 @@ print(prob_4_or_more)
 0.30000000000000004
 ```
 #### Identifying distributions
-Which sample is most likely to have been taken from a uniform distribution?
+- Which sample is most likely to have been taken from a uniform distribution?
 - <image>
 ```
 A
@@ -549,7 +549,7 @@ B
 ### Which distribution?
 - At this point, you've learned about the two different variants of the uniform distribution: the discrete uniform distribution, and the continuous uniform distribution. In this exercise, you'll decide which situations follow which distribution.
 #### Question 1
-Map each situation to the probability distribution it would best be modeled by.
+- Map each situation to the probability distribution it would best be modeled by.
 ```
 The height of a random person.
 The outcome of rolling a 4-sided die.
@@ -572,14 +572,14 @@ The height of a random person.
 ### Data back-ups
 - The sales software used at your company is set to automatically back itself up, but no one knows exactly what time the back-ups happen. It is known, however, that back-ups happen exactly every 30 minutes. Amir comes back from sales meetings at random times to update the data on the client he just met with. He wants to know how long he'll have to wait for his newly-entered data to get backed up. Use your new knowledge of continuous uniform distributions to model this situation and answer Amir's questions.
 #### Question 1
-To model how long Amir will wait for a back-up using a continuous uniform distribution, save his lowest possible wait time as min_time and his longest possible wait time as max_time. Remember that back-ups happen every 30 minutes.
+- To model how long Amir will wait for a back-up using a continuous uniform distribution, save his lowest possible wait time as min_time and his longest possible wait time as max_time. Remember that back-ups happen every 30 minutes.
 ```python
 # Min and max wait times for back-up that happens every 30 min
 min_time = 0
 max_time = 30
 ```
 #### Question 2
-Import uniform from scipy.stats and calculate the probability that Amir has to wait less than 5 minutes, and store in a variable called prob_less_than_5.
+- Import uniform from scipy.stats and calculate the probability that Amir has to wait less than 5 minutes, and store in a variable called prob_less_than_5.
 ```python
 # Min and max wait times for back-up that happens every 30 min
 min_time = 0
@@ -596,7 +596,7 @@ print(prob_less_than_5)
 0.16666666666666666
 ```
 #### Question 3
-Calculate the probability that Amir has to wait more than 5 minutes, and store in a variable called prob_greater_than_5.
+- Calculate the probability that Amir has to wait more than 5 minutes, and store in a variable called prob_greater_than_5.
 ```python
 # Min and max wait times for back-up that happens every 30 min
 min_time = 0
@@ -613,7 +613,7 @@ print(prob_greater_than_5)
 0.8333333333333334
 ```
 #### Question 4
-Calculate the probability that Amir has to wait between 10 and 20 minutes, and store in a variable called prob_between_10_and_20.
+- Calculate the probability that Amir has to wait between 10 and 20 minutes, and store in a variable called prob_between_10_and_20.
 ```python
 # Min and max wait times for back-up that happens every 30 min
 min_time = 0
@@ -639,7 +639,7 @@ print(prob_between_10_and_20)
 np.random.seed(334)
 ```
 #### Question 2
-Import uniform from scipy.stats.
+- Import uniform from scipy.stats.
 ```python
 # Set random seed to 334
 np.random.seed(334)
@@ -648,7 +648,7 @@ np.random.seed(334)
 from scipy.stats import uniform
 ```
 #### Question 3
-Generate 1000 wait times from the continuous uniform distribution that models Amir's wait time. Save this as wait_times.
+- Generate 1000 wait times from the continuous uniform distribution that models Amir's wait time. Save this as wait_times.
 ```python
 # Set random seed to 334
 np.random.seed(334)
@@ -662,7 +662,7 @@ wait_times = uniform.rvs(0, 30, size=1000)
 print(wait_times)
 ```
 #### Question 4
-Create a histogram of the simulated wait times and show the plot.
+- Create a histogram of the simulated wait times and show the plot.
 ```python
 # Set random seed to 334
 np.random.seed(334)
@@ -683,7 +683,7 @@ plt.show()
 - Assume that Amir usually works on 3 deals per week, and overall, he wins 30% of deals he works on. Each deal has a binary outcome: it's either lost, or won, so you can model his sales deals with a binomial distribution. In this exercise, you'll help Amir simulate a year's worth of his deals so he can better understand his performance.
 - numpy is imported as np.
 #### Question 1
-Import binom from scipy.stats and set the random seed to 10.
+- Import binom from scipy.stats and set the random seed to 10.
 ```python
 # Import binom from scipy.stats
 from scipy.stats import binom
@@ -692,7 +692,7 @@ from scipy.stats import binom
 np.random.seed(10)
 ```
 #### Question 2
-Simulate 1 deal worked on by Amir, who wins 30% of the deals he works on.
+- Simulate 1 deal worked on by Amir, who wins 30% of the deals he works on.
 ```python
 # Import binom from scipy.stats
 from scipy.stats import binom
@@ -704,7 +704,7 @@ np.random.seed(10)
 print(binom.rvs(1, 0.3, size=1))
 ```
 #### Question 3
-Simulate a typical week of Amir's deals, or one week of 3 deals.
+- Simulate a typical week of Amir's deals, or one week of 3 deals.
 ```python
 # Import binom from scipy.stats
 from scipy.stats import binom
@@ -738,7 +738,7 @@ print(np.mean(deals))
 - Just as in the last exercise, assume that Amir wins 30% of deals. He wants to get an idea of how likely he is to close a certain number of deals each week. In this exercise, you'll calculate what the chances are of him closing different numbers of deals using the binomial distribution.
 - binom is imported from scipy.stats.
 #### Question 1
-What's the probability that Amir closes all 3 deals in a week? Save this as prob_3.
+- What's the probability that Amir closes all 3 deals in a week? Save this as prob_3.
 ```python
 # Probability of closing 3 out of 3 deals
 prob_3 = binom.pmf(3, 3, 0.3)
@@ -749,7 +749,7 @@ print(prob_3)
 0.026999999999999982
 ```
 #### Question 2
-What's the probability that Amir closes 1 or fewer deals in a week? Save this as prob_less_than_or_equal_1.
+- What's the probability that Amir closes 1 or fewer deals in a week? Save this as prob_less_than_or_equal_1.
 ```python
 # Probability of closing <= 1 deal out of 3 deals
 prob_less_than_or_equal_1 = binom.cdf(1, 3, 0.3)
@@ -760,7 +760,7 @@ print(prob_less_than_or_equal_1)
 0.7839999999999999
 ```
 #### Question 3
-What's the probability that Amir closes more than 1 deal? Save this as prob_greater_than_1.
+- What's the probability that Amir closes more than 1 deal? Save this as prob_greater_than_1.
 ```python
 # Probability of closing > 1 deal out of 3 deals
 prob_greater_than_1 = 1 - binom.cdf(1, 3, 0.3)
@@ -773,9 +773,9 @@ print(prob_greater_than_1)
 ### How many sales will be won?
 - Now Amir wants to know how many deals he can expect to close each week if his win rate changes. Luckily, you can use your binomial distribution knowledge to help him calculate the expected value in different situations. Recall from the video that the expected value of a binomial distribution can be calculated by n×p.
 #### Question 1
-Calculate the expected number of sales out of the 3 he works on that Amir will win each week if he maintains his 30% win rate.
-Calculate the expected number of sales out of the 3 he works on that he'll win if his win rate drops to 25%.
-Calculate the expected number of sales out of the 3 he works on that he'll win if his win rate rises to 35%.
+- Calculate the expected number of sales out of the 3 he works on that Amir will win each week if he maintains his 30% win rate.
+- Calculate the expected number of sales out of the 3 he works on that he'll win if his win rate drops to 25%.
+- Calculate the expected number of sales out of the 3 he works on that he'll win if his win rate rises to 35%.
 ```python
 # Expected number won with 30% win rate
 won_30pct = 3 * 0.3
@@ -802,14 +802,14 @@ print(won_35pct)
 - Since each deal Amir worked on (both won and lost) was different, each was worth a different amount of money. These values are stored in the amount column of amir_deals As part of Amir's performance review, you want to be able to estimate the probability of him selling different amounts, but before you can do this, you'll need to determine what kind of distribution the amount variable follows.
 - Both pandas as pd and matplotlib.pyplot as plt are loaded and amir_deals is available.
 #### Question 1
-Create a histogram with 10 bins to visualize the distribution of the amount. Show the plot.
+- Create a histogram with 10 bins to visualize the distribution of the amount. Show the plot.
 ```python
 # Histogram of amount with 10 bins and show plot
 amir_deals['amount'].hist(bins=10)
 plt.show()
 ```
 #### Question 2
-Which probability distribution do the sales amounts most closely follow?
+- Which probability distribution do the sales amounts most closely follow?
 ```
 Uniform
 Binomial
@@ -823,7 +823,7 @@ Normal
 - Since each deal Amir worked on (both won and lost) was different, each was worth a different amount of money. These values are stored in the amount column of amir_deals and follow a normal distribution with a mean of 5000 dollars and a standard deviation of 2000 dollars. As part of his performance metrics, you want to calculate the probability of Amir closing a deal worth various amounts.
 - norm from scipy.stats is imported as well as pandas as pd. The DataFrame amir_deals is loaded.
 #### Question 1
-What's the probability of Amir closing a deal worth less than $7500?
+- What's the probability of Amir closing a deal worth less than $7500?
 ```python
 # Probability of deal < 7500
 prob_less_7500 = norm.cdf(7500, 5000, 2000)
@@ -834,7 +834,7 @@ print(prob_less_7500)
 0.8943502263331446
 ```
 #### Question 2
-What's the probability of Amir closing a deal worth more than $1000?
+- What's the probability of Amir closing a deal worth more than $1000?
 ```python
 # Probability of deal > 1000
 prob_over_1000 = 1 - norm.cdf(1000, 5000, 2000)
@@ -845,7 +845,7 @@ print(prob_over_1000)
 0.9772498680518208
 ```
 #### Question 3
-What's the probability of Amir closing a deal worth between $3000 and $7000?
+- What's the probability of Amir closing a deal worth between $3000 and $7000?
 ```python
 # Probability of deal between 3000 and 7000
 prob_3000_to_7000 = norm.cdf(7000, 5000, 2000) - norm.cdf(3000, 5000, 2000)
@@ -856,7 +856,7 @@ print(prob_3000_to_7000)
 0.6826894921370859
 ```
 #### Question 4
-What amount will 25% of Amir's sales be less than?
+- What amount will 25% of Amir's sales be less than?
 ```python
 # Calculate amount that 25% of deals will be less than
 pct_25 = norm.ppf(0.25, 5000, 2000)
@@ -893,7 +893,7 @@ plt.show()
 - Recall that Amir's current sales amounts have a mean of $5000 and a standard deviation of $2000, and Amir's predicted amounts in next quarter's market have a mean of $6000 and a standard deviation of $2600.
 - norm from scipy.stats is imported.
 #### Question 1
-Based only on the metric of percent of sales over $1000, does Amir perform better in the current market or the predicted market?
+- Based only on the metric of percent of sales over $1000, does Amir perform better in the current market or the predicted market?
 ```
 Amir performs much better in the current market.
 Amir performs much better in next quarter's predicted market.
@@ -942,7 +942,7 @@ print(np.mean(samp_20))
 32.0
 ```
 #### Question 3
-Repeat this 100 times using a for loop and store as sample_means. This will take 100 different samples and calculate the mean of each.
+- Repeat this 100 times using a for loop and store as sample_means. This will take 100 different samples and calculate the mean of each.
 ```python
 # Set seed to 104
 np.random.seed(104)
@@ -974,7 +974,7 @@ print(sample_means)
  44.55, 30.3, 50.45, 42.35, 40.65, 29.85, 39.3, 33.1]
 ```
 #### Question 4
-Convert sample_means into a pd.Series, create a histogram of the sample_means, and show the plot.
+- Convert sample_means into a pd.Series, create a histogram of the sample_means, and show the plot.
 ```python
 # Set seed to 104
 np.random.seed(104)
@@ -1033,14 +1033,14 @@ print(np.mean(amir_deals['num_users']))
 ### Identifying lambda
 - Now that you've learned about the Poisson distribution, you know that its shape is described by a value called lambda. In this exercise, you'll match histograms to lambda values.
 #### Question 1
-Match each Poisson distribution to its lambda value.
+- Match each Poisson distribution to its lambda value.
 - <image>
 - <image>
 - <image>
 ### Tracking lead responses
 - Your company uses sales software to keep track of new sales leads. It organizes them into a queue so that anyone can follow up on one when they have a bit of free time. Since the number of lead responses is a countable outcome over a period of time, this scenario corresponds to a Poisson distribution. On average, Amir responds to 4 leads each day. In this exercise, you'll calculate probabilities of Amir responding to different numbers of leads.
 #### Question 1
-Import poisson from scipy.stats and calculate the probability that Amir responds to 5 leads in a day, given that he responds to an average of 4.
+- Import poisson from scipy.stats and calculate the probability that Amir responds to 5 leads in a day, given that he responds to an average of 4.
 ```python
 # Import poisson from scipy.stats
 from scipy.stats import poisson
@@ -1054,7 +1054,7 @@ print(prob_5)
 0.1562934518505317
 ```
 #### Question 2
-Amir's coworker responds to an average of 5.5 leads per day. What is the probability that she answers 5 leads in a day?
+- Amir's coworker responds to an average of 5.5 leads per day. What is the probability that she answers 5 leads in a day?
 ```python
 # Import poisson from scipy.stats
 from scipy.stats import poisson
@@ -1068,7 +1068,7 @@ print(prob_coworker)
 0.17140068409793663
 ```
 #### Question 3
-What's the probability that Amir responds to 2 or fewer leads in a day?
+- What's the probability that Amir responds to 2 or fewer leads in a day?
 ```python
 # Import poisson from scipy.stats
 from scipy.stats import poisson
@@ -1082,7 +1082,7 @@ print(prob_2_or_less)
 0.23810330555354436
 ```
 #### Question 4
-What's the probability that Amir responds to more than 10 leads in a day?
+- What's the probability that Amir responds to more than 10 leads in a day?
 ```python
 # Import poisson from scipy.stats
 from scipy.stats import poisson
@@ -1100,7 +1100,7 @@ print(prob_over_10)
 ### Distribution dragging and dropping
 - By this point, you've learned about so many different probability distributions that it can be difficult to remember which is which. In this exercise, you'll practice distinguishing between distributions and identifying the distribution that best matches different scenarios.
 #### Question 1
-Match each situation to the distribution that best models it.
+- Match each situation to the distribution that best models it.
 ```
 Amount of time until someone pays off their loan
 Number of customer that enter a store each hour
@@ -1123,7 +1123,7 @@ Number of people from a group of 30 that pass their driving test
 ### Modeling time between leads
 - To further evaluate Amir's performance, you want to know how much time it takes him to respond to a lead after he opens it. On average, it takes 2.5 hours for him to respond. In this exercise, you'll calculate probabilities of different amounts of time passing between Amir receiving a lead and sending a response.
 #### Question 1
-Import expon from scipy.stats. What's the probability it takes Amir less than an hour to respond to a lead?
+- Import expon from scipy.stats. What's the probability it takes Amir less than an hour to respond to a lead?
 ```python
 # Import expon from scipy.stats
 from scipy.stats import expon
@@ -1135,7 +1135,7 @@ print(expon.cdf(1, scale=2.5))
 0.3296799539643607
 ```
 #### Question 2
-What's the probability it takes Amir more than 4 hours to respond to a lead?
+- What's the probability it takes Amir more than 4 hours to respond to a lead?
 ```python
 # Import expon from scipy.stats
 from scipy.stats import expon
@@ -1147,7 +1147,7 @@ print(1 - expon.cdf(4, scale=2.5))
 0.20189651799465536
 ```
 #### Question 3
-What's the probability it takes Amir 3-4 hours to respond to a lead?
+- What's the probability it takes Amir 3-4 hours to respond to a lead?
 ```python
 # Import expon from scipy.stats
 from scipy.stats import expon
@@ -1158,8 +1158,8 @@ print(expon.cdf(4, scale=2.5) - expon.cdf(3, scale=2.5))
 ```
 0.09929769391754684
 ```
-### The t-distribution
-Which statement is not true regarding the t-distribution?
+#### The t-distribution
+- Which statement is not true regarding the t-distribution?
 ```
 The t-distribution has thicker tails than the normal distribution.
 A t-distribution with high degrees of freedom resembles the normal distribution.
@@ -1177,7 +1177,7 @@ The t-distribution is skewed.
 ### Guess the correlation
 - On the right, use the scatterplot to estimate what the correlation is between the variables x and y. Once you've guessed it correctly, use the New Plot button to try out a few more scatterplots. When you're ready, answer the question below to continue to the next exercise.
 #### Question 1
-Which of the following statements is NOT true about correlation?
+- Which of the following statements is NOT true about correlation?
 ```
 If the correlation between x and y has a high magnitude, the data points will be clustered closely around a line.
 Correlation can be written as r.
@@ -1211,7 +1211,7 @@ sns.lmplot(x='life_exp', y='happiness_score', data=world_happiness, ci=None)
 plt.show()
 ```
 #### Question 3
-Based on the scatterplot, which is most likely the correlation between life_exp and happiness_score?
+- Based on the scatterplot, which is most likely the correlation between life_exp and happiness_score?
 ```
 0.3
 -0.3
@@ -1222,7 +1222,7 @@ Based on the scatterplot, which is most likely the correlation between life_exp 
 0.8
 ```
 #### Question 4
-Calculate the correlation between life_exp and happiness_score. Save this as cor.
+- Calculate the correlation between life_exp and happiness_score. Save this as cor.
 ```python
 # Create scatterplot of happiness_score vs life_exp with trendline
 sns.lmplot(x='life_exp', y='happiness_score', data=world_happiness, ci=None)
@@ -1254,7 +1254,7 @@ sns.scatterplot(x='gdp_per_cap', y='life_exp', data=world_happiness)
 plt.show()
 ```
 #### Question 2
-Calculate the correlation between gdp_per_cap and life_exp and store as cor.
+- Calculate the correlation between gdp_per_cap and life_exp and store as cor.
 ```python
 # Scatterplot of gdp_per_cap and life_exp
 sns.scatterplot(x='gdp_per_cap', y='life_exp', data=world_happiness)
@@ -1271,7 +1271,7 @@ print(cor)
 0.7019547642148012
 ```
 #### Question 3
-The correlation between GDP per capita and life expectancy is 0.7. Why is correlation not the best way to measure the relationship between these two variables?
+- The correlation between GDP per capita and life expectancy is 0.7. Why is correlation not the best way to measure the relationship between these two variables?
 ```
 Correlation measures how one variable affects another.
 Correlation only measures linear relationships.
@@ -1285,7 +1285,7 @@ Correlation only measures linear relationships.
 - When variables have skewed distributions, they often require a transformation in order to form a linear relationship with another variable so that correlation can be computed. In this exercise, you'll perform a transformation yourself.
 - pandas as pd, numpy as np, matplotlib.pyplot as plt, and seaborn as sns are imported, and world_happiness is loaded.
 #### Question 1
-Create a scatterplot of happiness_score versus gdp_per_cap and calculate the correlation between them.
+- Create a scatterplot of happiness_score versus gdp_per_cap and calculate the correlation between them.
 ```python
 # Scatterplot of happiness_score vs. gdp_per_cap
 sns.scatterplot(x='gdp_per_cap', y='happiness_score', data=world_happiness)
@@ -1336,7 +1336,7 @@ print(cor)
 0.6939100021829633
 ```
 #### Question 2
-Based on this data, which statement about sugar consumption and happiness scores is true?
+- Based on this data, which statement about sugar consumption and happiness scores is true?
 ```
 Increased sugar consumption leads to a higher happiness score.
 Lower sugar consumption results in a lower happiness score
@@ -1349,7 +1349,7 @@ Increased sugar consumption is associated with a higher happiness score.
 #### Confounders
 - A study is investigating the relationship between neighborhood residence and lung capacity. Researchers measure the lung capacity of thirty people from neighborhood A, which is located near a highway, and thirty people from neighborhood B, which is not near a highway. Both groups have similar smoking habits and a similar gender breakdown.
 #### Question 1
-Which of the following could be a confounder in this study?
+- Which of the following could be a confounder in this study?
 ```
 Lung capacity
 Neighborhood
@@ -1366,7 +1366,7 @@ Air pollution
 - While controlled experiments are ideal, many situations and research questions are not conducive to a controlled experiment. In a controlled experiment, causation can likely be inferred if the control and test groups have similar characteristics and don't have any systematic difference between them. On the other hand, causation cannot usually be inferred from observational studies, whose results are often misinterpreted as a result.
 - In this exercise, you'll practice distinguishing controlled experiments from observational studies.
 #### Question 1
-Determine if each study is a controlled experiment or observational study.
+- Determine if each study is a controlled experiment or observational study.
 ```
 Subjects are randomly assigned to a diet and weight loss is compared.
 Prevalence of heart disease is compared between veterans with PTSD and veterans without PTSD.
