@@ -633,7 +633,7 @@ print(prob_between_10_and_20)
 - To give Amir a better idea of how long he'll have to wait, you'll simulate Amir waiting 1000 times and create a histogram to show him what he should expect. Recall from the last exercise that his minimum wait time is 0 minutes and his maximum wait time is 30 minutes.
 - As usual, pandas as pd, numpy as np, and matplotlib.pyplot as plt are loaded.
 #### Question 1
-
+- Set the random seed to 334.
 ```python
 # Set random seed to 334
 np.random.seed(334)
