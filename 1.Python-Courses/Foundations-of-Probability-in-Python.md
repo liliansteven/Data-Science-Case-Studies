@@ -12,7 +12,7 @@
 - You will set the random seed so you can reproduce the results for the random experiment in each exercise.
 - From each experiment, you will get the values of each coin flip. You can add the coin flips to get the number of heads after flipping 10 coins using the sum() function.
 #### Question 1
-Import bernoulli from scipy.stats, set the seed with np.random.seed(). Simulate 1 flip, with a 35% chance of heads.
+- Import bernoulli from scipy.stats, set the seed with np.random.seed(). Simulate 1 flip, with a 35% chance of heads.
 ```python
 # Import the bernoulli object from scipy.stats
 from scipy.stats import bernoulli
