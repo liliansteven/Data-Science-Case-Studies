@@ -3,8 +3,8 @@
 ## 7. Shell-and-Git-Courses
 Shell-and-Git Tracks road map for computer science students, which including the following main topics:
 
-<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg">
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg">
+<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg">
 <br>
 <br>
 
