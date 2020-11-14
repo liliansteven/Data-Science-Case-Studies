@@ -8,7 +8,8 @@ Python Tracks road map for computer science students, which including the follow
 <br>
 
 <details>
-	<summary>Programming</summary><table>
+	<summary>Programming</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -335,7 +336,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Probability and Statistics</summary><table>
+	<summary>Probability and Statistics</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -611,7 +613,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Preprocessing</summary><table>
+	<summary>Data Preprocessing</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -893,7 +896,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Visualization</summary><table>
+	<summary>Data Visualization</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -1055,7 +1059,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Analysis</summary><table>
+	<summary>Data Analysis</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -1376,7 +1381,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Machine Learning</summary><table>
+	<summary>Machine Learning</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -1832,7 +1838,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Deep Learning</summary><table>
+	<summary>Deep Learning</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -2027,7 +2034,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Natural Language Processing</summary><table>
+	<summary>Natural Language Processing</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -2204,7 +2212,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Applied Finance</summary><table>
+	<summary>Applied Finance</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -2402,7 +2411,8 @@ Python Tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Engineering</summary><table>
+	<summary>Data Engineering</summary>
+	<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
