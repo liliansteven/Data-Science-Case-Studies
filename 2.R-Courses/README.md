@@ -10,21 +10,27 @@ R Tracks road map for computer science students, which including the following m
 <details>
 	<summary>Programming</summary><table>
 </details>
+
 <details>
 	<summary>Probability and Statistics</summary><table>
 </details>
+
 <details>
 	<summary>Data Preprocessing</summary><table>
 </details>
+
 <details>
 	<summary>Data Visualization</summary><table>
 </details>
+
 <details>
 	<summary>Data Analysis</summary><table>
 </details>
+
 <details>
 	<summary>Machine Learning</summary><table>
 </details>
+
 <details>
 	<summary>Applied Finance</summary><table>
 </details>
