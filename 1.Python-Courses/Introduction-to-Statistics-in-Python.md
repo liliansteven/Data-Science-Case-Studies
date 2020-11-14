@@ -1,3 +1,5 @@
+<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+
 # [Introduction-to-Statistics-in-Python](https://learn.datacamp.com/courses/introduction-to-statistics-in-python) `10H`
 
 ## Course Description
