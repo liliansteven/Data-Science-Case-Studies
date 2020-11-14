@@ -5,6 +5,7 @@ Python Tracks road map for computer science students, which including the follow
 
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
 <br>
+<br>
 
 <details>
 	<summary>Programming</summary><table>
