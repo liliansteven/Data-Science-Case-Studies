@@ -264,13 +264,12 @@ Use the average prediction from a Linear Regression, a K-Means and a Decision Tr
 - It's usually impossible to know which combination of hyperparameters will result in the best performing model, so you have to try lots of combinations of them.
 - Use the dashboard controls to change hyperparameters and find the combination that gives the highest accuracy.
 #### Question 1
-
-```
-100 trees, 6 levels of complexity, learning rate 0.01
-```
 ```
 200 trees, 2 levels of complexity, learning rate 0.01
 100 trees, 6 levels of complexity, learning rate 0.01
 100 trees, 4 levels of complexity, learning rate 0.1
 150 trees, 6 levels of complexity, learning rate 0.1
+```
+```
+100 trees, 6 levels of complexity, learning rate 0.01
 ```
