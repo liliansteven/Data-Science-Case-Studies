@@ -273,3 +273,183 @@ Use the average prediction from a Linear Regression, a K-Means and a Decision Tr
 ```
 100 trees, 6 levels of complexity, learning rate 0.01
 ```
+
+## `Chapter 3` Deep Learning
+
+### Video: Deep Learning
+### What is deep learning?
+- Deep learning applications are everywhere. Think of Google translating large blocks of text in a matter of seconds or your phone's photo gallery automatically recognizing faces.
+- Let's see how much you know about deep learning.
+#### Question 1
+- Here are various statements about deep learning. Some are true, some are false: drag the statements into the correct bucket.
+```
+You have to figure out the higher-level features yourself while training the data.
+More complex problems like image classification can be solved much faster by deep learning than by traditional machine learning.
+When there is lack of domain knowledge and you are not sure of the exact features that need to be used, you should use deep learning.
+Deep learning is always preferred over traditional machine learning.
+The number of neurons in a neural network is limited.
+Deep learning  is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called neural networks.
+```
+```
+True
+More complex problems like image classification can be solved much faster by deep learning than by traditional machine learning.
+Deep learning  is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called neural networks.
+When there is lack of domain knowledge and you are not sure of the exact features that need to be used, you should use deep learning.
+
+False
+Deep learning is always preferred over traditional machine learning.
+You have to figure out the higher-level features yourself while training the data.
+The number of neurons in a neural network is limited.
+```
+#### Should I use deep learning?
+- You work for a bank and want to help your company make smarter loans. You'd like to predict the probability of a borrower defaulting on a loan based on information in their application, such as their credit history, education level, income, and assets. This amount can then be used to determine the interest rate of the loan. You have hundreds of thousands of examples of loans from the past ten years.
+- For now, you just want to build a proof of concept on your laptop showing that there is some value in building this model. The performance doesn't have to be perfect just yet.
+- Based on this information, how should you solve this problem?
+```
+Deep Learning
+Traditional machine learning
+This is not a problem that can be solved with either
+```
+```
+Traditional machine learning
+```
+
+### Video: Computer vision
+### Image data
+- Your friend just texted you an image. However, when you open the message the content seems to be distorted. No worries, you have access to a pre-trained neural network that can restore any image.
+- Before you can pass the image to the neural network, it needs to be converted to numbers so that we have features to input. The image's resolution is 284 × 429 pixels. Remember, each color pixel is represented by three color channels (red, green, and blue).
+#### Question 1
+- How many features will be passed into the model for this color image?
+```
+121836
+429
+365508
+```
+```
+365508
+```
+### The process
+- In a bar you strike up a conversation with someone who turns out to be a data scientist at the self-driving car department of Tesla.
+- They start talking about one of the deep learning models they built a while ago. It was able to classify images of vehicles as cars or trucks. You discuss the process and at the end of the conversation you have a pretty good idea of what happened.
+#### Question 1
+- Place the steps that happen inside a neural network in the right order.
+```
+Neurons will learn to detect shapes of vehicles
+The car images are transformed to numbers
+Neurons will learn to detect edges
+The image is classified as a car or a truck
+The pixel intensities are fed into a neural network
+Neurons will learn to more complex objects like wheels, doors, and windows
+```
+```
+The car images are transformed to numbers
+The pixel intensities are fed into a neural network
+Neurons will learn to detect edges
+Neurons will learn to more complex objects like wheels, doors, and windows
+Neurons will learn to detect shapes of vehicles
+The image is classified as a car or a truck
+```
+### Recognizing handwritten digits
+- Remember this from Chapter 1? As a reminder, there's a famous dataset called the MNIST that contains 70,000 images of handwritten digits from 0 to 9. On the right, we have a computer vision model trained on this dataset that attempts to recognize handwritten digits.
+- For this exercise, we've added an extra dropdown where you can try different types of machine learning. The first two, logistic regression and random forest, are traditional machine learning models. As you've learned, the third, neural networks, is used in deep learning.
+#### Question 1
+- Try drawing some digits to see how well each model recognizes your handwriting. Which is the best performing machine learning model?
+```
+Logistic regression
+Random forest
+Neural networks
+```
+```
+Neural networks
+```
+
+### Video: Natural Language Processing
+### Sentiment analysis
+- Sentiment Analysis is a Natural Language Processing methodology for quantifying how positive or negative the emotion expressed by a segment of text is. It is often used for automatically categorizing customer feedback messages or product reviews.
+- Below are four reviews of the movie "The Last Jedi". You can paste them in the Sentiment Analyzer on the right.
+#### Question 1
+- Which review is scored as the most negative by the sentiment analysis algorithm?
+```
+I really agree with this comment "Great film, one of the best Star Wars films."
+Worst star wars movie ever made. It disrespected the force and everything we love.
+A fun exciting, visually striking movie with a great score, great characters, and great action. The Last Jedi is very well directed, but very messy.
+This movie was a pointless, ugly, and plot-hole-riddled mess. All it served to do was crush all hope and destroy everything that remained of the Original Trilogy.
+```
+```
+This movie was a pointless, ugly, and plot-hole-riddled mess. All it served to do was crush all hope and destroy everything that remained of the Original Trilogy.
+```
+### Classifying machine learning tasks
+- By this point, you have seen a lot of different applications of machine learning. In this chapter, two special fields were discussed: computer vision and Natural Language Processing (NLP). Deep learning is particularly well-suited to solve these kinds of problems. Let's see if you can identify which use case belongs to which field.
+#### Question 1
+- Match each task with the correct machine learning field.
+```
+Predicting the temperature in New York tomorrow.
+Searching for images on Google.
+Clustering pre-paid telecom customers to identify patterns in terms of money spent in recharging, sending SMS, and browsing the internet.
+Parsing all tweets about an artist's latest album to get a feeling for the sentiment toward it.
+Google Home understanding that you have asked it to turn on the lights.
+Building an application that takes pictures of all the items passing on a conveyor belt and detecting any defects.
+```
+```
+Computer Vision
+Searching for images on Google.
+Building an application that takes pictures of all the items passing on a conveyor belt and detecting any defects.
+
+NLP
+Parsing all tweets about an artist's latest album to get a feeling for the sentiment toward it.
+Google Home understanding that you have asked it to turn on the lights.
+
+Traditional Machine Learning
+Clustering pre-paid telecom customers to identify patterns in terms of money spent in recharging, sending SMS, and browsing the internet.
+Predicting the temperature in New York tomorrow.
+```
+### Bag of words
+- In the field of Natural Language Processing, n-grams are a foundational way to make features from text. n-grams count the sequence of words and n indicates how many word(s) a sequence contains. For example, 2-grams, count the occurrence of two-word sequences.
+- In this exercise, you can input text and see what are the top 1-gram, 2-gram, and 3-gram features based on occurrence. If you're not sure what to enter, try some of these restaurant reviews:
+```
+The food was not great and the service could be faster.
+I've seen a lot of bad reviews about this place, but it was not that bad. You get what you pay for!
+```
+#### Question 1
+- Which of the following statements is true?
+```
+3-grams contain unnecessary information and should be eliminated in effort of dimensionality reduction.
+You have to pick between 1-gram, 2-gram, and 3-gram when making your features. You can't use more than one.
+As you increase the value of n, the occurrences of n-grams decreases.
+```
+```
+As you increase the value of n, the occurrences of n-grams decreases.
+```
+
+### Video: Limits of machine learning
+### To black box or not to black box?
+- You are interested in machine learning applications in the health sector. You know that some of the tasks require a high accuracy but it's not that important to know what happens inside the model. Others require an Explainable AI approach because the rationale for each classification is important.
+#### Question 1
+- Sort each task into either the Black Box or Explainable AI category.
+```
+Extract information from medical journal articles.
+Predict whether or not a nurse is likely to quit within the next month.
+Classify images from mammograms as cancerous or non-cancerous.
+Provide a list of likely diagnoses, given a set of facts about a patient.
+```
+```
+Black Box
+Classify images from mammograms as cancerous or non-cancerous.
+Extract information from medical journal articles.
+Explainable AI
+Predict whether or not a nurse is likely to quit within the next month.
+Provide a list of likely diagnoses, given a set of facts about a patient.
+```
+### Spotting bias in machine learning
+- In the video, we learned about an AI-enabled recruiting software that preferred men because it learned from historical data when more men were hired. When we have models that affect peoples' lives, we need to carefully evaluate them for any discriminatory behavior that can be learned from historical data.
+- On the right, you have a model that attempts to predict whether someone will default on their loan. You can break down the resulting predictions, by different features like demographics and employment status. Play around with these features and see if you can find anything suspicious about who is predicted to default and who isn't.
+#### Question 1
+- Which feature(s) should be investigated more for potential bias before deploying the model?
+```
+Race because there is a relatively large difference between African American/ Caucasian proportions in the "No" (32%/68%) and "Yes" (74%/26%) outcomes.
+Job because there are a lot more people who are "skilled" in the "No" outcome than the "Yes" outcome.
+Purpose because loans for "furniture/appliances" are more often predicted to not default.
+```
+```
+Race because there is a relatively large difference between African American/ Caucasian proportions in the "No" (32%/68%) and "Yes" (74%/26%) outcomes.
+```
