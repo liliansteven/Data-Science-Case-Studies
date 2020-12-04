@@ -283,3 +283,143 @@ Unsupervised learning
 Group our customers based on the similarity of their purchasing patterns.
 Group our products together based on sensor readings, then flag outlier items which don't fall within any cluster for manual inspection.
 ```
+
+## `Chapter 3` Business requirements and model design
+
+### Video: Business requirements
+### Identify situation, opportunity and action
+- When scoping out the business requirements for machine learning project, it's very important to follow the right steps. Here, you're presented with a list of statements. You need to match them with different topics of the business requirement scoping process.
+#### Question 1
+- Match the statements with different topics of the business requirement scoping process.
+```
+The company started seeing much lower click through rate of its promotion emails.
+Increase the engagement and the click through rate of the emails from 2.5% to the previous levels of 5%.
+Run a series of AB tests targeting customers with relevant email content based on machine learning predicted product interest.
+Reduce the time-to-answer customer requests back to previous levels and potentially even lower.
+Build a machine learning solution to guide customers requests with step-by-step customer chat and call process automation.
+The number of customer service requests has increased by over 300% driving the time-to-answer up and resulting in more escalations.
+```
+```
+Business situation
+The company started seeing much lower click through rate of its promotion emails.
+The number of customer service requests has increased by over 300% driving the time-to-answer up and resulting in more escalations.
+Business opportunity
+Increase the engagement and the click through rate of the emails from 2.5% to the previous levels of 5%.
+Reduce the time-to-answer customer requests back to previous levels and potentially even lower.
+Business action
+Run a series of AB tests targeting customers with relevant email content based on machine learning predicted product interest.
+Build a machine learning solution to guide customers requests with step-by-step customer chat and call process automation.
+```
+#### Identify successful experiments
+- Machine learning (ML) outputs have to be tested through experiments in order to make sure the identified opportunity can be achieved. Below you will find a list of three ML initiatives, business scope and their test results. Identify which one has NOT reached the expected opportunity and should NOT be scaled up as the standard way of operating?
+```
+A manufacturing company has experienced a surge in returns of faulty products from 2% to 5% of total sales. They built a machine learning model to predict faulty items and started manually inspecting them. This was rolled out in half of the products to test the effect. After 3 months, the returns have decreased to 2% for the products with ML, while remained 5% in the other product lines.
+A bank has identified a growing number of defaults on credit cards over the last 12 months, going from the standard 7% to 11%. The bank has introduced a stricter application process and built an ML prediction to identify risky customers as one of the decision points in the application review. This was tested in half of the branches. After testing the new process, the default rates have started decreasing in the branches with ML solution while remaining unchanged in the rest.
+A beauty products company started seeing a lower number of customers reaching their "Gold Status" which requires meeting certain level of annual spending and other criteria. The competition has been much more active lately. The company decided to build an ML model identifying potential "Gold Status" customers early after they joined the company, and giving them extra discounts, more focused customer service and other incentives. The company ran a test on half of its customers using ML prediction. The conversion rate to "Gold Status" has increased for all customers.
+```
+```
+A beauty products company started seeing a lower number of customers reaching their "Gold Status" which requires meeting certain level of annual spending and other criteria. The competition has been much more active lately. The company decided to build an ML model identifying potential "Gold Status" customers early after they joined the company, and giving them extra discounts, more focused customer service and other incentives. The company ran a test on half of its customers using ML prediction. The conversion rate to "Gold Status" has increased for all customers.
+```
+
+### Video: Model training
+#### Model training process
+- Following the process to train machine learning models is extremely important to ensure the models are generalizable, and don't just memorize the patterns in the data for that specific sample. While the business leaders are not likely to be involved in the details, they will have to understand how the results were obtained, what the results mean, and how they should be interpreted. Which of these statements about the model training process and datasets is correct?
+```
+Model is built on the training dataset, then its performance is validated on the validation dataset, and finally on the test dataset.
+Model is built on the training dataset, then its performance is validated on the test dataset, and finally on the validation dataset.
+Training, validation and test datasets are chosen by the machine learning team manually to make sure the best data is in training, and the least accurate in validation and test.
+```
+```
+Model is built on the training dataset, then its performance is validated on the validation dataset, and finally on the test dataset.
+```
+### Training, validation and test
+- You can see a list of machine learning tasks on the right. Your task is to identify if they should be done on the training or test datasets.
+#### Question 1
+- Identify if these ML tasks should be done on the training or test datasets.
+```
+This dataset is used to train the model.
+Once the final ML model is trained, its performance is measured on this dataset.
+This is the last step in the ML process before reporting the final model performance metric.
+This dataset contains input features and the target variable for the model to learn the patterns on (model training).
+```
+```
+Training
+This dataset is used to train the model.
+This dataset contains input features and the target variable for the model to learn the patterns on (model training).
+Test
+Once the final ML model is trained, its performance is measured on this dataset.
+This is the last step in the ML process before reporting the final model performance metric.
+```
+
+### Video: Model performance measurement
+#### Poor performance examples
+- For a business leader it is critical to understand how the model is performing, and where it fails to predict. There is a (in)famous saying about ML models - "All models are wrong but some are useful". The useful part is to understand how it can be leveraged to help the business optimize its operations. Here, you will review several model performance metrics with business conclusions and identify which statement is incorrect.
+```
+Churn prediction model correctly captures 90% of all churned customers (90% recall), yet it predicts most of the non-churned customers as churned - of all the customers predicted as churned only 5% actually are churners (5% precision). The business asks the ML team to update the model to reduce the number of false positives, as the cost to run any campaigns will be very high if it has to cover almost all customers.
+A trading company is starting to use stock price prediction to make trading decisions. The percentage error rate is 25% which means on average the prediction is 25% different than the actual stock price. The traders are concerned. The company tests the model output as one of the rules in an automated rule-based trading system and sees uplift in the returns over the other non-ML rule-based trading system. Based on the positive results, the company is rolling out the prediction as one of the key signals for both the trading systems and the traders.
+The manufacturing company wants to predict which items on its production line are faulty. The model is built and it identifies 50% of total faulty products (50% recall), and from the ones identified as faulty around 95% actually are (95% precision). The company decides to continue the manual process as identifying only half of faulty products is not going to help. They need 100% recall and 100% precision.
+```
+```
+The manufacturing company wants to predict which items on its production line are faulty. The model is built and it identifies 50% of total faulty products (50% recall), and from the ones identified as faulty around 95% actually are (95% precision). The company decides to continue the manual process as identifying only half of faulty products is not going to help. They need 100% recall and 100% precision.
+```
+### Identify performance metrics
+- Here you will be given a set of model performance metrics, and will have to identify what kind of performance metrics are they - precision (classification), recall (classification) or error (regression).
+- CHEATSHEET: Precision measures how many of the predictions of that class turned out to be true. Recall measures how many of the total observations of that class the prediction was able to capture (or recall). Regression error calculates how far away the prediction is from the observed number.
+#### Question 1
+Identify what kind of performance metrics are these - precision (classification), recall (classification) or error (regression).
+```
+The stock price prediction model on average misses the actual stock price by 2.5 USD.
+The model predicts a list of patients liekly to suffer from a second heart attack in the next 24 hours. 50% of the predicted patients actually did.
+The weekly demand prediction model is on average wrong by 7% compared to the actual demand.
+The model gives a list of customer likely to purchase. When the performance is measured, it captures 45% of all the customers that were going to buy.
+Of all customers predicted likely to buy, 25% actually bought the product.
+The model predict a list of patients likely to suffer from a second heart attack in the next 24 hours. It captures only 20% of all patients at risk.
+```
+```
+Precision
+Of all customers predicted likely to buy, 25% actually bought the product.
+The model predicts a list of patients liekly to suffer from a second heart attack in the next 24 hours. 50% of the predicted patients actually did.
+Recall
+The model gives a list of customer likely to purchase. When the performance is measured, it captures 45% of all the customers that were going to buy.
+The model predict a list of patients likely to suffer from a second heart attack in the next 24 hours. It captures only 20% of all patients at risk.
+Error
+The stock price prediction model on average misses the actual stock price by 2.5 USD.
+The weekly demand prediction model is on average wrong by 7% compared to the actual demand.
+```
+
+### Video: Machine learning risks
+#### Fixing non performing models
+- Once the business runs a number of structured AB tests based on the machine learning predictions and gets negative results, it has to re-group and rethink the strategy again. Which of these is NOT the right action to take in such a situation?
+```
+Get more data.
+Continue using the same machine learning predictions, because it is based on complex algorithms.
+Run qualitative research e.g. surveys.
+Change the scope of the problem.
+```
+```
+Continue using the same machine learning predictions, because it is based on complex algorithms.
+```
+#### Non-actionable models
+- Identifying failed experiments and models that have not helped with driving the desired business outcomes is important: it helps ensure resources are allocated to the areas with the most business impact. Below are three results from a churn prevention test based on the ML model output. Which one performed the best and should be chosen for the implementation in the main production systems?
+```
+Half of the customers with a high predicted probability to churn have been targeted with a few retention emails. The churn rates were compared to the other half without email campaigns. The targeted group has seen a 0.2% reduction in the churn rates compared to the control group.
+Half of the customers with a high predicted probability to churn have been getting promotions and discounts on the items they were interested in (also predicted by ML). The company has observed a reduction in churn for that group by at least 3% and increase in overall purchase frequency.
+Half of the customers with a high predicted probability to churn have been targeted with an increased frequency of multi-channel (email, re-targeting, post etc.) product recommendations. The churn rates were compared to the other half without these recommendations. The targeted group has seen 0.5% increase in the churn rates compared to the control group.
+```
+```
+Half of the customers with a high predicted probability to churn have been getting promotions and discounts on the items they were interested in (also predicted by ML). The company has observed a reduction in churn for that group by at least 3% and increase in overall purchase frequency.
+```
+### Identify actionable recommendations
+- John has built a prototype machine learning model predicting the number of hours the customer will play on the online gaming website next month. He is presenting insights and recommendations. The top 5 most important variables are listed in the barplot, each with a coefficient which shows how much each variable affects the number of active hours for an average customer next month.
+- <image>
+#### Question 3
+- How would you interpret the results and what kind of initiatives would you start? Select one that DOES NOT apply.
+```
+Work with a website engineering team to reduce the number of errors, track the metric closely to make sure it is decreasing, since it is the thing that is most negatively impacting a player's gaming hours next month.
+Run an A/B test with the data science team to explore if reduction in advertising levels would increase the number of gaming hours next month.
+Reduce the price for the add-ons to zero.
+Raise a question whether the model should be adjusted and the last month hours removed since the variable is not actionable.
+```
+```
+Reduce the price for the add-ons to zero.
+```
