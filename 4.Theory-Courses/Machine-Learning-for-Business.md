@@ -423,3 +423,147 @@ Raise a question whether the model should be adjusted and the last month hours r
 ```
 Reduce the price for the add-ons to zero.
 ```
+
+## `Chapter 4` Managing machine learning projects
+
+### Video: Machine learning mistakes
+#### Identify machine learning mistakes
+- It's important to identify the situations in the machine learning development process where a mistake might be happening. Below you see a list of situations, identify the one that is NOT a machine learning mistake.
+```
+Defining business requirements before building the model.
+Not having enough data.
+Poor target variable definition.
+Delaying market testing to push incremental improvements to the model.
+```
+```
+Defining business requirements before building the model.
+```
+### Data needs pyramid
+- The data pyramid represents how value gets created with data, and how to ensure there are no gaps in the process. It's important for business leaders to understand which needs should be met first and which later, and structure their organization's data resources accordingly.
+- You're going to order the needs from the first (bottom of the pyramid) to the very last (top of the pyramid). Foundational needs should be in the bottom and the most advanced analytic methods on the top.
+#### Question 1
+- Order the needs from the first (bottom of the pyramid) to the very last (top of the pyramid).
+```
+Storage
+Analysis
+Preparation & Cleaning
+Collection
+Protoyping & Testing ML
+Machine Learning in production
+```
+```
+Machine Learning in production
+Protoyping & Testing ML
+Analysis
+Preparation & Cleaning
+Storage
+Collection
+```
+### Match ML mistakes by their types
+- It is vital to spot situations where machine learning team might be too focused on the methodology or are just excited about the science behind the project, but the business case is not strong, or the company is not be ready to execute on the ML model outputs. Below you will see a few situations, and will have to identify which of the ML mistake types they belong to.
+#### Question 1
+- Below you will see a few situations, and will have to identify which of the ML mistake types they belong to.
+```
+The team wants to get all the possible data before building a prototype. They need 8 months to aggregate data from all different sources.
+The team spent 2 months in building the prototype model. They need 8 more months to perfect it before running the A/B test in the market.
+The team has reviewed custoomers data: 3% of customers have data captured in a structured format, the rest is sitting in the back-end systems.
+The model has been tested in the market and has not shown any results, the team says that they need another 6 months to perfect the model algorithm.
+The team said they're going to use all data possible for the inferential model and that they don't need an input from the business team.
+The team has reviewed the data source the system are not capturing the data correctly and cannot be used in building the model.
+```
+```
+Not enough data
+The team has reviewed the data source the system are not capturing the data correctly and cannot be used in building the model.
+The team has reviewed custoomers data: 3% of customers have data captured in a structured format, the rest is sitting in the back-end systems.
+Late testing, no impact
+The team spent 2 months in building the prototype model. They need 8 more months to perfect it before running the A/B test in the market.
+The model has been tested in the market and has not shown any results, the team says that they need another 6 months to perfect the model algorithm.
+Feature selection
+The team said they're going to use all data possible for the inferential model and that they don't need an input from the business team.
+The team wants to get all the possible data before building a prototype. They need 8 months to aggregate data from all different sources.
+```
+
+### Video: Communication management
+#### Business communication focus
+- It's important to focus the business and machine learning communication on the right things. Below you will see a list of topics that are included in the proposed weekly machine learning model agenda. Which of these topics is NOT relevant for the business audience and should be decided by the ML team only?
+```
+Defining the business requirements.
+Reviewing machine learning model concept and its product proposal.
+Discussing machine learning algorithm nuances.
+Defining market testing tactics.
+```
+```
+Discussing machine learning algorithm nuances.
+```
+### Market testing
+- Market testing is extremely important to ensure that the model is useful and can drive desired business outcomes. The way to do this is through running structured experiments - they could be experiments with customers, systems, or even machines e.g. testing if preventive maintenance of manufacturing machines identified to be at risk of failure by ML would extend their lifetime and maintenance costs.
+- Here, you will sort the market testing steps from first to the last.
+#### Question 1
+- You see a number of steps for ML market testing - identify their order and sort them from first (top) to last (bottom).
+```
+Build a machine learning model predicting the outcome
+Run certain actions e.g. marketing campaign, for group A and no actions for group B
+Select customers with the predicted values and split into 2 groups (A/B)
+Measure group A performance vs. group B and conclude if there was an impact on the desired outcome
+Define the target
+```
+```
+Define the target
+Build a machine learning model predicting the outcome
+Select customers with the predicted values and split into 2 groups (A/B)
+Run certain actions e.g. marketing campaign, for group A and no actions for group B
+Measure group A performance vs. group B and conclude if there was an impact on the desired outcome
+```
+
+### Video: Machine learning in production
+#### Production systems
+- There are thousands of different production systems in the world, but there are certain nuances that separate them, as they are live, customer facing and critical to the business.
+- Below is a list of examples of production systems. Identify which of these items is NOT a production system.
+```
+Customer Relationship Management (CRM).
+Fraud detection system.
+Online banking platform.
+Weekly business report stored as a spreadsheet file in company's shared drive.
+```
+```
+Weekly business report stored as a spreadsheet file in company's shared drive.
+```
+### Production systems ML use cases
+- We have seen multiple types of production systems. Now, we will look into some specific machine learning in production examples, and you will have to match them with appropriate types of production systems.
+#### Question 1
+- Match the machine learning in production examples with the production systems they are likely implemented in.
+```
+A transaction is passed to the team for a manual review after the system it as 'risky'
+The snesor readings predict a potential collision and automatically hit the car brakes of the car to avoid it.
+An automated product promotion email is triggered by a real time machine learning model predicting which product the customer might be interested in.
+A high-value customers get a number of promotional discounts when the system predicts they are at risk of churning.
+The customer receives an email requesting information about their money transfer. The system identified a potentially risky transaction.
+The car should turn right at the next crossing. The road is closed; the system automatically re-calculates the journey to offer an alternative path.
+```
+```
+Customer relationship management
+An automated product promotion email is triggered by a real time machine learning model predicting which product the customer might be interested in.
+A high-value customers get a number of promotional discounts when the system predicts they are at risk of churning.
+Fraud prevention system
+A transaction is passed to the team for a manual review after the system it as 'risky'
+The customer receives an email requesting information about their money transfer. The system identified a potentially risky transaction.
+Autonomous car
+The snesor readings predict a potential collision and automatically hit the car brakes of the car to avoid it.
+The car should turn right at the next crossing. The road is closed; the system automatically re-calculates the journey to offer an alternative path.
+```
+### ML in production launch
+- Deploying machine learning models into production systems is a complex task, and requires caution and close business involvement to make sure customers are not negatively affected. Releasing slowly and to a limited audience, tracking results and feedback is critical to ensure a smooth launch and early detection of any possible issues.
+#### Question 1
+- Order the implementation steps of launching machine learning in production from first (top) to last (bottom).
+```
+Make sure the results are consistent over time
+Launch to a small of customers
+Scale up the model coverage
+Track initial results
+```
+```
+Launch to a small of customers
+Track initial results
+Make sure the results are consistent over time
+Scale up the model coverage
+```
