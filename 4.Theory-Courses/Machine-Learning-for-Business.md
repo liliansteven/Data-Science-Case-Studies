@@ -152,3 +152,134 @@ Hybrid
 Critical infrastructure and data storage are owned by one team. Data is analyzed, models prototyped and deployed by different units independently.
 Each office have hired their own data analysis and scientists who depend on the central data infrastructure and databases for their data access needs.
 ```
+
+## `Chapter 2` Machine learning types
+
+### Video: Prediction vs. inference dilemma
+#### Inference and prediction differences
+- The difference between inference and prediction models is mostly in the way the business question or hypothesis is phrased. It's also important to understand the pros and cons of each. There is a trade-off between accuracy and interpretability: some models are easy to understand but do not have optimal predictions; others have excellent predictions but it's unclear how they got there. Below are several statements about the inference and prediction focused models. Select the one that is NOT correct.
+```
+Inference models are also called causal models.
+Prediction models focus on getting the best prediction, no matter the model interpretation.
+Inference models are less accurate than prediction machine learning models.
+Inference models are more accurate than prediction machine learning models.
+```
+```
+Inference models are more accurate than prediction machine learning models.
+```
+### Identify inference vs. prediction use cases
+- You've learned about the inference vs. prediction dilemma - business leaders do not have to know the algorithmic nuances of the models, but defining the business questions correctly will guide the science team to correctly frame the modeling strategy. Now, you will identify which of these business questions are more likely to be a candidate for an inference (or causal) model, or instead a prediction model.
+#### Question 1
+- Review each business question and move them to either the "Inference" or "Prediction" bucket.
+```
+What are the main drivers of high customer satisfaction?
+Which of these customers are likely to spend the most in the next 12 months?
+Which gaming behaviors are the most predictive of the next month gaming hours?
+Which of these transactions are most likely to be fraud?
+What are the main indicators of transaction's probability to be fraudulent?
+Which of these banknotes are likely to be counterfeit?
+```
+```
+Inference (Causal)
+What are the main drivers of high customer satisfaction?
+Which gaming behaviors are the most predictive of the next month gaming hours?
+What are the main indicators of transaction's probability to be fraudulent?
+Prediction
+Which of these customers are likely to spend the most in the next 12 months?
+Which of these transactions are most likely to be fraud?
+Which of these banknotes are likely to be counterfeit?
+```
+
+### Video: Inference (causal) models
+#### Experiments and causal models
+- In the video, we have discussed the importance of experiments such as website or email A/B tests and the role they play when assessing the need of causal models. Read the statements below and identify which of these is incorrect.
+```
+Whenever possible, causal models are preferred over experiments.
+Whenever possible, experiments are preferred over causal models.
+Causal models are used when running experiments are not possible e.g. unethical, illegal, or too expensive.
+```
+```
+Whenever possible, causal models are preferred over experiments.
+```
+### Identify non actionable variables
+- Rosie’s machine learning team has deployed a machine learning model on an insurance company’s website. It predicts a purchase probability for a certain insurance type for each customer. Then, the customized recommended product with the highest probability for each customer is shown on the homepage.
+- The website team started running AB tests and didn't see any sales increase in the customer group with machine learned recommendation compared with the group that only has generic messages on the main website. Rosie asked to review the model, and provide insights into what are the key driving variables, and how the model was designed.
+- In the inferential models, it is important to use variables which the business can affect and has impact on versus the ones that are just correlated but are not useful.
+- <image>
+#### Question 1
+- What conclusion can you draw based on the most impactful variables? Select the most important one.
+```
+We need to aggressively promote insurance descriptions page visits since they are positively impacting the chances that the customer will buy insurance
+The most impactful variables are highly correlated with the desired outcome (interest in a product leads to product purchase) but they are not actionable. The machine learning model needs to be rebuilt using actionable inputs that the business can impact
+Weekly behavior is more important than monthly - change the frequency of the product promotional newsletter from monthly to weekly
+Nothing, we can’t do anything since the customers are finding the products themselves
+```
+```
+The most impactful variables are highly correlated with the desired outcome (interest in a product leads to product purchase) but they are not actionable. The machine learning model needs to be rebuilt using actionable inputs that the business can impact
+```
+
+### Video: Prediction models (supervised learning)
+#### Supervised modeling principles
+- You have learned the fundamental principles of supervised machine learning models. Now you will read a list of several statements about supervised learning and find one that is incorrect.
+```
+Supervised machine learning uses inputs features to discover outliers.
+Supervised machine learning uses input features to predict the probability of belonging to a certain discrete class.
+Supervised machine learning uses input features to predict the amount of a certain outcome.
+```
+```
+Supervised machine learning uses inputs features to discover outliers.
+```
+### Identify classification and regression models
+- You know that supervised machine learning has two types - classification and regression. While the underlying supervised learning principles are the same, they produce different outcomes. Here, you will be presented with a number of machine learning use cases, and try to identify if this is a classification or regression.
+#### Question 1
+- For each of the machine learning use case - identify if it belongs to classification or regression supervised learning.
+```
+A car manufacturer wants to use sensor data to identify which of the parts in the production line are potentially faculty and need manual inspection.
+A gaming company wants to predict how much time each gamer will likely spend playing video games in the next month.
+An online toy shop wants to predict which customers are likely to buy a bike next month.
+A bank wants to predict how much money will the customers spend on different services in the next year.
+```
+```
+Classification
+An online toy shop wants to predict which customers are likely to buy a bike next month.
+A car manufacturer wants to use sensor data to identify which of the parts in the production line are potentially faculty and need manual inspection.
+Regression
+A gaming company wants to predict how much time each gamer will likely spend playing video games in the next month.
+A bank wants to predict how much money will the customers spend on different services in the next year.
+```
+
+### Video: Prediction models (unsupervised learning)
+#### Unsupervised modeling use cases
+- You have reviewed the key principles to unsupervised learning and have gone through a specific example of customer segmentation. In this exercise, you will read a list of statements about unsupervised machine learning and identify which of them is correct.
+```
+Unsupervised learning is used to predict the probability of an event e.g. whether a machine in a factory will break
+Unsupervised learning is used to predict the amount of an outcome e.g. number of purchases next month
+Unsupervised learning is used to understand the causal relationship and its strength of input features on the outcome variable
+Unsupervised learning is used to identify patterns in data, build clusters or detect outliers
+```
+```
+Unsupervised learning is used to identify patterns in data, build clusters or detect outliers
+```
+### Classification, regression or unsupervised models
+- Now you know a lot about different types of machine learning models. In this case you will see a number of machine learning examples, formulated as a business question or a need e.g. "I want to predict potato prices next month", and will identify if this it belongs with a classification, regression or unsupervised learning.
+#### Question 1
+- Classify the examples on the right as classification, regression or unsupervised learning problems.
+```
+Predict our product demand for the next month.
+Predict what is the object in the uploaded picture - human, car, animal or other.
+Group our customers based on the similarity of their purchasing patterns.
+Predict agricultural raw material prices to inform our pricing decisions.
+Identify which customers are likely to click on this banner.
+Group our products together based on sensor readings, then flag outlier items which don't fall within any cluster for manual inspection.
+```
+```
+Classification
+Identify which customers are likely to click on this banner.
+Predict what is the object in the uploaded picture - human, car, animal or other.
+Regression
+Predict our product demand for the next month.
+Predict agricultural raw material prices to inform our pricing decisions.
+Unsupervised learning
+Group our customers based on the similarity of their purchasing patterns.
+Group our products together based on sensor readings, then flag outlier items which don't fall within any cluster for manual inspection.
+```
