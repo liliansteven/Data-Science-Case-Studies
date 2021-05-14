@@ -1,14 +1,14 @@
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## Python-Courses
-Python tracks road map for computer science students, which including the following main topics:
+Python Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
 <br>
 <br>
 
 <details>
-	<summary>Basic Programming</summary>
+	<summary>Basic Programming Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -336,7 +336,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Probability and Statistics</summary>
+	<summary>Probability and Statistics Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -613,7 +613,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Preprocessing</summary>
+	<summary>Data Preprocessing Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -896,7 +896,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Visualization</summary>
+	<summary>Data Visualization Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -1059,7 +1059,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Analysis</summary>
+	<summary>Data Analysis Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -1381,7 +1381,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Machine Learning</summary>
+	<summary>Machine Learning Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -1838,7 +1838,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Deep Learning</summary>
+	<summary>Deep Learning Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -2034,7 +2034,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Natural Language Processing</summary>
+	<summary>Natural Language Processing Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -2212,7 +2212,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Applied Finance</summary>
+	<summary>Applied Finance Tracks</summary>
 	<table>
 	<thead>
 		<tr>
@@ -2411,7 +2411,7 @@ Python tracks road map for computer science students, which including the follow
 	</table>
 </details>
 <details>
-	<summary>Data Engineering</summary>
+	<summary>Data Engineering Tracks</summary>
 	<table>
 	<thead>
 		<tr>
