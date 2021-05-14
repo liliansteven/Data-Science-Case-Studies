@@ -8,7 +8,8 @@ Theory tracks road map for computer science students, which including the follow
 <br>
 
 <details>
-	<summary>Theory</summary><table>
+	<summary>Theory</summary>
+<table>
 	<thead>
 		<tr>
 			<th width="40%">Course</th>
@@ -135,6 +136,24 @@ Theory tracks road map for computer science students, which including the follow
 			</tr>
 			<tr>
 				<td align="left">Cloud Providers and Case Studies</td>
+			</tr>
+			<tr>
+				<td rowspan=4 align=center>
+<a href="https://learn.datacamp.com/courses/data-driven-decision-making">Data Driven Decision Making</a><br>
+				<td align="left">Data-Driven Decision-Making Framework</td>
+				<td rowspan=4 align="center">2</td>
+				<td rowspan=4 align="center">14</td>
+				<td rowspan=4 align="center">46</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">Applying Data to Inform Marketing</td>
+			</tr>
+			<tr>
+				<td align="left">Spotting Finance Opportunities With Data</td>
+			</tr>
+			<tr>
+				<td align="left">Data-Driven Business Operations</td>
 			</tr>
 	</tbody>
 </table>
