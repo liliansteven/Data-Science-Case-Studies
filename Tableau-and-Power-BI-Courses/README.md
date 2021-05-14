@@ -135,4 +135,4 @@ Tableau and Power BI tracks road map for computer science students, which includ
 </details>
 
 **SKILLS YOU WILL GAIN:**<br>
-`tableau`, `analyzing data tableau`, `power bi`
+`tableau`, `analyzing data tableau`, `power bi`, `creating dashboards in tableau`, `connecting data in tableau`, `statistical techniques in tableau`, `analyzing data in tableau`
