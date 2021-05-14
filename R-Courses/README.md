@@ -1,38 +1,38 @@
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## R-Courses
-R tracks road map for computer science students, which including the following main topics:
+R Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
 <br>
 <br>
 
 <details>
-	<summary>Basic Programming</summary>
+	<summary>Basic Programming Tracks</summary>
 </details>
 
 <details>
-	<summary>Probability and Statistics</summary>
+	<summary>Probability and Statistics Tracks</summary>
 </details>
 
 <details>
-	<summary>Data Preprocessing</summary>
+	<summary>Data Preprocessing Tracks</summary>
 </details>
 
 <details>
-	<summary>Data Visualization</summary>
+	<summary>Data Visualization Tracks</summary>
 </details>
 
 <details>
-	<summary>Data Analysis</summary>
+	<summary>Data Analysis Tracks</summary>
 </details>
 
 <details>
-	<summary>Machine Learning</summary>
+	<summary>Machine Learning Tracks</summary>
 </details>
 
 <details>
-	<summary>Applied Finance</summary>
+	<summary>Applied Finance Tracks</summary>
 </details>
 
 **SKILLS YOU WILL GAIN:**<br>
