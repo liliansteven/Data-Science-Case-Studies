@@ -8,7 +8,7 @@ R tracks road map for computer science students, which including the following m
 <br>
 
 <details>
-	<summary>Programming</summary>
+	<summary>Basic Programming</summary>
 </details>
 
 <details>
