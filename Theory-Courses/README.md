@@ -160,4 +160,4 @@ Theory tracks road map for computer science students, which including the follow
 </details>
 
 **SKILLS YOU WILL GAIN:**<br>
-`course name`, `data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`
+`data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`, `data driven decision making`
