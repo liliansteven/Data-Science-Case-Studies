@@ -8,7 +8,7 @@ Python tracks road map for computer science students, which including the follow
 <br>
 
 <details>
-	<summary>Programming</summary>
+	<summary>Basic Programming</summary>
 	<table>
 	<thead>
 		<tr>
