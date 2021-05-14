@@ -59,7 +59,7 @@ Theory Tracks road map for computer science students, which including the follow
 #### `1.` [Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Courses/README.md) Tracks `7 Entities`
 
 **SKILLS YOU WILL GAIN:**<br>
-`course name`, `data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`
+`data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`, `data driven decision making`
 
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
