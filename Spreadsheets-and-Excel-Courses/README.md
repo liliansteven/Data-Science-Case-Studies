@@ -1,7 +1,7 @@
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## Spreadsheets-and-Excel-Courses
-Spreadsheets and Excel Tracks road map for computer science students, which including the following main topics:
+Spreadsheets and Excel tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
 <img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
