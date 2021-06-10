@@ -4,7 +4,7 @@ DataCamp tracks road map for computer science students.
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## [Python-Data-Analysis-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md)
-Python Tracks road map for computer science students, which including the following main topics:
+Python Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <details>
 	<summary>Python Data Analysis Tracks (main topics)</summary>
@@ -25,7 +25,7 @@ Python Tracks road map for computer science students, which including the follow
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## [Python-Machine-Learning-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md)
-Python Tracks road map for computer science students, which including the following main topics:
+Python Machine Learning Tracks road map for computer science students, which including the following main topics:
 
 <details>
 	<summary>Python Machine Learning Tracks (main topics)</summary>
