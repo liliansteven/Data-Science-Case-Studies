@@ -3,27 +3,43 @@ DataCamp tracks road map for computer science students.
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Python-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md)
+## [Python-Data-Analysis-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md)
 Python Tracks road map for computer science students, which including the following main topics:
 
 <details>
-	<summary>Python Tracks (main topics)</summary>
+	<summary>Python Data Analysis Tracks (main topics)</summary>
 
   <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
 
-  #### `1.` [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `17 Entities`
-  #### `2.` [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `14 Entities`
-  #### `3.` [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `15 Entities`
-  #### `4.` [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `8 Entities`
-  #### `5.` [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `17 Entities`
-  #### `6.` [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `24 Entities`
-  #### `7.` [Deep Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `10 Entities`
-  #### `8.` [Natural Language Processing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `9 Entities`
-  #### `9.` [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `10 Entities`
-  #### `10.` [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Tracks/README.md) Tracks `11 Entities`
+  #### `1.` [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks `17 Entities`
+  #### `2.` [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks `14 Entities`
+  #### `3.` [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks `15 Entities`
+  #### `4.` [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks `8 Entities`
+  #### `5.` [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks `17 Entities`
 
   **SKILLS YOU WILL GAIN:**<br>
-  `object-oriented programming`, `databases`, `mongodb`, `data science toolbox`, `command line automation`, `aws boto`, `unit testing for data science`, `analyzing marketing campaigns`, `analyzing police activity`, `analyzing social media data`, `arima models`, `customer segmentation`, `market basket analysis`, `marketing analytics predicting customer churn`, `working geospatial data`, `supply chain analytics`, `analyzing us census data`, `data science`, `feature engineering`, `machine learning`, `python for spreadsheet users`, `exploratory data analysis`, `winning kaggle competition`, `probability`, `statistics`, `linear modeling`, `network analysis`, `generalized linear models`, `practicing statistics interview questions`, `experimental design`, `customer analytics a/b testing`, `time series analysis`, `importing data`, `cleaning data`, `web scraping`, `data manipulation`, `dealing missing data`, `joining data`, `manipulating time series data`, `working dates times`, `pandas foundations`, `manipulating dataframes`, `merging dataframes`, `pandas joins for spreadsheet users`, `data visualization`, `matplotlib`, `seaborn`, `bokeh`, `geospatial data`, `time series data`, `software engineering for data scientists`, `preprocessing for machine learning`, `linear classifiers`, `unsupervised learning`, `supervised learning scikit-learn`, `machine learning tree-based models`, `predictive analytics`, `dimensionality reduction`, `designing machine learning workflows`, `machine learning for time series data`, `machine learning for marketing`, `human resources analytics`, `machine learning for finance`, `extreme gradient boosting xgboost`, `parallel programming dask`, `fraud detection`, `cluster analysis`, `model validation`, `hyperparameter tuning`, `ensemble methods`, `natural language processing`, `regular expressions`, `sentiment analysis`, `feature engineering for nlp`, `machine translation`, `spoken language processing`, `building chatbots`, `advanced nlp spacy`, `deep learning`, `keras`, `pytorch`, `recurrent neural networks for language modeling`, `predicting ctr machine learning`, `image processing`, `biomedical image analysis`, `credit risk modeling`, `python for finance`  `financial concepts`, `portfolio analysis`, `portfolio risk management`, `importing managing financial data`, `quantitative risk management`, `financial forecasting`, `pyspark`, `data engineering`, `spark sql`, `big data fundamentals pyspark`, `feature engineering pyspark`, `cleaning data pyspark`, `machine learning pyspark`, `building recommendation engines pyspark`, `streaming data aws kinesis lambda`, `building data engineering pipelines`
+  `object-oriented programming`, `databases`, `mongodb`, `data science toolbox`, `command line automation`, `aws boto`, `unit testing for data science`, `analyzing marketing campaigns`, `analyzing police activity`, `analyzing social media data`, `arima models`, `customer segmentation`, `market basket analysis`, `marketing analytics predicting customer churn`, `working geospatial data`, `supply chain analytics`, `analyzing us census data`, `data science`, `feature engineering`, `python for spreadsheet users`, `exploratory data analysis`, `winning kaggle competition`, `probability`, `statistics`, `linear modeling`, `network analysis`, `generalized linear models`, `practicing statistics interview questions`, `experimental design`, `customer analytics a/b testing`, `time series analysis`, `importing data`, `cleaning data`, `web scraping`, `data manipulation`, `dealing missing data`, `joining data`, `manipulating time series data`, `working dates times`, `pandas foundations`, `manipulating dataframes`, `merging dataframes`, `pandas joins for spreadsheet users`, `data visualization`, `matplotlib`, `seaborn`, `bokeh`, `geospatial data`, `time series data`, `software engineering for data scientists`, `linear classifiers`, `predictive analytics`, `dimensionality reduction`, `parallel programming dask`, `model validation`, `hyperparameter tuning`, `portfolio analysis`, `portfolio risk management`, `importing managing financial data`, `quantitative risk management`, `financial forecasting`
+
+</details>
+
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+
+## [Python-Machine-Learning-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md)
+Python Tracks road map for computer science students, which including the following main topics:
+
+<details>
+	<summary>Python Machine Learning Tracks (main topics)</summary>
+
+  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+
+  #### `1.` [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks `24 Entities`
+  #### `2.` [Deep Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks `10 Entities`
+  #### `3.` [Natural Language Processing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks `9 Entities`
+  #### `4.` [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks `10 Entities`
+  #### `5.` [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks `11 Entities`
+
+  **SKILLS YOU WILL GAIN:**<br>
+  `data science`, `feature engineering`, `machine learning`, `python for spreadsheet users`, `exploratory data analysis`, `winning kaggle competition`, `probability`, `statistics`, `linear modeling`, `network analysis`, `experimental design`, `time series analysis`, `manipulating time series data`, `working dates times`, `pandas foundations`, `manipulating dataframes`, `merging dataframes`, `pandas joins for spreadsheet users`, `data visualization`, `matplotlib`, `seaborn`, `bokeh`, `geospatial data`, `time series data`, `software engineering for data scientists`, `preprocessing for machine learning`, `linear classifiers`, `unsupervised learning`, `supervised learning scikit-learn`, `machine learning tree-based models`, `predictive analytics`, `dimensionality reduction`, `designing machine learning workflows`, `machine learning for time series data`, `machine learning for marketing`, `human resources analytics`, `machine learning for finance`, `extreme gradient boosting xgboost`, `parallel programming dask`, `fraud detection`, `cluster analysis`, `model validation`, `hyperparameter tuning`, `ensemble methods`, `natural language processing`, `regular expressions`, `sentiment analysis`, `feature engineering for nlp`, `machine translation`, `spoken language processing`, `building chatbots`, `advanced nlp spacy`, `deep learning`, `keras`, `pytorch`, `recurrent neural networks for language modeling`, `predicting ctr machine learning`, `image processing`, `biomedical image analysis`, `credit risk modeling`, `python for finance`  `financial concepts`, `portfolio analysis`, `portfolio risk management`, `importing managing financial data`, `quantitative risk management`, `financial forecasting`, `pyspark`, `data engineering`, `spark sql`, `big data fundamentals pyspark`, `feature engineering pyspark`, `cleaning data pyspark`, `machine learning pyspark`, `building recommendation engines pyspark`, `streaming data aws kinesis lambda`, `building data engineering pipelines`
 
 </details>
 
