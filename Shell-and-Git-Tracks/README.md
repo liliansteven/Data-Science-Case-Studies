@@ -5,8 +5,6 @@ Shell and Git tracks road map for computer science students, which including the
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg">
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg">
-<br>
-<br>
 
 <details>
 	<summary>Git</summary><table>
