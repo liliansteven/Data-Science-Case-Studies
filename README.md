@@ -45,24 +45,41 @@ Python Machine Learning Tracks road map for computer science students, which inc
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [R-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md)
-R Tracks road map for computer science students, which including the following main topics:
+## [R-Data-Analysis-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md)
+R Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <details>
-	<summary>R Tracks (main topics)</summary>
+	<summary>R Data Analysis Tracks (main topics)</summary>
 
   <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
 
-  #### `1.` [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `2.` [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `3.` [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `4.` [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `5.` [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `6.` [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
-  #### `7.` [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Tracks/README.md) Tracks
+  #### `1.` [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `18 Entities`
+  #### `2.` [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `16 Entities`
+  #### `3.` [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `20 Entities`
+  #### `4.` [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `17 Entities`
+  #### `5.` [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `27 Entities`
 
   **SKILLS YOU WILL GAIN:**<br>
-  `reporting r markdown`, `visualizing geospatial data`, `joining data table`, `marketing analytics`, `garch models`, `survey and measurement development`, `single-cell rna-seq bioconductor`, `text analysis`, `data manipulation dplyr`, `linear algebra for data science`, ` classification`, `tidyverse`, `regression`, `object-oriented`, `tree-based models`, `communicating data tidyverse`, `analyzing social media data`, `hyperparameter tuning`, `inference for categorical data`, `topic modeling`, `handling missing data imputations`, `data manipulation`, `sentiment analysis`, `statistics`, `spatial analysis sf and raster`, `text mining bag-of-words`, `probability`, `regular expressions`, `hierarchical and mixed effects models`, `equity valuation`, `categorical data tidyverse`, `r for finance`, `machine learning`, `parallel programming`, `building dashboards flexdashboard`, `bond valuation and analysis`, `cluster analysis`, `writing functions`, `inference for numerical data`, `visualizing big data trelliscope`, `fraud detection`, `arima models`, `factor analysis`, `choice modeling for marketing`, `scalable data processing`, `correlation and regression`, `inference for linear regression`, `bayesian data analysis`, `cleaning data`, `advanced dimensionality reduction`, `time series analysis`, `portfolio analysis`, `logistic regression`, `probability puzzles`, `statistical modeling`, `business process analytics`, `life insurance products valuation`, `bayesian regression modeling rstanarm`, `mixture models`, `dealing missing data`, `data privacy and anonymization`, `modeling data tidyverse`, `inference`, `a/b testing`, `market basket analysis`, `spark sparklyr`, `visualizing time series data`, `quantitative risk management`, `feature engineering`, `exploratory data analysis`, `building dashboards shinydashboard`, `human resources analytics`, `importing and managing financial data`, `experimental design`, `forecasting product demand`, `financial trading`, `big data r`, `credit risk modeling`, `support vector machines`, `analyzing us census data`, `forecasting`, `predictive analytics using networked data`, `joining data dplyr`, `network analysis`, `generalized linear models`, `data visualization`, `nonlinear modeling  gams`, `working data tidyverse`, `importing data`, `working web data`, `differential expression analysis limma`, `optimizing r code rcpp`, `dimensionality reduction`, `natural language processing`, `functional programming purrr`, `anomaly detection`, `network analysis tidyverse`, `chip-seq bioconductor`, `building web applications shiny`, `analyzing election and polling data`, `rna-seq bioconductor`, `designing and analyzing clinical trials`, `developing r packages`, `working dates and times`, `survival analysis`, `bayesian modeling rjags`, `interactive maps leaflet`, `multivariate probability distributions`
+  `reporting r markdown`, `visualizing geospatial data`, `joining data table`, `marketing analytics`, `garch models`, `survey and measurement development`, `single-cell rna-seq bioconductor`, `data manipulation dplyr`, `object-oriented`, `communicating data tidyverse`, `developing r packages`, `importing data`, `inference for categorical data`, `topic modeling`, `handling missing data imputations`, `data manipulation`, `statistics`,  `working dates and times`, `spatial analysis sf and raster`, `probability`, `regular expressions`, `business process analytics`, `functional programming purrr`, `anomaly detection`, `parallel programming`, `building dashboards flexdashboard`, `writing functions`, `visualizing big data trelliscope`, `designing and analyzing clinical trials`, `fraud detection`, `arima models`, `factor analysis`, `choice modeling for marketing`, `dealing missing data`, `data privacy and anonymization`, `modeling data tidyverse`, `cleaning data`, `time series analysis`, `probability puzzles`, `statistical modeling`, `life insurance products valuation`, `data visualization`, `visualizing time series data`, `network analysis tidyverse`, `chip-seq bioconductor`, `rna-seq bioconductor`, `working web data`, `differential expression analysis limma`, `feature engineering`, `exploratory data analysis`, `building dashboards shinydashboard`, `importing and managing financial data`, `working data tidyverse`, `analyzing us census data`, `joining data dplyr`, `generalized linear models`, `interactive maps leaflet`, `multivariate probability distributions`
+
+</details>
+
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+
+## [R-Machine-Learning-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md)
+R Machine Learning Tracks road map for computer science students, which including the following main topics:
+
+<details>
+	<summary>R Machine Learning Tracks (main topics)</summary>
+
+  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+
+  #### `1.` [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks `27 Entities`
+  #### `2.` [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks `10 Entities`
+  #### `3.` [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks `12 Entities`
+
+  **SKILLS YOU WILL GAIN:**<br>
+  `text analysis`, `linear algebra for data science`, `classification`, `tidyverse`, `regression`, `tree-based models`, `analyzing social media data`, `hyperparameter tuning`, `sentiment analysis`, `text mining bag-of-words`, `hierarchical and mixed effects models`, `logistic regression`, `equity valuation`, `categorical data tidyverse`, `r for finance`, `machine learning`, `predictive analytics using networked data`,  `quantitative risk management`, `bond valuation and analysis`, `cluster analysis`, `inference for numerical data`, `scalable data processing`, `correlation and regression`, `inference for linear regression`, `bayesian data analysis`, `survival analysis`, `bayesian modeling rjags`, `forecasting`, `advanced dimensionality reduction`, `experimental design`, `forecasting product demand`, `financial trading`, `big data r`, `credit risk modeling`, `support vector machines`, `nonlinear modeling  gams`, `bayesian regression modeling rstanarm`, `mixture models`, `optimizing r code rcpp`, `dimensionality reduction`, `natural language processing`, `human resources analytics`, `building web applications shiny`, `analyzing election and polling data`, `spark sparklyr`, `inference`, `a/b testing`, `market basket analysis`, `network analysis`, `portfolio analysis`, 
 
 </details>
 
