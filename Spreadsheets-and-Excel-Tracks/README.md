@@ -1,12 +1,11 @@
-<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## Spreadsheets-and-Excel-Tracks
 Spreadsheets and Excel tracks road map for computer science students, which including the following main topics:
 
-<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
-<img align="right" width="100" height="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
-<br>
-<br>
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
+<br><br>
 
 <details>
 	<summary>Excel</summary><table>
