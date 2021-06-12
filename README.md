@@ -51,7 +51,7 @@ R Data Analysis Tracks road map for computer science students, which including t
 <details>
 	<summary>R Data Analysis Tracks (main topics)</summary>
 
-  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
 
   #### `1.` [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `18 Entities`
   #### `2.` [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks `16 Entities`
@@ -72,7 +72,7 @@ R Machine Learning Tracks road map for computer science students, which includin
 <details>
 	<summary>R Machine Learning Tracks (main topics)</summary>
 
-  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+  <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
 
   #### `1.` [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks `27 Entities`
   #### `2.` [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks `10 Entities`
