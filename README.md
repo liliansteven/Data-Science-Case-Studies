@@ -3,7 +3,7 @@ DataCamp tracks road map for computer science students.
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Python-Data-Analysis-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md)
+## [`Python Data Analysis`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis-Tracks/README.md) Tracks
 Python Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -24,7 +24,7 @@ Python Data Analysis Tracks road map for computer science students, which includ
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Python-Machine-Learning-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md)
+## [`Python Machine Learning`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/README.md) Tracks
 Python Machine Learning Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -45,7 +45,7 @@ Python Machine Learning Tracks road map for computer science students, which inc
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [R-Data-Analysis-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md)
+## [`R Data Analysis`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/README.md) Tracks
 R Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -66,7 +66,7 @@ R Data Analysis Tracks road map for computer science students, which including t
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [R-Machine-Learning-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md)
+## [`R Machine Learning`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/README.md) Tracks
 R Machine Learning Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -85,7 +85,7 @@ R Machine Learning Tracks road map for computer science students, which includin
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [SQL-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/README.md)
+## [`SQL`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/README.md) Tracks
 SQL Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -105,7 +105,7 @@ SQL Tracks road map for computer science students, which including the following
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Theory-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md)
+## [`Theory`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks
 Theory Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -122,7 +122,7 @@ Theory Tracks road map for computer science students, which including the follow
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Spreadsheets-and-Excel-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel-Tracks/README.md)
+## [`Spreadsheets and Excel`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel-Tracks/README.md) Tracks
 Spreadsheets and Excel Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -141,7 +141,7 @@ Spreadsheets and Excel Tracks road map for computer science students, which incl
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Tableau-and-Power-BI-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Tableau-and-Power-BI-Tracks/README.md)
+## [`Tableau and Power-BI`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Tableau-and-Power-BI-Tracks/README.md) Tracks
 Tableau and Power BI Tracks road map for computer science students, which including the following main topics:
 
 <details>
@@ -160,7 +160,7 @@ Tableau and Power BI Tracks road map for computer science students, which includ
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## [Shell-and-Git-Tracks](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git-Tracks/README.md)
+## [`Shell and Git`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git-Tracks/README.md) Tracks
 Shell and Git Tracks road map for computer science students, which including the following main topics:
 
 <details>
