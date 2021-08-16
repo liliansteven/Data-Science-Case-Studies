@@ -72,6 +72,8 @@ Theory Tracks road map for computer science students, which including the follow
 
 #### `1.` [Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks `8 Entities`
 
+<br><br><br>
+
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 ## [`Spreadsheets and Excel`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel-Tracks/README.md) Tracks
