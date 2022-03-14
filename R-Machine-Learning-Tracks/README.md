@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## R Machine Learning Tracks
+# R Machine Learning Tracks
 R Machine Learning Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
@@ -495,7 +495,3 @@ R Machine Learning Tracks road map for computer science students, which includin
 	</tbody>
 </table>
 </details>
-
-
-**SKILLS YOU WILL GAIN:**<br>
-`text analysis`, `linear algebra for data science`, `classification`, `tidyverse`, `regression`, `tree-based models`, `analyzing social media data`, `hyperparameter tuning`, `sentiment analysis`, `text mining bag-of-words`, `hierarchical and mixed effects models`, `logistic regression`, `equity valuation`, `categorical data tidyverse`, `r for finance`, `machine learning`, `predictive analytics using networked data`,  `quantitative risk management`, `bond valuation and analysis`, `cluster analysis`, `inference for numerical data`, `scalable data processing`, `correlation and regression`, `inference for linear regression`, `bayesian data analysis`, `survival analysis`, `bayesian modeling rjags`, `forecasting`, `advanced dimensionality reduction`, `experimental design`, `forecasting product demand`, `financial trading`, `big data r`, `credit risk modeling`, `support vector machines`, `nonlinear modeling  gams`, `bayesian regression modeling rstanarm`, `mixture models`, `optimizing r code rcpp`, `dimensionality reduction`, `natural language processing`, `human resources analytics`, `building web applications shiny`, `analyzing election and polling data`, `spark sparklyr`, `inference`, `a/b testing`, `market basket analysis`, `network analysis`, `portfolio analysis`, 
