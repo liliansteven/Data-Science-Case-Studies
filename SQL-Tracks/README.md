@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## SQL Tracks
+# SQL Tracks
 SQL track road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg">
@@ -553,6 +553,3 @@ SQL track road map for computer science students, which including the following 
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`analyzing business data sql`, `sql`, `intermediate sql`, `exploratory data analysis sql`, `relational databases sql`, `joining data sql`, `reporting sql`, `applying sql real-world problems`, `database design`, `data-driven decision making sql`, `sql server`, `intermediate sql server`, `functions for manipulating data sql server`, `cleaning data sql server databases`, `hierarchical recursive queries sql server`, `time series analysis sql server`, `improving query performance sql server`, `writing functions stored procedures sql server`, `transactions error handling sql server`, `building optimizing triggers sql server`, `creating postgresql databases`, `functions for manipulating data postgresql`, `postgresql summary stats window functions`, `cleaning data postgresql databases`, `improving query performance postgresql`, `transactions error handling postgresql`, `oracle sql`
