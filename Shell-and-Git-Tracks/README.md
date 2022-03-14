@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Shell and Git Tracks
+# Shell and Git Tracks
 Shell and Git tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg">
@@ -148,6 +148,3 @@ Shell and Git tracks road map for computer science students, which including the
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`git`, `bash scripting`, `shell` ,`conda essentials`, `building distributing packages conda`, `data processing shell`
