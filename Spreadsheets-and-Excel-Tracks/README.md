@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Spreadsheets and Excel Tracks
+# Spreadsheets and Excel Tracks
 Spreadsheets and Excel tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
@@ -277,6 +277,3 @@ Spreadsheets and Excel tracks road map for computer science students, which incl
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`data analysis excel`, `data analysis spreadsheets`, `spreadsheets`, `intermediate spreadsheets`, `statistics spreadsheets`, `error uncertainty spreadsheets`, `conditional formatting spreadsheets`, `pivot tables spreadsheets`, `data visualization spreadsheets`, `loan amortization spreadsheets`, `marketing analytics spreadsheets`, `financial analytics spreadsheets`, `financial modeling spreadsheets`, `options trading spreadsheets`
