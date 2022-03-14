@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Python Machine Learning Tracks
+# Python Machine Learning Tracks
 Python Machine Learning Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
@@ -1250,6 +1250,3 @@ Python Machine Learning Tracks road map for computer science students, which inc
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`data science`, `feature engineering`, `machine learning`, `winning kaggle competition`, `working dates times`, `data visualization`, `software engineering for data scientists`, `preprocessing for machine learning`, `linear classifiers`, `unsupervised learning`, `supervised learning scikit-learn`, `machine learning tree-based models`, `predictive analytics`, `dimensionality reduction`, `designing machine learning workflows`, `machine learning for time series data`, `machine learning for marketing`, `human resources analytics`, `machine learning for finance`, `extreme gradient boosting xgboost`, `parallel programming dask`, `fraud detection`, `cluster analysis`, `model validation`, `hyperparameter tuning`, `ensemble methods`, `natural language processing`, `regular expressions`, `sentiment analysis`, `feature engineering for nlp`, `machine translation`, `spoken language processing`, `building chatbots`, `advanced nlp spacy`, `deep learning`, `keras`, `pytorch`, `recurrent neural networks for language modeling`, `predicting ctr machine learning`, `image processing`, `biomedical image analysis`, `credit risk modeling`, `python for finance`  `financial concepts`, `quantitative risk management`, `financial forecasting`, `pyspark`, `data engineering`, `spark sql`, `big data fundamentals pyspark`, `feature engineering pyspark`, `cleaning data pyspark`, `machine learning pyspark`, `building recommendation engines pyspark`, `streaming data aws kinesis lambda`, `building data engineering pipelines`
