@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Python Data Analysis Tracks
+# Python Data Analysis Tracks
 Python Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
@@ -1379,6 +1379,3 @@ Python Data Analysis Tracks road map for computer science students, which includ
 	</tbody>
 	</table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`object-oriented programming`, `databases`, `mongodb`, `data science toolbox`, `command line automation`, `aws boto`, `unit testing for data science`, `analyzing marketing campaigns`, `analyzing police activity`, `analyzing social media data`, `arima models`, `customer segmentation`, `market basket analysis`, `marketing analytics predicting customer churn`, `working geospatial data`, `supply chain analytics`, `analyzing us census data`, `python for spreadsheet users`, `exploratory data analysis`, `probability`, `statistics`, `linear modeling`, `network analysis`, `generalized linear models`, `practicing statistics interview questions`, `experimental design`, `customer analytics a/b testing`, `time series analysis`, `importing data`, `cleaning data`, `web scraping`, `data manipulation`, `dealing missing data`, `joining data`, `manipulating time series data`, `working dates times`, `pandas foundations`, `manipulating dataframes`, `merging dataframes`, `pandas joins for spreadsheet users`, `data visualization`, `matplotlib`, `seaborn`, `bokeh`, `geospatial data`, `time series data`, `software engineering for data scientists`, `parallel programming dask`, `portfolio analysis`, `portfolio risk management`, `importing managing financial data`, `quantitative risk management`, `financial forecasting`
