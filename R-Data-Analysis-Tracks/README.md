@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## R Data Analysis Tracks
+# R Data Analysis Tracks
 R Data Analysis Tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
@@ -968,7 +968,3 @@ R Data Analysis Tracks road map for computer science students, which including t
 	</tbody>
 	</table>
 </details>
-
-
-**SKILLS YOU WILL GAIN:**<br>
-`reporting r markdown`, `visualizing geospatial data`, `joining data table`, `marketing analytics`, `garch models`, `survey and measurement development`, `single-cell rna-seq bioconductor`, `data manipulation dplyr`, `object-oriented`, `communicating data tidyverse`, `developing r packages`, `importing data`, `inference for categorical data`, `topic modeling`, `handling missing data imputations`, `data manipulation`, `statistics`,  `working dates and times`, `spatial analysis sf and raster`, `probability`, `regular expressions`, `business process analytics`, `functional programming purrr`, `anomaly detection`, `parallel programming`, `building dashboards flexdashboard`, `writing functions`, `visualizing big data trelliscope`, `designing and analyzing clinical trials`, `fraud detection`, `arima models`, `factor analysis`, `choice modeling for marketing`, `dealing missing data`, `data privacy and anonymization`, `modeling data tidyverse`, `cleaning data`, `time series analysis`, `probability puzzles`, `statistical modeling`, `life insurance products valuation`, `data visualization`, `visualizing time series data`, `network analysis tidyverse`, `chip-seq bioconductor`, `rna-seq bioconductor`, `working web data`, `differential expression analysis limma`, `feature engineering`, `exploratory data analysis`, `building dashboards shinydashboard`, `importing and managing financial data`, `working data tidyverse`, `analyzing us census data`, `joining data dplyr`, `generalized linear models`, `interactive maps leaflet`, `multivariate probability distributions`
