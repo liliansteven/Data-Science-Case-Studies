@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Tableau and Power-BI Tracks
+# Tableau and Power-BI Tracks
 Tableau and Power BI tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/power-bi.jpg">
@@ -132,6 +132,3 @@ Tableau and Power BI tracks road map for computer science students, which includ
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`tableau`, `analyzing data tableau`, `power bi`, `creating dashboards in tableau`, `connecting data in tableau`, `statistical techniques in tableau`, `analyzing data in tableau`
