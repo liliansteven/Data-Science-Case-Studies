@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
-## Theory Tracks
+# Theory Tracks
 Theory tracks road map for computer science students, which including the following main topics:
 
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/theory.jpg">
@@ -157,6 +157,3 @@ Theory tracks road map for computer science students, which including the follow
 	</tbody>
 </table>
 </details>
-
-**SKILLS YOU WILL GAIN:**<br>
-`data science for business`, `data science for everyone`, `machine learning for business`, `machine learning for everyone`, `data visualization for everyone`, `data engineering for everyone`, `cloud computing for everyone`, `data driven decision making`
