@@ -42,18 +42,6 @@ SQL Tracks for computer science students, which including the following main top
 <td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
 <td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
         </tr>
-        <tr>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL/README.md">Template</a></td>
-        </tr>
-        <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-        </tr>
     </tbody>
 </table>
 
@@ -61,18 +49,6 @@ SQL Tracks for computer science students, which including the following main top
 
 <table>
     <tbody>
-        <tr>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
-        </tr>
-        <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-        </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/SQL-Server/README.md">Template</a></td>
@@ -128,18 +104,6 @@ SQL Tracks for computer science students, which including the following main top
 <td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
 <td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
         </tr>
-        <tr>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/PostgreSQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/PostgreSQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/PostgreSQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/PostgreSQL/README.md">Template</a></td>
-        </tr>
-        <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-        </tr>
     </tbody>
 </table>
 
@@ -147,18 +111,6 @@ SQL Tracks for computer science students, which including the following main top
 
 <table>
     <tbody>
-        <tr>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
-<td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
-        </tr>
-        <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg" width="70%"></img></td>
-        </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL-Tracks/Oracle-SQL/README.md">Template</a></td>
