@@ -7,13 +7,13 @@ R Machine Learning Tracks for computer science students, which including the fol
 <img align="right" width="90" height="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/logos/agenda.jpg">
 
 ## Table of Contents
-  * [Machine Learning](#Machine-Learning)
-  * [Applied Finance](#Applied-Finance)
-  * [Data Engineering](#Data-Engineering)
+  * [Machine Learning Tracks](#Machine-Learning-Tracks)
+  * [Applied Finance Tracks](#Applied-Finance-Tracks)
+  * [Data Engineering Tracks](#Data-Engineering-Tracks)
 
 <br><br>
 
-## [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Machine-Learning/README.md)
+## [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Machine-Learning/README.md) Tracks
 
 <table>
     <tbody>
@@ -56,7 +56,7 @@ R Machine Learning Tracks for computer science students, which including the fol
     </tbody>
 </table>
 
-## [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Applied-Finance/README.md)
+## [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Applied-Finance/README.md) Tracks
 
 <table>
     <tbody>
@@ -99,7 +99,7 @@ R Machine Learning Tracks for computer science students, which including the fol
     </tbody>
 </table>
 
-## [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Data-Engineering/README.md)
+## [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning-Tracks/Data-Engineering/README.md) Tracks
 
 <table>
     <tbody>
