@@ -7,15 +7,15 @@ Python Machine Learning Tracks for computer science students, which including th
 <img align="right" width="90" height="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/logos/agenda.jpg">
 
 ## Table of Contents
-  * [Machine Learning](#Machine-Learning)
-  * [Deep Learning](#Deep-Learning)
-  * [Natural Language Processing](#Natural-Language-Processing)
-  * [Applied Finance](#Applied-Finance)
-  * [Data Engineering](#Data-Engineering)
+  * [Machine Learning Tracks](#Machine-Learning-Tracks)
+  * [Deep Learning Tracks](#Deep-Learning-Tracks)
+  * [Natural Language Processing Tracks](#Natural-Language-Processing-Tracks)
+  * [Applied Finance Tracks](#Applied-Finance-Tracks)
+  * [Data Engineering Tracks](#Data-Engineering-Tracks)
 
 <br><br>
 
-## [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Machine-Learning/README.md)
+## [Machine Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Machine-Learning/README.md) Tracks
 
 <table>
     <tbody>
@@ -58,7 +58,7 @@ Python Machine Learning Tracks for computer science students, which including th
     </tbody>
 </table>
 
-## [Deep Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Deep-Learning/README.md)
+## [Deep Learning](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Deep-Learning/README.md) Tracks
 
 <table>
     <tbody>
@@ -101,7 +101,7 @@ Python Machine Learning Tracks for computer science students, which including th
     </tbody>
 </table>
 
-## [Natural Language Processing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Natural-Language-Processing/README.md)
+## [Natural Language Processing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Natural-Language-Processing/README.md) Tracks
 
 <table>
     <tbody>
@@ -144,7 +144,7 @@ Python Machine Learning Tracks for computer science students, which including th
     </tbody>
 </table>
 
-## [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Applied-Finance/README.md)
+## [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Applied-Finance/README.md) Tracks
 
 <table>
     <tbody>
@@ -187,7 +187,7 @@ Python Machine Learning Tracks for computer science students, which including th
     </tbody>
 </table>
 
-## [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Data-Engineering/README.md)
+## [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning-Tracks/Data-Engineering/README.md) Tracks
 
 <table>
     <tbody>
