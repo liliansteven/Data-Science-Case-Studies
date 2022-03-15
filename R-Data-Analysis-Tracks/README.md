@@ -7,15 +7,15 @@ R Data Analysis Tracks for computer science students, which including the follow
 <img align="right" width="90" height="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/logos/agenda.jpg">
 
 ## Table of Contents
-  * [Basic Programming](#Basic-Programming)
-  * [Probability and Statistics](#Probability-and-Statistics)
-  * [Data Preprocessing](#Data-Preprocessing)
-  * [Data Visualization](#Data-Visualization)
-  * [Data Analysis](#Data-Analysis)
+  * [Basic Programming Tracks](#Basic-Programming-Tracks)
+  * [Probability and Statistics Tracks](#Probability-and-Statistics-Tracks)
+  * [Data Preprocessing Tracks](#Data-Preprocessing-Tracks)
+  * [Data Visualization Tracks](#Data-Visualization-Tracks)
+  * [Data Analysis Tracks](#Data-Analysis-Tracks)
 
 <br><br>
 
-## [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Basic-Programming/README.md)
+## [Basic Programming](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Basic-Programming/README.md) Tracks
 
 <table>
     <tbody>
@@ -58,7 +58,7 @@ R Data Analysis Tracks for computer science students, which including the follow
     </tbody>
 </table>
 
-## [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Probability-and-Statistics/README.md)
+## [Probability and Statistics](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Probability-and-Statistics/README.md) Tracks
 
 <table>
     <tbody>
@@ -101,7 +101,7 @@ R Data Analysis Tracks for computer science students, which including the follow
     </tbody>
 </table>
 
-## [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Preprocessing/README.md)
+## [Data Preprocessing](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Preprocessing/README.md) Tracks
 
 <table>
     <tbody>
@@ -144,7 +144,7 @@ R Data Analysis Tracks for computer science students, which including the follow
     </tbody>
 </table>
 
-## [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Visualization/README.md)
+## [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Visualization/README.md) Tracks
 
 <table>
     <tbody>
@@ -187,7 +187,7 @@ R Data Analysis Tracks for computer science students, which including the follow
     </tbody>
 </table>
 
-## [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Analysis/README.md)
+## [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis-Tracks/Data-Analysis/README.md) Tracks
 
 <table>
     <tbody>
