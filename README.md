@@ -61,9 +61,9 @@ SQL Tracks for computer science students, which including the following main top
 ## [`Theory`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks
 Theory Tracks for computer science students, which including the following main topics:
 
-#### - [Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks
+#### - [Artificial Intelligence Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks
+#### - [Data Science Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory-Tracks/README.md) Tracks
 
-<br><br>
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
 
