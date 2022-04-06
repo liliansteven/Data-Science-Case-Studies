@@ -1,7 +1,7 @@
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
 
 # [DataCamp](https://learn.datacamp.com/) Tracks
-DataCamp tracks road map for computer science students.
+DataCamp Tracks road map for computer science students.
 
 <br>
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
