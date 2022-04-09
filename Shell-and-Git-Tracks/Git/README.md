@@ -2,6 +2,7 @@
 
 # Shell and Git Tracks
 
+<br>
 <img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg">
 <br><br>
 
