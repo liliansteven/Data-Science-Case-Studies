@@ -1,9 +1,9 @@
-<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/datacamp.jpg">
 
 # Tableau and Power-BI Tracks
 
 <br>
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/power-bi.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/power-bi.jpg">
 <br><br>
 
 ## Power BI

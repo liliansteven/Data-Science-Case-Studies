@@ -1,4 +1,4 @@
-<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/datacamp.jpg">
 
 # R Machine Learning Tracks
 R Machine Learning Tracks for computer science students, which including the following main topics:
@@ -24,10 +24,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Machine-Learning/README.md">Template</a></td>
@@ -36,10 +36,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Machine-Learning/README.md">Template</a></td>
@@ -48,10 +48,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -67,10 +67,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Applied-Finance/README.md">Template</a></td>
@@ -79,10 +79,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Applied-Finance/README.md">Template</a></td>
@@ -91,10 +91,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -110,10 +110,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Data-Engineering/README.md">Template</a></td>
@@ -122,10 +122,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Data-Engineering/README.md">Template</a></td>
@@ -134,10 +134,10 @@ R Machine Learning Tracks for computer science students, which including the fol
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>

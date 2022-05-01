@@ -1,10 +1,10 @@
-<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/datacamp.jpg">
 
 # [DataCamp](https://learn.datacamp.com/) Tracks
 DataCamp Tracks road map for computer science students.
 
 <br>
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg">
 
 ## [`Python Data Analysis`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis/README.md) Tracks
 Python Data Analysis Tracks for computer science students, which including the following main topics:
@@ -15,7 +15,7 @@ Python Data Analysis Tracks for computer science students, which including the f
 #### - [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis/README.md) Tracks
 #### - [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Data-Analysis/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg">
 
 ## [`Python Machine Learning`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/README.md) Tracks
 Python Machine Learning Tracks for computer science students, which including the following main topics:
@@ -26,7 +26,7 @@ Python Machine Learning Tracks for computer science students, which including th
 #### - [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/README.md) Tracks
 #### - [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg">
 
 ## [`R Data Analysis`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis/README.md) Tracks
 R Data Analysis Tracks for computer science students, which including the following main topics:
@@ -37,7 +37,7 @@ R Data Analysis Tracks for computer science students, which including the follow
 #### - [Data Visualization](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis/README.md) Tracks
 #### - [Data Analysis](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Data-Analysis/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/r.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/r.jpg">
 
 ## [`R Machine Learning`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/README.md) Tracks
 R Machine Learning Tracks for computer science students, which including the following main topics:
@@ -46,7 +46,7 @@ R Machine Learning Tracks for computer science students, which including the fol
 #### - [Applied Finance](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/README.md) Tracks
 #### - [Data Engineering](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/R-Machine-Learning/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/sql.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/sql.jpg">
 
 ## [`SQL`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL/README.md) Tracks
 SQL Tracks for computer science students, which including the following main topics:
@@ -56,7 +56,7 @@ SQL Tracks for computer science students, which including the following main top
 #### - [PostgreSQL](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL/README.md) Tracks
 #### - [Oracle SQL](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/SQL/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/theory.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/theory.jpg">
 
 ## [`Theory`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory/README.md) Tracks
 Theory Tracks for computer science students, which including the following main topics:
@@ -64,8 +64,8 @@ Theory Tracks for computer science students, which including the following main 
 #### - [Artificial Intelligence Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory/README.md) Tracks
 #### - [Data Science Theory](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Theory/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/excel.jpg">
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/spreadsheet.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/excel.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/spreadsheet.jpg">
 
 ## [`Spreadsheets and Excel`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel/README.md) Tracks
 Spreadsheets and Excel Tracks for computer science students, which including the following main topics:
@@ -73,8 +73,8 @@ Spreadsheets and Excel Tracks for computer science students, which including the
 #### - [Excel](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel/README.md) Tracks
 #### - [Spreadsheets](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Spreadsheets-and-Excel/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/power-bi.jpg">
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/tableau.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/power-bi.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/tableau.jpg">
 
 ## [`Tableau and Power-BI`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Tableau-and-Power-BI/README.md) Tracks
 Tableau and Power BI Tracks for computer science students, which including the following main topics:
@@ -82,8 +82,8 @@ Tableau and Power BI Tracks for computer science students, which including the f
 #### - [Tableau](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Tableau-and-Power-BI/README.md) Tracks
 #### - [Power BI](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Tableau-and-Power-BI/README.md) Tracks
 
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg">
-<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg">
+<img align="right" width="80" height="80" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg">
 
 ## [`Shell and Git`](https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/README.md) Tracks
 Shell and Git Tracks for computer science students, which including the following main topics:

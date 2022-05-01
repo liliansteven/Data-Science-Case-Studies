@@ -1,4 +1,4 @@
-<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/datacamp.jpg">
 
 # Shell and Git Tracks
 Shell and Git Tracks for computer science students, which including the following main topics:
@@ -23,10 +23,10 @@ Shell and Git Tracks for computer science students, which including the followin
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Git/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Git/README.md">Template</a></td>
@@ -35,10 +35,10 @@ Shell and Git Tracks for computer science students, which including the followin
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Git/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/git.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -54,10 +54,10 @@ Shell and Git Tracks for computer science students, which including the followin
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Shell/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Shell/README.md">Template</a></td>
@@ -66,10 +66,10 @@ Shell and Git Tracks for computer science students, which including the followin
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Shell-and-Git/Shell/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/shell.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>

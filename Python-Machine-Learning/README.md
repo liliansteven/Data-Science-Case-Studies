@@ -1,4 +1,4 @@
-<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/datacamp.jpg">
+<img align="right" width="100" src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/datacamp.jpg">
 
 # Python Machine Learning Tracks
 Python Machine Learning Tracks for computer science students, which including the following main topics:
@@ -26,10 +26,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Machine-Learning/README.md">Template</a></td>
@@ -38,10 +38,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Machine-Learning/README.md">Template</a></td>
@@ -50,10 +50,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Machine-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -69,10 +69,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Deep-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Deep-Learning/README.md">Template</a></td>
@@ -81,10 +81,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Deep-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Deep-Learning/README.md">Template</a></td>
@@ -93,10 +93,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Deep-Learning/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -112,10 +112,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Natural-Language-Processing-and-Text-Mining/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Natural-Language-Processing-and-Text-Mining/README.md">Template</a></td>
@@ -124,10 +124,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Natural-Language-Processing-and-Text-Mining/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Natural-Language-Processing-and-Text-Mining/README.md">Template</a></td>
@@ -136,10 +136,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Natural-Language-Processing-and-Text-Mining/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -155,10 +155,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Applied-Finance/README.md">Template</a></td>
@@ -167,10 +167,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Applied-Finance/README.md">Template</a></td>
@@ -179,10 +179,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Applied-Finance/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
@@ -198,10 +198,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Data-Engineering/README.md">Template</a></td>
@@ -210,10 +210,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
         <tr>
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Data-Engineering/README.md">Template</a></td>
@@ -222,10 +222,10 @@ Python Machine Learning Tracks for computer science students, which including th
 <td align=center width="25%"><a href="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/Python-Machine-Learning/Data-Engineering/README.md">Template</a></td>
         </tr>
         <tr>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
-<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/organizations-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
+<td align=center width="25%"><img src="https://github.com/cs-MohamedAyman/DataCamp-Tracks/blob/master/org-logos/python.jpg" width="70%"></img></td>
         </tr>
     </tbody>
 </table>
