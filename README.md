@@ -5,13 +5,13 @@ Data Science Case Studies for computer science students.
 
 <br><br><br>
 
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/kaggle.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/uci-machine-learning.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/idao.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/codalab.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/tianchi.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/machinehack.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/iron-viz.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/datahack.jpg"></img>
-<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/main/org-logos/drivendata.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/idao.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/codalab.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/tianchi.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/iron-viz.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/datahack.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg"></img>
 <br><br><br><br>
