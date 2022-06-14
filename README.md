@@ -111,22 +111,6 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
-     * [Prerequisite Knowledge](#prerequisite-knowledge)
-     * [Industry Timeline](#industry-timeline)
-     * [Kaggle Datasets](#kaggle-oj-datasets)
-     * [UCI Machine Learning Datasets](#uci-machine-learning-datasets)
-     * [Machine Hack Datasets](#machine-hack-datasets)
-     * [DrivenData Datasets](#drivendata-datasets)
-     * [Notes](#notes)
-  * [ Industry](#-industry)
-     * [Prerequisite Knowledge](#prerequisite-knowledge)
-     * [Industry Timeline](#industry-timeline)
-     * [Kaggle Datasets](#kaggle-oj-datasets)
-     * [UCI Machine Learning Datasets](#uci-machine-learning-datasets)
-     * [Machine Hack Datasets](#machine-hack-datasets)
-     * [DrivenData Datasets](#drivendata-datasets)
-     * [Notes](#notes)
 
 <br>
 
@@ -140,7 +124,5 @@ Data Science Case Studies for computer science students.
 ## Mining, Oil and Gas Extraction
 ## Energy and Utilities
 ## Construction and Real Estate
-## Sports
 ## Video Games and Music
-## Travel
 ## Professional Services
