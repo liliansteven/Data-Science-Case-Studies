@@ -9,6 +9,7 @@ Data Science Case Studies for computer science students.
 <img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg"></img>
 <img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg"></img>
 <img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg"></img>
+<img width="80" height="80" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/datacamp.jpg"></img>
 <br><br><br><br>
 
 <br>
