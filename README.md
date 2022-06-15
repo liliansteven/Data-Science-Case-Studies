@@ -15,7 +15,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-logos/agenda.jpg">
 
 ## Table of Contents
-  * [ Industry](#-industry)
+  * [Telecommunications Industry](#telecommunications-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -23,7 +23,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Retail, Supply Chain, and eCommerce Industry](#retail-supply-chain-ecommerce-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -31,7 +31,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Digital Marketing Industry](#digital-marketing-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -39,7 +39,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Banking and Finance Industry](#banking-finance-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -47,7 +47,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Media, Entertainment, and Arts Industry](#media-entertainment-arts-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -55,7 +55,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Healthcare and Medicine Industry](#healthcare-medicine-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -63,7 +63,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Automotive and Transportation Industry](#automotive-transportation-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -71,7 +71,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Mining, Oil and Gas Industry](#mining-oil-gas-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -79,7 +79,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Energy and Utilities Industry](#energy-utilities-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -87,7 +87,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Construction and Real Estate Industry](#construction-real-estate-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -95,7 +95,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Video Games and Music Industry](#video-games-music-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -103,7 +103,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [ Industry](#-industry)
+  * [Professional Services Industry](#professional-services-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
@@ -121,7 +121,7 @@ Data Science Case Studies for computer science students.
 ## Media, Entertainment, and Arts
 ## Healthcare and Medicine
 ## Automotive and Transportation
-## Mining, Oil and Gas Extraction
+## Mining, Oil and Gas
 ## Energy and Utilities
 ## Construction and Real Estate
 ## Video Games and Music
