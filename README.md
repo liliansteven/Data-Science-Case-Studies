@@ -115,15 +115,15 @@ Data Science Case Studies for computer science students.
 
 <br>
 
-## Telecommunications
-## Retail, Supply Chain, and eCommerce
-## Digital Marketing
-## Banking and Finance
-## Media, Entertainment, and Arts
-## Healthcare and Medicine
-## Automotive and Transportation
-## Mining, Oil and Gas
-## Energy and Utilities
-## Construction and Real Estate
-## Video Games and Music
-## Professional Services
+## [`Telecommunications`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+## [`Retail, Supply Chain, and eCommerce`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+## [`Digital Marketing`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+## [`Banking and Finance`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+## [`Media, Entertainment, and Arts`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+## [`Healthcare and Medicine`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+## [`Automotive and Transportation`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+## [`Mining, Oil and Gas`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+## [`Energy and Utilities`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+## [`Construction and Real Estate`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+## [`Video Games and Music`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+## [`Professional Services`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
