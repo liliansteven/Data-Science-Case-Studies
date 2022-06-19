@@ -1,4 +1,4 @@
-# Data Science Case Studies - Telecommunications Industry
+# Data Science Case Studies - Telecommunications
 Data Science Case Studies for computer science students.
 
 <img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg"></img>
