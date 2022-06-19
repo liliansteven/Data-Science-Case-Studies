@@ -48,7 +48,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [Media, Entertainment, and Arts Industry](#media-entertainment-arts-industry)
+  * [Media, Entertainment, and Arts Industry](#media-entertainment-and-arts-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
