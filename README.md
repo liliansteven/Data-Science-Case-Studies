@@ -32,14 +32,217 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## [`Telecommunications Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Retail, Supply Chain, and eCommerce Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Digital Marketing Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Banking and Finance Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Media, Entertainment, and Arts Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Healthcare and Medicine Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Automotive and Transportation Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Mining, Oil and Gas Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Energy and Utilities Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Construction and Real Estate Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Video Games and Music Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+
+<br>
+
+## `Notes`
+
 ## [`Professional Services Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+
+## `Prerequisite Knowledge`
+
+## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/Timeline.md)
+
+## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+
+## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+
+## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+
+## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+
+<br>
+
+## `Notes`
