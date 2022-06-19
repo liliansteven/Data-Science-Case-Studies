@@ -49,6 +49,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Retail, Supply Chain, and eCommerce Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
 
 ## `Prerequisite Knowledge`
@@ -66,6 +68,8 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
 
 ## [`Digital Marketing Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
 
@@ -85,6 +89,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Banking and Finance Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
 
 ## `Prerequisite Knowledge`
@@ -102,6 +108,8 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
 
 ## [`Media, Entertainment, and Arts Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
 
@@ -121,6 +129,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Healthcare and Medicine Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
 
 ## `Prerequisite Knowledge`
@@ -138,6 +148,8 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
 
 ## [`Automotive and Transportation Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
 
@@ -157,6 +169,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Mining, Oil and Gas Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
 
 ## `Prerequisite Knowledge`
@@ -174,6 +188,8 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
 
 ## [`Energy and Utilities Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
 
@@ -193,6 +209,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Construction and Real Estate Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
 ## `Prerequisite Knowledge`
@@ -210,6 +228,8 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
 
 ## [`Video Games and Music Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
 
@@ -229,6 +249,8 @@ Data Science Case Studies for computer science students.
 
 ## `Notes`
 
+<br>
+
 ## [`Professional Services Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
 
 ## `Prerequisite Knowledge`
@@ -246,3 +268,5 @@ Data Science Case Studies for computer science students.
 <br>
 
 ## `Notes`
+
+<br>
