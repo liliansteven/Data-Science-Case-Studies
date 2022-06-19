@@ -80,7 +80,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [Energy and Utilities Industry](#energy-utilities-industry)
+  * [Energy and Utilities Industry](#energy-and-utilities-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
