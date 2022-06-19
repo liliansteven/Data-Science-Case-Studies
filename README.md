@@ -40,7 +40,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [Banking and Finance Industry](#banking-finance-industry)
+  * [Banking and Finance Industry](#banking-and-finance-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
