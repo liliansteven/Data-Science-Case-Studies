@@ -1,4 +1,4 @@
-# Data Science Case Studies - Retail, Supply Chain, and eCommerce Industry
+# Data Science Case Studies - Retail, Supply Chain, and eCommerce
 Data Science Case Studies for computer science students.
 
 <img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg"></img>
