@@ -1,4 +1,4 @@
-# Data Science Case Studies - Banking-Finance
+# Data Science Case Studies - Banking Finance
 
 Data Science Case Studies for computer science students.
 
