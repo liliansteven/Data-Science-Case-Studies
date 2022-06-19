@@ -24,7 +24,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [Retail, Supply Chain, and eCommerce Industry](#retail-supplychain-ecommerce-industry)
+  * [Retail, Supply Chain, and eCommerce Industry](#retail-supply-chain-and-ecommerce-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
