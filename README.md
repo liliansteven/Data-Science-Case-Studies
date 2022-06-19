@@ -64,7 +64,7 @@ Data Science Case Studies for computer science students.
      * [Machine Hack Datasets](#machine-hack-datasets)
      * [DrivenData Datasets](#drivendata-datasets)
      * [Notes](#notes)
-  * [Automotive and Transportation Industry](#automotive-transportation-industry)
+  * [Automotive and Transportation Industry](#automotive-and-transportation-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Industry Timeline](#industry-timeline)
      * [Kaggle Datasets](#kaggle-oj-datasets)
