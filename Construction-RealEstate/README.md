@@ -1,11 +1,11 @@
 # Data Science Case Studies - Construction and Real Estate
 Data Science Case Studies for computer science students.
 
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/datacamp.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/datacamp.jpg"></img>
 <br><br><br><br>
 
 <br>

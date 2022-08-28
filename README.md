@@ -5,11 +5,11 @@ Data Science Case Studies for computer science students.
 
 <br><br><br>
 
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg"></img>
-<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/datacamp.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg"></img>
+<img width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/datacamp.jpg"></img>
 <br><br><br><br>
 
 <br>
@@ -37,22 +37,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
@@ -69,22 +69,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
@@ -101,22 +101,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
@@ -133,22 +133,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
@@ -165,22 +165,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
@@ -197,22 +197,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
@@ -229,22 +229,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
@@ -261,22 +261,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
@@ -293,22 +293,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
@@ -325,22 +325,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
@@ -357,22 +357,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
@@ -389,22 +389,22 @@ Data Science Case Studies for computer science students.
 
 ## [`Industry Timeline`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/Timeline.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/kaggle.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/kaggle.jpg">
 <br>
 
 ## [`Kaggle datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/uci-machine-learning.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/uci-machine-learning.jpg">
 <br>
 
 ## [`UCI Machine Learning datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/machinehack.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/machinehack.jpg">
 <br>
 
 ## [`Machine Hack datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
 
-<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/org-logos/drivendata.jpg">
+<img align="right" width="85" src="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/logos/drivendata.jpg">
 <br>
 
 ## [`DrivenData datasets`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
