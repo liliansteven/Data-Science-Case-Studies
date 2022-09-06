@@ -16,6 +16,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-logos/agenda.jpg">
 
 ## Table of Contents
+  * [General Case Studies](#general-case-studies)
   * [Telecommunications Industry](#telecommunications-industry)
   * [Retail, Supply Chain, and eCommerce Industry](#retail-supply-chain-and-ecommerce-industry)
   * [Digital Marketing Industry](#digital-marketing-industry)
@@ -30,6 +31,8 @@ Data Science Case Studies for computer science students.
   * [Professional Services Industry](#professional-services-industry)
 
 <br>
+
+## [`General Case Studies`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/General-Case-Studies/README.md)
 
 ## [`Telecommunications Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
 
