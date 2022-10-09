@@ -13,7 +13,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [Banking and Finance Industry](#banking-and-finance-industry)
+  * [Banking and Finance](#banking-and-finance)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Case Studies Timeline](#case-studies-timeline)
      * [Data Analysis Techniques](#data-analysis-techniques)
