@@ -12,7 +12,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [Digital Marketing Industry](#digital-marketing-industry)
+  * [Digital Marketing](#digital-marketing)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Case Studies Timeline](#case-studies-timeline)
      * [Data Analysis Techniques](#data-analysis-techniques)
