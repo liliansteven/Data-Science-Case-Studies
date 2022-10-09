@@ -12,7 +12,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [Automotive and Transportation Industry](#automotive-and-transportation-industry)
+  * [Automotive and Transportation](#automotive-and-transportation)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Case Studies Timeline](#case-studies-timeline)
      * [Data Analysis Techniques](#data-analysis-techniques)
