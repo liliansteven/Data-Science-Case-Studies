@@ -14,11 +14,12 @@ Data Science Case Studies for computer science students.
 ## Table of Contents
   * [Automotive and Transportation Industry](#automotive-and-transportation-industry)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
-     * [Industry Timeline](#industry-timeline)
-     * [Kaggle Datasets](#kaggle-oj-datasets)
-     * [UCI Machine Learning Datasets](#uci-machine-learning-datasets)
-     * [Machine Hack Datasets](#machine-hack-datasets)
-     * [DrivenData Datasets](#drivendata-datasets)
+     * [Case Studies Timeline](#case-studies-timeline)
+     * [Data Analysis Techniques](#data-analysis-techniques)
+     * [Supervised Learning Techniques](#supervised-learning-techniques)
+     * [Unsupervised Learning Techniques](#unsupervised-learning-techniques)
+     * [Neural Networks Basics Techniques](#neural-networks-basics-techniques)
+     * [Neural Networks Advanced Techniques](#neural-networks-advanced-techniques)
      * [Notes](#notes)
 
 <br>
