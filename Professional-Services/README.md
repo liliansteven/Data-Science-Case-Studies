@@ -12,13 +12,14 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [Professional Services Industry](#professional-services-industry)
+  * [Professional Services](#professional-services)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
-     * [Industry Timeline](#industry-timeline)
-     * [Kaggle Datasets](#kaggle-oj-datasets)
-     * [UCI Machine Learning Datasets](#uci-machine-learning-datasets)
-     * [Machine Hack Datasets](#machine-hack-datasets)
-     * [DrivenData Datasets](#drivendata-datasets)
+     * [Case Studies Timeline](#case-studies-timeline)
+     * [Data Analysis Techniques](#data-analysis-techniques)
+     * [Supervised Learning Techniques](#supervised-learning-techniques)
+     * [Unsupervised Learning Techniques](#unsupervised-learning-techniques)
+     * [Neural Networks Basics Techniques](#neural-networks-basics-techniques)
+     * [Neural Networks Advanced Techniques](#neural-networks-advanced-techniques)
      * [Notes](#notes)
 
 <br>
