@@ -12,7 +12,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="90" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [Energy and Utilities Industry](#energy-and-utilities-industry)
+  * [Energy and Utilities](#energy-and-utilities)
      * [Prerequisite Knowledge](#prerequisite-knowledge)
      * [Case Studies Timeline](#case-studies-timeline)
      * [Data Analysis Techniques](#data-analysis-techniques)
