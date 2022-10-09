@@ -17,55 +17,56 @@ Data Science Case Studies for computer science students.
 
 ## Table of Contents
   * [General Case Studies](#general-case-studies)
-  * [Telecommunications Industry](#telecommunications-industry)
-  * [Retail, Supply Chain, and eCommerce Industry](#retail-supply-chain-and-ecommerce-industry)
-  * [Digital Marketing Industry](#digital-marketing-industry)
-  * [Banking and Finance Industry](#banking-and-finance-industry)
-  * [Media, Entertainment, and Arts Industry](#media-entertainment-and-arts-industry)
-  * [Healthcare and Medicine Industry](#healthcare-and-medicine-industry)
-  * [Automotive and Transportation Industry](#automotive-and-transportation-industry)
-  * [Mining, Oil and Gas Industry](#mining-oil-and-gas-industry)
-  * [Energy and Utilities Industry](#energy-and-utilities-industry)
-  * [Construction and Real Estate Industry](#construction-and-real-estate-industry)
-  * [Video Games and Music Industry](#video-games-and-music-industry)
-  * [Professional Services Industry](#professional-services-industry)
+  * [Telecommunications](#telecommunications)
+  * [Retail, Supply Chain, and eCommerce](#retail-supply-chain-and-ecommerce)
+  * [Digital Marketing](#digital-marketing)
+  * [Banking and Finance](#banking-and-finance)
+  * [Media, Entertainment, and Arts](#media-entertainment-and-arts)
+  * [Healthcare and Medicine](#healthcare-and-medicine)
+  * [Automotive and Transportation](#automotive-and-transportation)
+  * [Mining, Oil and Gas](#mining-oil-and-gas)
+  * [Energy and Utilities](#energy-and-utilities)
+  * [Construction and Real Estate](#construction-and-real-estate)
+  * [Video Games and Sports Analytics](#video-games-and-sports-analytics)
+  * [Professional Services](#professional-services)
 
 <br>
 
 ## [`General Case Studies`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/General-Case-Studies/README.md)
 
-## [`Telecommunications Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
+
+## [`Telecommunications`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Telecommunications/README.md)
 
 
-## [`Retail, Supply Chain, and eCommerce Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
+## [`Retail, Supply Chain, and eCommerce`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Retail-SupplyChain-eCommerce/README.md)
 
 
-## [`Digital Marketing Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
+## [`Digital Marketing`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Digital-Marketing/README.md)
 
 
-## [`Banking and Finance Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
+## [`Banking and Finance`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Banking-Finance/README.md)
 
 
-## [`Media, Entertainment, and Arts Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
+## [`Media, Entertainment, and Arts`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Media-Entertainment-Arts/README.md)
 
 
-## [`Healthcare and Medicine Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
+## [`Healthcare and Medicine`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Healthcare-Medicine/README.md)
 
 
-## [`Automotive and Transportation Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
+## [`Automotive and Transportation`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Automotive-Transportation/README.md)
 
 
-## [`Mining, Oil and Gas Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
+## [`Mining, Oil and Gas`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Mining-Oil-Gas/README.md)
 
 
-## [`Energy and Utilities Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
+## [`Energy and Utilities`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Energy-Utilities/README.md)
 
 
-## [`Construction and Real Estate Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
+## [`Construction and Real Estate`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
 
-## [`Video Games and Music Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Music/README.md)
+## [`Video Games and Sports Analytics`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-Sports-Analytics/README.md)
 
 
-## [`Professional Services Industry`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
+## [`Professional Services`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
 
