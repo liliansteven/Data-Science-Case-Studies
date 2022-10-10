@@ -65,7 +65,7 @@ Data Science Case Studies for computer science students.
 ## [`Construction and Real Estate`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Construction-RealEstate/README.md)
 
 
-## [`Video Games and Sports Analytics`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/VideoGames-SportsAnalytics/README.md)
+## [`Video Games and Sports Analytics`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Video-Games-Sports-Analytics/README.md)
 
 
 ## [`Professional Services`](https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/blob/master/Professional-Services/README.md)
