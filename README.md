@@ -8,6 +8,7 @@ Data Science Case Studies for computer science students.
 <img width="80" src="/logos/telecom.jpg"></img>
 <img width="80" src="/logos/retail.jpg"></img>
 <img width="80" src="/logos/ecommerce.jpg"></img>
+<img width="80" src="/logos/marketing.jpg"></img>
 <img width="80" src="/logos/digital-marketing.jpg"></img>
 <img width="80" src="/logos/banking.jpg"></img>
 <img width="80" src="/logos/finance.jpg"></img>
@@ -21,6 +22,7 @@ Data Science Case Studies for computer science students.
 <img width="80" src="/logos/gas.jpg"></img>
 <img width="80" src="/logos/oil.jpg"></img>
 <img width="80" src="/logos/energy.jpg"></img>
+<img width="80" src="/logos/utilities.jpg"></img>
 <img width="80" src="/logos/construction.jpg"></img>
 <img width="80" src="/logos/real-estate.jpg"></img>
 <img width="80" src="/logos/video-games.jpg"></img>
