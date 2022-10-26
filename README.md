@@ -68,6 +68,7 @@ Data Science Case Studies for computer science students.
 ## [`Retail, Supply Chain, and eCommerce`](/Retail-SupplyChain-eCommerce/README.md)
 
 
+<img align="right" width="80" src="/logos/marketing.jpg">
 <img align="right" width="80" src="/logos/digital-marketing.jpg">
 <br>
 
@@ -110,6 +111,7 @@ Data Science Case Studies for computer science students.
 
 
 <img align="right" width="80" src="/logos/energy.jpg">
+<img align="right" width="80" src="/logos/utilities.jpg">
 <br>
 
 ## [`Energy and Utilities`](/Energy-Utilities/README.md)
