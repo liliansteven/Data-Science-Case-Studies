@@ -5,6 +5,7 @@ Data Science Case Studies for computer science students.
 
 <br><br><br>
 
+<img width="80" src="/logos/kaggle.jpg"></img>
 <img width="80" src="/logos/telecom.jpg"></img>
 <img width="80" src="/logos/retail.jpg"></img>
 <img width="80" src="/logos/ecommerce.jpg"></img>
@@ -17,6 +18,7 @@ Data Science Case Studies for computer science students.
 <img width="80" src="/logos/healthcare.jpg"></img>
 <img width="80" src="/logos/medicine.jpg"></img>
 <br>
+<img width="80" src="/logos/datacamp.jpg"></img>
 <img width="80" src="/logos/transportation.jpg"></img>
 <img width="80" src="/logos/automotive.jpg"></img>
 <img width="80" src="/logos/gas.jpg"></img>
@@ -49,9 +51,10 @@ Data Science Case Studies for computer science students.
   * [Video Games and Sports Analytics](#video-games-and-sports-analytics)
   * [Professional Services](#professional-services)
 
-<br>
+<br><br>
 
 <img align="right" width="80" src="/logos/kaggle.jpg">
+<img align="right" width="80" src="/logos/datacamp.jpg">
 <br>
 
 ## [`General Case Studies`](/General-Case-Studies/README.md)
