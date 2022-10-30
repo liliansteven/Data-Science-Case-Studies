@@ -35,7 +35,6 @@ Data Science Case Studies for computer science students.
 <br>
 <img align="right" width="100" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
-
 ## Table of Contents
   * [General Case Studies](#general-case-studies)
   * [Telecommunications](#telecommunications)
