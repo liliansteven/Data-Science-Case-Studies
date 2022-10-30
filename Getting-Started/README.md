@@ -1,7 +1,7 @@
 <img align="right" width="80" src="/logos/kaggle.jpg"></img>
 <img align="right" width="80" src="/logos/datacamp.jpg"></img>
 
-## Getting Started - Kaggle, DataCamp, UCI `100 case studies` `100 days`
+## Getting Started - Kaggle, DataCamp, UCI `100 competitions` `100 days`
 
 ### Table of Content
 
