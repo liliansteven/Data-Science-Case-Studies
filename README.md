@@ -36,7 +36,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="100" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
 
 ## Table of Contents
-  * [General Case Studies](#general-case-studies)
+  * [Getting Started](#getting-Started)
   * [Telecommunications](#telecommunications)
   * [Retail, Supply Chain, and eCommerce](#retail-supply-chain-and-ecommerce)
   * [Digital Marketing](#digital-marketing)
@@ -56,7 +56,7 @@ Data Science Case Studies for computer science students.
 <img align="right" width="80" src="/logos/datacamp.jpg">
 <br>
 
-## [`General Case Studies`](/General-Case-Studies/README.md)
+## [`Getting Started`](/Getting-Started/README.md)
 
 
 <img align="right" width="80" src="/logos/telecom.jpg">
