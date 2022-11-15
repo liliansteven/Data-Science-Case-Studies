@@ -32,26 +32,6 @@ Data Science Case Studies for computer science students.
 <a href="/README.md"><img width="80" src="/logos/services.jpg"></img></a>
 <br><br><br><br>
 
-<br>
-<a href="/README.md"><img align="right" width="100" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.jpg">
-
-## Table of Contents
-  * [Getting Started](#getting-Started)
-  * [Telecommunications](#telecommunications)
-  * [Retail, Supply Chain, and eCommerce](#retail-supply-chain-and-ecommerce)
-  * [Digital Marketing](#digital-marketing)
-  * [Banking and Finance](#banking-and-finance)
-  * [Media, Entertainment, and Arts](#media-entertainment-and-arts)
-  * [Healthcare and Medicine](#healthcare-and-medicine)
-  * [Automotive and Transportation](#automotive-and-transportation)
-  * [Mining, Oil and Gas](#mining-oil-and-gas)
-  * [Energy and Utilities](#energy-and-utilities)
-  * [Construction and Real Estate](#construction-and-real-estate)
-  * [Video Games and Sports Analytics](#video-games-and-sports-analytics)
-  * [Professional Services](#professional-services)
-
-<br><br>
-
 <a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/kaggle.jpg">
 <a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/datacamp.jpg">
 <br>
