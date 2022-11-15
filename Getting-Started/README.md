@@ -1,5 +1,5 @@
-<img align="right" width="80" src="/logos/kaggle.jpg"></img>
-<img align="right" width="80" src="/logos/datacamp.jpg"></img>
+<a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/kaggle.jpg"></img></a>
+<a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/datacamp.jpg"></img></a>
 
 ## Getting Started - Kaggle, DataCamp, UCI `100 competitions` `100 days`
 
