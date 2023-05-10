@@ -5,33 +5,6 @@ Data Science Case Studies for computer science students.
 
 <br><br><br>
 
-<a href="/README.md"><img width="80" src="/logos/kaggle.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/telecom.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/retail.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/ecommerce.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/marketing.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/digital-marketing.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/banking.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/finance.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/media.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/arts.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/healthcare.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/medicine.png"></img></a>
-<br>
-<a href="/README.md"><img width="80" src="/logos/datacamp.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/transportation.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/automotive.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/gas.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/oil.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/energy.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/utilities.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/construction.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/real-estate.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/video-games.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/sports-analytics.png"></img></a>
-<a href="/README.md"><img width="80" src="/logos/services.png"></img></a>
-<br><br><br><br>
-
 <a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/kaggle.png"></img></a>
 <a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
 <br>
