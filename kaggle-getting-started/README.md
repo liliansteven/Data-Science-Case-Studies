@@ -1,15 +1,20 @@
-<a href="/Getting-Started/README.md"><img align="right" width="80" src="/logos/kaggle.png"></img></a>
+<a href="/kaggle-getting-started/README.md"><img align="right" width="80" src="/logos/kaggle.png"></img></a>
 
-## Kaggle - Getting Started `200 competitions` `100 days`
+## Kaggle - Getting Started
+Data Science Case Studies for computer science students.
 
-### Table of Content
+<br><br><br><br>
 
-- ***Data Analysis***                            `75 case studies`
-- ***Supervised Learning - Regression***         `30 case studies`
-- ***Supervised Learning - Classification***     `40 case studies`
-- ***Unsupervised Learning***                    `20 case studies`
-- ***Computer Vision***                          `50 case studies`
-- ***Natural Language Processing***              `30 case studies`
+<br>
+<a href="/kaggle-getting-started/README.md"><img align="right" width="100" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.png"></img></a>
+
+## Table of Contents
+  * [Data Analysis (75 case studies)](#data-analysis-75-case-studies)
+  * [Supervised Learning - Regression (30 case studies)](#supervised-learning---regression-30-case-studies)
+  * [Supervised Learning - Classification (40 case studies)](#supervised-learning---classification-40-case-studies)
+  * [Unsupervised Learning (20 case studies)](#unsupervised-learning-20-case-studies)
+  * [Computer Vision (50 case studies)](#computer-vision-50-case-studies)
+  * [Natural Language Processing (30 case studies)](#natural-language-processing-30-case-studies)
 
 ### Data Analysis `75 case studies`
 
