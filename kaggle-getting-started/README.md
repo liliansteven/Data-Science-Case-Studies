@@ -3,8 +3,6 @@
 ## Kaggle - Getting Started
 Data Science Case Studies for computer science students.
 
-<br><br><br><br>
-
 <br>
 <a href="/kaggle-getting-started/README.md"><img align="right" width="100" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-icons/agenda.png"></img></a>
 
@@ -16,7 +14,7 @@ Data Science Case Studies for computer science students.
   * [Computer Vision (50 case studies)](#computer-vision-50-case-studies)
   * [Natural Language Processing (30 case studies)](#natural-language-processing-30-case-studies)
 
-<br><br><br><br>
+<br><br>
 
 ### Data Analysis `75 case studies`
 
