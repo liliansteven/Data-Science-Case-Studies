@@ -16,6 +16,8 @@ Data Science Case Studies for computer science students.
   * [Computer Vision (50 case studies)](#computer-vision-50-case-studies)
   * [Natural Language Processing (30 case studies)](#natural-language-processing-30-case-studies)
 
+<br><br><br><br>
+
 ### Data Analysis `75 case studies`
 
 <table>
