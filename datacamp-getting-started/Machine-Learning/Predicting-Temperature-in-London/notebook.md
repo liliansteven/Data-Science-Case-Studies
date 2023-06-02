@@ -35,7 +35,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 ```python
 # Import the data and perform exploratory data analysis
-weather = pd.read_csv('london_weather.csv')
+weather = pd.read_csv('datasets/london_weather.csv')
 weather.info()
 ```
 
