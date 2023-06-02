@@ -121,14 +121,14 @@ import pandas as pd
 def test_yearly_exists():
     assert "yearly" in globals(), \
         "The variable yearly should be defined."
-        
+
 def test_yearly_correctly_loaded():
     correct_yearly = pd.read_csv("datasets/yearly_deaths_by_clinic.csv")
     try:
         pd.testing.assert_frame_equal(yearly, correct_yearly)
     except AssertionError:
         assert False, "The variable yearly should contain the data in yearly_deaths_by_clinic.csv"
-        
+
 ```
 
     2/2 tests passed
@@ -220,7 +220,7 @@ def test_proportion_deaths_exists():
 def test_proportion_deaths_is_correctly_calculated():
     assert all(yearly["proportion_deaths"] == yearly["deaths"] / yearly["births"]), \
         "The column proportion_deaths should be the number of deaths divided by the number of births."
-   
+
 def test_yearly1_correct_shape():
     assert clinic_1.shape == yearly[yearly["clinic"] == "clinic 1"].shape, \
         "`clinic_1` should contain the rows in yearly from clinic 1"
@@ -259,7 +259,7 @@ def test_plt_exists():
 def test_ax_exists():
     assert 'ax' in globals(), \
         "The result of the plot method should be assigned to a variable called ax"
-        
+
 def test_plot_plots_correct_data():
     y0 = ax.get_lines()[0].get_ydata()
     y1 = ax.get_lines()[1].get_ydata()
@@ -343,7 +343,7 @@ monthly.head()
 def test_monthly_exists():
     assert "monthly" in globals(), \
         "The variable monthly should be defined."
-        
+
 def test_monthly_correctly_loaded():
     correct_monthly = pd.read_csv("datasets/monthly_deaths.csv")
     try:
@@ -353,8 +353,8 @@ def test_monthly_correctly_loaded():
 
 def test_date_correctly_converted():
     assert monthly.date.dtype == pd.to_datetime(pd.Series("1847-06-01")).dtype, \
-        "The column date should be converted using the pd.to_datetime() function"        
-        
+        "The column date should be converted using the pd.to_datetime() function"
+
 def test_proportion_deaths_is_correctly_calculated():
     assert all(monthly["proportion_deaths"] == monthly["deaths"] / monthly["births"]), \
         "The column proportion_deaths should be the number of deaths divided by the number of births."
@@ -413,20 +413,20 @@ def test_before_washing_correct():
     try:
         pd.testing.assert_frame_equal(before_washing, correct_before_washing)
     except AssertionError:
-        assert False, "before_washing should contain the rows of monthly < handwashing_start" 
+        assert False, "before_washing should contain the rows of monthly < handwashing_start"
 
 def test_after_washing_correct():
     correct_after_washing = monthly[monthly["date"] >= handwashing_start]
     try:
         pd.testing.assert_frame_equal(after_washing, correct_after_washing)
     except AssertionError:
-        assert False, "after_washing should contain the rows of monthly >= handwashing_start" 
+        assert False, "after_washing should contain the rows of monthly >= handwashing_start"
 
 def test_ax_exists():
     assert 'ax' in globals(), \
         "The result of the plot method should be assigned to a variable called ax"
 
-        
+
 def test_plot_plots_correct_data():
     y0_len = ax.get_lines()[0].get_ydata().shape[0]
     y1_len = ax.get_lines()[1].get_ydata().shape[0]
@@ -458,15 +458,15 @@ mean_diff
 def test_before_proportion_exists():
     assert 'before_proportion' in globals(), \
         "before_proportion should be defined"
-        
+
 def test_after_proportion_exists():
     assert 'after_proportion' in globals(), \
         "after_proportion should be defined"
-        
+
 def test_mean_diff_exists():
     assert 'mean_diff' in globals(), \
         "mean_diff should be defined"
-        
+
 def test_before_proportion_is_a_series():
      assert hasattr(before_proportion, '__len__') and len(before_proportion) == 76, \
         "before_proportion should be 76 elements long, and not a single number."
@@ -493,7 +493,7 @@ for i in range(3000):
     boot_after = after_proportion.sample(frac=1, replace=True)
     boot_mean_diff.append(boot_after.mean() - boot_before.mean())
 
-# Calculating a 95% confidence interval from boot_mean_diff 
+# Calculating a 95% confidence interval from boot_mean_diff
 confidence_interval = pd.Series(boot_mean_diff).quantile([0.025, 0.975])
 confidence_interval
 ```
@@ -509,10 +509,10 @@ def test_confidence_interval_exists():
 
 def test_boot_before_correct_length():
     assert len(boot_before) == len(before_proportion), \
-        ("boot_before have {} elements and before_proportion have {}." + 
+        ("boot_before have {} elements and before_proportion have {}." +
          "They should have the same number of elements."
         ).format(len(boot_before), len(before_proportion))
-        
+
 def test_confidence_interval_correct():
     assert ((0.09 < abs(confidence_interval).max() < 0.11) and
             (0.055 < abs(confidence_interval).min() < 0.075)) , \

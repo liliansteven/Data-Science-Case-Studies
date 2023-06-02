@@ -12,10 +12,10 @@ import pandas as pd
 # Define file containing dataset
 runkeeper_file = 'datasets/cardioActivities.csv'
 
-# Create DataFrame with parse_dates and index_col parameters 
+# Create DataFrame with parse_dates and index_col parameters
 df_activities = pd.read_csv(runkeeper_file, parse_dates=True, index_col='Date')
 
-# First look at exported data: select sample of 3 random rows 
+# First look at exported data: select sample of 3 random rows
 display(df_activities.sample(3))
 
 # Print DataFrame summary
@@ -137,7 +137,7 @@ df_activities.info()
 def test_pandas_loaded():
     assert 'pd' in globals(), \
     'Did you import the pandas library aliased as pd?'
-    
+
 def test_activities_correctly_loaded():
     correct_activities = pd.read_csv(runkeeper_file,  parse_dates=True, index_col='Date')
     assert correct_activities.equals(df_activities), \
@@ -228,11 +228,11 @@ def test_values_count():
         "We expected the df_activities variable in your input."
     assert 'value_counts' in last_input, \
         "We expected the value_counts() method in your input."
-    
+
 def test_replace():
     assert df_activities[df_activities['Type'] == 'Unicycling']['Type'].count() == 2, \
         "The count of activities of type 'Unicycling' is incorrect."
-    
+
 def test_missing_output():
     try:
         assert "214" in last_output.to_string()
@@ -252,7 +252,7 @@ def test_missing_output():
 
 
 ```python
-# Calculate sample means for heart rate for each training activity type 
+# Calculate sample means for heart rate for each training activity type
 avg_hr_run = df_activities[df_activities['Type'] == 'Running']['Average Heart Rate (bpm)'].mean()
 avg_hr_cycle = df_activities[df_activities['Type'] == 'Cycling']['Average Heart Rate (bpm)'].mean()
 
@@ -261,7 +261,7 @@ df_run = df_activities[df_activities['Type'] == 'Running'].copy()
 df_walk = df_activities[df_activities['Type'] == 'Walking'].copy()
 df_cycle = df_activities[df_activities['Type'] == 'Cycling'].copy()
 
-# Filling missing values with counted means  
+# Filling missing values with counted means
 df_walk['Average Heart Rate (bpm)'].fillna(110, inplace=True)
 df_run['Average Heart Rate (bpm)'].fillna(int(avg_hr_run), inplace=True)
 df_cycle['Average Heart Rate (bpm)'].fillna(int(avg_hr_cycle), inplace=True)
@@ -367,7 +367,7 @@ last_input = strip_comment_lines(In[-2])
 # def test_set_style():
 #     assert "plt.style.use('ggplot')" in last_input, \
 #         "We expected the plt.style.use('ggplot') in your input."
-    
+
 def test_subset_correct():
     correct_subset = df_run['2018':'2013']
     assert correct_subset.equals(runs_subset_2013_2018), \
@@ -376,7 +376,7 @@ def test_subset_correct():
 def test_subplots_param():
     assert "subplots=True" in last_input, \
         "We expected the subplots=True in your input WITHOUT whitespaces around '=' sign."
-    
+
 def test_plt_show():
     assert "plt.show()" in last_input, \
         "We expected plt.show() in your input."
@@ -504,7 +504,7 @@ def test_weekly_average():
 def test_weekly_count_syntax():
     assert "runs_subset_2015_2018['Distance (km)']" in last_input, \
     "Did you filter column 'Distance (km)' from data subset using single quotes?"
-    
+
 def test_weekly_count():
     assert weekly_counts_average == 1.5, \
     "We expected 1.5 trainings per week on average."
@@ -555,11 +555,11 @@ def test_data_correct6():
 def test_plot_exist6():
     assert (ax2.get_geometry()[0] == 2 and fig.get_figwidth() == 12), \
     "The size of plot and the number of subplots are not as expected."
-    
+
 def test_first_subplot6():
     assert all(ax1.lines[0].get_ydata() == runs_distance.sort_index()), \
     "Did you use runs_distance.plot(ax=ax1) to plot the first plot?"
-    
+
 def test_horline6():
     assert ax2.lines[1].get_ydata()[0] == runs_hr.mean(), \
     "The value of average heart rate is incorrect on the plot."
@@ -579,9 +579,9 @@ df_run_dist_annual = df_run.sort_index()['20130101':'20181231']['Distance (km)']
 fig = plt.figure(figsize=(8, 5))
 
 # Plot and customize
-ax = df_run_dist_annual.plot(marker='*', markersize=14, linewidth=0, 
+ax = df_run_dist_annual.plot(marker='*', markersize=14, linewidth=0,
                              color='blue')
-ax.set(ylim=[0, 1210], 
+ax.set(ylim=[0, 1210],
        xlim=['2012','2019'],
        ylabel='Distance (km)',
        xlabel='Years',
@@ -641,7 +641,7 @@ import statsmodels.api as sm
 # Prepare data
 df_run_dist_wkly = df_run.loc['20190101':'20130101']['Distance (km)'] \
                     .resample('W').bfill()
-decomposed = sm.tsa.seasonal_decompose(df_run_dist_wkly, 
+decomposed = sm.tsa.seasonal_decompose(df_run_dist_wkly,
                                        extrapolate_trend=1, freq=52)
 
 # Create plot
@@ -729,17 +729,17 @@ def test_data_correct9():
 def test_subplots_used9():
     assert 'plt.subplots' in last_input, \
     "We expected plt.subplots in your input."
-    
+
 def test_figsize9():
     assert (fig.get_figwidth() == 8.0 and fig.get_figheight() == 5.0), \
     "The figure size is incorrect. Did you set figsize=(8, 5) in plt.subplots()?"
-    
+
 def test_xticklabels9():
     lbls = [lb.get_text() for lb in ax.get_xticklabels()]
     del lbls[-1]
     assert lbls == zone_names, \
     "The x-axis labels are incorrect. Did you use ax.set_xticklabels(labels=zone_names, ...) ?"
-    
+
 def test_show9():
     assert 'plt.show()' in last_input , \
     "We expected plt.show() in your input."
@@ -763,7 +763,7 @@ df_totals = df_run_walk_cycle.groupby('Type')[dist_climb_cols].sum()
 print('Totals for different training types:')
 display(df_totals)
 
-# Calculating summary statistics for each type of activities 
+# Calculating summary statistics for each type of activities
 df_summary = df_run_walk_cycle.groupby('Type')[dist_climb_cols + speed_col].describe()
 
 # Combine totals with summary
@@ -1017,7 +1017,7 @@ def test_data_correct10():
 def test_display_totals10():
     assert 'display(df_totals)' in last_input, \
     "Did you use display(df_totals) to show the calculations?"
-    
+
 def test_totals10():
     corr_tot = df_totals['Distance (km)']['Running'].round(1)
     assert corr_tot == 5224.5, \

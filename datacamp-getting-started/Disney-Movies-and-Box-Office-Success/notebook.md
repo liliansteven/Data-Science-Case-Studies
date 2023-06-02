@@ -9,7 +9,7 @@
 import pandas as pd
 
 # Read the file into gross
-gross = pd.read_csv("datasets/disney_movies_total_gross.csv", 
+gross = pd.read_csv("datasets/disney_movies_total_gross.csv",
                     parse_dates=["release_date"])
 
 # Print out gross
@@ -90,7 +90,7 @@ def test_pandas_loaded():
 def test_parse_date():
     assert gross['release_date'].dtype == '<M8[ns]', \
     "The release_date column is not of dtype <M8[ns]."
-      
+
 def test_gross_correctly_loaded():
     correct_gross = pd.read_csv('./datasets/disney_movies_total_gross.csv', parse_dates=['release_date'])
     assert correct_gross.equals(gross), "The DataFrame gross should contain the data in disney_movies_total_gross.csv."
@@ -102,10 +102,10 @@ def test_gross_correctly_loaded():
 <p>Let's started by exploring the data. We will check which are the 10 Disney movies that have earned the most at the box office. We can do this by sorting movies by their inflation-adjusted gross (we will call it adjusted gross from this point onward). </p>
 
 ```python
-# Sort data by the adjusted gross in descending order 
+# Sort data by the adjusted gross in descending order
 inflation_adjusted_gross_desc = gross.sort_values(by='inflation_adjusted_gross', ascending=False)
 
-# Display the top 10 movies 
+# Display the top 10 movies
 inflation_adjusted_gross_desc.head(10)
 ```
 
@@ -225,7 +225,7 @@ last_output = _
 
 def test_sort_output():
     try:
-        assert (last_output.iloc[0][0] == 'Snow White and the Seven Dwarfs'  and 
+        assert (last_output.iloc[0][0] == 'Snow White and the Seven Dwarfs'  and
         last_output.iloc[9][0] == 'The Lion King')
     except AttributeError:
         assert False, \
@@ -236,7 +236,7 @@ def test_sort_output():
     except IndexError:
         assert False, \
             "Did you return the first 10 rows of the output?"
-        
+
 def test_head_output():
     try:
         assert last_output.shape == (10,6)
@@ -255,7 +255,7 @@ def test_head_output():
 
 ```python
 # Extract year from release_date and store it in a new column
-gross['release_year'] = pd.DatetimeIndex(gross["release_date"]).year 
+gross['release_year'] = pd.DatetimeIndex(gross["release_date"]).year
 
 # Compute mean of adjusted gross per genre and per year
 group = gross.groupby(['genre','release_year']).mean()
@@ -263,7 +263,7 @@ group = gross.groupby(['genre','release_year']).mean()
 # Convert the GroupBy object to a DataFrame
 genre_yearly = group.reset_index()
 
-# Inspect genre_yearly 
+# Inspect genre_yearly
 genre_yearly.head(10)
 ```
 
@@ -352,7 +352,7 @@ genre_yearly.head(10)
 </table>
 
 ```python
-import numpy 
+import numpy
 
 # One or more tests of the student's code
 # The @solution should pass the tests
@@ -368,7 +368,7 @@ def test_release_year_exists():
 def test_release_year_correctly_created():
     correct_release_year = pd.Series(pd.DatetimeIndex(gross['release_date']).year )
     assert numpy.array_equal(gross['release_year'].values,correct_release_year.values), \
-    "The values in the column release_year looks incorrect." 
+    "The values in the column release_year looks incorrect."
 
 def test_group_correctly_created():
     assert isinstance(group, pd.DataFrame),\
@@ -377,21 +377,21 @@ def test_group_correctly_created():
 def test_group_value():
     assert group.iloc[2]['total_gross'] == 17577696 ,\
     "The variable group has incorrect values."
-    
+
 def test_group_shape():
     assert correct_group_result.shape == group.shape, \
     "The variable group should have 218 rows and 2 columns."
- 
+
 def test_group_column_names():
      assert correct_group_result.index.names == group.index.names, \
     "The variable group should have two index names in this order: 'genre', 'release_year'."
-        
+
 def test_genre_yearly_correctly_created():
     correct_genre_yearly_result = group.reset_index()
     assert correct_genre_yearly_result.equals(genre_yearly), \
     "The variable genre_yearly looks incorrect."
     #assert isinstance(genre_yearly, pd.DataFrame),\
-    #"The variable genre_yearly is not a DataFrame." 
+    #"The variable genre_yearly is not a DataFrame."
 
 def test_genre_yearly_shape():
     assert genre_yearly.shape[1] == 4, \
@@ -407,9 +407,9 @@ def test_genre_yearly_shape():
 # Import seaborn library
 import seaborn as sns
 
-# Plot the data  
-sns.relplot(x='release_year', y='inflation_adjusted_gross', kind='line', 
-            hue='genre', data=genre_yearly)  
+# Plot the data
+sns.relplot(x='release_year', y='inflation_adjusted_gross', kind='line',
+            hue='genre', data=genre_yearly)
 ```
 
     <seaborn.axisgrid.FacetGrid at 0x7fe043a9db70>
@@ -435,15 +435,15 @@ def test_line_plot():
     assert len(last_value.ax.get_lines()) == 25,\
     "The line plot looks incorrect."
 
-def test_x_data(): # Test the first x value in the first line 
+def test_x_data(): # Test the first x value in the first line
     #assert list(last_value.ax.get_lines()[0].get_xdata()) == list(genre_yearly[genre_yearly['genre'] =='Action']['release_year']), \
     assert last_value.ax.get_lines()[0].get_xdata()[0] in list(gross['release_year']), \
     'The x-axis data looks incorrect.'
-    
-def test_y_data(): # Test the first y value in the first line 
+
+def test_y_data(): # Test the first y value in the first line
         assert last_value.ax.get_lines()[0].get_ydata()[0] in list(gross['inflation_adjusted_gross']), \
     'The y-axis data looks incorrect.'
-    
+
 def test_hue_data():
     assert list(last_value.ax.get_legend_handles_labels()[1][1::])  == list(genre_yearly['genre'].unique()), \
     'The hue data looks incorrect.'
@@ -457,7 +457,7 @@ def test_hue_data():
 <p>For this dataset, there will be 11 dummy variables, one for each genre except the action genre which we will use as a baseline. For example, if a movie is an adventure movie, like The Lion King, the adventure variable will be 1 and other dummy variables will be 0. Since the action genre is our baseline, if a movie is an action movie, such as The Avengers, all dummy variables will be 0.</p>
 
 ```python
-# Convert genre variable to dummy variables 
+# Convert genre variable to dummy variables
 genre_dummies = pd.get_dummies(data=gross['genre'], drop_first=True)
 
 # Inspect genre_dummies
@@ -567,7 +567,7 @@ def test_genre_dummies_exists():
 
 def test_correct_dummies_numbers():
     assert isinstance(genre_dummies, pd.DataFrame) and genre_dummies.shape == (579, 11), \
-        "The genre_dummies should be a DataFrame with 11 columns and 579 rows."  
+        "The genre_dummies should be a DataFrame with 11 columns and 579 rows."
 
 def test_correct_dummies_values():
     assert list(genre_dummies.iloc[0]) ==  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], \
@@ -590,11 +590,11 @@ regr = LinearRegression()
 # Fit regr to the dataset
 regr.fit(genre_dummies, gross["inflation_adjusted_gross"])
 
-# Get estimated intercept and coefficient values 
+# Get estimated intercept and coefficient values
 action =  regr.intercept_
 adventure = regr.coef_[[0]][0]
 
-# Inspect the estimated intercept and coefficient values 
+# Inspect the estimated intercept and coefficient values
 print((action, adventure))
 ```
 
@@ -605,7 +605,7 @@ print((action, adventure))
 # The @solution should pass the tests
 # The purpose of the tests is to try to catch common errors and
 # to give the student a hint on how to resolve these errors
-from sklearn.utils import validation 
+from sklearn.utils import validation
 from sklearn.exceptions import NotFittedError
 
 
@@ -616,15 +616,15 @@ def test_LinearRegression_loaded():
 def test_regr_exists():
     assert "regr" in globals(), \
         "The variable regr was not correctly created."
-    
+
 def test_regr_is_model():
     assert isinstance(regr, LinearRegression),\
-    "regr should be a LinearRegression model." 
+    "regr should be a LinearRegression model."
 
 def test_regr_is_fitted():
     try:
         validation.check_is_fitted(regr, "coef_")
- 
+
     except NotFittedError:
         assert False, "regr is not fitted yet."
 
@@ -632,7 +632,7 @@ def test_correct_features():
     assert   regr.coef_.size == 11, \
     "regr doesn't have a correct number of coefficients. Did you use the correct regressors X?"
 
-        
+
 def test_correct_intercept():
     assert round(action) == 102921757,\
     "The value of action looks incorrect."
@@ -648,7 +648,7 @@ def test_correct_intercept():
 # Import a module
 import numpy as np
 
-# Create an array of indices to sample from 
+# Create an array of indices to sample from
 inds = np.arange(len(gross['genre']))
 
 # Initialize 500 replicate arrays
@@ -666,16 +666,16 @@ bs_adventure_reps =  np.empty(size)
 def test_inds_exists():
     assert "inds" in globals(), \
         "The variable inds was not correctly created."
-    
-def test_inds_type(): 
+
+def test_inds_type():
     assert  isinstance(inds, np.ndarray) ,\
     "Type of inds should be ndarray."
 
-#def test_inds_shape(): 
+#def test_inds_shape():
 #    assert  inds.size==579  ,\
-#    "Length of inds should be 579."    
+#    "Length of inds should be 579."
 
-def test_inds_shape(): 
+def test_inds_shape():
     try:
         assert inds.size==579
     except AttributeError:
@@ -683,17 +683,17 @@ def test_inds_shape():
             "Make sure that inds is an ndarray of length 579."
     except AssertionError:
         assert False, \
-            "Length of inds should be 579."  
-        
-def test_bs_action_reps_type(): 
+            "Length of inds should be 579."
+
+def test_bs_action_reps_type():
     assert  isinstance(bs_action_reps, np.ndarray) ,\
     "Type of bs_action_reps should be ndarray."
-    
-#def test_bs_action_reps_shape(): 
+
+#def test_bs_action_reps_shape():
 #    assert bs_action_reps.size == 1000  ,\
 #    "Length of bs_action_reps should be 1000."
 
-def test_bs_action_reps_shape(): 
+def test_bs_action_reps_shape():
     try:
         assert bs_action_reps.size == 500
     except AttributeError:
@@ -702,17 +702,17 @@ def test_bs_action_reps_shape():
     except AssertionError:
         assert False, \
             "Length of bs_action_reps should be 500."
-        
-def test_bs_adventure_reps_type(): 
+
+def test_bs_adventure_reps_type():
     assert  isinstance(bs_adventure_reps, np.ndarray) ,\
     "Type of bs_adventure_reps should be ndarray."
- 
 
-#def test_bs_adventure_reps_shape(): 
+
+#def test_bs_adventure_reps_shape():
 #    assert bs_adventure_reps.size == 500  ,\
 #    "Length of bs_adventure_reps should be 500."
-    
-def test_bs_adventure_reps_shape(): 
+
+def test_bs_adventure_reps_shape():
     try:
         assert bs_adventure_reps.size == 500
     except AttributeError:
@@ -729,22 +729,22 @@ def test_bs_adventure_reps_shape():
 <p>After the initialization, we will perform pair bootstrap estimates for the regression parameters. Note that we will draw a sample from a set of (genre, adjusted gross) data where the genre is the original genre variable. We will perform one-hot encoding after that. </p>
 
 ```python
-# Generate replicates  
+# Generate replicates
 for i in range(size):
-    
-    # Resample the indices 
+
+    # Resample the indices
     bs_inds = np.random.choice(inds, size=len(inds))
-    
+
     # Get the sampled genre and sampled adjusted gross
-    bs_genre = gross['genre'][bs_inds] 
+    bs_genre = gross['genre'][bs_inds]
     bs_gross = gross['inflation_adjusted_gross'][bs_inds]
-    
+
     # Convert sampled genre to dummy variables
     bs_dummies = pd.get_dummies(data=gross['genre'] , drop_first=True)
-   
-    # Build and fit a regression model 
+
+    # Build and fit a regression model
     regr = LinearRegression().fit(bs_dummies, bs_gross)
-    
+
     # Compute replicates of estimated intercept and coefficient
     bs_action_reps[i] = regr.intercept_
     bs_adventure_reps[i] = regr.coef_[[0]][0]
@@ -762,52 +762,52 @@ def test_bs_inds_exists():
 
 def test_bs_inds_type():
      assert isinstance(bs_inds, np.ndarray), \
-    'Type of bs_inds should be ndarray.' 
-  
+    'Type of bs_inds should be ndarray.'
+
 def test_bs_inds_size():
      assert bs_inds.size == 579, \
-    'Size of bs_inds should be 579.' 
-   
-def test_bs_gross_type(): 
+    'Size of bs_inds should be 579.'
+
+def test_bs_gross_type():
     assert  isinstance(bs_gross, pd.core.series.Series) ,\
     "Type of bs_gross should be Pandas Series."
-    
-def test_bs_gross_dtype(): 
+
+def test_bs_gross_dtype():
     assert  bs_gross.dtype == 'int64' ,\
     "Type of elements in bs_gross should be int64."
-    
-def test_bs_gross_shape(): 
+
+def test_bs_gross_shape():
     assert  bs_gross.size == 579  ,\
     "Size of bs_gross should be 579."
 
-def test_bs_gross_is_randomized(): 
+def test_bs_gross_is_randomized():
     assert not bs_gross.equals(gross['inflation_adjusted_gross'])  ,\
     "bs_gross should not be the same as the inflation_adjusted_gross."
-    
+
 def test_bs_dummies_exists():
      assert 'bs_dummies' in globals(), \
     'The variable bs_dummies was not correctly created.'
 
 def test_bs_dummies_DataFrame():
     assert isinstance(bs_dummies, pd.DataFrame), \
-        "bs_dummies should be a DataFrame."  
-    
+        "bs_dummies should be a DataFrame."
+
 def test_correct_bs_dummies_numbers():
     assert  bs_dummies.shape == (579, 11), \
-        "bs_dummies should be a DataFrame with 11 columns and 579 rows."  
+        "bs_dummies should be a DataFrame with 11 columns and 579 rows."
 
-def test_correct_bs_dummies_values(): 
+def test_correct_bs_dummies_values():
     assert set(bs_dummies.iloc[0]) == {0, 1} or set(bs_dummies.iloc[0]) == {0}, \
-        "The values of bs_dummies looks incorrect."  
+        "The values of bs_dummies looks incorrect."
 
-def test_bs_action_reps_type(): 
+def test_bs_action_reps_type():
     assert  isinstance(bs_action_reps, np.ndarray) ,\
     "Type of bs_action_reps should be a NumPy array."
 
-def test_bs_action_reps_shape(): 
+def test_bs_action_reps_shape():
     assert  bs_action_reps.size == 500  ,\
     "Size of bs_gross should be 500."
-    
+
 def test_bs_action_reps_value():
     assert bs_action_reps[499] == regr.intercept_,\
         "The value of bs_action_reps looks incorrect."
@@ -820,9 +820,9 @@ def test_bs_action_reps_value():
 
 ```python
 # Compute 95% confidence intervals for intercept and coefficient values
-confidence_interval_action = np.percentile(bs_action_reps, [2.5, 97.5]) 
+confidence_interval_action = np.percentile(bs_action_reps, [2.5, 97.5])
 confidence_interval_adventure = np.percentile(bs_adventure_reps, [2.5, 97.5])
-    
+
 # Inspect the confidence intervals
 print(confidence_interval_action)
 print(confidence_interval_adventure)
@@ -843,32 +843,32 @@ correct_confidence_interval_adventure = np.percentile(bs_adventure_reps, [2.5, 9
 def test_confidence_interval_action_exists():
     assert 'confidence_interval_action' in globals(),\
     "confidence_interval_action was not correctly created."
-    
+
 def test_confidence_interval_adventure_exists():
     assert 'confidence_interval_adventure' in globals(),\
     "confidence_interval_adventure was not correctly created."
-   
-def test_confidence_interval_action_type(): 
+
+def test_confidence_interval_action_type():
     assert  isinstance(confidence_interval_action, np.ndarray) ,\
     "Type of confidence_interval_action should be a NumPy array."
-    
-def test_confidence_interval_action_values(): 
+
+def test_confidence_interval_action_values():
     assert (confidence_interval_action == correct_confidence_interval_action).all(),\
     "Values in confidence_interval_action look incorrect."
-    
-def test_confidence_interval_action_shape(): 
+
+def test_confidence_interval_action_shape():
     assert  confidence_interval_action.size == 2  ,\
     "Length of confidence_interval_action should be 2."
 
-def test_confidence_interval_adventure_type(): 
+def test_confidence_interval_adventure_type():
     assert  isinstance(confidence_interval_adventure, np.ndarray) ,\
     "Type of confidence_interval_adventure should be a Numpy array."
-    
-def test_confidence_interval_adventure_values(): 
+
+def test_confidence_interval_adventure_values():
     assert  (confidence_interval_adventure == correct_confidence_interval_adventure).all(),\
     "Values in confidence_interval_adventure look incorrect."
-      
-def test_confidence_interval_adventure_shape(): 
+
+def test_confidence_interval_adventure_shape():
     assert  confidence_interval_adventure.size == 2  ,\
     "Length of confidence_interval_adventure should be 2."
 ```
@@ -880,7 +880,7 @@ def test_confidence_interval_adventure_shape():
 <p>From the results of the bootstrap analysis and the trend plot we have done earlier, we could say that Disney movies with plots that fit into the action and adventure genre, according to our data, tend to do better in terms of adjusted gross than other genres. So we could expect more Marvel, Star Wars, and live-action movies in the upcoming years!</p>
 
 ```python
-# should Disney studios make more action and adventure movies? 
+# should Disney studios make more action and adventure movies?
 more_action_adventure_movies = True
 ```
 
@@ -893,7 +893,7 @@ more_action_adventure_movies = True
 def test_more_action_adventure_movies_type():
     assert isinstance(more_action_adventure_movies, bool), \
         'more_action_adventure_movies should be of Boolean type.'
-    
+
 def test_conclusion():
     assert more_action_adventure_movies, \
         'That is not a reasonable conclusion given the values of confidence intervals.'

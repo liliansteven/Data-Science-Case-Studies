@@ -22,17 +22,17 @@ files.sort()
 
 # One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_files_type():
     assert isinstance(files, list), \
     'The files variable should be a list.'
-    
+
 def test_glob_len():
     assert len(files) == 20, \
     'The files variable should contain 20 elements. Make sure you only selected files ending by .txt.'
-    
+
 def test_is_files_list_sorted():
     assert all(files[i] <= files[i+1] for i in range(len(files)-1)), \
     'The files list should be sorted by using the .sort() method.'
@@ -95,28 +95,28 @@ import _io
 def test_txts_titles_len():
     assert len(txts) == 20 & len(titles) == 20, \
     'The txts and titles variable should contain 20 elements.'
-    
+
 
 def test_f_type():
     assert isinstance(f, _io.TextIOWrapper), \
     'The f variable should be of type _io.TextIOWrapper and be generated with the open() function.'
-    
+
 def test_file_encoding():
     assert f.encoding == 'utf-8-sig', \
-    'Make sure you open the text file encoded as utf-8-sig.'   
-    
+    'Make sure you open the text file encoded as utf-8-sig.'
+
 def test_txt_in_title():
     assert all([".txt" not in title for title in titles]), \
-    'The titles contained in the titles variable should not contain the .txt string. Use the .replace() method to remove them.'   
+    'The titles contained in the titles variable should not contain the .txt string. Use the .replace() method to remove them.'
 
 def test_folder_in_title():
     assert all([folder not in title for title in titles]), \
-    'The titles contained in the titles variable should not contain the name of the folder (' + str(folder) + '). Use the os.path.basename() function to remove them.'   
-    
-    
+    'The titles contained in the titles variable should not contain the name of the folder (' + str(folder) + '). Use the os.path.basename() function to remove them.'
+
+
 def test_alphanumeric_in_txt():
     assert not sum([len(i) for i in [re.findall('^[\w-]+$', t) for t in txts]]), \
-    'The elements of the txts variable should not contain non-alphanumeric characters.' 
+    'The elements of the txts variable should not contain non-alphanumeric characters.'
 ```
 
     6/6 tests passed
@@ -157,7 +157,7 @@ def test_ori_existence():
 def test_ori_type():
     assert type(ori) == int, \
     'The ori variable should be of type integer.'
-    
+
 def test_ori_value():
     assert ori == ori_test, \
     'The ori variable does not contain the correct index number.'
@@ -172,10 +172,10 @@ def test_ori_value():
 # Define a list of stop words
 stoplist = set('for a of the and to in to be which some is at that we i who whom show via may my our might as well'.split())
 
-# Convert the text to lower case 
+# Convert the text to lower case
 txts_lower_case = [txt.lower() for txt in txts]
 
-# Transform the text into tokens 
+# Transform the text into tokens
 txts_split = [txt.split() for txt in txts_lower_case]
 
 # Remove tokens which are part of the list of stop words
@@ -209,15 +209,15 @@ texts[ori][: 20]
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 stoplist = set('for a of the and to in to be which some is at that we i who whom show via may my our might as well'.split())
 
-def intersection(lst1, lst2): 
-    lst3 = [value for value in lst1 if value in lst2] 
-    return lst3 
+def intersection(lst1, lst2):
+    lst3 = [value for value in lst1 if value in lst2]
+    return lst3
 
 ## Variables existence
 
@@ -228,16 +228,16 @@ def test_var_texts_existence():
 def test_var_lowercase_existence():
     assert 'txts_lower_case' in globals(), \
     'The variable txts_lower_case should exist.'
-    
+
 def test_var_split_existence():
     assert 'txts_split' in globals(), \
     'The variable txts_split should exist.'
 
-## Variables type and length    
+## Variables type and length
 def test_var_texts_type():
     assert isinstance(txts, list), \
     'The texts variable should be a list.'
-    
+
 def test_var_texts_lowercase_type():
     assert isinstance(txts_lower_case, list), \
     'The txts_lower_case variable should be a list.'
@@ -258,7 +258,7 @@ def test_var_texts_lowercase_len():
 def test_var_texts_split_len():
     assert len(txts_split) == 20, \
     'The txts_split list should contain 20 elements.'
-    
+
 ## Variable content
 
 def test_lower_case():
@@ -268,8 +268,8 @@ def test_lower_case():
 def test_split_list():
     assert all([isinstance(t, list) for t in txts_split]), \
     'Each element of the txts_split list should be a list'
-    
-    
+
+
 def test_stopwords():
     assert not sum([len(i) for i in [intersection(t, stoplist) for t in texts]]), \
     'You should remove stop words from the final token sets contained in the texts variable.'
@@ -316,9 +316,9 @@ texts_stem[ori][: 20]
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_var_existence():
@@ -328,7 +328,7 @@ def test_var_existence():
 def test_var_type():
     assert isinstance(texts_stem, list), \
     'The texts_stem variable should be a list.'
-    
+
 def test_var_len():
     assert len(texts_stem) == 20, \
     'The texts_stem list should contain 20 elements.'
@@ -360,9 +360,9 @@ bows[ori][: 5]
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 import gensim.corpora.dictionary
 from gensim import corpora
@@ -376,25 +376,25 @@ bows_test_len =[len(b) for b in bows_test]
 def test_dictionary_type():
     assert isinstance(dictionary, gensim.corpora.dictionary.Dictionary), \
     'The dictionary should be created using the corpora.Dictionary() function and the resulting object should be of type "gensim.corpora.dictionary.Dictionary".'
-    
+
 def test_dictionary_len():
     assert len(dictionary) == len(dictionary_test), \
     'The dictionary should contain ' +  str(len(dictionary_test)) + ' tokens. Make sure you generated the dictionary from the texts_stem object.'
-    
+
 ## bows variable
 
 def test_bows_type():
     assert isinstance(bows, list), \
     'The bows variable should be a list.'
-    
+
 def test_bows_list_len():
     assert bows_len == bows_test_len, \
     'The lengths of the bows are not those expected. Make sure you generated them using the texts_stem object.'
-    
+
 def test_bows_len():
     assert len(bows) == 20, \
     'The bows object should have 20 elements, one model per text.'
-    
+
 def test_bows_content_type():
     assert all([isinstance(b, list) for b in bows]), \
     'Each elements in the bows list should be a list.'
@@ -499,9 +499,9 @@ df_bow_origin.head(10)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 import pandas.core.frame
@@ -521,14 +521,14 @@ def test_df_type():
 def test_df_dim1():
     assert df_bow_origin.shape[1] == 3, \
     'The df_bow_origin DataFrame should have 3 columns.'
-    
+
 def test_df_dim2():
     assert df_bow_origin.shape[0] == n_rows_test, \
-    'The df_bow_origin DataFrame should have ' + str(n_rows_test) + ' rows.'    
-    
+    'The df_bow_origin DataFrame should have ' + str(n_rows_test) + ' rows.'
+
 def test_df_columns():
     assert all(df_bow_origin.columns == list(["index", "occurrences", "token"])), \
-    'The columns of the df_bow_origin DataFrame should be named "index", "occurrences" and "token".'    
+    'The columns of the df_bow_origin DataFrame should be named "index", "occurrences" and "token".'
 ```
 
     4/4 tests passed
@@ -1658,9 +1658,9 @@ df_tfidf.head(10)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 import pandas.core.frame
@@ -1672,18 +1672,18 @@ n_rows_test_tfidf = df_tfidf_test.shape[0]
 def test_df_type():
     assert isinstance(df_tfidf, pandas.core.frame.DataFrame), \
     'The df_tfidf variable should contain a pandas DataFrame of type pandas.core.frame.DataFrame.'
-    
+
 def test_df_dim1():
     assert df_tfidf.shape[1] == 3, \
     'The df_bow_origin DataFrame should have 3 columns.'
-    
+
 def test_df_dim2():
     assert df_tfidf.shape[0] == n_rows_test_tfidf, \
-    'The df_bow_origin DataFrame should have ' + str(n_rows_test_tfidf) + ' rows.'    
-    
+    'The df_bow_origin DataFrame should have ' + str(n_rows_test_tfidf) + ' rows.'
+
 def test_df_columns():
     assert all(df_tfidf.columns == list(["id", "score", "token"])), \
-    'The columns of the df_bow_origin DataFrame should be named "id", "score" and "token".'    
+    'The columns of the df_bow_origin DataFrame should be named "id", "score" and "token".'
 ```
 
     4/4 tests passed
@@ -2208,24 +2208,24 @@ import pandas.core.indexes.base
 def test_sims_type():
     assert isinstance(sims, gensim.similarities.docsim.MatrixSimilarity), \
     'The sims variable should be created using the similarities.MatrixSimilarity() function and be of type gensim.similarities.docsim.MatrixSimilarity.'
-    
+
 def test_sim_df_type():
     assert isinstance(sim_df, pandas.core.frame.DataFrame), \
     'The sim_df variable should be a pandas DataFrame of type pandas.core.frame.DataFrame.'
-    
+
 def test_df_dims():
     assert sim_df.shape[0] == 20 and sim_df.shape[1] == 20 , \
-    'The sim_df DataFrame should have 20 rows and 20 columns.'    
-    
+    'The sim_df DataFrame should have 20 rows and 20 columns.'
+
 def test_df_columns():
     assert all(sim_df.columns == titles), \
-    'The columns of the sim_df DataFrame should be the titles of the books (contained in the titles variable).'    
-        
+    'The columns of the sim_df DataFrame should be the titles of the books (contained in the titles variable).'
+
 # This test isn't working properly and is redundant with the following one. Hence, it is disabled.
 #def test_df_index_type():
 #    assert isinstance(sim_df.index, pandas.core.indexes.base.Index), \
-#    'The index of the sim_df DataFrame should be of type pandas.core.indexes.base.Index. Make sure the index contains the titles of the books, and not numbers.'    
-        
+#    'The index of the sim_df DataFrame should be of type pandas.core.indexes.base.Index. Make sure the index contains the titles of the books, and not numbers.'
+
 def test_df_index_content():
     assert  list(sim_df.index) == titles , \
     'The index of the sim_df DataFrame should contain the titles of the books, contained in the titles variable. For example, use: sim_df.index = titles.'
@@ -2244,7 +2244,7 @@ def test_df_index_content():
 # Import libraries
 import matplotlib.pyplot as plt
 
-# Select the column corresponding to "On the Origin of Species" and 
+# Select the column corresponding to "On the Origin of Species" and
 v = sim_df['OriginofSpecies']
 
 # Sort by ascending scores
@@ -2266,9 +2266,9 @@ plt.title("Similarity")
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 import pandas.core.series
@@ -2284,7 +2284,7 @@ def test_v_sorted_type():
     assert isinstance(v_sorted, pandas.core.series.Series), \
     'The v_sorted variable should be a series of type pandas.core.series.Series.'
 
-## Variable lengths    
+## Variable lengths
 def test_v_len():
     assert len(v) == 20, \
     'The v series should be of length 20.'
@@ -2292,7 +2292,7 @@ def test_v_len():
 def test_v_sorted_len():
     assert len(v_sorted) == 20, \
     'The v_sorted series should be of length 20.'
-    
+
 ## Is the series sorted?
 def test_is_series_sorted():
     assert all(v_sorted_list[i] <= v_sorted_list[i+1] for i in range(len(v_sorted_list)-1)), \

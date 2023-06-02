@@ -187,7 +187,7 @@ test_sets = pd.read_csv('datasets/sets.csv')
 def test_sets_exists():
     assert 'sets' in globals(), "You should read the data into a variable named `sets`"
     assert sets.equals(test_sets), "Did you read in the correct csv file?"
-    
+
 def test_parts_by_year_exists():
     assert 'parts_by_year' in globals(), "You should have defined a variable named `parts_by_year`"
     assert len(parts_by_year) == 66, "Did you correctly group the `sets` DataFrame by year?"

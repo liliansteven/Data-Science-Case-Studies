@@ -1,7 +1,7 @@
 ## 1. The Statcast revolution
 <p><img style="float: left;margin:5px 20px 5px 1px" src="https://assets.datacamp.com/production/project_250/img/judge_wide.jpg"></p>
-<p>This is Aaron Judge. Judge is one of the physically largest players in Major League Baseball standing 6 feet 7 inches (2.01 m) tall and weighing 282 pounds (128 kg). He also hit the <a href="https://www.mlb.com/news/aaron-judge-sets-statcast-exit-velocity-record/c-235640846">hardest home run</a> ever recorded. How do we know this? <strong>Statcast</strong>.</p>
-<p>Statcast is a state-of-the-art tracking system that uses high-resolution cameras and radar equipment to measure the precise location and movement of baseballs and baseball players. Introduced in 2015 to all 30 major league ballparks, Statcast data is revolutionizing the game. Teams are engaging in an "arms race" of data analysis, hiring analysts left and right in an attempt to gain an edge over their competition. This <a href="https://www.youtube.com/watch?v=9rOKGKhQe8U">video</a> describing the system is incredible.</p>
+<p>This is Aaron Judge. Judge is one of the physically largest players in Major League Baseball standing 6 feet 7 inches (2.01 m) tall and weighing 282 pounds (128 kg). He also hit the <a href="https://mlb.com/news/aaron-judge-sets-statcast-exit-velocity-record/c-235640846">hardest home run</a> ever recorded. How do we know this? <strong>Statcast</strong>.</p>
+<p>Statcast is a state-of-the-art tracking system that uses high-resolution cameras and radar equipment to measure the precise location and movement of baseballs and baseball players. Introduced in 2015 to all 30 major league ballparks, Statcast data is revolutionizing the game. Teams are engaging in an "arms race" of data analysis, hiring analysts left and right in an attempt to gain an edge over their competition. This <a href="https://youtube.com/watch?v=9rOKGKhQe8U">video</a> describing the system is incredible.</p>
 <p><strong>In this notebook</strong>, we're going to wrangle, analyze, and visualize Statcast data to compare Mr. Judge and another (extremely large) teammate of his. Let's start by loading the data into our Notebook. There are two CSV files, <code>judge.csv</code> and <code>stanton.csv</code>, both of which contain Statcast data for 2015-2017. We'll use pandas DataFrames to store this data. Let's also load our data visualization libraries, matplotlib and seaborn.</p>
 
 ```python
@@ -556,7 +556,7 @@ def test_head_output():
 
 ## 3. Aaron Judge and Giancarlo Stanton, prolific sluggers
 <p><img style="float: left;margin:5px 20px 5px 1px" src="https://assets.datacamp.com/production/project_250/img/stanton_wide.jpg"></p>
-<p>This is Giancarlo Stanton. He is also a very large human being, standing 6 feet 6 inches tall and weighing 245 pounds. Despite not wearing the same jersey as Judge in the pictures provided, in 2018 they will be teammates on the New York Yankees. They are similar in a lot of ways, one being that they hit a lot of home runs. Stanton and Judge led baseball in home runs in 2017, with <a href="https://www.youtube.com/watch?v=tJ6Bz5P6dg4">59</a> and <a href="https://www.youtube.com/watch?v=Gw3pFHMM9fk">52</a>, respectively. These are exceptional totals - the player in third "only" had 45 home runs.</p>
+<p>This is Giancarlo Stanton. He is also a very large human being, standing 6 feet 6 inches tall and weighing 245 pounds. Despite not wearing the same jersey as Judge in the pictures provided, in 2018 they will be teammates on the New York Yankees. They are similar in a lot of ways, one being that they hit a lot of home runs. Stanton and Judge led baseball in home runs in 2017, with <a href="https://youtube.com/watch?v=tJ6Bz5P6dg4">59</a> and <a href="https://youtube.com/watch?v=Gw3pFHMM9fk">52</a>, respectively. These are exceptional totals - the player in third "only" had 45 home runs.</p>
 <p>Stanton and Judge are also different in many ways. One is <a href="http://m.mlb.com/glossary/statcast/batted-ball-event">batted ball events</a>, which is any batted ball that produces a result. This includes outs, hits, and errors. Next, you'll find the counts of batted ball events for each player in 2017. The frequencies of other events are quite different.</p>
 
 ```python
@@ -588,7 +588,7 @@ print(stanton_events_2017.value_counts())
     triple                         3
     strikeout_double_play          1
     Name: events, dtype: int64
-    
+
     Giancarlo Stanton batted ball event totals, 2017:
     field_out                    239
     strikeout                    161
@@ -625,7 +625,7 @@ def test_stanton_events_2017_correct():
 <li><a href="http://m.mlb.com/glossary/statcast/launch-angle">Launch angle</a>: the vertical angle at which the ball leaves a player's bat</li>
 <li><a href="http://m.mlb.com/glossary/statcast/exit-velocity">Exit velocity</a>: the speed of the baseball as it comes off the bat</li>
 </ul>
-<p>This new data has changed the way teams value both hitters and pitchers. Why? As per the <a href="https://www.washingtonpost.com/graphics/sports/mlb-launch-angles-story/?utm_term=.8d088d31f098">Washington Post</a>:</p>
+<p>This new data has changed the way teams value both hitters and pitchers. Why? As per the <a href="https://washingtonpost.com/graphics/sports/mlb-launch-angles-story/?utm_term=.8d088d31f098">Washington Post</a>:</p>
 <blockquote>
   <p>Balls hit with a high launch angle are more likely to result in a hit. Hit fast enough and at the right angle, they become home runs.</p>
 </blockquote>
@@ -663,7 +663,7 @@ def test_judge_hr_correct():
 def test_stanton_hr_correct():
     correct_stanton_hr = stanton.loc[stanton['events'] == 'home_run']
     assert correct_stanton_hr.equals(stanton_hr), "The variable stanton_hr should contain all pitches in stanton that resulted in a home run."
-    
+
 # No standard testing procedure exists for plots at the moment
 ```
 
@@ -691,7 +691,7 @@ def test_judge_stanton_hr_correct():
     also_correct_judge_stanton_hr = pd.concat([stanton_hr, judge_hr])
     assert correct_judge_stanton_hr.equals(judge_stanton_hr) or \
         also_correct_judge_stanton_hr.equals(judge_stanton_hr), \
-        "The variable judge_stanton_hr should be the concatenation of judge_hr and stanton_hr."        
+        "The variable judge_stanton_hr should be the concatenation of judge_hr and stanton_hr."
 
 # No standard testing procedure exists for plots at the moment
 ```
@@ -733,7 +733,7 @@ def test_assign_x_coord():
                     {'zone': 9}]
     df_dummy_zone_x = pd.DataFrame(dummy_zone_x)
     df_dummy_zone_x['zone_x'] = df_dummy_zone_x.apply(assign_x_coord, axis=1)
-    
+
     correct_zone_x = [{'zone': 1, 'zone_x': 1},
                       {'zone': 2, 'zone_x': 2},
                       {'zone': 3, 'zone_x': 3},
@@ -744,7 +744,7 @@ def test_assign_x_coord():
                       {'zone': 8, 'zone_x': 2},
                       {'zone': 9, 'zone_x': 3}]
     df_correct_zone_x = pd.DataFrame(correct_zone_x)
-    
+
     assert df_correct_zone_x.equals(df_dummy_zone_x), "At least one of the zone's assigned x-coordinates are incorrect."
 ```
 
@@ -783,7 +783,7 @@ def test_assign_y_coord():
                     {'zone': 9}]
     df_dummy_zone_y = pd.DataFrame(dummy_zone_y)
     df_dummy_zone_y['zone_y'] = df_dummy_zone_y.apply(assign_y_coord, axis=1)
-    
+
     correct_zone_y = [{'zone': 1, 'zone_y': 3},
                       {'zone': 2, 'zone_y': 3},
                       {'zone': 3, 'zone_y': 3},
@@ -794,7 +794,7 @@ def test_assign_y_coord():
                       {'zone': 8, 'zone_y': 1},
                       {'zone': 9, 'zone_y': 1}]
     df_correct_zone_y = pd.DataFrame(correct_zone_y)
-    
+
     assert df_correct_zone_y.equals(df_dummy_zone_y), "At least one of the zone's assigned y-coordinates are incorrect."
 ```
 

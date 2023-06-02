@@ -5,7 +5,7 @@
 <p>Let's take a look at the data, which consists of two files:</p>
 <ul>
 <li><code>apps.csv</code>: contains all the details of the applications on Google Play. There are 13 features that describe a given app.</li>
-<li><code>user_reviews.csv</code>: contains 100 reviews for each app, <a href="https://www.androidpolice.com/2019/01/21/google-play-stores-redesigned-ratings-and-reviews-section-lets-you-easily-filter-by-star-rating/">most helpful first</a>. The text in each review has been pre-processed and attributed with three new features: Sentiment (Positive, Negative or Neutral), Sentiment Polarity and Sentiment Subjectivity.</li>
+<li><code>user_reviews.csv</code>: contains 100 reviews for each app, <a href="https://androidpolice.com/2019/01/21/google-play-stores-redesigned-ratings-and-reviews-section-lets-you-easily-filter-by-star-rating/">most helpful first</a>. The text in each review has been pre-processed and attributed with three new features: Sentiment (Positive, Negative or Neutral), Sentiment Polarity and Sentiment Subjectivity.</li>
 </ul>
 
 ```python
@@ -144,16 +144,16 @@ def test_pandas_loaded():
 def test_apps_with_duplicates_loaded():
 #     correct_apps_with_duplicates = pd.read_csv('datasets/apps.csv')
     assert (correct_apps_with_duplicates.equals(apps_with_duplicates)), "The data was not correctly read into apps_with_duplicates."
-    
+
 def test_duplicates_dropped():
 #     correct_apps_with_duplicates = pd.read_csv('datasets/apps.csv')
     correct_apps = correct_apps_with_duplicates.drop_duplicates()
     assert (correct_apps.equals(apps)), "The duplicates were not correctly dropped from apps_with_duplicates."
-    
+
 def test_total_apps():
     correct_total_apps = len(correct_apps_with_duplicates.drop_duplicates())
     assert (correct_total_apps == len(apps)), "The total number of apps is incorrect. It should equal 9659."
-    
+
 ```
 
     4/4 tests passed
@@ -175,7 +175,7 @@ for col in cols_to_clean:
     # Loop for each char in chars_to_remove
     for char in chars_to_remove:
         # Replace the character with an empty string
-        apps[col] = apps[col].apply(lambda x: x.replace(char, ''))  
+        apps[col] = apps[col].apply(lambda x: x.replace(char, ''))
 
 # Print a summary of the apps dataframe
 print(apps.info())
@@ -209,14 +209,14 @@ def test_installs_plus():
     installs = apps['Installs'].values
     plus_removed_correctly = all('+' not in val for val in installs)
     assert plus_removed_correctly, \
-    'Some of the "+" characters still remain in the Installs column.' 
-    
+    'Some of the "+" characters still remain in the Installs column.'
+
 def test_installs_comma():
     installs = apps['Installs'].values
     comma_removed_correctly = all(',' not in val for val in installs)
     assert comma_removed_correctly, \
     'Some of the "," characters still remain in the Installs column.'
-    
+
 def test_price_dollar():
     prices = apps['Price'].values
     dollar_removed_correctly = all('$' not in val for val in prices)
@@ -293,7 +293,7 @@ import plotly.graph_objs as go
 num_categories = len(apps['Category'].unique())
 print('Number of categories = ', num_categories)
 
-# Count the number of apps in each 'Category'. 
+# Count the number of apps in each 'Category'.
 num_apps_in_category = apps['Category'].value_counts()
 
 # Sort num_apps_in_category in descending order based on the count of apps in each category
@@ -316,7 +316,7 @@ plotly.offline.iplot(data)
 ```python
 def test_num_categories():
     assert num_categories == 33, "The number of app categories is incorrect. It should equal 33."
-    
+
 def test_num_apps_in_category():
     correct_sorted_num_apps_in_category = apps['Category'].value_counts().sort_values(ascending=False)
     assert (correct_sorted_num_apps_in_category == sorted_num_apps_in_category).all(), "sorted_num_apps_in_category is not what we expected. Please inspect the hint."
@@ -359,7 +359,7 @@ plotly.offline.iplot({'data': data, 'layout': layout})
 def test_app_avg_rating():
     assert round(avg_app_rating, 5) == 4.17324, \
     "The average app rating rounded to five digits should be 4.17324."
-    
+
 # def test_x_histogram():
 #     correct_x_histogram = apps['Rating']
 #     assert correct_x_histogram.all() == data[0]['x'].all(), \
@@ -408,12 +408,12 @@ plt2 = sns.jointplot(x = paid_apps['Price'], y = paid_apps['Rating'])
 
 ```python
 correct_apps_with_size_and_rating_present = apps[(~apps['Rating'].isnull()) & (~apps['Size'].isnull())]
- 
+
 def test_apps_with_size_and_rating_present():
     global correct_apps_with_size_and_rating_present
     assert correct_apps_with_size_and_rating_present.equals(apps_with_size_and_rating_present)
     "The correct_apps_with_size_and_rating_present is not what we expected. Please review the instructions and check the hint if necessary."
-    
+
 def test_large_categories():
     global correct_apps_with_size_and_rating_present
     correct_large_categories = correct_apps_with_size_and_rating_present.groupby(['Category']).filter(lambda x: len(x) >= 250)
@@ -427,13 +427,13 @@ def test_size_vs_rating():
 #     correct_large_categories = correct_large_categories[correct_large_categories['Rating'].notnull()]
     assert plt1.x.tolist() == large_categories['Size'].values.tolist() and plt1.y.tolist() == large_categories['Rating'].values.tolist(), \
     "The size vs. rating jointplot is not what we expected. Please review the instructions and check the hint if necessary."
-    
+
 def test_paid_apps():
     global correct_apps_with_size_and_rating_present
     correct_paid_apps = correct_apps_with_size_and_rating_present[correct_apps_with_size_and_rating_present['Type'] == 'Paid']
     assert correct_paid_apps.equals(paid_apps), \
     "The paid_apps DataFrame is not what we expected. Please review the instructions and check the hint if necessary."
-    
+
 def test_price_vs_rating():
     global correct_apps_with_size_and_rating_present
     correct_paid_apps = correct_apps_with_size_and_rating_present[correct_apps_with_size_and_rating_present['Type'] == 'Paid']
@@ -684,7 +684,7 @@ def test_trace1_y():
         check_2 = all(trace1['y'] == correct_y_2.values)
     except:
         check_2 = False
-        
+
     assert check_1 or check_2, \
     "The y data for trace1 appears incorrect. Please review the instructions and check the hint if necessary."
 ```
@@ -723,17 +723,17 @@ ax.set_title('Sentiment Polarity Distribution')
 def test_user_reviews_loaded():
     correct_user_reviews = pd.read_csv('datasets/user_reviews.csv')
     assert (correct_user_reviews.equals(reviews_df)), "The user_reviews.csv file was not correctly loaded. Please review the instructions and inspect the hint if necessary."
-    
+
 def test_user_reviews_merged():
     user_reviews = pd.read_csv('datasets/user_reviews.csv')
     correct_merged = pd.merge(apps, user_reviews, on = "App")
     correct_merged = correct_merged.dropna(subset=['Sentiment', 'Review'])
     assert (correct_merged.equals(merged_df)), "The merging of user_reviews and apps is incorrect. Please review the instructions and inspect the hint if necessary."
-    
+
 def test_project_reset():
     user_reviews = pd.read_csv('datasets/user_reviews.csv')
     assert ('Translated_Reviews' not in user_reviews.columns), "There is an update in the project and some column names have been changed. Please choose the \"Reset Project\" option to fetch the updated copy of the project."
-    
+
 ```
 
     3/3 tests passed

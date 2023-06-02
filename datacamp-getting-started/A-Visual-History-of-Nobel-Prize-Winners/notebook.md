@@ -173,11 +173,11 @@ nobel.head(6)
 
 ```python
 last_value = _
-    
+
 def test_pandas_loaded():
     assert pd.__name__ == 'pandas', \
         "pandas should be imported as pd"
-    
+
 def test_seaborn_loaded():
     assert sns.__name__ == 'seaborn', \
         "seaborn should be imported as sns"
@@ -187,7 +187,7 @@ def test_numpy_loaded():
         "numpy should be imported as np"
 
 import pandas as pd
-        
+
 def test_nobel_correctly_loaded():
     correct_nobel = pd.read_csv('datasets/nobel.csv')
     assert correct_nobel.equals(nobel), \
@@ -354,7 +354,7 @@ sns.set()
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = [11, 7]
 
-# Plotting USA born winners 
+# Plotting USA born winners
 ax = sns.lineplot(x='decade', y='usa_born_winner', data=prop_usa_winners)
 
 # Adding %-formatting to the y-axis
@@ -368,7 +368,7 @@ ax.yaxis.set_major_formatter(PercentFormatter(1.0))
 def test_y_axis():
     assert all(ax.get_lines()[0].get_ydata() == prop_usa_winners.usa_born_winner), \
     'The plot should be assigned to ax and have usa_born_winner on the y-axis'
-    
+
 def test_x_axis():
     assert all(ax.get_lines()[0].get_xdata() == prop_usa_winners.decade), \
     'The plot should be assigned to ax and have decade on the x-axis'
@@ -403,7 +403,7 @@ def test_correct_prop_usa_winners():
 def test_y_axis():
     assert all(pd.Series(ax.get_lines()[0].get_ydata()).isin(prop_female_winners.female_winner)), \
     'The plot should be assigned to ax and have female_winner on the y-axis'
-    
+
 def test_x_axis():
     assert all(pd.Series(ax.get_lines()[0].get_xdata()).isin(prop_female_winners.decade)), \
     'The plot should be assigned to ax and have decade on the x-axis'
@@ -478,7 +478,7 @@ nobel[nobel['sex'] == 'Female'].nsmallest(1, 'year')
 
 ```python
 last_value = _
-    
+
 def test_Marie_was_selected():
     assert "Marie Curie" in last_value.to_string(), \
         "Hmm, it seems you have not displayed the row of the first woman to win a Nobel Prize, her first name should be Marie."
@@ -840,7 +840,7 @@ nobel.groupby('full_name').filter(lambda x: len(x) >= 2)
 
 ```python
 last_value = _
-    
+
 def test_something():
     correct_last_value = nobel.groupby('full_name').filter(lambda group: len(group) >= 2)
     assert correct_last_value.equals(last_value), \
@@ -870,12 +870,12 @@ sns.lmplot(x='year', y='age', data=nobel, lowess=True, aspect=2, line_kws={'colo
 
 ```python
 ax = _
-    
+
 def test_birth_date():
     assert pd.to_datetime(nobel['birth_date']).equals(nobel['birth_date']), \
         "Have you converted nobel['birth_date'] using to_datetime?"
 
-    
+
 def test_year():
     assert (nobel['year'] - nobel['birth_date'].dt.year).equals(nobel['age']), \
         "Have you caluclated nobel['year'] correctly?"
@@ -883,7 +883,7 @@ def test_year():
 def test_plot_data():
     assert list(ax.data)[0] in ["age", "year"] and list(ax.data)[1] in ["age", "year"], \
     'The plot should show year on the x-axis and age on the y-axis'
-    
+
 # Why not this testing code?
 # def test_plot_data():
 #     assert list(ax.data)[0] == "age" and list(ax.data)[1] == "year", \
@@ -908,7 +908,7 @@ sns.lmplot(x='year', y='age', data=nobel, row='category' ,lowess=True, aspect=2,
 
 ```python
 ax = _
-    
+
 def test_plot_data():
     assert list(ax.data)[0] in ["age", "year", "category"] and \
            list(ax.data)[1] in ["age", "year", "category"] and \
@@ -1044,7 +1044,7 @@ nobel.nsmallest(1, 'age')
 
 ```python
 last_value = _
-    
+
 def test_oldest_or_youngest():
     assert 'Hurwicz' in last_value.to_string() or 'Yousafzai' in last_value.to_string(), \
         "Have you displayed the row of the oldest winner and the row of the youngest winner?"
@@ -1064,7 +1064,7 @@ youngest_winner = 'Malala Yousafzai'
 
 ```python
 import re
-    
+
 def test_right_name():
     assert re.match("(malala|yousafzai)", youngest_winner.lower()), \
         "youngest_winner should be a string. Try writing only the first / given name."

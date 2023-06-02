@@ -51,9 +51,9 @@ import matplotlib.pyplot as plt
 # Plotting global temperature in degrees celsius by year
 plt.plot(global_temp['year'], global_temp['degrees_celsius'])
 
-# Adding some nice labels 
-plt.xlabel('Year') 
-plt.ylabel('Degrees Celsius') 
+# Adding some nice labels
+plt.xlabel('Year')
+plt.ylabel('Degrees Celsius')
 ```
 
     <matplotlib.text.Text at 0x7f91e30aa828>
@@ -73,7 +73,7 @@ phone_map = folium.Map()
 companies = [
     {'loc': [37.4970,  127.0266], 'label': 'Samsung: 20.5%'},
     {'loc': [37.3318, -122.0311], 'label': 'Apple: 14.4%'},
-    {'loc': [22.5431,  114.0579], 'label': 'Huawei: 8.9%'}] 
+    {'loc': [22.5431,  114.0579], 'label': 'Huawei: 8.9%'}]
 
 # Adding markers to the map
 for company in companies:
@@ -88,7 +88,7 @@ phone_map
 def test_market_share_of_samsung():
     assert '20.5' in companies[0]['label'], \
         "The market share of Samsung should be 20.5%"
-        
+
 def test_market_share_of_apple():
     assert '14.4' in companies[1]['label'], \
         "The market share of Apple should be 14.4%"
@@ -107,8 +107,8 @@ def test_market_share_of_huawei():
 # Are you ready to get started with  DataCamp projects?
 I_am_ready = True
 
-# Ps. 
-# Feel free to try out any other stuff in this notebook. 
+# Ps.
+# Feel free to try out any other stuff in this notebook.
 # It's all yours!
 ```
 

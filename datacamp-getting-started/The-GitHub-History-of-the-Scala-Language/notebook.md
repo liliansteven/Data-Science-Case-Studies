@@ -16,7 +16,7 @@ import pandas as pd
 # Loading in the data
 pulls_one = pd.read_csv('datasets/pulls_2011-2013.csv')
 pulls_two = pd.read_csv('datasets/pulls_2014-2018.csv')
-pull_files = pd.read_csv('datasets/pull_files.csv') 
+pull_files = pd.read_csv('datasets/pull_files.csv')
 ```
 
 ```python
@@ -31,7 +31,7 @@ def test_pulls_two():
     correct_pulls_two = pd.read_csv('datasets/pulls_2014-2018.csv')
     assert correct_pulls_two.equals(pulls_two), \
    "Read in 'datasets/pulls_2014-2018.csv' using read_csv()."
-    
+
 def test_pull_files():
     correct_pull_files = pd.read_csv('datasets/pull_files.csv')
     assert correct_pull_files.equals(pull_files), \
@@ -54,9 +54,9 @@ pulls['date'] = pd.to_datetime(pulls['date'], utc=True)
 ```
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_pulls_length():
@@ -172,9 +172,9 @@ data
 <p>85588 rows × 4 columns</p>
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_merge():
@@ -186,7 +186,7 @@ def test_merge_dataframes():
     also_correct_data = pull_files.merge(pulls, on='pid')
     assert correct_data.equals(data) or \
         also_correct_data.equals(data), \
-        "The DataFrames are not merged correctly."        
+        "The DataFrames are not merged correctly."
 ```
 
     2/2 tests passed
@@ -220,7 +220,7 @@ counts.plot(kind='bar', figsize = (12,4))
 ```
 
     <AxesSubplot:xlabel='month_year'>
-    
+
 ![png](images/output_10_1.png)
 
 ```python
@@ -247,13 +247,13 @@ by_user.plot.hist()
 ```
 
     <AxesSubplot:ylabel='Frequency'>
- 
+
 ![png](images/output_13_1.png)
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_by_user():
@@ -316,9 +316,9 @@ files
      'test/files/run/t8348/Test.scala'}
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_last_10():
@@ -328,7 +328,7 @@ def test_last_10():
 def test_join():
     assert len(joined_pr) == 34, \
     'The join was not done correctly. You lost some pull requests in the process.'
-    
+
 def test_no_files():
     assert len(files) == 34, \
     'You did not select the right number of pull requests.'
@@ -401,15 +401,15 @@ author_counts.sort_values(by='pid', ascending=False).head(3)
 </table>
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_selecting_commits():
     assert len(file_pr) == 30, \
     'You did not filter the data on the right file.'
-    
+
 def test_author_counts():
     assert len(author_counts) == 11, \
     'The number of authors is not correct.'
@@ -440,19 +440,19 @@ users_last_10
     {'bjornregnell', 'retronym', 'soc', 'starblood', 'xeno-by', 'zuvizudar'}
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_join():
     assert len(joined_pr) == len(file_pr), \
     'The join was not done correctly. You lost some pull requests in the process.'
-    
+
 def test_file_pr():
     assert len(joined_pr) == 30, \
     'The file does not have the correct number of pull requests.'
-    
+
 def test_last_10():
     assert len(users_last_10) == 6, \
     'You did not select the right number of pull requests.'
@@ -487,15 +487,15 @@ counts_wide.plot.bar()
 ![png](images/output_25_1.png)
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_author_pr():
     assert len(by_author) == 715, \
     "The wrong number of pull requests have been selected."
-    
+
 def test_counts():
     assert len(counts) == 11, \
     'The data should span 6 years.'
@@ -531,23 +531,23 @@ by_file_wide.plot(kind='bar')
 ![png](images/output_28_1.png)
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_by_author():
     assert len(by_author) == 16999, \
     'Selecting by author did not produce the expected results.'
-    
+
 def test_by_file():
     assert len(by_file) == 15, \
     'Selecting by file did not produce the expected results.'
-    
+
 # def test_grouped():
 #     assert len(grouped) == 4, \
 #     'There should be only 3 years that matches our data.'
-    
+
 def test_by_file_wide():
     assert len(by_file_wide) == 3, \
     'There should be only 3 years that matches our data.'

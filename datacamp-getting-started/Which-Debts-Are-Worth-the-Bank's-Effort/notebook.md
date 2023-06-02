@@ -81,7 +81,7 @@ df.head()
 
 ```python
 first_value = _
-    
+
 def test_pandas_loaded():
     assert pd.__name__ == 'pandas', \
         "pandas should be imported as pd."
@@ -89,15 +89,15 @@ def test_pandas_loaded():
 def test_numpy_loaded():
     assert np.__name__ == 'numpy', \
         "numpy should be imported as np."
-        
+
 import pandas as pd
 
 def test_df_correctly_loaded():
     correct_df = pd.read_csv('datasets/bank_data.csv')
-    
+
     assert correct_df.equals(df), \
         "The variable df should contain the data in 'datasets/bank_data.csv'."
-        
+
 # def test_head_output():
 #     try:
 #         assert "2030" in first_value.to_string()
@@ -162,15 +162,15 @@ def test_matplotlib_loaded_2():
 from scipy import stats
 
 # Compute average age just below and above the threshold
-era_900_1100 = df.loc[(df['expected_recovery_amount']<1100) & 
+era_900_1100 = df.loc[(df['expected_recovery_amount']<1100) &
                       (df['expected_recovery_amount']>=900)]
 by_recovery_strategy = era_900_1100.groupby(['recovery_strategy'])
 by_recovery_strategy['age'].describe().unstack()
 
-# Perform Kruskal-Wallis test 
+# Perform Kruskal-Wallis test
 Level_0_age = era_900_1100.loc[df['recovery_strategy']=="Level 0 Recovery"]['age']
 Level_1_age = era_900_1100.loc[df['recovery_strategy']=="Level 1 Recovery"]['age']
-stats.kruskal(Level_0_age, Level_1_age) 
+stats.kruskal(Level_0_age, Level_1_age)
 ```
 
     KruskalResult(statistic=3.4572342749517513, pvalue=0.06297556896097407)
@@ -181,14 +181,14 @@ def test_stats_loaded():
     'Did you import the stats module from scipy?'
 
 def test_level_0():
-    correct_Level_0_age_mean= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900) & 
+    correct_Level_0_age_mean= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900) &
                      (df['recovery_strategy']=="Level 0 Recovery")]['age'].mean()
     Level_0_age_mean= Level_0_age.mean()
     assert correct_Level_0_age_mean == Level_0_age_mean, \
         "The mean age for Level_0_age appears to be incorrect. Did you correctly assign Level_0_age?"
 
 def test_level_1():
-    correct_Level_1_age_mean= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900) & 
+    correct_Level_1_age_mean= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900) &
                      (df['recovery_strategy']=="Level 1 Recovery")]['age'].mean()
     Level_1_age_mean= Level_1_age.mean()
     assert correct_Level_1_age_mean == Level_1_age_mean, \
@@ -198,16 +198,16 @@ def test_level_1():
     3/3 tests passed
 
 ## 4. Statistical test:  sex vs. expected recovery amount
-<p>We have seen that there is no major jump in the average customer age just above and just 
+<p>We have seen that there is no major jump in the average customer age just above and just
 below the \$1000 threshold by doing a statistical test as well as exploring it graphically with a scatter plot.  </p>
 <p>We want to also test that the percentage of customers that are male does not jump across the \$1000 threshold. We can start by exploring the range of \$900 to \$1100 and later adjust this range.</p>
 <p>We can examine this question statistically by developing cross-tabs as well as doing chi-square tests of the percentage of customers that are male vs. female.</p>
 
 ```python
 # Number of customers in each category
-crosstab = pd.crosstab(df.loc[(900<=df['expected_recovery_amount']) & 
-                              (df['expected_recovery_amount']<1100) & 
-                              (df['expected_recovery_amount']>=0)]['recovery_strategy'], 
+crosstab = pd.crosstab(df.loc[(900<=df['expected_recovery_amount']) &
+                              (df['expected_recovery_amount']<1100) &
+                              (df['expected_recovery_amount']>=0)]['recovery_strategy'],
                        df['sex'])
 print(crosstab)
 
@@ -217,7 +217,7 @@ print(p_val)
 ```
 
     sex                Female  Male
-    recovery_strategy              
+    recovery_strategy
     Level 0 Recovery       32    57
     Level 1 Recovery       39    55
     0.5377947810444592
@@ -242,7 +242,7 @@ def test_pval():
 <p>A first step in examining the relationship between the actual recovery amount and the expected recovery amount is to develop a scatter plot where we want to focus our attention at the range just below and just above the threshold. Specifically, we will develop a scatter plot of  Expected Recovery Amount (X) versus Actual Recovery Amount (Y) for Expected Recovery Amounts between \$900 to \$1100.  This range covers Levels 0 and 1.  A key question is whether or not we see a discontinuity (jump) around the \$1000 threshold.</p>
 
 ```python
-# Scatter plot of Actual Recovery Amount vs. Expected Recovery Amount 
+# Scatter plot of Actual Recovery Amount vs. Expected Recovery Amount
 plt.scatter(x=df['expected_recovery_amount'], y=df['actual_recovery_amount'], c="g", s=2)
 plt.xlim(900, 1100)
 plt.ylim(0, 2000)
@@ -285,7 +285,7 @@ Level_1_actual = era_900_1100.loc[df['recovery_strategy']=='Level 1 Recovery']['
 print(stats.kruskal(Level_0_actual, Level_1_actual))
 
 # Repeat for a smaller range of $950 to $1050
-era_950_1050 = df.loc[(df['expected_recovery_amount']<1050) & 
+era_950_1050 = df.loc[(df['expected_recovery_amount']<1050) &
                       (df['expected_recovery_amount']>=950)]
 Level_0_actual = era_950_1050.loc[df['recovery_strategy']=='Level 0 Recovery']['actual_recovery_amount']
 Level_1_actual = era_950_1050.loc[df['recovery_strategy']=='Level 1 Recovery']['actual_recovery_amount']
@@ -298,14 +298,14 @@ stats.kruskal(Level_0_actual, Level_1_actual)
 
 ```python
 def test_level_0():
-    correct_Level_0_actual_mean= df.loc[(df['expected_recovery_amount']<1050) & (df['expected_recovery_amount']>=950) & 
+    correct_Level_0_actual_mean= df.loc[(df['expected_recovery_amount']<1050) & (df['expected_recovery_amount']>=950) &
                      (df['recovery_strategy']=="Level 0 Recovery")]['actual_recovery_amount'].mean()
     Level_0_actual_mean= Level_0_actual.mean()
     assert correct_Level_0_actual_mean == Level_0_actual_mean, \
         "The mean actual_recovery_amount for Level_0_actual appears to be incorrect. Did you correctly assign Level_0_actual?"
 
 def test_level_1():
-    correct_Level_1_actual_mean= df.loc[(df['expected_recovery_amount']<1050) & (df['expected_recovery_amount']>=950) & 
+    correct_Level_1_actual_mean= df.loc[(df['expected_recovery_amount']<1050) & (df['expected_recovery_amount']>=950) &
                      (df['recovery_strategy']=="Level 1 Recovery")]['actual_recovery_amount'].mean()
     Level_1_actual_mean= Level_1_actual.mean()
     assert correct_Level_1_actual_mean == Level_1_actual_mean, \
@@ -361,15 +361,15 @@ model.summary()
   <th>Df Residuals:</th>             <td>   181</td>         <th>  BIC:               </th> <td>   2568.</td>
 </tr>
 <tr>
-  <th>Df Model:</th>                 <td>     1</td>         <th>                     </th>     <td> </td>   
+  <th>Df Model:</th>                 <td>     1</td>         <th>                     </th>     <td> </td>
 </tr>
 <tr>
-  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>   
+  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>
 </tr>
 <tr>
   <th>const</th>                    <td>-1978.7597</td> <td>  347.741</td> <td>   -5.690</td> <td> 0.000</td> <td>-2664.907</td> <td>-1292.612</td>
@@ -403,7 +403,7 @@ def test_y():
     correct_y= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900)]['actual_recovery_amount']
     assert correct_y.mean() == y.mean(), \
         "The mean actual_recovery_amount for y appears incorrect. Check your assignment of y. It should include the actual_recovery_amount when the expected_recovery_amount is <1100 and >=900."
-        
+
 # def test_df_correctly_loaded():
 #     correct_model = sm.OLS(y,x).fit()
 #     assert correct_model.params[1] == model.params[1], \
@@ -421,7 +421,7 @@ def test_y():
 ```python
 # Create indicator (0 or 1) for expected recovery amount >= $1000
 df['indicator_1000'] = np.where(df['expected_recovery_amount']<1000, 0, 1)
-era_900_1100 = df.loc[(df['expected_recovery_amount']<1100) & 
+era_900_1100 = df.loc[(df['expected_recovery_amount']<1100) &
                       (df['expected_recovery_amount']>=900)]
 
 # Define X and y
@@ -460,15 +460,15 @@ model.summary()
   <th>Df Residuals:</th>             <td>   181</td>         <th>  BIC:               </th> <td>   2568.</td>
 </tr>
 <tr>
-  <th>Df Model:</th>                 <td>     1</td>         <th>                     </th>     <td> </td>   
+  <th>Df Model:</th>                 <td>     1</td>         <th>                     </th>     <td> </td>
 </tr>
 <tr>
-  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>   
+  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>
 </tr>
 <tr>
   <th>const</th>                    <td>-1978.7597</td> <td>  347.741</td> <td>   -5.690</td> <td> 0.000</td> <td>-2664.907</td> <td>-1292.612</td>
@@ -503,7 +503,7 @@ def test_y():
     correct_y= df.loc[(df['expected_recovery_amount']<1100) & (df['expected_recovery_amount']>=900)]['actual_recovery_amount']
     assert correct_y.mean() == y.mean(), \
         "The mean actual_recovery_amount for y appears incorrect. Check your assignment of y. It should include the actual_recovery_amount when the expected_recovery_amount is <1100 and >=900."
-        
+
 # def test_df_correctly_loaded():
 #     correct_model = sm.OLS(y,X).fit()
 #     assert correct_model.params[1] == model.params[1], \
@@ -519,10 +519,10 @@ def test_y():
 
 ```python
 # Redefine era_950_1050 so the indicator variable is included
-era_950_1050 = df.loc[(df['expected_recovery_amount']<1050) & 
+era_950_1050 = df.loc[(df['expected_recovery_amount']<1050) &
                       (df['expected_recovery_amount']>=950)]
 
-# Define X and y 
+# Define X and y
 X = era_950_1050[['expected_recovery_amount','indicator_1000']]
 y = era_950_1050['actual_recovery_amount']
 X = sm.add_constant(X)
@@ -558,15 +558,15 @@ model.summary()
   <th>Df Residuals:</th>             <td>    96</td>         <th>  BIC:               </th> <td>   1400.</td>
 </tr>
 <tr>
-  <th>Df Model:</th>                 <td>     2</td>         <th>                     </th>     <td> </td>   
+  <th>Df Model:</th>                 <td>     2</td>         <th>                     </th>     <td> </td>
 </tr>
 <tr>
-  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>   
+  <th>Covariance Type:</th>         <td>nonrobust</td>       <th>                     </th>     <td> </td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+              <td></td>                <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>
 </tr>
 <tr>
   <th>const</th>                    <td> -279.5243</td> <td> 1840.707</td> <td>   -0.152</td> <td> 0.880</td> <td>-3933.298</td> <td> 3374.250</td>
@@ -603,7 +603,7 @@ def test_y():
     correct_y= df.loc[(df['expected_recovery_amount']<1050) & (df['expected_recovery_amount']>=950)]['actual_recovery_amount']
     assert correct_y.mean() == y.mean(), \
         "The mean actual_recovery_amount for y appears incorrect. Check your assignment of y. It should include the actual_recovery_amount when the expected_recovery_amount is <1050 and >=950."
-        
+
 # def test_df_correctly_loaded():
 #     correct_model = sm.OLS(y,X).fit()
 #     assert correct_model.params[1] == model.params[1], \

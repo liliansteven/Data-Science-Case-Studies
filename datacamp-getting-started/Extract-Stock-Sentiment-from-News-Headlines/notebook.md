@@ -34,20 +34,20 @@ for table_name in os.listdir('datasets'):
 ```
 
 ```python
-import bs4 
+import bs4
 
 def test_load_html():
     assert type(html) == bs4.BeautifulSoup, \
     'You should load the BeautifulSoup objects in variable named html.'
-    
+
 def test_load_html_table():
     assert type(html_table) == bs4.element.Tag, \
-    'You should load the news-table tags in the variable named html_table.' 
-    
+    'You should load the news-table tags in the variable named html_table.'
+
 def test_load_html_tables():
     assert len(html_tables) == 5, \
     'You should load all five tables in the html tables dictionary.'
-    
+
 def test_html_tables_has_data():
     assert type(html_tables['tsla_26nov.html'])  == bs4.element.Tag, \
     'You should load the news-table elements into the html_tables dictionary.'
@@ -58,14 +58,14 @@ def test_html_tables_has_data():
 ## 2. What is inside those files anyway?
 <p>We've grabbed the table that contains the headlines from each stock's HTML file, but before we start parsing those tables further, we need to understand how the data in that table is structured. We have a few options for this:</p>
 <ul>
-<li>Open the HTML file with a text editor (preferably one with syntax highlighting, like <a href="http://www.sublimetext.com/">Sublime Text</a>) and explore it there</li>
+<li>Open the HTML file with a text editor (preferably one with syntax highlighting, like <a href="http://sublimetext.com/">Sublime Text</a>) and explore it there</li>
 <li>Use your browser's <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">webdev toolkit</a> to explore the HTML</li>
 <li>Explore the headlines table here in this notebook!</li>
 </ul>
 <p>Let's do the third option.</p>
 
 ```python
-# Read one single day of headlines 
+# Read one single day of headlines
 tsla = html_tables['tsla_22sep.html']
 # Get all the table rows tagged in HTML with <tr> into 'tesla_tr'
 tsla_tr = tsla.findAll('tr')
@@ -78,7 +78,7 @@ for i, table_row in enumerate(tsla_tr):
     data_text = table_row.td.get_text()
     # Print the count
     print(f'{i}:')
-    # Print the contents of 'link_text' and 'data_text' 
+    # Print the contents of 'link_text' and 'data_text'
     print(link_text)
     print(data_text)
     # The following exits the loop after three rows to prevent spamming the notebook, do not touch
@@ -88,22 +88,22 @@ for i, table_row in enumerate(tsla_tr):
 
     0:
     Billionaire investor questions Elon Musk getting 'a pass' after bombshell tweets
-    Sep-21-18 09:56PM  
+    Sep-21-18 09:56PM
     1:
     Broadcoms Stock Looks Like a Winner
-    09:30PM  
+    09:30PM
     2:
     SHAREHOLDER ALERT:  Pomerantz Law Firm Reminds Shareholders with Losses on their Investment in Tesla, Inc. of Class Action Lawsuit and Upcoming Deadline  TSLA
-    05:30PM  
+    05:30PM
     3:
     Tesla's People Problem and the Inscrutable Musk: 2 Things That Make You Go Hmmm
-    05:30PM  
+    05:30PM
 
 ```python
 def test_link_ok():
     assert link_text == "Tesla's People Problem and the Inscrutable Musk: 2 Things That Make You Go Hmmm", \
     "Iterate through table_row and load link_text exactly 3 times."
-    
+
 def test_data_ok():
     assert data_text == '05:30PM\xa0\xa0', \
     "Iterate through table_row and load data_text exactly 3 times."
@@ -122,9 +122,9 @@ for file_name, news_table in html_tables.items():
     # Iterate through all tr tags in 'news_table'
     for x in news_table.findAll('tr'):
         # Read the text from the tr tag into text
-        text = x.get_text() 
+        text = x.get_text()
         headline = x.a.get_text()
-        # Split the text in the td tag into a list 
+        # Split the text in the td tag into a list
         date_scrape = x.td.text.split()
         # If the length of 'date_scrape' is 1, load 'time' as the only element
         # If not, load 'date' as the 1st element and 'time' as the second
@@ -134,7 +134,7 @@ for file_name, news_table in html_tables.items():
             date = date_scrape[0]
             time = date_scrape[1]
 
-        # Extract the ticker from the file name, get the string up to the 1st '_'  
+        # Extract the ticker from the file name, get the string up to the 1st '_'
         ticker = file_name.split('_')[0]
         # Append ticker, date, time and headline as a list to the 'parsed_news' list
         parsed_news.append([ticker, date, time, headline])
@@ -146,11 +146,11 @@ import pandas as pd
 def test_date():
     assert pd.DataFrame(parsed_news)[1].sort_values().unique()[4] == 'Jan-01-19', \
     'All dates should be loaded in the 2nd column, with format like in "Jan-01-19"'
-    
+
 def test_time():
     assert pd.DataFrame(parsed_news)[2].sort_values().unique()[4] == '01:06PM', \
     'All dates should be loaded in the 2nd column, with format like in "01:06PM"'
-    
+
 def test_ticker():
     assert list(pd.DataFrame(parsed_news)[0].sort_values().unique()) == ['fb', 'tsla'], \
     'The tickers loaded in parsed_news should be "tsla" and "fb". They should be the 1st column.'
@@ -194,7 +194,7 @@ import nltk
 def test_vader():
     assert type(vader) == nltk.sentiment.vader.SentimentIntensityAnalyzer, \
     'The vader object should be a SentimentIntensityAnalyzer instance.'
-    
+
 def test_lexicon_len():
     assert len(vader.lexicon) >= 7504, "The lexicon should have been enriched with at least 5 words."
 ```
@@ -230,17 +230,17 @@ def test_scored_news_columns():
 def test_shape_scored_news():
     assert scored_news.shape == (500, 8), \
     'The DataFrame scored_news should have exactly 500 rows and 8 columns.'
-    
+
 def test_shape_scores_df():
     assert scores_df.shape == (500, 4), \
-    'The DataFrame scores_df should have exactly 500 rows and 4 columns.' 
-    
+    'The DataFrame scores_df should have exactly 500 rows and 4 columns.'
+
 def test_first_date():
     assert scored_news.date.min() == datetime.date(2018, 9, 18), "Convert the column date to a *date* (not a datetime)."
-    
+
 def test_min_score():
     assert scored_news[["neg", "pos", "neu"]].min().min() >= 0 , "neg, pos and neu cannot be smaller than 0."
- 
+
 def test_max_score():
     assert scored_news[["neg", "pos", "neu"]].max().max() <= 1, "neg, pos and neu cannot be bigger than 1."
 
@@ -277,7 +277,7 @@ mean_c.plot.bar()
 ```python
 def test_mean_shape():
     assert mean_c.shape == (23, 2), '"mean_c" should have exactly 23 rows and 2 columns.'
-    
+
 def test_ticker():
     assert mean_c.columns.name == 'ticker', 'you should group by and unstack the column ticker.'
 
@@ -302,7 +302,7 @@ num_news_before = scored_news['headline'].count()
 scored_news_clean = scored_news.drop_duplicates(subset=['ticker', 'headline'])
 # Count number of headlines after dropping duplicates
 num_news_after = scored_news_clean['headline'].count()
-# Print before and after numbers to get an idea of how we did 
+# Print before and after numbers to get an idea of how we did
 f"Before we had {num_news_before} headlines, now we have {num_news_after}"
 ```
 
@@ -311,7 +311,7 @@ f"Before we had {num_news_before} headlines, now we have {num_news_after}"
 ```python
 def test_df_shape():
     assert scored_news_clean.shape == (476, 8), '"scored_news_clean" should have 476 rows and 8 columns.'
-    
+
 def test_df_cols():
     l = list(scored_news.columns)
     l.sort()
@@ -337,8 +337,8 @@ single_day = single_day.loc['fb']
 single_day = single_day.loc['2019-01-03']
 # Convert the datetime string to just the time
 single_day['time'] = pd.to_datetime(single_day['time'])
-single_day['time'] = single_day.time.dt.time 
-# Set the index to time and 
+single_day['time'] = single_day.time.dt.time
+# Set the index to time and
 single_day = single_day.set_index('time')
 # Sort it
 single_day = single_day.sort_index(ascending=True)
@@ -349,14 +349,14 @@ import datetime
 
 def test_shape():
     assert single_day.shape == (19, 5), 'single_day should have 19 rows and 5 columns'
-    
+
 def test_cols():
     assert list(single_day.columns) == ['headline', 'compound', 'neg', 'neu', 'pos'], \
     'single_day column names should be "headline", "compound", "neg", "neu" and "pos"'
 
 def test_index_type():
     assert type(single_day.index[1]) == datetime.time, 'The index should be of type "datetime.type"'
-    
+
 def test_index_val():
     assert single_day.index[1] == datetime.time(8, 4), 'The 2nd index value should be exactly "08:04:00"'
 ```
@@ -374,9 +374,9 @@ plot_day = single_day.drop(['headline', 'compound'], axis=1)
 # Change the column names to 'negative', 'positive', and 'neutral'
 plot_day.columns = ['negative', 'neutral', 'positive']
 # Plot a stacked bar chart
-plot_day.plot.bar(stacked = True, 
-                  figsize=(10, 6), 
-                  title = TITLE, 
+plot_day.plot.bar(stacked = True,
+                  figsize=(10, 6),
+                  title = TITLE,
                   color = COLORS).legend(bbox_to_anchor=(1.2, 0.5))
 plt.ylabel("scores")
 ```
@@ -390,14 +390,14 @@ import datetime
 
 def test_shape():
     assert plot_day.shape == (19, 3), 'plot_day should have 19 rows and 3 columns.'
-    
+
 def test_cols():
     assert list(plot_day.columns) == ['negative', 'neutral', 'positive'], \
     'plot_day column names should be "negative", "neutral" and "positive".'
 
 def test_index_type():
     assert plot_day.index.name == 'time', 'The index should be named "time".'
-    
+
 ```
 
     3/3 tests passed

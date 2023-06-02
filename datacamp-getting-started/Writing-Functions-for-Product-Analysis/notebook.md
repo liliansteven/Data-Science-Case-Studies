@@ -66,7 +66,7 @@ import pandas as pd
 
 # Write a function that matches the docstring
 def convert_csv_to_df(csv_name, source_type):
-    """ Converts an NPS CSV into a DataFrame with a column for the source. 
+    """ Converts an NPS CSV into a DataFrame with a column for the source.
 
     Args:
         csv_name (str): The name of the NPS CSV file.
@@ -74,12 +74,12 @@ def convert_csv_to_df(csv_name, source_type):
 
     Returns:
         A DataFrame with the CSV data and a column, source.
-    """   
+    """
     df = pd.read_csv(csv_name)
     df['source'] = source_type
     return df
 
-# Test the function on the mobile data 
+# Test the function on the mobile data
 convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile")
 ```
 
@@ -219,7 +219,7 @@ def check_csv(csv_name):
         csv_name (str): The name of the CSV file.
 
     Returns:
-        Boolean: True if the CSV is valid, False otherwise 
+        Boolean: True if the CSV is valid, False otherwise
     """
     # Open csv_name as f using with open
     with open(csv_name) as f:
@@ -227,7 +227,7 @@ def check_csv(csv_name):
         # Return true if the CSV has the three specified columns
         if first_line == "response_date,user_id,nps_rating\n":
             return True
-        # Otherwise, return false    
+        # Otherwise, return false
         else:
             return False
 
@@ -279,7 +279,7 @@ def test_check_csv():
 <p>To make sure our code is scalable, we're going to write a function called <code>combine_nps_csvs()</code> that takes in a dictionary. Python dictionaries have key:value pairs. In our case, the CSV's name and source type will be the key and value, respectively. That way, we can define a dictionary with as many NPS files as we have and run it through <code>combine_nps_csvs()</code>. For each file, we'll check that it's valid using <code>check_csv()</code>, and if it is, we'll use <code>convert_csv_to_df()</code> to convert it into a DataFrame. At the start of the function, we'll define an empty DataFrame called <code>combined</code> and everytime a CSV is succesfully converted, we'll concatenate it to <code>combined</code>.</p>
 
 ```python
-# Write a function combine_nps_csvs() with the arg csvs_dict 
+# Write a function combine_nps_csvs() with the arg csvs_dict
 def combine_nps_csvs(csvs_dict):
     # Define combine as an empty DataFrame
     combined = pd.DataFrame()
@@ -304,7 +304,7 @@ my_files = {
   "datasets/corrupted.csv": "social_media"
 }
 
-# Test the function on the my_files dictionary 
+# Test the function on the my_files dictionary
 combine_nps_csvs(my_files)
 ```
 
@@ -430,7 +430,7 @@ user_ans = combine_nps_csvs(my_files)
 def test_combine():
     # check that combine_nps_csvs() has been defined
     assert inspect.isfunction(combine_nps_csvs), \
-    'Did you define a function with the name `combine_nps_csvs`?'  
+    'Did you define a function with the name `combine_nps_csvs`?'
     # check num of arguments is 1
     assert len(inspect.signature(combine_nps_csvs).parameters) == 1, \
     'Your function should have one argument: csvs_dict.'
@@ -460,8 +460,8 @@ def test_combine():
 
 ```python
 def categorize_nps(x):
-    """ 
-    Takes a NPS rating and outputs whether it is a "promoter", 
+    """
+    Takes a NPS rating and outputs whether it is a "promoter",
     "passive", "detractor", or "invalid" rating. "invalid" is
     returned when the rating is not between 0-10.
 
@@ -481,7 +481,7 @@ def categorize_nps(x):
     else:
         return 'invalid'
 
-# Test the function 
+# Test the function
 categorize_nps(8)
 ```
 
@@ -500,13 +500,13 @@ def correct_cat(x):
         return 'detractor'
     else:
         return "invalid"
-    
+
 test_series = pd.Series(range(-100,101))
 
 def test_categorize():
     # check that categorize_nps() has been defined
     assert inspect.isfunction(categorize_nps), \
-    'Did you define a function with the name `categorize_nps`?'  
+    'Did you define a function with the name `categorize_nps`?'
     # check num of arguments is 1
     assert len(inspect.signature(categorize_nps).parameters) == 1, \
     'Your function should have one argument: a rating.'
@@ -527,7 +527,7 @@ def test_categorize():
 <p>So we have a function that takes a score and outputs which NPS response group it belongs to. It would be great to have this as a column in our NPS DataFrames, similar to the <code>source</code> column we added. Since we've modularized our code with functions, all we need to do is edit our <code>convert_cvs_to_df()</code> function and nest <code>categorize_nps()</code> into it. However, the way we'll nest <code>categorize_nps()</code> will be different than previous times. The <code>pandas</code> library has a handy function called <code>apply()</code>, which lets us apply a function to each column or row of a DataFrame. </p>
 
 ```python
-def convert_csv_to_df(csv_name, source_type):    
+def convert_csv_to_df(csv_name, source_type):
     """ Convert an NPS CSV into a DataFrame with columns for the source and NPS group.
 
     Args:
@@ -654,7 +654,7 @@ convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile")
 import inspect
 import pandas as pd
 
-def correct_convert(csv_name, source_type):    
+def correct_convert(csv_name, source_type):
     df = pd.read_csv(csv_name)
     df['source'] = source_type
     # Define a new column nps_group which applies categorize_nps to nps_rating
@@ -695,11 +695,11 @@ $</p>
 
 ```python
 def calculate_nps(dataframe):
-    # Calculate the NPS score using the nps_group column 
+    # Calculate the NPS score using the nps_group column
     counts = dataframe['nps_group'].value_counts()
     detract = counts['detractor']
     promo = counts['promoter']
-    
+
     # Return the NPS Score:
     return ((promo-detract) / counts.sum()) * 100
 
@@ -736,7 +736,7 @@ def correct_calc(nps_df):
     total = counts.sum()
     return ((promotor-detractor)/ total)*100
 
-def correct_convert(csv_name, source_type):    
+def correct_convert(csv_name, source_type):
     df = pd.read_csv(csv_name)
     df['source'] = source_type
     # Define a new column nps_group which applies categorize_nps to nps_rating
@@ -843,14 +843,14 @@ def test_calc():
 
 ## 8. Adding docstrings
 <p>Interesting! The mobile responses have an NPS score of about -15, which is noticeably lower than the other two sources. There are few ways we could continue our analysis from here. We could use the column <code>user_id</code> to reach out to users who rated poorly on the mobile app for user interviews. We could also breakdown NPS by source and date to see if there was a date where NPS started clearly decreasing - perhaps the same time there was a bug or feature realeased. With the functions we created, Brenda is in a good place to continue this work!</p>
-<p>The last thing we'll discuss is docstrings. In Task 1, 2, 4 and 5, we included docstrings for <code>convert_csv_to_df()</code>, <code>check_csv()</code>, and <code>categorize_nps()</code>. However, we should include docstrings for all the functions we write so that others can better re-use and maintain our code. Docstrings tell readers what a function does, its arguments, its return value(s) if any, and any other useful information you want to include, like error handling. There are several standards for writing docstrings in Python, including: <a href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpydoc</a>, <a href="https://google.github.io/styleguide/pyguide.html">Google-style</a> (chosen style in this notebook), and <a href="https://www.python.org/dev/peps/pep-0287/">reStructuredText</a>.</p>
+<p>The last thing we'll discuss is docstrings. In Task 1, 2, 4 and 5, we included docstrings for <code>convert_csv_to_df()</code>, <code>check_csv()</code>, and <code>categorize_nps()</code>. However, we should include docstrings for all the functions we write so that others can better re-use and maintain our code. Docstrings tell readers what a function does, its arguments, its return value(s) if any, and any other useful information you want to include, like error handling. There are several standards for writing docstrings in Python, including: <a href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpydoc</a>, <a href="https://google.github.io/styleguide/pyguide.html">Google-style</a> (chosen style in this notebook), and <a href="https://python.org/dev/peps/pep-0287/">reStructuredText</a>.</p>
 <p>To make sure Brenda and other colleagues can follow our work, we are going to add docstrings to the remaining undocumented functions: <code>combine_nps_csvs()</code>, <code>calculate_nps()</code>, and <code>calculate_nps_by_source</code>. It's up to you how you want to write the docstrings - we'll only check that a docstring exists for each of these functions. </p>
 
 ```python
 # Copy and paste your code for the function from Task 3
 def combine_nps_csvs(csvs_dict):
-    """ 
-    A function combine_nps_csvs() with the arg csvs_dict 
+    """
+    A function combine_nps_csvs() with the arg csvs_dict
     """
     # Define combine as an empty DataFrame
     combined = pd.DataFrame()
@@ -870,22 +870,22 @@ def combine_nps_csvs(csvs_dict):
 
 # Copy and paste your code for the function from Task 6
 def calculate_nps(dataframe):
-    """ 
-    A function calculate_nps() with the arg dataframe 
     """
-    # Calculate the NPS score using the nps_group column 
+    A function calculate_nps() with the arg dataframe
+    """
+    # Calculate the NPS score using the nps_group column
     counts = dataframe['nps_group'].value_counts()
     detract = counts['detractor']
     promo = counts['promoter']
-    
+
     # Return the NPS Score:
     return ((promo-detract) / counts.sum()) * 100
 
 
 # Copy and paste your code for the function from Task 7
 def calculate_nps_by_source(dataframe):
-    """ 
-    A function calculate_nps_by_source() with the arg dataframe 
+    """
+    A function calculate_nps_by_source() with the arg dataframe
     """
     # Group the DataFrame by source and apply calculate_nps():
     return dataframe.groupby(['source']).apply(calculate_nps)
@@ -906,7 +906,7 @@ def test_docs():
     "It looks like there is no docstring for `calculate_nps()`. Did you enclose the docstring in triple quotes?"
     assert (calc2 is not None), \
     "It looks like there is no docstring for `calculate_nps_by_source()`. Did you enclose the docstring in triple quotes?"
-    
+
 ```
 
     1/1 tests passed

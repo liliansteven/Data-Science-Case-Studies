@@ -23,21 +23,21 @@ from sklearn import metrics
 
 # One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_CountVectorizer():
     assert 'CountVectorizer' in globals(), \
     'CountVectorizer should be imported.'
-    
+
 def test_TfidfVectorizer():
     assert 'TfidfVectorizer' in globals(), \
     'TfidfVectorizer should be imported.'
-    
+
 def test_train_test_split():
     assert 'train_test_split' in globals(), \
     'train_test_split should be imported.'
-    
+
 def test_MultinomialNB():
     assert 'MultinomialNB' in globals(), \
     'MultinomialNB should be imported.'
@@ -73,9 +73,9 @@ X_train, X_test, y_train, y_test = train_test_split(tweet_df['status'], y, rando
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_df():
@@ -119,9 +119,9 @@ tfidf_test = tfidf_vectorizer.transform(X_test)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 import scipy
 
@@ -136,7 +136,7 @@ def test_test():
     'Make sure to run the count vectorizer for the test data.'
     assert isinstance(tfidf_test, scipy.sparse.csr.csr_matrix), \
     'Make sure to run the TFIDF vectorizer for the test data.'
-    
+
 def test_vectorizers():
     assert isinstance(tfidf_vectorizer, TfidfVectorizer), \
     'tfidf_vectorizer is missing or an incorrect type.'
@@ -194,9 +194,9 @@ print('NaiveBayes Count Score: ', count_nb_score)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 import numpy
@@ -211,8 +211,8 @@ def test_models():
     'count_nb should have only two classes.'
     assert isinstance(tfidf_nb.classes_, numpy.ndarray)
     assert len(tfidf_nb.classes_) == 2, \
-    'tfidf_nb should have only two classes.' 
-    
+    'tfidf_nb should have only two classes.'
+
 
 def test_pred():
     assert isinstance(tfidf_nb_pred, numpy.ndarray), \
@@ -253,7 +253,7 @@ count_nb_cm = metrics.confusion_matrix(y_test, count_nb_pred, labels=['Donald J.
 # Plot the tfidf_nb_cm confusion matrix
 plot_confusion_matrix(tfidf_nb_cm, classes=['Donald J. Trump', 'Justin Trudeau'], title="TF-IDF NB Confusion Matrix")
 
-# Plot the count_nb_cm confusion matrix without overwriting the first plot 
+# Plot the count_nb_cm confusion matrix without overwriting the first plot
 plot_confusion_matrix(count_nb_cm, classes=['Donald J. Trump', 'Justin Trudeau'], title="Count NB Confusion Matrix", figure=1)
 ```
 
@@ -267,9 +267,9 @@ plot_confusion_matrix(count_nb_cm, classes=['Donald J. Trump', 'Justin Trudeau']
 ```python
 # This needs to be included at the beginning of every @tests cell
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 import numpy
 
@@ -317,9 +317,9 @@ plot_confusion_matrix(svc_cm, classes=['Donald J. Trump', 'Justin Trudeau'], tit
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 import numpy
 
@@ -329,19 +329,19 @@ def test_models():
     assert isinstance(tfidf_svc.classes_, numpy.ndarray), \
     'tfidf_svc should have the proper classes.'
     assert len(tfidf_svc.classes_) == 2, \
-    'tfidf_svc should have exactly 2 classes.' 
+    'tfidf_svc should have exactly 2 classes.'
 
 def test_pred():
     assert isinstance(tfidf_svc_pred, numpy.ndarray), \
     'tfidf_svc_pred should be a numpy array.'
     assert set(tfidf_svc_pred) == set(tfidf_svc.classes_), \
     'tfidf_svc_pred should have the same classes as the model.'
-    
+
 def test_score():
     assert isinstance(tfidf_svc_score, float), \
     'tfidf_svc_score should be a float.'
     assert tfidf_svc_score > .84, \
-    'tfidf_svc_score should be > .84.' 
+    'tfidf_svc_score should be > .84.'
 ```
 
     3/3 tests passed
@@ -387,9 +387,9 @@ pprint(top_features)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_example():
@@ -443,9 +443,9 @@ print("Predicted Trudeau tweet", trudeau_tweet_pred)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 import scipy
 
@@ -461,7 +461,7 @@ def test_example():
     assert trump_tweet_pred == ['Donald J. Trump'], \
     'Your tweet was not classified as a Trump tweet, try again!'
     assert trudeau_tweet_pred == ['Justin Trudeau'], \
-    'Your tweet was not classified as a Trudeau tweet, try again!'    
+    'Your tweet was not classified as a Trudeau tweet, try again!'
 ```
 
     1/1 tests passed

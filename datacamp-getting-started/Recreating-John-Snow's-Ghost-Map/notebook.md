@@ -33,7 +33,7 @@ import pandas as pd
 def test_deaths_correctly_loaded():
     correct_deaths = pd.read_csv('datasets/deaths.csv')
     assert correct_deaths.equals(deaths), 'The variable deaths should contain the data in datasets/deaths.csv'
-        
+
 def test_deaths_exists():
     assert "deaths" in globals(), \
         'The variable deaths should be defined.'
@@ -54,14 +54,14 @@ deaths.info()
 # Define the new names of your columns
 newcols = {
     'Death': 'death_count',
-    'X coordinate': 'x_latitude', 
-    'Y coordinate': 'y_longitude' 
+    'X coordinate': 'x_latitude',
+    'Y coordinate': 'y_longitude'
     }
 
 # Rename your columns
 deaths.rename(columns=newcols, inplace=True)
 
-# Describe the dataset 
+# Describe the dataset
 deaths.describe()
 ```
 
@@ -139,15 +139,15 @@ deaths.describe()
 def test_example():
     assert newcols == {
     'Death': 'death_count',
-    'X coordinate': 'x_latitude', 
-    'Y coordinate': 'y_longitude' 
+    'X coordinate': 'x_latitude',
+    'Y coordinate': 'y_longitude'
     }, \
     'The columns should have the new names (defined by the list/new dictionary).'
-        
+
 def test_deaths_exists():
     assert "deaths" in globals(), \
         'The variable deaths should be defined/data loaded as DataFrame.'
-        
+
 def test_deaths_rename():
     correct_deaths_rename = deaths.rename(columns=newcols, inplace=True), \
         'The DataFrame deaths should contain new names of the columns x_latitude and y_longitude.'
@@ -162,10 +162,10 @@ def test_deaths_rename():
 <p>We now know how John Snow did it, so let's get the data right first.</p>
 
 ```python
-# Create `locations` by subsetting only Latitude and Longitude from the dataset 
+# Create `locations` by subsetting only Latitude and Longitude from the dataset
 locations = deaths[['x_latitude', 'y_longitude']]
 
-# Create `deaths_list` by transforming the DataFrame to list of lists 
+# Create `deaths_list` by transforming the DataFrame to list of lists
 deaths_list = locations.values.tolist()
 
 # Check the length of the list
@@ -261,10 +261,10 @@ dates = pd.read_csv('datasets/dates.csv', parse_dates=['date'])
 # Set the Date when handle was removed (8th of September 1854)
 handle_removed = pd.to_datetime('1854/9/8')
 
-# Create new column `day_name` in `dates` DataFrame with names of the day 
+# Create new column `day_name` in `dates` DataFrame with names of the day
 dates['day_name'] = dates['date'].dt.weekday_name
 
-# Create new column `handle` in `dates` DataFrame based on a Date the handle was removed 
+# Create new column `handle` in `dates` DataFrame based on a Date the handle was removed
 dates['handle'] = dates['date'] > handle_removed
 
 # Check the dataset and datatypes
@@ -321,7 +321,7 @@ dates.groupby(['handle']).sum()
 def test_dates_exists():
     assert "dates" in globals(), \
         "The variable dates should be defined."
-        
+
 def test_dates_correctly_loaded():
     correct_dates = pd.read_csv('datasets/dates.csv', parse_dates=['date'])
     handle_removed = pd.to_datetime('1854/9/8')
@@ -331,7 +331,7 @@ def test_dates_correctly_loaded():
 
 def test_date_correctly_converted():
     assert dates.date.dtype == pd.to_datetime(pd.Series("1854/9/8")).dtype, \
-        "The column date should be converted using the pd.to_datetime() function"    
+        "The column date should be converted using the pd.to_datetime() function"
 ```
 
     3/3 tests passed
@@ -350,7 +350,7 @@ output_notebook(bokeh.resources.INLINE)
 
 # Set up figure
 p = figure(plot_width=900, plot_height=450, x_axis_type='datetime', tools='lasso_select, box_zoom, save, reset, wheel_zoom',
-          toolbar_location='above', x_axis_label='Date', y_axis_label='Number of Deaths/Attacks', 
+          toolbar_location='above', x_axis_label='Date', y_axis_label='Number of Deaths/Attacks',
           title='Number of Cholera Deaths/Attacks before and after 8th of September 1854 (removing the pump handle)')
 
 # Plot on figure

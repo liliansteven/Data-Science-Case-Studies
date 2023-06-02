@@ -14,7 +14,7 @@ ba_data = pd.read_csv('datasets/breath_alcohol_ames.csv')
 # quickly inspect the data
 print(ba_data.head())
 
-# obtain counts for each year 
+# obtain counts for each year
 ba_year = ba_data['year'].value_counts()
 ba_year
 ```
@@ -44,7 +44,7 @@ import pandas as pd
 
 # # check head
 
-# # check value counts    
+# # check value counts
 # def test_value_counts():
 #     assert len(ba_year) == 5, \
 #     'The rows are not arraged by year. Did you select the correct value to count?'
@@ -52,7 +52,7 @@ import pandas as pd
 def test_task_1a():
     correct_ba_data = pd.read_csv("datasets/breath_alcohol_ames.csv")
     assert correct_ba_data.equals(ba_data), "The variable `ba_data` should contain the data in `breath_alcohol_ames.csv`"
-    
+
 def test_task_1b():
     correct_ba_year = ba_data['year'].value_counts()
     assert correct_ba_year.equals(ba_year), "The variable `ba_year` should contain the counts of years in `ba_data`. Did you use the `value_counts` method?"
@@ -74,7 +74,7 @@ pds
     Name: location, dtype: int64
 
 ```python
-# # check value counts    
+# # check value counts
 # def test_value_counts():
 #     assert len(ba_year) == 2, \
 #     'The rows are not arraged by location. Did you select the correct value to count?'
@@ -93,7 +93,7 @@ def test_task_2():
 ```python
 %matplotlib inline
 
-# count by hour 
+# count by hour
 hourly = ba_data.groupby(['hour']).size()
 
 # create a vertical bar graph of the arrest count by hour
@@ -106,11 +106,11 @@ hourly.plot.bar(x='hour')
 
 ```python
 # groupby, count, and sort values
-# check counts    
+# check counts
 def test_sort_values():
     assert len(hourly) == 24, \
     'The rows are not arranged by hour. Did you select "hour" to group by?'
-    
+
 # no test for plots
 ```
 
@@ -133,7 +133,7 @@ monthly.plot.bar(x='month')
 
 ```python
 # groupby, count, and sort values
-# check counts    
+# check counts
 def test_sort_values():
     assert len(monthly) == 12, \
     'The rows are not arranged by month. Did you select "month" to group by?'
@@ -149,7 +149,7 @@ def test_sort_values():
 # count by gender
 counts_gender = ba_data['gender'].value_counts()
 
-# create a dataset with no NAs in gender 
+# create a dataset with no NAs in gender
 gen = ba_data.dropna(subset=['gender'])
 
 # create a mean test result variable
@@ -174,19 +174,19 @@ def test_task_5b():
 def test_dropna():
     assert len(gen) == 1527, \
     'Did you use dropna() on `gender`?'
-    
+
 # create meanRes in mean_bas
 def test_month_year_column():
     assert 'meanRes' in mean_bas, \
     "Did you create the `meanRes` column."
-    
+
 # no test for plots
 ```
 
     3/3 tests passed
 
 ## 6. Above the legal limit
-<p>In the USA, it is illegal to drive with a blood alcohol concentration (BAC) above 0.08%. This is the case for <a href="https://www.dmv.org/automotive-law/dui.php">all 50 states</a>. Assuming everyone tested in our data was driving (though we have no way of knowing this from the data), if either of the results (<code>Res1</code>, <code>Res2</code>) are above 0.08, the person would be charged with DUI (driving under the influence). </p>
+<p>In the USA, it is illegal to drive with a blood alcohol concentration (BAC) above 0.08%. This is the case for <a href="https://dmv.org/automotive-law/dui.php">all 50 states</a>. Assuming everyone tested in our data was driving (though we have no way of knowing this from the data), if either of the results (<code>Res1</code>, <code>Res2</code>) are above 0.08, the person would be charged with DUI (driving under the influence). </p>
 
 ```python
 # Filter the data
@@ -200,11 +200,11 @@ p_dui
     0.7448586118251928
 
 ```python
-# check filter    
+# check filter
 def test_duis():
     assert len(duis) == 1159, \
     'Did you use the logical OR operator (|) to filter ba_data?'
-    
+
 # check p_dui
 def test_p_dui():
     correct_p_dui = duis.shape[0] / ba_data.shape[0]
@@ -313,15 +313,15 @@ ba_data.head()
 </table>
 
 ```python
-# create date var    
+# create date var
 def test_date():
     assert 'date' in ba_data, \
     "You did not create the variable for date."
-    
+
 # create week var
 def test_week():
     assert 'week' in ba_data, \
-    "You did not create the variable for week."    
+    "You did not create the variable for week."
 ```
 
     2/2 tests passed
@@ -330,7 +330,7 @@ def test_week():
 <p>How do the weeks differ over time? One of the most common data visualizations is the time series, a line tracking the changes in a variable over time. We will use the new <code>week</code> variable to look at test frequency over time. We end with a time series plot showing the frequency of breathalyzer tests by week in year, with one line for each year. </p>
 
 ```python
-# choose and count the variables of interest  
+# choose and count the variables of interest
 timeline = ba_data.groupby(['week','year']).count()['Res1']
 
 # unstack and plot
@@ -342,23 +342,23 @@ timeline.unstack().plot(title='VEISHEA DUIs', legend=True)
 ![png](images/output_22_1.png)
 
 ```python
-# check timeline  
+# check timeline
 def test_timeline():
     assert len(timeline) == 259, \
     'Did you group by week and year?'
-    
+
 # plot
 ```
 
     1/1 tests passed
 
 ## 9. The end of VEISHEA
-<p>From <a href="https://en.wikipedia.org/wiki/VEISHEA">Wikipedia</a>: 
+<p>From <a href="https://en.wikipedia.org/wiki/VEISHEA">Wikipedia</a>:
 "VEISHEA was an annual week-long celebration held each spring on the campus of Iowa State University in Ames, Iowa. The celebration featured an annual parade and many open-house demonstrations of the university facilities and departments. Campus organizations exhibited products, technologies, and held fundraisers for various charity groups. In addition, VEISHEA brought speakers, lecturers, and entertainers to Iowa State. [...] VEISHEA was the largest student-run festival in the nation, bringing in tens of thousands of visitors to the campus each year."</p>
-<p>This over 90-year tradition in Ames was <a href="https://www.news.iastate.edu/news/2014/08/07/veisheaend">terminated permanently</a> after <a href="https://www.desmoinesregister.com/story/news/crime-and-courts/2014/04/09/veishea-ames-car-tipping/7495935/">riots in 2014</a>, where drunk celebrators flipped over multiple vehicles and tore light poles down. This was not the first incidence of violence and severe property damage in VEISHEA's history. Did former President Leath make the right decision by canceling VEISHEA?</p>
+<p>This over 90-year tradition in Ames was <a href="https://news.iastate.edu/news/2014/08/07/veisheaend">terminated permanently</a> after <a href="https://desmoinesregister.com/story/news/crime-and-courts/2014/04/09/veishea-ames-car-tipping/7495935/">riots in 2014</a>, where drunk celebrators flipped over multiple vehicles and tore light poles down. This was not the first incidence of violence and severe property damage in VEISHEA's history. Did former President Leath make the right decision by canceling VEISHEA?</p>
 
 ```python
-## Was it right to permanently cancel VEISHEA? TRUE or FALSE?  
+## Was it right to permanently cancel VEISHEA? TRUE or FALSE?
 canceling_VEISHEA_was_right = False
 ```
 

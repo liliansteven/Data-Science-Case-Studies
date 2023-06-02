@@ -1,6 +1,6 @@
 ## 1. Loading your friend's data into a dictionary
 <p><img src="https://assets.datacamp.com/production/project_1237/img/netflix.jpg" alt="Someone's feet on table facing a television"></p>
-<p>Netflix! What started in 1997 as a DVD rental service has since exploded into the largest entertainment/media company by <a href="https://www.marketwatch.com/story/netflix-shares-close-up-8-for-yet-another-record-high-2020-07-10">market capitalization</a>, boasting over 200 million subscribers as of <a href="https://www.cbsnews.com/news/netflix-tops-200-million-subscribers-but-faces-growing-challenge-from-disney-plus/">January 2021</a>.</p>
+<p>Netflix! What started in 1997 as a DVD rental service has since exploded into the largest entertainment/media company by <a href="https://marketwatch.com/story/netflix-shares-close-up-8-for-yet-another-record-high-2020-07-10">market capitalization</a>, boasting over 200 million subscribers as of <a href="https://cbsnews.com/news/netflix-tops-200-million-subscribers-but-faces-growing-challenge-from-disney-plus/">January 2021</a>.</p>
 <p>Given the large number of movies and series available on the platform, it is a perfect opportunity to flex our data manipulation skills and dive into the entertainment industry. Our friend has also been brushing up on their Python skills and has taken a first crack at a CSV file containing Netflix data. For their first order of business, they have been performing some analyses, and they believe that the average duration of movies has been declining. </p>
 <p>As evidence of this, they have provided us with the following information. For the years from 2011 to 2020, the average movie durations are 103, 101, 99, 100, 100, 95, 95, 96, 93, and 90, respectively.</p>
 <p>If we're going to be working with this data, we know a good place to start would be to probably start working with <code>pandas</code>. But first we'll need to create a DataFrame from scratch. Let's start by creating a Python object covered in <a href="https://learn.datacamp.com/courses/intermediate-python">Intermediate Python</a>: a dictionary!</p>
@@ -32,7 +32,7 @@ def test_years_list():
     "Did you correctly define the `years` list as a list containing **all** 10 years from 2011 to 2020?"
     assert test_years == years, \
     "Did you correctly define the `years` list as a list containing the years (in order) from 2011 to 2020?"
-    
+
 def test_durations_list():
     assert (type(durations) == list), \
     'Did you correctly initalize a `durations` as a list?'
@@ -40,7 +40,7 @@ def test_durations_list():
     "Did you correctly define the `durations` list as a list containing **all** 10 average durations our friend provided us?"
     assert test_durations == durations, \
     "Did you correctly define the `durations` list as a list containing all of the average movie durations (in order) that our friend provided us?"
-    
+
 def test_movie_dict_dict():
     assert (type(movie_dict) == dict), \
     'Did you correctly initalize `movie_dict` as a dictionary?'
@@ -136,7 +136,7 @@ durations_df
 def test_pandas_loaded():
     assert 'pd' in globals(), \
     'Did you correctly import the `pandas` library under the alias `pd`?'
-    
+
 import pandas as pd
 
 test_years = [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
@@ -201,13 +201,13 @@ y_axis_data = test_netflix_df['durations'].values
 def test_matplotlib_loaded():
     assert 'plt' in globals(), \
     'Did you correctly import `matplotlib.pyplot` under the alias `plt`?'
-    
+
 try:
     # Generate x and y axis containers
     stu_yaxis = fig.gca().get_lines()[0].get_ydata()
     stu_xaxis = fig.gca().get_lines()[0].get_xdata()
     title = fig.gca()._axes.get_title()
-    
+
 except:
     title = 'null'
     stu_yaxis = 'null'
@@ -218,11 +218,11 @@ except:
 def test_y_axis():
     assert (stu_yaxis == y_axis_data).all(), \
     'Are you correctly plotting the average movie durations on the y-axis?'
-    
+
 def test_x_axis():
     assert (stu_xaxis == x_axis_data).all(), \
     'Are you correctly plotting the release years on the x axis?'
-    
+
 def test_title():
     assert (re.search('netflix\s+movie\s+durations\s+2011\s*\-\s*2020', title, re.IGNORECASE)), \
     'Did you set the correct title?'
@@ -449,7 +449,7 @@ def test_netflix_df_1():
     assert test_netflix_df_filtered.equals(netflix_df_movies_only), \
     "Did you correctly create the `netflix_df_movies_only` DataFrame by filtering the `netflix_df` DataFrame \
     where the `type` was `'Movie'`?"
-    
+
 def test_netflix_df_2():
     assert test_netflix_movies.equals(netflix_movies_col_subset), \
     "Did you correctly create the `netflix_movies_col_subset` DataFrame by \
@@ -516,10 +516,10 @@ except:
 def test_y_axis():
     assert stu_yaxis.all() == y_axis_data.all(), \
     'Are you correctly plotting `duration` on the y-axis?'
-    
+
 def test_x_axis():
     assert stu_xaxis.all() == x_axis_data.all(), \
-    'Are you correctly plotting `release_date` on the x-axis?' 
+    'Are you correctly plotting `release_date` on the x-axis?'
 
 def test_title():
     assert (re.search('Movie\s+Duration\s+by\s+Year\s+of\s+Release', title, re.IGNORECASE)), \
@@ -766,7 +766,7 @@ for lab, row in netflix_movies_col_subset.iterrows():
     else:
         colors.append("black")
 
-# Inspect the first 10 values in your list      
+# Inspect the first 10 values in your list
 colors[:10]
 ```
 
@@ -795,7 +795,7 @@ for lab, row in netflix_movies_col_subset.iterrows():
         colors_test.append("green")
     else :
         colors_test.append("black")
-        
+
 def test_colors_list():
     assert colors_test == colors, \
     "Did you correctly loop through your `netflix_movies` DataFrame, \
@@ -863,11 +863,11 @@ except:
 def test_y_axis():
     assert stu_yaxis.all() == y_axis_data.all(), \
     'Are you correctly plotting `duration` on the y axis?'
-    
+
 def test_x_axis():
     assert stu_xaxis.all() == x_axis_data.all(), \
     'Are you correctly plotting `release_date` on the x axis?'
-    
+
 def test_colors():
     assert color_data.all() == stu_colors.all(), \
     'Are you correctly setting the colors according to the rating scheme provided?'
@@ -876,16 +876,16 @@ def test_labels():
     assert (re.search('movie\s+duration\s+by\s+year\s+of\s+release', title, re.IGNORECASE)), \
     'Did you give the correct title?'
     assert (re.search('release\s+year', x_label, re.IGNORECASE)), \
-    'Did you set the correct x-axis label?'  
+    'Did you set the correct x-axis label?'
     assert (re.search('duration\s*\(\s*min\s*\)', y_label, re.IGNORECASE)), \
-    'Did you set the correct y-axis label?'   
+    'Did you set the correct y-axis label?'
 ```
 
     5/5 tests passed
 
 ## 10. What next?
 <p>Well, as we suspected, non-typical genres such as children's movies and documentaries are all clustered around the bottom half of the plot. But we can't know for certain until we perform additional analyses. </p>
-<p>Congratulations, you've performed an exploratory analysis of some entertainment data, and there are lots of fun ways to develop your skills as a Pythonic data scientist. These include learning how to analyze data further with statistics, creating more advanced visualizations, and perhaps most importantly, learning more advanced ways of working with data in <code>pandas</code>. This latter skill is covered in our fantastic course <a href="www.datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with pandas</a>.</p>
+<p>Congratulations, you've performed an exploratory analysis of some entertainment data, and there are lots of fun ways to develop your skills as a Pythonic data scientist. These include learning how to analyze data further with statistics, creating more advanced visualizations, and perhaps most importantly, learning more advanced ways of working with data in <code>pandas</code>. This latter skill is covered in our fantastic course <a href="datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with pandas</a>.</p>
 <p>We hope you enjoyed this application of the skills learned in Intermediate Python, and wish you all the best on the rest of your journey!</p>
 
 ```python

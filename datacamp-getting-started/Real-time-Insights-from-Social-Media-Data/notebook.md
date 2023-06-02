@@ -34,7 +34,7 @@ print(US_trends)
 def test_pandas_loaded():
     assert 'json' in globals(), \
     'Did you import the json module?'
-    
+
 def test_WW_trends_correctly_loaded():
     correct_ww_trends = json.loads(open('datasets/WWTrends.json').read())
     assert correct_ww_trends == WW_trends, "The variable WW_trends should contain the data in WWTrends.json."
@@ -60,7 +60,7 @@ json.dumps(US_trends, indent=1)
 ```
 
     WW trends:
-    
+
      US trends:
 
     '[\n {\n  "trends": [\n   {\n    "name": "#WeLoveTheEarth",\n    "url": "http://twitter.com/search?q=%23WeLoveTheEarth",\n    "promoted_content": null,\n    "query": "%23WeLoveTheEarth",\n    "tweet_volume": 159698\n   },\n   {\n    "name": "#DragRace",\n    "url": "http://twitter.com/search?q=%23DragRace",\n    "promoted_content": null,\n    "query": "%23DragRace",\n    "tweet_volume": 37166\n   },\n   {\n    "name": "Lil Dicky",\n    "url": "http://twitter.com/search?q=%22Lil+Dicky%22",\n    "promoted_content": null,\n    "query": "%22Lil+Dicky%22",\n    "tweet_volume": 42461\n   },\n   {\n    "name": "Derrick White",\n    "url": "http://twitter.com/search?q=%22Derrick+White%22",\n    "promoted_content": null,\n    "query": "%22Derrick+White%22",\n    "tweet_volume": 27104\n   },\n   {\n    "name": "#CUZILOVEYOU",\n    "url": "http://twitter.com/search?q=%23CUZILOVEYOU",\n    "promoted_content": null,\n    "query": "%23CUZILOVEYOU",\n    "tweet_volume": null\n   },\n   {\n    "name": "Kevin Durant",\n    "url": "http://twitter.com/search?q=%22Kevin+Durant%22",\n    "promoted_content": null,\n    "query": "%22Kevin+Durant%22",\n    "tweet_volume": 21870\n   },\n   {\n    "name": "#StarTrekDiscovery",\n    "url": "http://twitter.com/search?q=%23StarTrekDiscovery",\n    "promoted_content": null,\n    "query": "%23StarTrekDiscovery",\n    "tweet_volume": null\n   },\n   {\n    "name": "#GSWvsLAC",\n    "url": "http://twitter.com/search?q=%23GSWvsLAC",\n    "promoted_content": null,\n    "query": "%23GSWvsLAC",\n    "tweet_volume": null\n   },\n   {\n    "name": "Oshie",\n    "url": "http://twitter.com/search?q=Oshie",\n    "promoted_content": null,\n    "query": "Oshie",\n    "tweet_volume": null\n   },\n   {\n    "name": "Seth Abramson",\n    "url": "http://twitter.com/search?q=%22Seth+Abramson%22",\n    "promoted_content": null,\n    "query": "%22Seth+Abramson%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Lyra McKee",\n    "url": "http://twitter.com/search?q=%22Lyra+McKee%22",\n    "promoted_content": null,\n    "query": "%22Lyra+McKee%22",\n    "tweet_volume": 17606\n   },\n   {\n    "name": "Silky",\n    "url": "http://twitter.com/search?q=Silky",\n    "promoted_content": null,\n    "query": "Silky",\n    "tweet_volume": 12881\n   },\n   {\n    "name": "Kazuo Koike",\n    "url": "http://twitter.com/search?q=%22Kazuo+Koike%22",\n    "promoted_content": null,\n    "query": "%22Kazuo+Koike%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Game 6",\n    "url": "http://twitter.com/search?q=%22Game+6%22",\n    "promoted_content": null,\n    "query": "%22Game+6%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Yvie",\n    "url": "http://twitter.com/search?q=Yvie",\n    "promoted_content": null,\n    "query": "Yvie",\n    "tweet_volume": 10680\n   },\n   {\n    "name": "Gallant",\n    "url": "http://twitter.com/search?q=Gallant",\n    "promoted_content": null,\n    "query": "Gallant",\n    "tweet_volume": null\n   },\n   {\n    "name": "Lone Wolf and Cub",\n    "url": "http://twitter.com/search?q=%22Lone+Wolf+and+Cub%22",\n    "promoted_content": null,\n    "query": "%22Lone+Wolf+and+Cub%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "George Conway",\n    "url": "http://twitter.com/search?q=%22George+Conway%22",\n    "promoted_content": null,\n    "query": "%22George+Conway%22",\n    "tweet_volume": 27458\n   },\n   {\n    "name": "David Fletcher",\n    "url": "http://twitter.com/search?q=%22David+Fletcher%22",\n    "promoted_content": null,\n    "query": "%22David+Fletcher%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Derry",\n    "url": "http://twitter.com/search?q=Derry",\n    "promoted_content": null,\n    "query": "Derry",\n    "tweet_volume": 28234\n   },\n   {\n    "name": "Mike Anderson",\n    "url": "http://twitter.com/search?q=%22Mike+Anderson%22",\n    "promoted_content": null,\n    "query": "%22Mike+Anderson%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Shy Glizzy",\n    "url": "http://twitter.com/search?q=%22Shy+Glizzy%22",\n    "promoted_content": null,\n    "query": "%22Shy+Glizzy%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Tomas Hertl",\n    "url": "http://twitter.com/search?q=%22Tomas+Hertl%22",\n    "promoted_content": null,\n    "query": "%22Tomas+Hertl%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "Servais",\n    "url": "http://twitter.com/search?q=Servais",\n    "promoted_content": null,\n    "query": "Servais",\n    "tweet_volume": null\n   },\n   {\n    "name": "WE LOVE THE EARTH",\n    "url": "http://twitter.com/search?q=%22WE+LOVE+THE+EARTH%22",\n    "promoted_content": null,\n    "query": "%22WE+LOVE+THE+EARTH%22",\n    "tweet_volume": null\n   },\n   {\n    "name": "\\"Earth\\"",\n    "url": "http://twitter.com/search?q=%22Earth%22",\n    "promoted_content": null,\n    "query": "%22Earth%22",\n    "tweet_volume": 338417\n   },\n   {\n    "name": "#DinahJane1",\n    "url": "http://twitter.com/search?q=%23DinahJane1",\n    "promoted_content": null,\n    "query": "%23DinahJane1",\n    "tweet_volume": 23757\n   },\n   {\n    "name": "#WhatStopsYouFromGoingHome",\n    "url": "http://twitter.com/search?q=%23WhatStopsYouFromGoingHome",\n    "promoted_content": null,\n    "query": "%23WhatStopsYouFromGoingHome",\n    "tweet_volume": null\n   },\n   {\n    "name": "#MakeAMovieSensual",\n    "url": "http://twitter.com/search?q=%23MakeAMovieSensual",\n    "promoted_content": null,\n    "query": "%23MakeAMovieSensual",\n    "tweet_volume": null\n   },\n   {\n    "name": "#DontChangeOutNow",\n    "url": "http://twitter.com/search?q=%23DontChangeOutNow",\n    "promoted_content": null,\n    "query": "%23DontChangeOutNow",\n    "tweet_volume": null\n   },\n   {\n    "name": "#BLACKPINKxCorden",\n    "url": "http://twitter.com/search?q=%23BLACKPINKxCorden",\n    "promoted_content": null,\n    "query": "%23BLACKPINKxCorden",\n    "tweet_volume": 253605\n   },\n   {\n    "name": "#WorldofWarcraftMains",\n    "url": "http://twitter.com/search?q=%23WorldofWarcraftMains",\n    "promoted_content": null,\n    "query": "%23WorldofWarcraftMains",\n    "tweet_volume": null\n   },\n   {\n    "name": "#MyDrunkUncleSays",\n    "url": "http://twitter.com/search?q=%23MyDrunkUncleSays",\n    "promoted_content": null,\n    "query": "%23MyDrunkUncleSays",\n    "tweet_volume": null\n   },\n   {\n    "name": "#WGAMIX",\n    "url": "http://twitter.com/search?q=%23WGAMIX",\n    "promoted_content": null,\n    "query": "%23WGAMIX",\n    "tweet_volume": null\n   },\n   {\n    "name": "#Earth",\n    "url": "http://twitter.com/search?q=%23Earth",\n    "promoted_content": null,\n    "query": "%23Earth",\n    "tweet_volume": 13655\n   },\n   {\n    "name": "#TheLegendOfVoxMachina",\n    "url": "http://twitter.com/search?q=%23TheLegendOfVoxMachina",\n    "promoted_content": null,\n    "query": "%23TheLegendOfVoxMachina",\n    "tweet_volume": null\n   },\n   {\n    "name": "#AFLNorthDons",\n    "url": "http://twitter.com/search?q=%23AFLNorthDons",\n    "promoted_content": null,\n    "query": "%23AFLNorthDons",\n    "tweet_volume": null\n   },\n   {\n    "name": "#FridayFeeling",\n    "url": "http://twitter.com/search?q=%23FridayFeeling",\n    "promoted_content": null,\n    "query": "%23FridayFeeling",\n    "tweet_volume": 19510\n   },\n   {\n    "name": "#MyInnerDemonSaid",\n    "url": "http://twitter.com/search?q=%23MyInnerDemonSaid",\n    "promoted_content": null,\n    "query": "%23MyInnerDemonSaid",\n    "tweet_volume": null\n   },\n   {\n    "name": "#rupaulsdragrace",\n    "url": "http://twitter.com/search?q=%23rupaulsdragrace",\n    "promoted_content": null,\n    "query": "%23rupaulsdragrace",\n    "tweet_volume": null\n   },\n   {\n    "name": "#ConCalmaRemix",\n    "url": "http://twitter.com/search?q=%23ConCalmaRemix",\n    "promoted_content": null,\n    "query": "%23ConCalmaRemix",\n    "tweet_volume": 37846\n   },\n   {\n    "name": "#TimeToImpeach",\n    "url": "http://twitter.com/search?q=%23TimeToImpeach",\n    "promoted_content": null,\n    "query": "%23TimeToImpeach",\n    "tweet_volume": 21732\n   },\n   {\n    "name": "#NRLBulldogsSouths",\n    "url": "http://twitter.com/search?q=%23NRLBulldogsSouths",\n    "promoted_content": null,\n    "query": "%23NRLBulldogsSouths",\n    "tweet_volume": null\n   },\n   {\n    "name": "#CriticalRoleSpoilers",\n    "url": "http://twitter.com/search?q=%23CriticalRoleSpoilers",\n    "promoted_content": null,\n    "query": "%23CriticalRoleSpoilers",\n    "tweet_volume": null\n   },\n   {\n    "name": "#GossipShouldBe",\n    "url": "http://twitter.com/search?q=%23GossipShouldBe",\n    "promoted_content": null,\n    "query": "%23GossipShouldBe",\n    "tweet_volume": null\n   },\n   {\n    "name": "#LilDicky",\n    "url": "http://twitter.com/search?q=%23LilDicky",\n    "promoted_content": null,\n    "query": "%23LilDicky",\n    "tweet_volume": null\n   },\n   {\n    "name": "#RPDR",\n    "url": "http://twitter.com/search?q=%23RPDR",\n    "promoted_content": null,\n    "query": "%23RPDR",\n    "tweet_volume": null\n   },\n   {\n    "name": "#WeirdDateStories",\n    "url": "http://twitter.com/search?q=%23WeirdDateStories",\n    "promoted_content": null,\n    "query": "%23WeirdDateStories",\n    "tweet_volume": null\n   },\n   {\n    "name": "#HustleAndSoul",\n    "url": "http://twitter.com/search?q=%23HustleAndSoul",\n    "promoted_content": null,\n    "query": "%23HustleAndSoul",\n    "tweet_volume": null\n   },\n   {\n    "name": "#fridaymotivation",\n    "url": "http://twitter.com/search?q=%23fridaymotivation",\n    "promoted_content": null,\n    "query": "%23fridaymotivation",\n    "tweet_volume": null\n   }\n  ],\n  "as_of": "2019-04-19T08:43:43Z",\n  "created_at": "2019-04-19T08:39:15Z",\n  "locations": [\n   {\n    "name": "United States",\n    "woeid": 23424977\n   }\n  ]\n }\n]'
@@ -69,9 +69,9 @@ json.dumps(US_trends, indent=1)
 ```python
 # Not sure what to check here
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def strip_comment_lines(cell_input):
@@ -106,7 +106,7 @@ def test_info_command():
 world_trends = set([trend['name'] for trend in WW_trends[0]['trends']])
 
 # Extracting all the US trend names from US_trends
-us_trends = set([trend['name'] for trend in US_trends[0]['trends']]) 
+us_trends = set([trend['name'] for trend in US_trends[0]['trends']])
 
 # Getting the intersection of the two sets of trends
 common_trends = world_trends.intersection(us_trends)
@@ -117,23 +117,23 @@ print(us_trends, "\n")
 print (len(common_trends), "common trends:", common_trends)
 ```
 
-    {'刀ステ', '池袋の事故', '高齢者', '#TheJudasInMyLife', '十二国記', 'Hemant Karkare', '#19aprile', '重体の女性と女児', '브이알', '#HanumanJayanti', 'Derrick White', '#BeratKandili', '#ShivSena', 'Priyanka Chaturvedi', '#HayırlıKandiller', '歩行者', '#AFLNorthDons', '#NRLBulldogsSouths', '#Ontas', 'Lyra McKee', '#DinahJane1', '#JunquerasACN', 'Shiv Sena', 'プリウス', '免許返納', 'グレア', '#GoodFriday', '#HardikPatel', '#ConCalmaRemix', '#DragRace', '#يوم_الجمعه', '#ViernesSanto', '#WeLoveTheEarth', '#KpuJanganCurang', 'örgütdeğil arkadaşgrubu', 'Derry', 'Lil Dicky', '#ProtestoEdiyorum', '#DuyguAsena', '#Karfreitag', '#NikahUmurBerapa', '#اغلاق_BBM', '#BLACKPINKxCorden', '東京・池袋衝突事故', '#195TLdenTTVerilir', '#HayırlıCumalar', '#Jersey', 'Berat Kandilimiz', '#CHIvLIO', '#IndonesianElectionHeroes'} 
-    
-    {'Game 6', '#WhatStopsYouFromGoingHome', '#WorldofWarcraftMains', '#WeirdDateStories', 'Lone Wolf and Cub', '#TimeToImpeach', '#TheLegendOfVoxMachina', '"Earth"', '#CriticalRoleSpoilers', 'George Conway', 'Derrick White', '#MyDrunkUncleSays', '#NRLBulldogsSouths', '#AFLNorthDons', '#StarTrekDiscovery', 'Lyra McKee', '#DinahJane1', '#LilDicky', 'Seth Abramson', '#fridaymotivation', '#GSWvsLAC', '#WGAMIX', '#DontChangeOutNow', 'David Fletcher', '#FridayFeeling', '#ConCalmaRemix', '#RPDR', '#DragRace', '#CUZILOVEYOU', 'Servais', '#WeLoveTheEarth', 'Derry', 'WE LOVE THE EARTH', '#GossipShouldBe', '#rupaulsdragrace', 'Lil Dicky', 'Silky', '#HustleAndSoul', 'Gallant', 'Mike Anderson', 'Tomas Hertl', 'Oshie', '#BLACKPINKxCorden', 'Kazuo Koike', 'Shy Glizzy', 'Kevin Durant', '#MakeAMovieSensual', '#Earth', '#MyInnerDemonSaid', 'Yvie'} 
-    
+    {'刀ステ', '池袋の事故', '高齢者', '#TheJudasInMyLife', '十二国記', 'Hemant Karkare', '#19aprile', '重体の女性と女児', '브이알', '#HanumanJayanti', 'Derrick White', '#BeratKandili', '#ShivSena', 'Priyanka Chaturvedi', '#HayırlıKandiller', '歩行者', '#AFLNorthDons', '#NRLBulldogsSouths', '#Ontas', 'Lyra McKee', '#DinahJane1', '#JunquerasACN', 'Shiv Sena', 'プリウス', '免許返納', 'グレア', '#GoodFriday', '#HardikPatel', '#ConCalmaRemix', '#DragRace', '#يوم_الجمعه', '#ViernesSanto', '#WeLoveTheEarth', '#KpuJanganCurang', 'örgütdeğil arkadaşgrubu', 'Derry', 'Lil Dicky', '#ProtestoEdiyorum', '#DuyguAsena', '#Karfreitag', '#NikahUmurBerapa', '#اغلاق_BBM', '#BLACKPINKxCorden', '東京・池袋衝突事故', '#195TLdenTTVerilir', '#HayırlıCumalar', '#Jersey', 'Berat Kandilimiz', '#CHIvLIO', '#IndonesianElectionHeroes'}
+
+    {'Game 6', '#WhatStopsYouFromGoingHome', '#WorldofWarcraftMains', '#WeirdDateStories', 'Lone Wolf and Cub', '#TimeToImpeach', '#TheLegendOfVoxMachina', '"Earth"', '#CriticalRoleSpoilers', 'George Conway', 'Derrick White', '#MyDrunkUncleSays', '#NRLBulldogsSouths', '#AFLNorthDons', '#StarTrekDiscovery', 'Lyra McKee', '#DinahJane1', '#LilDicky', 'Seth Abramson', '#fridaymotivation', '#GSWvsLAC', '#WGAMIX', '#DontChangeOutNow', 'David Fletcher', '#FridayFeeling', '#ConCalmaRemix', '#RPDR', '#DragRace', '#CUZILOVEYOU', 'Servais', '#WeLoveTheEarth', 'Derry', 'WE LOVE THE EARTH', '#GossipShouldBe', '#rupaulsdragrace', 'Lil Dicky', 'Silky', '#HustleAndSoul', 'Gallant', 'Mike Anderson', 'Tomas Hertl', 'Oshie', '#BLACKPINKxCorden', 'Kazuo Koike', 'Shy Glizzy', 'Kevin Durant', '#MakeAMovieSensual', '#Earth', '#MyInnerDemonSaid', 'Yvie'}
+
     11 common trends: {'Lil Dicky', '#NRLBulldogsSouths', '#AFLNorthDons', '#ConCalmaRemix', '#DragRace', 'Lyra McKee', '#DinahJane1', '#BLACKPINKxCorden', '#WeLoveTheEarth', 'Derry', 'Derrick White'}
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_ww_trends():
     correct_world_trends = set([trend['name'] for trend in WW_trends[0]['trends']])
     assert world_trends == correct_world_trends, \
     'The variable world_trends does not have the expected trend names.'
-   
+
 def test_us_trends():
     correct_us_trends = set([trend['name'] for trend in US_trends[0]['trends']])
     assert us_trends == correct_us_trends, \
@@ -399,7 +399,7 @@ tweets[0:2]
 def test_tweets_loaded_correctly():
     correct_tweets_data = json.loads(open('datasets/WeLoveTheEarth.json').read())
     assert correct_tweets_data == tweets, "The variable tweets should contain the data in WeLoveTheEarth.json."
-    
+
 ```
 
     1/1 tests passed
@@ -414,12 +414,12 @@ def test_tweets_loaded_correctly():
 texts = [tweet['text'] for tweet in tweets]
 
 # Extracting screen names of users tweeting about #WeLoveTheEarth
-names = [hashtag['screen_name'] 
+names = [hashtag['screen_name']
              for tweet in tweets
                  for hashtag in tweet['entities']['user_mentions']]
 
 # Extracting all the hashtags being used when talking about this topic
-hashtags = [hashtag['text'] 
+hashtags = [hashtag['text']
              for tweet in tweets
                  for hashtag in tweet['entities']['hashtags']]
 
@@ -440,8 +440,8 @@ print (json.dumps(hashtags[0:10], indent=1),"\n")
      "Literally no one:\n\nMe in the past 4 hours:\n\nI'm a koala and I sleep all the time, so what, it's cute \ud83c\udfb6\n\n#WeLoveTheEarth #EdSheeranTheKoala",
      "RT @Yuuupthatsme: Mia\u0142e\u015b by\u0107 \u017cyraf\u0105 #WeLoveTheEarth https://t.co/0kNCpU8o6q",
      "RT @jaguareffects: eu prestando aten\u00e7\u00e3o no \u00e1udio pra identificar cada artista\n\n#WeLoveTheEarth https://t.co/0cDtiV2t1E"
-    ] 
-    
+    ]
+
     [
      "lildickytweets",
      "cabeyoomoon",
@@ -453,8 +453,8 @@ print (json.dumps(hashtags[0:10], indent=1),"\n")
      "sanbenito",
      "edsheeran",
      "SnoopDogg"
-    ] 
-    
+    ]
+
     [
      "WeLoveTheEarth",
      "WeLoveTheEarth",
@@ -466,7 +466,7 @@ print (json.dumps(hashtags[0:10], indent=1),"\n")
      "EdSheeranTheKoala",
      "WeLoveTheEarth",
      "WeLoveTheEarth"
-    ] 
+    ]
 
 ```python
 # One or more tests of the student's code
@@ -478,16 +478,16 @@ def test_extracted_texts():
     correct_text = [tweet['text'] for tweet in tweets ]
     assert texts == correct_text, \
     'The variable texts does not have the expected text data.'
-   
+
 def test_extracted_names():
-    correct_names = [user_mention['screen_name'] 
-                         for tweet in tweets 
+    correct_names = [user_mention['screen_name']
+                         for tweet in tweets
                              for user_mention in tweet['entities']['user_mentions']]
     assert correct_names == names, \
     'The variable names does not have the expected user names.'
-    
+
 def test_extracted_hashtags():
-    correct_hashtags = [hashtag['text'] 
+    correct_hashtags = [hashtag['text']
                             for tweet in tweets
                                  for hashtag in tweet['entities']['hashtags']]
     assert correct_hashtags == hashtags, \
@@ -512,14 +512,14 @@ from collections import Counter
 
 # Counting occcurrences/ getting frequency dist of all names and hashtags
 for item in [names, hashtags]:
-    c = Counter(item) 
+    c = Counter(item)
     # Inspecting the 10 most common items in c
     print (c.most_common(10), "\n")
 ```
 
-    [('lildickytweets', 102), ('LeoDiCaprio', 44), ('ShawnMendes', 33), ('halsey', 31), ('ArianaGrande', 30), ('justinbieber', 29), ('Spotify', 26), ('edsheeran', 26), ('sanbenito', 25), ('SnoopDogg', 25)] 
-    
-    [('WeLoveTheEarth', 313), ('4future', 12), ('19aprile', 12), ('EARTH', 11), ('fridaysforfuture', 10), ('EarthMusicVideo', 3), ('ConCalmaRemix', 3), ('Earth', 3), ('aliens', 2), ('AvengersEndgame', 2)] 
+    [('lildickytweets', 102), ('LeoDiCaprio', 44), ('ShawnMendes', 33), ('halsey', 31), ('ArianaGrande', 30), ('justinbieber', 29), ('Spotify', 26), ('edsheeran', 26), ('sanbenito', 25), ('SnoopDogg', 25)]
+
+    [('WeLoveTheEarth', 313), ('4future', 12), ('19aprile', 12), ('EARTH', 11), ('fridaysforfuture', 10), ('EarthMusicVideo', 3), ('ConCalmaRemix', 3), ('Earth', 3), ('aliens', 2), ('AvengersEndgame', 2)]
 
 ```python
 # One or more tests of the student's code
@@ -528,7 +528,7 @@ for item in [names, hashtags]:
 # to give the student a hint on how to resolve these errors
 
 def test_counter():
-    for item in [names, hashtags]: correct_counter = Counter(item)  
+    for item in [names, hashtags]: correct_counter = Counter(item)
     assert c == correct_counter, \
     "The variable c does not have the expected values."
 ```
@@ -552,9 +552,9 @@ def test_counter():
 
 ```python
 # Extracting useful information from retweets
-retweets = [(tweet['retweet_count'], 
-             tweet['retweeted_status']['favorite_count'], 
-             tweet['retweeted_status']['user']['followers_count'], 
+retweets = [(tweet['retweet_count'],
+             tweet['retweeted_status']['favorite_count'],
+             tweet['retweeted_status']['user']['followers_count'],
              tweet['retweeted_status']['user']['screen_name'],
              tweet['text']) for tweet in tweets if 'retweeted_status' in tweet]
 ```
@@ -567,13 +567,13 @@ retweets = [(tweet['retweet_count'],
 
 def test_retweets():
     correct_retweets = [
-             (tweet['retweet_count'], 
+             (tweet['retweet_count'],
               tweet['retweeted_status']['favorite_count'],
               tweet['retweeted_status']['user']['followers_count'],
               tweet['retweeted_status']['user']['screen_name'],
-              tweet['text']) 
-            
-            for tweet in tweets 
+              tweet['text'])
+
+            for tweet in tweets
                 if 'retweeted_status' in tweet
            ]
     assert correct_retweets == retweets, \
@@ -591,11 +591,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Create a DataFrame and visualize the data in a pretty and insightful format
-df = pd.DataFrame(retweets, 
+df = pd.DataFrame(retweets,
                   columns=['Retweets',
                            'Favorites',
-                           'Followers', 
-                           'ScreenName', 
+                           'Followers',
+                           'ScreenName',
                            'Text']).groupby(['ScreenName',
                                              'Text',
                                              'Followers']).sum().sort_values(by=['Followers'], ascending=False)
@@ -1865,7 +1865,7 @@ Look Out!
 
 🐆
 
-#Cheetah @LeoDiCaprio  #FridayFeeling #WeLoveTheEarth 
+#Cheetah @LeoDiCaprio  #FridayFeeling #WeLoveTheEarth
 
 https://t.co/w1O1NyTbwX</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row9" class="row_heading level2 row9" >590841</th>
@@ -1995,7 +1995,7 @@ https://t.co/w1O1NyTbwX</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row28" class="row_heading level0 row28" >gtbriel</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row28" class="row_heading level1 row28" >RT @gtbriel: vimos o cu do justin bieber
 
-logo em seguida a ariana sair do cu do justin 
+logo em seguida a ariana sair do cu do justin
 
 e logo em seguuda a ariana sendo morta pela halse…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row28" class="row_heading level2 row28" >49215</th>
@@ -2123,7 +2123,7 @@ L: ¿Sabes qué, Bieber? Podríamos morir. No voy a mentirte. Quiero decir, hay 
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row46" class="row_heading level0 row46" >ArianaRenewsFR</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row46" class="row_heading level1 row46" >RT @ArianaRenewsFR: #WeLoveTheEarth est maintenant disponible sur toutes les plateformes ! 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row46" class="row_heading level1 row46" >RT @ArianaRenewsFR: #WeLoveTheEarth est maintenant disponible sur toutes les plateformes !
 
 YouTube : https://t.co/zSpCdE74lV
 
@@ -2236,14 +2236,14 @@ Lil Dicky: "Sabes Bieber... podemos morir. No te voy a mentir a ti, hay muchas p
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row61" class="row_heading level0 row61" rowspan=2>cyruseyes_</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row61" class="row_heading level1 row61" >RT @cyruseyes_: Qui non stiamo parlando abbastanza di Leonardo DiCaprio e di questa scena 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row61" class="row_heading level1 row61" >RT @cyruseyes_: Qui non stiamo parlando abbastanza di Leonardo DiCaprio e di questa scena
 #WeLoveTheEarth https://t.co/zUfOWBy7ct</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row61" class="row_heading level2 row61" >9148</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row61_col0" class="data row61 col0" >22</td>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row61_col1" class="data row61 col1" >148</td>
             </tr>
             <tr>
-                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row62" class="row_heading level1 row62" >RT @cyruseyes_: Questo video deve diventare un film. Il messaggio arriverebbe veramente a tutti. @ Disney sai cosa fare 
+                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row62" class="row_heading level1 row62" >RT @cyruseyes_: Questo video deve diventare un film. Il messaggio arriverebbe veramente a tutti. @ Disney sai cosa fare
 #WeLoveTheEarth ht…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row62" class="row_heading level2 row62" >9148</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row62_col0" class="data row62 col0" >10</td>
@@ -2251,8 +2251,8 @@ Lil Dicky: "Sabes Bieber... podemos morir. No te voy a mentir a ti, hay muchas p
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row63" class="row_heading level0 row63" >ChartBTS</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row63" class="row_heading level1 row63" >RT @ChartBTS: "We love the earth it is our planet  
-We love the earth it is our home" 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row63" class="row_heading level1 row63" >RT @ChartBTS: "We love the earth it is our planet
+We love the earth it is our home"
 
 ARMYs, support this important cause, it is our home…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row63" class="row_heading level2 row63" >8527</th>
@@ -2261,8 +2261,8 @@ ARMYs, support this important cause, it is our home…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row64" class="row_heading level0 row64" >MileyDimension</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row64" class="row_heading level1 row64" >RT @MileyDimension: I think everyone should see this! 
-It is about time to do something. #WeLoveTheEarth 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row64" class="row_heading level1 row64" >RT @MileyDimension: I think everyone should see this!
+It is about time to do something. #WeLoveTheEarth
 https://t.co/WmMDhsBq19</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row64" class="row_heading level2 row64" >7745</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row64_col0" class="data row64 col0" >645</td>
@@ -2284,7 +2284,7 @@ https://t.co/WmMDhsBq19</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row67" class="row_heading level0 row67" >hoe4exhoee</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row67" class="row_heading level1 row67" >RT @hoe4exhoee: Lil Dicky - Earth (Official Music Video) https://t.co/XT4xdm9XoN  
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row67" class="row_heading level1 row67" >RT @hoe4exhoee: Lil Dicky - Earth (Official Music Video) https://t.co/XT4xdm9XoN
 
 KRIS WU's PART IS ON 5:43. It is short but I'm so glad…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row67" class="row_heading level2 row67" >6870</th>
@@ -2366,7 +2366,7 @@ KRIS WU's PART IS ON 5:43. It is short but I'm so glad…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row78" class="row_heading level0 row78" >SoundOfSeries</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row78" class="row_heading level1 row78" >RT @SoundOfSeries: #INFOSOS : 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row78" class="row_heading level1 row78" >RT @SoundOfSeries: #INFOSOS :
 'WeLoveTheEarth' est disponible sur YouTube. Le but de cette chanson n’est pas de devenir le tube de l’été,…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row78" class="row_heading level2 row78" >4393</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row78_col0" class="data row78 col0" >80</td>
@@ -2388,7 +2388,7 @@ KRIS WU's PART IS ON 5:43. It is short but I'm so glad…</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row80_col1" class="data row80 col1" >1698</td>
             </tr>
             <tr>
-                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row81" class="row_heading level1 row81" >RT @gcldendays: No one: 
+                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row81" class="row_heading level1 row81" >RT @gcldendays: No one:
 Not even a soul:
 
 Me:
@@ -2399,8 +2399,8 @@ Me:
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row82" class="row_heading level0 row82" rowspan=2>biebercentineo</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row82" class="row_heading level1 row82" >RT @biebercentineo: Justin : are we gonna die? 
-Lil dicky: you know bieber we might die 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row82" class="row_heading level1 row82" >RT @biebercentineo: Justin : are we gonna die?
+Lil dicky: you know bieber we might die
 
 BTCH IM CRYING #EARTH #WeLoveTheEarth #WELOVEEART…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row82" class="row_heading level2 row82" >4038</th>
@@ -2431,7 +2431,7 @@ Stream #WeloveTheEarth…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row86" class="row_heading level0 row86" >larryxcolours</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row86" class="row_heading level1 row86" >RT @larryxcolours: ¿Cómo pueden ayudar a la organización? 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row86" class="row_heading level1 row86" >RT @larryxcolours: ¿Cómo pueden ayudar a la organización?
 -Compren la mercancia, las ganancias irán directamente para ayudar a la tierra.…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row86" class="row_heading level2 row86" >3766</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row86_col0" class="data row86 col0" >330</td>
@@ -2455,15 +2455,15 @@ Stream #WeloveTheEarth…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row89" class="row_heading level0 row89" rowspan=2>nervous_taste</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row89" class="row_heading level1 row89" >RT @nervous_taste: Have u thought that we will have:
 
-SHAWN MENDES FT ARIANA GRANDE 
-SHAWN MENDES FT JUSTIN BIEBER 
+SHAWN MENDES FT ARIANA GRANDE
+SHAWN MENDES FT JUSTIN BIEBER
 SHAWN MENDES FT HALSEY…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row89" class="row_heading level2 row89" >3283</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row89_col0" class="data row89 col0" >2</td>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row89_col1" class="data row89 col1" >9</td>
             </tr>
             <tr>
-                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row90" class="row_heading level1 row90" >RT @nervous_taste: Shawn isn’t the giraffe 
+                                <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row90" class="row_heading level1 row90" >RT @nervous_taste: Shawn isn’t the giraffe
 
 #WeLoveTheEarth https://t.co/0PJdZnkP87</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row90" class="row_heading level2 row90" >3283</th>
@@ -2508,7 +2508,7 @@ Tutti gli a…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row96" class="row_heading level0 row96" >SMendesMedia</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row96" class="row_heading level1 row96" >RT @SMendesMedia: . @ShawnMendes’ part on l “Earth” 🌎 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row96" class="row_heading level1 row96" >RT @SMendesMedia: . @ShawnMendes’ part on l “Earth” 🌎
 
 #WeLoveTheEarth (@lildickytweets)
 • https://t.co/XrpJbZ6zY7 https://t.co/o2dO7V5cz4</th>
@@ -2587,7 +2587,7 @@ Jego od razu poznałam, bo z innymi miałam problem XD #WeLoveTheEarth https://t
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row107" class="row_heading level0 row107" >izrnsrdn</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row107" class="row_heading level1 row107" >RT @izrnsrdn: Justin Drew Bieber as a baboon 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row107" class="row_heading level1 row107" >RT @izrnsrdn: Justin Drew Bieber as a baboon
 #WeLoveTheEarth https://t.co/Wz8YK6r21q</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row107" class="row_heading level2 row107" >2034</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row107_col0" class="data row107 col0" >223</td>
@@ -2712,7 +2712,7 @@ Jego od razu poznałam, bo z innymi miałam problem XD #WeLoveTheEarth https://t
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row124" class="row_heading level0 row124" >moarjustln</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row124" class="row_heading level1 row124" >RT @moarjustln: can't believe we listened to justin's voice after months and I still in love 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row124" class="row_heading level1 row124" >RT @moarjustln: can't believe we listened to justin's voice after months and I still in love
 #WeLoveTheEarth https://t.co/JhFRENhOH3</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row124" class="row_heading level2 row124" >1216</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row124_col0" class="data row124 col0" >58</td>
@@ -2720,7 +2720,7 @@ Jego od razu poznałam, bo z innymi miałam problem XD #WeLoveTheEarth https://t
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row125" class="row_heading level0 row125" >AGPLOfficial</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row125" class="row_heading level1 row125" >RT @AGPLOfficial: Nawet gdy jest zebrą, Ariana zawsze serwuje wokal! 🎶 #WeLoveTheEarth 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row125" class="row_heading level1 row125" >RT @AGPLOfficial: Nawet gdy jest zebrą, Ariana zawsze serwuje wokal! 🎶 #WeLoveTheEarth
 
 Posłuchaj utworu “Earth” z Arianą Grande i plejadą…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row125" class="row_heading level2 row125" >1152</th>
@@ -2737,7 +2737,7 @@ Posłuchaj utworu “Earth” z Arianą Grande i plejadą…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row127" class="row_heading level0 row127" >sourdieselzain</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row127" class="row_heading level1 row127" >RT @sourdieselzain: “I’m a fat fucking pig” no ja się tu poplacze zaraz  
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row127" class="row_heading level1 row127" >RT @sourdieselzain: “I’m a fat fucking pig” no ja się tu poplacze zaraz
 #WeLoveTheEarth #EarthMusicVideo https://t.co/tpBQZeRQEh</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row127" class="row_heading level2 row127" >1048</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row127_col0" class="data row127 col0" >34</td>
@@ -3058,7 +3058,7 @@ coinvolgere così tanti artisti per un buona causa è una cosa bellissim…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row171" class="row_heading level1 row171" >RT @ShawnDailyJP: Lil Dickyの新曲・チャリティーソング「Earth」
 アリアナ・ジャスティン・カニエら名だたるアーティスト達と共にショーンも参加してます。
 是非聴いてみて下さい。
-#WeLoveTheEarth 
+#WeLoveTheEarth
 https://t.co/CKUtq0…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row171" class="row_heading level2 row171" >199</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row171_col0" class="data row171 col0" >1</td>
@@ -3073,8 +3073,8 @@ https://t.co/CKUtq0…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row173" class="row_heading level0 row173" >justinsmiIxs</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row173" class="row_heading level1 row173" >RT @justinsmiIxs: "Ya sé que no todos somos iguales, pero vivimos en la misma tierra"  
-"¿Vamos a morir?" 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row173" class="row_heading level1 row173" >RT @justinsmiIxs: "Ya sé que no todos somos iguales, pero vivimos en la misma tierra"
+"¿Vamos a morir?"
 "Sabes Bieber? No te voy a menti…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row173" class="row_heading level2 row173" >171</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row173_col0" class="data row173 col0" >530</td>
@@ -3096,7 +3096,7 @@ https://t.co/CKUtq0…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row176" class="row_heading level0 row176" rowspan=2>jestemzajeta</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row176" class="row_heading level1 row176" >RT @jestemzajeta: uzbierane pieniądze trafiają na fundację Leonardo DiCaprio, która ratuje naszą planetę 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row176" class="row_heading level1 row176" >RT @jestemzajeta: uzbierane pieniądze trafiają na fundację Leonardo DiCaprio, która ratuje naszą planetę
 #WeLoveTheEarth</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row176" class="row_heading level2 row176" >143</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row176_col0" class="data row176 col0" >504</td>
@@ -3107,9 +3107,9 @@ https://t.co/CKUtq0…</th>
 Halsey lwiątkiem
 Charlie Puth żyrafą
 Ed Sheeran koalą
-Sia kangurem 
-miley słoniem 
-Ariana zebrą 
+Sia kangurem
+miley słoniem
+Ariana zebrą
 K…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row177" class="row_heading level2 row177" >143</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row177_col0" class="data row177 col0" >126</td>
@@ -3194,7 +3194,7 @@ Speriamo riesca a sensibilizzare più persone possibili su questo enorme pericol
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row188" class="row_heading level0 row188" >protectmayne</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row188" class="row_heading level1 row188" >RT @protectmayne: Earth se tornou minha música preferida junto com o clipe 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row188" class="row_heading level1 row188" >RT @protectmayne: Earth se tornou minha música preferida junto com o clipe
 isso simplesmente por passar uma mensagem forte pra gente, eu e…</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row188" class="row_heading level2 row188" >40</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row188_col0" class="data row188 col0" >294</td>
@@ -3216,7 +3216,7 @@ isso simplesmente por passar uma mensagem forte pra gente, eu e…</th>
             </tr>
             <tr>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level0_row191" class="row_heading level0 row191" >LILG96958980</th>
-                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row191" class="row_heading level1 row191" >RT @LILG96958980: Me on my way to save the earth after bobbing to the song  for a straight hour 
+                        <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level1_row191" class="row_heading level1 row191" >RT @LILG96958980: Me on my way to save the earth after bobbing to the song  for a straight hour
 #WeLoveTheEarth https://t.co/94g0N2SLBM</th>
                         <th id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0level2_row191" class="row_heading level2 row191" >24</th>
                         <td id="T_fbe77a0e_fee6_11ed_af86_9ef7402596b0row191_col0" class="data row191 col0" >1224</td>
@@ -3282,7 +3282,7 @@ Lil Dicky : *hold my beer*
 # The @solution should pass the tests
 # The purpose of the tests is to try to catch common errors and
 # to give the student a hint on how to resolve these errors
-    
+
 def strip_comment_lines(cell_input):
     """Returns cell input string with comment lines removed."""
     return '\n'.join(line for line in cell_input.splitlines() if not line.startswith('#'))
@@ -3303,7 +3303,7 @@ def test_df_creation_command():
         "The sort_values method is missing."
     assert 'ascending' in last_input, \
         "The ascending parameter is missing."
-    
+
 def test_dataframe():
     correct_dataframe = pd.DataFrame(retweets, columns=['Retweets','Favorites', 'Followers', 'ScreenName', 'Text']).groupby(
     ['ScreenName','Text','Followers']).sum().sort_values(by=['Followers'], ascending=False)
@@ -3352,7 +3352,7 @@ def test_tweet_languages():
     for tweet in tweets: correct_tweet_languages.append(tweet['lang'])
     assert correct_tweet_languages == tweets_languages, \
     "The tweets_languages variable does not have the expected values."
-    
+
 last_value = _
 
 def test_plot_exists():
@@ -3367,7 +3367,7 @@ last_input = strip_comment_lines(In[-2])
 
 def test_plot_command():
     assert 'plt.hist(tweets_languages)' in last_input, \
-        "We expected the plt.hist() method in your input."   
+        "We expected the plt.hist() method in your input."
 ```
 
     3/3 tests passed

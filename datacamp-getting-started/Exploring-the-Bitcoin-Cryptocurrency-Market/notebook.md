@@ -2,7 +2,7 @@
 ## 1. Bitcoin and Cryptocurrencies: Full dataset, filtering, and reproducibility
 <p>Since the <a href="https://newfronttest.bitcoin.com/bitcoin.pdf">launch of Bitcoin in 2008</a>, hundreds of similar projects based on the blockchain technology have emerged. We call these cryptocurrencies (also coins or cryptos in the Internet slang). Some are extremely valuable nowadays, and others may have the potential to become extremely valuable in the future<sup>1</sup>. In fact, on the 6th of December of 2017, Bitcoin has a <a href="https://en.wikipedia.org/wiki/Market_capitalization">market capitalization</a> above $200 billion. </p>
 <p><center>
-<img src="https://assets.datacamp.com/production/project_82/img/bitcoint_market_cap_2017.png" style="width:500px"> <br> 
+<img src="https://assets.datacamp.com/production/project_82/img/bitcoint_market_cap_2017.png" style="width:500px"> <br>
 <em>The astonishing increase of Bitcoin market capitalization in 2017.</em></center></p>
 <p>*<sup>1</sup> <strong>WARNING</strong>: The cryptocurrency market is exceptionally volatile<sup>2</sup> and any money you put in might disappear into thin air.  Cryptocurrencies mentioned here <strong>might be scams</strong> similar to <a href="https://en.wikipedia.org/wiki/Ponzi_scheme">Ponzi Schemes</a> or have many other issues (overvaluation, technical, etc.). <strong>Please do not mistake this for investment advice</strong>. *</p>
 <p><em><sup>2</sup> <strong>Update on March 2020</strong>: Well, it turned out to be volatile indeed :D</em></p>
@@ -16,7 +16,7 @@ import pandas as pd
 # Importing matplotlib and setting aesthetics for plotting later.
 import matplotlib.pyplot as plt
 %matplotlib inline
-%config InlineBackend.figure_format = 'svg' 
+%config InlineBackend.figure_format = 'svg'
 plt.style.use('fivethirtyeight')
 
 # Reading datasets/coinmarketcap_06122017.csv into pandas
@@ -43,7 +43,7 @@ def test_dec6_is_dataframe():
 def test_market_cap_raw():
     assert list(market_cap_raw.columns) == ['id', 'market_cap_usd'], \
     'The variable market_cap_raw should contain the "id" and "market_cap_usd" columns exclusively'
-    
+
 def test_pandas_imported():
     assert inspect.ismodule(pd), 'Do not delete the "from pandas import pd" import'
 
@@ -71,7 +71,7 @@ print(cap.count())
 ```python
 def test_cap_filtered():
     assert cap.id.count() == cap.market_cap_usd.count(), 'id and market_cap_usd should have the same count'
-    
+
 def test_cap_small():
     assert cap.id.count() == 1031, 'The resulting amount of cryptos should be 1031'
 ```
@@ -92,7 +92,7 @@ cap10 = cap.head(10).set_index('id')
 # Calculating market_cap_perc
 cap10 = cap10.assign(market_cap_perc = lambda x: (x.market_cap_usd/cap.market_cap_usd.sum())*100)
 
-# Plotting the barplot with the title defined above 
+# Plotting the barplot with the title defined above
 ax = cap10.market_cap_perc.head(10).plot.bar(title=TOP_CAP_TITLE)
 
 # Annotating the y axis with the label defined above
@@ -112,7 +112,7 @@ def test_index():
 
 def test_perc_correct():
     assert round(cap10.market_cap_perc.iloc[0], 2) == 56.92, 'the "market_cap_perc" formula is incorrect'
-    
+
 def test_title():
     assert ax.get_title() == TOP_CAP_TITLE, 'The title of the plot should be {}'.format(TOP_CAP_TITLE)
 
@@ -132,7 +132,7 @@ def test_ylabel():
 # Colors for the bar plot
 COLORS = ['orange', 'green', 'orange', 'cyan', 'cyan', 'blue', 'silver', 'orange', 'red', 'green']
 
-# Plotting market_cap_usd as before but adding the colors and scaling the y-axis  
+# Plotting market_cap_usd as before but adding the colors and scaling the y-axis
 ax = cap10.market_cap_perc.head(10).plot.bar(title=TOP_CAP_TITLE, logy=True)
 
 # Annotating the y axis with 'USD'
@@ -152,14 +152,14 @@ def test_title():
 
 def test_ylabel():
     assert ax.get_ylabel() == 'USD', 'The y-axis should be named {}'.format(TOP_CAP_YLABEL)
-    
+
 def test_xlabel():
     assert not ax.get_xlabel(), 'The X label should contain an empty string, currently it contains "{}"'.format(ax.get_xlabel())
-    
+
 def test_log_scale():
     assert ax.get_yaxis().get_scale() == 'log', \
     'The y-axis is not on a log10 scale. Do not transform the data yourself, use the pandas/matplotlib interface'
-    
+
 #def test_colors():
 #    assert round(ax.patches[1].get_facecolor()[1], 3) == 0.502, 'The colors of the bars are not correct'
 ```
@@ -230,7 +230,7 @@ volatility.head()
 
 def test_vol():
     assert list(volatility.columns) == ['percent_change_24h', 'percent_change_7d'], '"volatility" not loaded correctly'
-    
+
 def test_vol_index():
     assert list(volatility.index[:3]) == ['flappycoin', 'credence-coin', 'coupecoin'], \
     '"volatility" index is not set to "id", or data sorted incorrectly'
@@ -246,25 +246,25 @@ def test_vol_index():
 def top10_subplot(volatility_series, title):
     # Making the subplot and the figure for two side by side plots
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 6))
-    
+
     # Plotting with pandas the barchart for the top 10 losers
     ax = (volatility_series[:10].plot.bar(color='darkred', ax=axes[0]))
-    
+
     # Setting the figure's main title to the text passed as parameter
     fig.suptitle(title)
-    
+
     # Setting the ylabel to '% change'
     ax.set_ylabel("% change")
-    
+
     # Same as above, but for the top 10 winners
     ax = (volatility_series[-10:].plot.bar(color='darkblue', ax=axes[1]))
-    
+
     # Returning this for good practice, might use later
     return fig, ax
 
 DTITLE = "24 hours top losers and winners"
 
-# Calling the function above with the 24 hours period series and title DTITLE  
+# Calling the function above with the 24 hours period series and title DTITLE
 fig, ax = top10_subplot(volatility.percent_change_24h, DTITLE)
 ```
 
@@ -278,14 +278,14 @@ def test_title():
 
 def test_subplots():
     assert len(fig.get_axes()) == 2, 'The plot should have 2 subplots'
-    
+
 def test_ylabel():
     fig.get_axes()[0].get_ylabel() == '% change', 'y axis label should be set to % change'
 
 def test_comet_coin():
     assert round(fig.get_children()[2].get_children()[3].get_height(), 0) == 252.0, \
     'The data on the winners plot is incorrect'
-  
+
 def test_tyrocoin():
     assert abs(round(fig.get_children()[1].get_children()[4].get_height(), 0)) == 77.0, \
     'The data on the losers plot is incorrect'
@@ -293,7 +293,7 @@ def test_tyrocoin():
 #def test_colors():
 #    r, g, b, a = fig.get_axes()[0].patches[1].get_facecolor()
 #    assert round(r, 1) and not round(g, 1) and not round(b, 1), 'The bars on the left plot are not red'
-    
+
 #def test_colors2():
 #    r, g, b, a = fig.get_axes()[1].patches[1].get_facecolor()
 #    assert not round(r, 1) and not round(g, 1) and round(b, 1), 'The bars on the left plot are not blue'
@@ -326,22 +326,22 @@ def test_title():
 
 def test_subplots():
     assert len(fig.get_axes()) == 2, 'The plot should have 2 subplots'
-    
+
 def test_ylabel():
     fig.get_axes()[0].get_ylabel() == '% change', "y axis label should be set to '% change'"
-   
+
 #def test_colors():
 #    r, g, b, a = fig.get_axes()[0].patches[1].get_facecolor()
 #    assert round(r, 1) and not round(g, 1) and not round(b, 1), 'The bars on the left plot are not red'
-#    
+#
 #def test_colors2():
 #    r, g, b, a = fig.get_axes()[1].patches[1].get_facecolor()
 #    assert not round(r, 1) and not round(g, 1) and round(b, 1), 'The bars on the left plot are not blue'
-    
+
 def test_comet_coin():
     assert abs(round(fig.get_children()[2].get_children()[3].get_height(), 0)) == 543.0, \
     'The data on the gainers plot is incorrect'
-  
+
 def test_tyrocoin():
     assert abs(round(fig.get_children()[1].get_children()[4].get_height(), 0)) == 87.0, \
     'The data on the losers plot is incorrect'
@@ -350,11 +350,11 @@ def test_tyrocoin():
     5/5 tests passed
 
 ## 8. How small is small?
-<p>The names of the cryptocurrencies above are quite unknown, and there is a considerable fluctuation between the 1 and 7 days percentage changes. As with stocks, and many other financial products, the smaller the capitalization, the bigger the risk and reward. Smaller cryptocurrencies are less stable projects in general, and therefore even riskier investments than the bigger ones<sup>1</sup>. Let's classify our dataset based on Investopedia's capitalization <a href="https://www.investopedia.com/video/play/large-cap/">definitions</a> for company stocks. </p>
-<p><sup>1</sup> <em>Cryptocurrencies are a new asset class, so they are not directly comparable to stocks. Furthermore, there are no limits set in stone for what a "small" or "large" stock is. Finally, some investors argue that bitcoin is similar to gold, this would make them more comparable to a <a href="https://www.investopedia.com/terms/c/commodity.asp">commodity</a> instead.</em></p>
+<p>The names of the cryptocurrencies above are quite unknown, and there is a considerable fluctuation between the 1 and 7 days percentage changes. As with stocks, and many other financial products, the smaller the capitalization, the bigger the risk and reward. Smaller cryptocurrencies are less stable projects in general, and therefore even riskier investments than the bigger ones<sup>1</sup>. Let's classify our dataset based on Investopedia's capitalization <a href="https://investopedia.com/video/play/large-cap/">definitions</a> for company stocks. </p>
+<p><sup>1</sup> <em>Cryptocurrencies are a new asset class, so they are not directly comparable to stocks. Furthermore, there are no limits set in stone for what a "small" or "large" stock is. Finally, some investors argue that bitcoin is similar to gold, this would make them more comparable to a <a href="https://investopedia.com/terms/c/commodity.asp">commodity</a> instead.</em></p>
 
 ```python
-# Selecting everything bigger than 10 billion 
+# Selecting everything bigger than 10 billion
 largecaps = cap.query('market_cap_usd > 10000000000')
 
 # Printing out largecaps
@@ -370,10 +370,10 @@ print(largecaps)
 ```python
 def test_large():
     assert not largecaps.market_cap_usd.count() < 4, 'You filtered too much'
-    
+
 def test_small():
     assert not largecaps.market_cap_usd.count() > 4, "You didn't filter enough"
-    
+
 def test_order():
     assert largecaps.iloc[1].id == "ethereum", "The dataset is not in the right order, no need to manipulate it here"
 ```
@@ -406,10 +406,10 @@ nano =  capcount('market_cap_usd < 50000000')
 # Making a list with the 3 counts
 values = [biggish, micro, nano]
 
-# Plotting them with matplotlib 
+# Plotting them with matplotlib
 plt.bar(range(len(values)), values, tick_label=LABELS)
 
-# Plotting them with matplotlib 
+# Plotting them with matplotlib
 fig, ax = plt.subplots()
 nano_plt, micro_plt, biggish_plt = plt.bar([0, 1, 2], values, tick_label=LABELS)
 nano_plt.set_facecolor('darkred')
@@ -427,7 +427,7 @@ plt.show()
 ```python
 def test_biggish():
     assert biggish == 39, 'biggish is not correct'
-    
+
 def test_micro():
     assert micro == 96, 'micro is not correct'
 
