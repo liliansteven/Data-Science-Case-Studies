@@ -714,7 +714,6 @@ short_movies.head(20)
     </tr>
   </tbody>
 </table>
-</div>
 
 ```python
 last_input = In[-2]
