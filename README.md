@@ -5,16 +5,16 @@ Data Science Case Studies for computer science students.
 
 <br><br><br>
 
-<a href="/kaggle-getting-started/README.md"><img align="right" width="80" src="/logos/kaggle.png"></img></a>
-<br>
-
-## [`Kaggle - Getting Started`](/kaggle-getting-started/README.md)
-
-
 <a href="/datacamp-getting-started/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
 <br>
 
 ## [`DataCamp - Getting Started`](/datacamp-getting-started/README.md)
+
+
+<a href="/kaggle-getting-started/README.md"><img align="right" width="80" src="/logos/kaggle.png"></img></a>
+<br>
+
+## [`Kaggle - Getting Started`](/kaggle-getting-started/README.md)
 
 
 <a href="/Telecommunications/README.md"><img align="right" width="80" src="/logos/telecom.png"></img></a>
