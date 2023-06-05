@@ -64,7 +64,7 @@ benchmark_data.info()
 ```
 
     Stocks
-    
+
     <class 'pandas.core.frame.DataFrame'>
     DatetimeIndex: 252 entries, 2016-01-04 to 2016-12-30
     Data columns (total 2 columns):
@@ -72,9 +72,9 @@ benchmark_data.info()
     Facebook    252 non-null float64
     dtypes: float64(2)
     memory usage: 5.9 KB
-    
+
     Benchmarks
-    
+
     <class 'pandas.core.frame.DataFrame'>
     DatetimeIndex: 252 entries, 2016-01-04 to 2016-12-30
     Data columns (total 1 columns):
@@ -418,7 +418,7 @@ def test_excess_returns():
 <p>Now we can finally start computing the Sharpe Ratio. First we need to calculate the average of the <code>excess_returns</code>. This tells us how much more or less the investment yields per day compared to the benchmark.</p>
 
 ```python
-# calculate the mean of excess_returns 
+# calculate the mean of excess_returns
 avg_excess_return = excess_returns.mean()
 
 # plot avg_excess_returns
@@ -479,10 +479,10 @@ annual_sharpe_ratio.plot.bar(title='Annualized Sharpe Ratio: Stocks vs S&P 500')
 def test_daily_sharpe():
     assert daily_sharpe_ratio.equals(avg_excess_return.div(sd_excess_return)), \
     'Did you use .div() avg_excess_return and sd_excess_return?'
-    
+
 def test_annual_factor():
     assert annual_factor == np.sqrt(252), 'Did you apply np.sqrt() to, number_of_trading_days?'
-    
+
 def test_annual_sharpe():
     assert annual_sharpe_ratio.equals(daily_sharpe_ratio.mul(annual_factor)), 'Did you use .mul() with daily_sharpe_ratio and annual_factor?'
 ```

@@ -79,10 +79,10 @@ print(words)
 
 ```python
 def test_words_in_long_word_list_task_1():
-    correct_words = ['buy', 'price', 'discount', 'promotion', 'promo', 'shop', 
-                     'buying', 'prices', 'pricing', 'shopping', 'discounts', 
-                     'promos', 'ecommerce', 'e commerce', 'buy online', 
-                     'shop online', 'cheap', 'best price', 'lowest price', 
+    correct_words = ['buy', 'price', 'discount', 'promotion', 'promo', 'shop',
+                     'buying', 'prices', 'pricing', 'shopping', 'discounts',
+                     'promos', 'ecommerce', 'e commerce', 'buy online',
+                     'shop online', 'cheap', 'best price', 'lowest price',
                      'cheapest', 'best value', 'offer', 'offers', 'promotions',
                      'purchase', 'sale', 'bargain', 'affordable',
                      'cheap', 'low cost', 'low price', 'budget', 'inexpensive', 'economical',]
@@ -120,7 +120,7 @@ for product in products:
         # Append combinations
         keywords_list.append([product, product + ' ' + word])
         keywords_list.append([product, word + ' ' + product])
-        
+
 # Inspect keyword list
 print(keywords_list)
 ```
@@ -205,9 +205,9 @@ def test_keywords_df_created_correctly_task_3():
     import pandas as pd
     correct_keywords_df = pd.DataFrame.from_records(keywords_list)
     assert correct_keywords_df.equals(keywords_df), "The contents of `keywords_df` doesn't appear to be correct. Don't specify column names yet!"
-    
+
 #     correct_keywords_df = pd.DataFrame.from_records(keywords_list)
-    
+
 #     assert (correct_keywords_df
 #             .sort_values(list(sorted(correct_keywords_df.columns.values)))
 #             .reset_index(drop=True)
@@ -236,7 +236,7 @@ def test_df_columns_renamed_correctly_task_4():
     1/1 tests passed
 
 ## 5. Add a campaign column
-<p>Now we need to add some additional information to our DataFrame. 
+<p>Now we need to add some additional information to our DataFrame.
 We need a new column called <code>Campaign</code> for the campaign name. We want campaign names to be descriptive of our group of keywords and products, so let's call this campaign 'SEM_Sofas'.</p>
 
 ```python
@@ -248,7 +248,7 @@ keywords_df['Campaign'] = 'SEM_Sofas'
 def test_campaign_column_created_task_5():
     assert 'Campaign' in keywords_df.columns.values, \
     "`Campaign` needs to be the name of the new column. Capitalization matters!"
-    
+
 def test_campaign_name_task_5():
     assert len(set(keywords_df['Campaign'])) == 1 and set(keywords_df['Campaign']).pop() == 'SEM_Sofas', \
     "Is 'SEM_Sofas' the campaign name in every row of the `Campaign` column?"
@@ -273,7 +273,7 @@ keywords_df['Criterion Type'] = 'Exact'
 def test_criterion_type_column_created_task_6():
     assert 'Criterion Type' in keywords_df.columns.values, \
     "`Criterion Type` needs to be the name of the new column. Capitalization matters!"
-    
+
 def test_criterion_type_task_6():
     assert len(set(keywords_df['Criterion Type'])) == 1 and set(keywords_df['Criterion Type']).pop() == 'Exact', \
     "Is 'Exact' the campaign name in every row of the `Criterion Type` column?"
@@ -399,7 +399,7 @@ import os
 def test_file_exists_task_8():
     assert os.path.exists("keywords.csv"), \
     'Did you save the `keywords_df_final` DataFrame to \'keywords.csv\'?'
-    
+
 def test_index_excluded_task_8():
     test_keywords_csv = pd.read_csv('keywords.csv')
     assert len(pd.read_csv('keywords.csv').columns) == 4, \

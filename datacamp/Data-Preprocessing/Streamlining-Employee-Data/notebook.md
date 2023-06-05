@@ -18,25 +18,25 @@ print(df_office_addresses.head())
 print(df_employee_addresses.head())
 ```
               office office_country    office_city   office_street  \
-    0  Leuven Office             BE         Leuven  Martelarenlaan   
-    1     ESB Office             US  New York City    Fifth Avenue   
-    2  WeWork Office             GB         London      Old Street   
-    
-       office_street_number  
-    0                    38  
-    1                   350  
-    2                   207  
+    0  Leuven Office             BE         Leuven  Martelarenlaan
+    1     ESB Office             US  New York City    Fifth Avenue
+    2  WeWork Office             GB         London      Old Street
+
+       office_street_number
+    0                    38
+    1                   350
+    2                   207
       employee_id employee_last_name employee_first_name employee_country  \
-    0      A2R5H9             Hunman                 Jax               BE   
-    1      H8K0L6               Siff                Tara               GB   
-    2      G4R7V0              Sagal               Gemma               US   
-    3      M1Z7U9             Coates                 Tig               FR   
-    
-      employee_city      employee_street  employee_street_number  
-    0        Leuven          Grote Markt                       9  
-    1        London         Baker Street                     221  
-    2      New-York         Perry Street                      66  
-    3         Paris  Rue de l'Université                       7  
+    0      A2R5H9             Hunman                 Jax               BE
+    1      H8K0L6               Siff                Tara               GB
+    2      G4R7V0              Sagal               Gemma               US
+    3      M1Z7U9             Coates                 Tig               FR
+
+      employee_city      employee_street  employee_street_number
+    0        Leuven          Grote Markt                       9
+    1        London         Baker Street                     221
+    2      New-York         Perry Street                      66
+    3         Paris  Rue de l'Université                       7
 
 ```python
 # One or more tests of the student's code
@@ -52,7 +52,7 @@ def test_office_addresses():
     "It seems your there's something wrong with your `df_office_addresses` DataFrame.\n\
      Are you sure you loaded the `office_addresses.csv` located in the `datasets` folder\n\
      using pandas `read_csv()` method?"
-    
+
 def test_employee_addresses():
     assert correct_employee_addresses.equals(df_employee_addresses), \
     "It seems your there's something wrong with your `df_employee_addresses` DataFrame.\n\
@@ -70,7 +70,7 @@ def test_employee_addresses():
 df_emergency_contacts = pd.read_excel("datasets/employee_information.xls", sheet_name=1, header=None)
 
 # Declare a list of new column names
-emergency_contacts_header = ["employee_id", "last_name", "first_name", "emergency_contact", 
+emergency_contacts_header = ["employee_id", "last_name", "first_name", "emergency_contact",
                              "emergency_contact_number", "relationship"]
 
 # Rename the columns
@@ -80,16 +80,16 @@ print(df_emergency_contacts.head())
 ```
 
       employee_id last_name first_name emergency_contact emergency_contact_number  \
-    0      A2R5H9    Hunman        Jax        Opie Hurst          +32-456-5556-84   
-    1      H8K0L6      Siff       Tara   Wendy de Matteo         +44-020-5554-333   
-    2      G4R7V0     Sagal      Gemma      John Newmark           +1-202-555-194   
-    3      M1Z7U9    Coates        Tig       Venus Noone          +1-202-555-0130   
-    
-      relationship  
-    0      Brother  
-    1       Sister  
-    2      Husband  
-    3         Wife  
+    0      A2R5H9    Hunman        Jax        Opie Hurst          +32-456-5556-84
+    1      H8K0L6      Siff       Tara   Wendy de Matteo         +44-020-5554-333
+    2      G4R7V0     Sagal      Gemma      John Newmark           +1-202-555-194
+    3      M1Z7U9    Coates        Tig       Venus Noone          +1-202-555-0130
+
+      relationship
+    0      Brother
+    1       Sister
+    2      Husband
+    3         Wife
 
 ```python
 # One or more tests of the student's code
@@ -112,7 +112,7 @@ def test_emergency_columns():
     correct_emergency_contacts.columns == df_emergency_contacts.columns
     "It seems there's something wrong with your DataFrame's column titles.\n\
      Are you sure you used the list storing column names provided by the HR manager?"
-    
+
 def test_emergency_contacts():
     assert correct_emergency_contacts.equals(df_emergency_contacts), \
     "It seems there's something wrong with your `df_emergency_contacts` DataFrame.\n\
@@ -235,34 +235,34 @@ print(df_employees.columns)
 ```
 
       employee_id employee_last_name employee_first_name employee_country  \
-    0      A2R5H9             Hunman                 Jax               BE   
-    1      H8K0L6               Siff                Tara               GB   
-    2      G4R7V0              Sagal               Gemma               US   
-    3      M1Z7U9             Coates                 Tig               FR   
-    
+    0      A2R5H9             Hunman                 Jax               BE
+    1      H8K0L6               Siff                Tara               GB
+    2      G4R7V0              Sagal               Gemma               US
+    3      M1Z7U9             Coates                 Tig               FR
+
       employee_city      employee_street  employee_street_number last_name  \
-    0        Leuven          Grote Markt                       9    Hunman   
-    1        London         Baker Street                     221      Siff   
-    2      New-York         Perry Street                      66     Sagal   
-    3         Paris  Rue de l'Université                       7    Coates   
-    
+    0        Leuven          Grote Markt                       9    Hunman
+    1        London         Baker Street                     221      Siff
+    2      New-York         Perry Street                      66     Sagal
+    3         Paris  Rue de l'Université                       7    Coates
+
       first_name emergency_contact emergency_contact_number relationship  \
-    0        Jax        Opie Hurst          +32-456-5556-84      Brother   
-    1       Tara   Wendy de Matteo         +44-020-5554-333       Sister   
-    2      Gemma      John Newmark           +1-202-555-194      Husband   
-    3        Tig       Venus Noone          +1-202-555-0130         Wife   
-    
+    0        Jax        Opie Hurst          +32-456-5556-84      Brother
+    1       Tara   Wendy de Matteo         +44-020-5554-333       Sister
+    2      Gemma      John Newmark           +1-202-555-194      Husband
+    3        Tig       Venus Noone          +1-202-555-0130         Wife
+
       monthly_salary               team               title         office  \
-    0          $4500         Leadership                 CEO  Leuven Office   
-    1          $4500         Leadership                 CFO  WeWork Office   
-    2          $3000              Sales  Business Developer     ESB Office   
-    3          $2000  People Operations      Office Manager            NaN   
-    
-      office_country    office_city   office_street  office_street_number  
-    0             BE         Leuven  Martelarenlaan                  38.0  
-    1             GB         London      Old Street                 207.0  
-    2             US  New York City    Fifth Avenue                 350.0  
-    3            NaN            NaN             NaN                   NaN  
+    0          $4500         Leadership                 CEO  Leuven Office
+    1          $4500         Leadership                 CFO  WeWork Office
+    2          $3000              Sales  Business Developer     ESB Office
+    3          $2000  People Operations      Office Manager            NaN
+
+      office_country    office_city   office_street  office_street_number
+    0             BE         Leuven  Martelarenlaan                  38.0
+    1             GB         London      Old Street                 207.0
+    2             US  New York City    Fifth Avenue                 350.0
+    3            NaN            NaN             NaN                   NaN
     Index(['employee_id', 'employee_last_name', 'employee_first_name',
            'employee_country', 'employee_city', 'employee_street',
            'employee_street_number', 'last_name', 'first_name',
@@ -297,7 +297,7 @@ correct_employees = correct_employee_addresses.merge(correct_emergency_contacts,
                                                      how="left",
                                                      on="employee_id")
 correct_employees = correct_employees.merge(correct_employee_roles,
-                                            how="left", 
+                                            how="left",
                                             left_on="employee_id",
                                             right_on=correct_employee_roles.index)
 correct_employees = correct_employees.merge(correct_office_addresses,
@@ -314,7 +314,7 @@ def test_column_length():
     assert len(correct_employees.columns) == len(df_employees.columns), \
     "It looks like your DataFrame does not have the right count of columns.\n\
      You should end up with 20 columns."
-    
+
 def test_column_titles():
     assert correct_employees.columns.to_list().sort() == df_employees.columns.to_list().sort(), \
     "It looks like your DataFrame does not have the right columns titles.\n\
@@ -357,9 +357,9 @@ def test_employees():
 df_employees_renamed = df_employees.drop(["employee_first_name", "employee_last_name"], axis=1)
 
 # Declare a list of new columns names and rename the DataFrame columns
-new_header = ["id", "country", "city", "street", "street_number", "last_name", "first_name", 
-              "emergency_contact", "emergency_number", "emergency_relationship", 
-              "monthly_salary", "team", "title", "office", "office_country", "office_city", 
+new_header = ["id", "country", "city", "street", "street_number", "last_name", "first_name",
+              "emergency_contact", "emergency_number", "emergency_relationship",
+              "monthly_salary", "team", "title", "office", "office_country", "office_city",
               "office_street", "office_street_number"]
 
 # Rename the columns
@@ -370,28 +370,28 @@ print(df_employees_renamed.head())
 ```
 
            id country      city               street  street_number last_name  \
-    0  A2R5H9      BE    Leuven          Grote Markt              9    Hunman   
-    1  H8K0L6      GB    London         Baker Street            221      Siff   
-    2  G4R7V0      US  New-York         Perry Street             66     Sagal   
-    3  M1Z7U9      FR     Paris  Rue de l'Université              7    Coates   
-    
+    0  A2R5H9      BE    Leuven          Grote Markt              9    Hunman
+    1  H8K0L6      GB    London         Baker Street            221      Siff
+    2  G4R7V0      US  New-York         Perry Street             66     Sagal
+    3  M1Z7U9      FR     Paris  Rue de l'Université              7    Coates
+
       first_name emergency_contact  emergency_number emergency_relationship  \
-    0        Jax        Opie Hurst   +32-456-5556-84                Brother   
-    1       Tara   Wendy de Matteo  +44-020-5554-333                 Sister   
-    2      Gemma      John Newmark    +1-202-555-194                Husband   
-    3        Tig       Venus Noone   +1-202-555-0130                   Wife   
-    
+    0        Jax        Opie Hurst   +32-456-5556-84                Brother
+    1       Tara   Wendy de Matteo  +44-020-5554-333                 Sister
+    2      Gemma      John Newmark    +1-202-555-194                Husband
+    3        Tig       Venus Noone   +1-202-555-0130                   Wife
+
       monthly_salary               team               title         office  \
-    0          $4500         Leadership                 CEO  Leuven Office   
-    1          $4500         Leadership                 CFO  WeWork Office   
-    2          $3000              Sales  Business Developer     ESB Office   
-    3          $2000  People Operations      Office Manager            NaN   
-    
-      office_country    office_city   office_street  office_street_number  
-    0             BE         Leuven  Martelarenlaan                  38.0  
-    1             GB         London      Old Street                 207.0  
-    2             US  New York City    Fifth Avenue                 350.0  
-    3            NaN            NaN             NaN                   NaN  
+    0          $4500         Leadership                 CEO  Leuven Office
+    1          $4500         Leadership                 CFO  WeWork Office
+    2          $3000              Sales  Business Developer     ESB Office
+    3          $2000  People Operations      Office Manager            NaN
+
+      office_country    office_city   office_street  office_street_number
+    0             BE         Leuven  Martelarenlaan                  38.0
+    1             GB         London      Old Street                 207.0
+    2             US  New York City    Fifth Avenue                 350.0
+    3            NaN            NaN             NaN                   NaN
 
 ```python
 # One or more tests of the student's code
@@ -419,7 +419,7 @@ correct_employees = correct_employee_addresses.merge(correct_emergency_contacts,
                                                      how="left",
                                                      on="employee_id")
 correct_employees = correct_employees.merge(correct_employee_roles,
-                                            how="left", 
+                                            how="left",
                                             left_on="employee_id",
                                             right_on=correct_employee_roles.index)
 correct_employees = correct_employees.merge(correct_office_addresses,
@@ -454,8 +454,8 @@ def test_employees_renamed():
 
 ```python
 # Declare a list for the new column's order and reorder columns
-new_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary", "country", "city", 
-                    "street", "street_number", "emergency_contact", "emergency_number", "emergency_relationship", 
+new_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary", "country", "city",
+                    "street", "street_number", "emergency_contact", "emergency_number", "emergency_relationship",
                     "office", "office_country", "office_city", "office_street", "office_street_number"]
 
 # Reorder the columns
@@ -603,7 +603,7 @@ correct_employees = correct_employee_addresses.merge(correct_emergency_contacts,
                                                      how="left",
                                                      on="employee_id")
 correct_employees = correct_employees.merge(correct_employee_roles,
-                                            how="left", 
+                                            how="left",
                                             left_on="employee_id",
                                             right_on=correct_employee_roles.index)
 correct_employees = correct_employees.merge(correct_office_addresses,
@@ -615,12 +615,12 @@ correct_employees = correct_employees.merge(correct_office_addresses,
 correct_employees_renamed = correct_employees.drop(["employee_first_name", "employee_last_name"], axis=1)
 correct_header = ["id", "country", "city", "street", "street_number", "last_name", "first_name",
                   "emergency_contact", "emergency_number", "emergency_relationship",
-                  "monthly_salary", "team", "title", "office", "office_country", 
+                  "monthly_salary", "team", "title", "office", "office_country",
                   "office_city", "office_street", "office_street_number"]
 correct_employees_renamed.columns = correct_header
 
 # Task 6
-correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary", 
+correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary",
                         "country", "city", "street", "street_number",
                         "emergency_contact", "emergency_number", "emergency_relationship",
                         "office", "office_country", "office_city", "office_street", "office_street_number"]
@@ -632,7 +632,7 @@ def test_column_order():
      Are you sure you used the column names given by People Ops,\n\
      in the order they were provided?\n\
      Make sure there's no typo."
-    
+
 def test_employees_renamed():
     assert correct_employees_ordered.equals(df_employees_ordered), \
     "It seems there's something wrong with your `df_employees_ordered` DataFrame.\n\
@@ -662,7 +662,7 @@ for index, row in df_employees_final.iterrows():
     else:
         status_list.append("On-site")
 
-# Or 
+# Or
 status_list = ["Remote" if pd.isnull(row["office"]) else "On-site" for index, row in df_employees_final.iterrows()]
 
 # Insert status as a new column
@@ -832,7 +832,7 @@ correct_employees = correct_employee_addresses.merge(correct_emergency_contacts,
                                                      how="left",
                                                      on="employee_id")
 correct_employees = correct_employees.merge(correct_employee_roles,
-                                            how="left", 
+                                            how="left",
                                             left_on="employee_id",
                                             right_on=correct_employee_roles.index)
 correct_employees = correct_employees.merge(correct_office_addresses,
@@ -844,12 +844,12 @@ correct_employees = correct_employees.merge(correct_office_addresses,
 correct_employees_renamed = correct_employees.drop(["employee_first_name", "employee_last_name"], axis=1)
 correct_header = ["id", "country", "city", "street", "street_number", "last_name", "first_name",
                   "emergency_contact", "emergency_number", "emergency_relationship",
-                  "monthly_salary", "team", "title", "office", "office_country", 
+                  "monthly_salary", "team", "title", "office", "office_country",
                   "office_city", "office_street", "office_street_number"]
 correct_employees_renamed.columns = correct_header
 
 # Task 6
-correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary", 
+correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary",
                         "country", "city", "street", "street_number",
                         "emergency_contact", "emergency_number", "emergency_relationship",
                         "office", "office_country", "office_city", "office_street", "office_street_number"]
@@ -871,7 +871,7 @@ def test_status():
     assert 'status' in df_employees_final.columns.tolist(), \
     "It seems `\"status\"` isn't a column in your `df_employees_final` DataFrame.\n\
      Make sure to add a `status` column to `df_employees_final`."
-    
+
 def test_status_location():
     assert df_employees_final.columns[5] == 'status', \
     "It looks like your `\"status\"` column is not at the expected place.\n\
@@ -885,8 +885,8 @@ def test_status_values():
 
 actual = df_employees_final[['status']].to_numpy()
 expected = np.where(
-        df_employees_final[['office']].isnull(), 
-        'Remote', 
+        df_employees_final[['office']].isnull(),
+        'Remote',
         'On-site')
 
 def test_employees_final():
@@ -939,7 +939,7 @@ correct_employees = correct_employee_addresses.merge(correct_emergency_contacts,
                                                      how="left",
                                                      on="employee_id")
 correct_employees = correct_employees.merge(correct_employee_roles,
-                                            how="left", 
+                                            how="left",
                                             left_on="employee_id",
                                             right_on=correct_employee_roles.index)
 correct_employees = correct_employees.merge(correct_office_addresses,
@@ -951,12 +951,12 @@ correct_employees = correct_employees.merge(correct_office_addresses,
 correct_employees_renamed = correct_employees.drop(["employee_first_name", "employee_last_name"], axis=1)
 correct_header = ["id", "country", "city", "street", "street_number", "last_name", "first_name",
                   "emergency_contact", "emergency_number", "emergency_relationship",
-                  "monthly_salary", "team", "title", "office", "office_country", 
+                  "monthly_salary", "team", "title", "office", "office_country",
                   "office_city", "office_street", "office_street_number"]
 correct_employees_renamed.columns = correct_header
 
 # Task 6
-correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary", 
+correct_column_order = ["id", "last_name", "first_name", "title", "team", "monthly_salary",
                         "country", "city", "street", "street_number",
                         "emergency_contact", "emergency_number", "emergency_relationship",
                         "office", "office_country", "office_city", "office_street", "office_street_number"]

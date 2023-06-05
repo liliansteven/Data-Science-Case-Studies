@@ -1,6 +1,6 @@
 
 ## 1. Of cats and cookies
-<p><a href="https://www.facebook.com/cookiecatsgame">Cookie Cats</a> is a hugely popular mobile puzzle game developed by <a href="http://tactile.dk">Tactile Entertainment</a>. It's a classic "connect three"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats. We're not kidding! Check out this short demo:</p>
+<p><a href="https://facebook.com/cookiecatsgame">Cookie Cats</a> is a hugely popular mobile puzzle game developed by <a href="http://tactile.dk">Tactile Entertainment</a>. It's a classic "connect three"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats. We're not kidding! Check out this short demo:</p>
 <p><a href="https://youtu.be/GaP5f0jVTWE"><img src="https://assets.datacamp.com/production/project_184/img/cookie_cats_video.jpeg" style="width: 500px"></a></p>
 <p>As players progress through the levels of the game, they will occasionally encounter gates that force them to wait a non-trivial amount of time or make an in-app purchase to progress. In addition to driving in-app purchases, these gates serve the important purpose of giving players an enforced break from playing the game, hopefully resulting in that the player's enjoyment of the game being increased and prolonged.</p>
 <p><img src="https://assets.datacamp.com/production/project_184/img/cc_gates.png" alt></p>
@@ -74,7 +74,7 @@ df.head()
 
 ```python
 import pandas as pd
-        
+
 def test_yearly_correctly_loaded():
     correct_df = pd.read_csv('datasets/cookie_cats.csv')
     assert correct_df.equals(df), \
@@ -151,7 +151,7 @@ def test_nothing():
 # This command makes plots appear in the notebook
 %matplotlib inline
 
-# Counting the number of players for each number of game rounds 
+# Counting the number of players for each number of game rounds
 plot_df = df.groupby('sum_gamerounds')['userid'].count()
 
 # Plotting the distribution of players that played 0 to 100 game rounds
@@ -169,7 +169,7 @@ ax_sol = df.groupby('sum_gamerounds')['userid'].count().head(n=100).plot(x="sum_
 
 def test_y_axis():
     assert ax.get_ybound() == ax_sol.get_ybound(), 'The plot should be assigned to ax and have userid on the Y-axis'
-    
+
 def test_x_axis():
     assert ax.get_xbound() == ax_sol.get_xbound(), 'The plot should be assigned to ax and have sum_gamerounds on the X-axis'
 ```
@@ -230,10 +230,10 @@ boot_1d = []
 for i in range(500):
     boot_mean = df.sample(frac=1, replace=True).groupby('version')['retention_1'].mean()
     boot_1d.append(boot_mean)
-    
+
 # Transforming the list to a DataFrame
 boot_1d = pd.DataFrame(boot_1d)
-    
+
 # A Kernel Density Estimate plot of the bootstrap distributions
 boot_1d.plot.kde()
 ```
@@ -332,7 +332,7 @@ boot_7d = []
 for i in range(500):
     boot_mean = df.sample(frac=1, replace=True).groupby('version')['retention_7'].mean()
     boot_7d.append(boot_mean)
-    
+
 # Transforming the list to a DataFrame
 boot_7d = pd.DataFrame(boot_1d)
 
@@ -358,7 +358,7 @@ print('{:.1%}'.format(prob))
 def test_boot_7d():
     assert isinstance(boot_7d, pd.DataFrame) and boot_7d.shape == (500, 3), \
         'boot_7d should be a DataFrame with three columns and 500 rows with the bootstrapped 7-day retentions from both AB-groups.'
-        
+
 def test_prob():
     correct_prob = (boot_7d['diff'] > 0).sum() / len(boot_7d)
     assert correct_prob == prob, \

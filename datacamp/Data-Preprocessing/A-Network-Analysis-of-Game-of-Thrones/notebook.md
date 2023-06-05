@@ -169,7 +169,7 @@ def test_task4():
 
 # Creating a list of degree centrality of all the books
 evol = [nx.degree_centrality(book) for book in books]
- 
+
 # Creating a DataFrame from the list of degree centralities in all the books
 degree_evol_df = pd.DataFrame.from_records(evol)
 
@@ -257,8 +257,8 @@ def test_task7():
 ```python
 # Creating a list of pagerank, betweenness centrality, degree centrality
 # of all the characters in the fifth book.
-measures = [nx.pagerank(books[4]), 
-            nx.betweenness_centrality(books[4], weight='weight'), 
+measures = [nx.pagerank(books[4]),
+            nx.betweenness_centrality(books[4], weight='weight'),
             nx.degree_centrality(books[4])]
 
 # Creating the correlation DataFrame
@@ -577,7 +577,7 @@ def test_task8():
 <p>So we've been looking at different ways to find the important characters in the Game of Thrones co-occurrence network. According to degree centrality, Eddard Stark is the most important character initially in the books. But who is/are the most important character(s) in the fifth book according to these three measures? </p>
 
 ```python
-# Finding the most important character in the fifth book,  
+# Finding the most important character in the fifth book,
 # according to degree centrality, betweenness centrality and pagerank.
 p_rank, b_cent, d_cent = cor.idxmax(axis=1)
 

@@ -29,17 +29,17 @@ with open('datasets/git_log_excerpt.csv', 'r') as f:
 
 ```python
 def test_listing_of_file_contents():
-    
+
     # FIXME1: if student executes cell more than once, variable _i2 is then not defined. Solution?
-    
+
     #PATH = "datasets/git_log_excerpt.csv"
     # hard coded cell number: maybe a little bit fragile
     #cell_input_from_sample_code = _i2
     #assert PATH in cell_input_from_sample_code, \
     #"The file %s should be read in." % PATH
-    
+
     # FIXME2: can't access the sample code cell's output here because of the use of 'print'
-    
+
     # test currently deactivated: too hard to create a table test case
     assert True
 ```
@@ -104,7 +104,7 @@ git_log.head()
 
 ```python
 def test_is_pandas_loaded_as_pd():
-    
+
     try:
         pd # throws NameError
         pd.DataFrame # throws AttributeError
@@ -112,34 +112,34 @@ def test_is_pandas_loaded_as_pd():
         assert False, "Module pandas not loaded as pd."
     except AttributeError:
         assert False, "Variable pd is used as short name for another module."
-    
-    
+
+
 def test_is_git_log_data_frame_existing():
-    
+
     try:
         # checks implicitly if git_log by catching the NameError exception
         assert isinstance(git_log, pd.DataFrame), "git_log isn't a DataFrame."
-              
+
     except NameError as e:
         assert False, "Variable git_log doesn't exist."
 
 
 def test_has_git_log_correct_columns():
-    
+
     expected = ['timestamp', 'author']
     assert all(git_log.columns.get_values() == expected), \
         "Expected columns are %s" % expected
-        
+
 
 def test_is_logfile_content_read_in_correctly():
-    
+
     correct_git_log = pd.read_csv(
         'datasets/git_log.gz',
         sep='#',
         encoding='latin-1',
         header=None,
         names=['timestamp', 'author'])
-    
+
     assert correct_git_log.equals(git_log), \
         "The content of datasets/git_log.gz wasn't correctly read into git_log. Check the parameters of read_csv."
 ```
@@ -240,34 +240,34 @@ top_10_authors
 
 ```python
 def test_is_series_or_data_frame():
-    
+
     assert isinstance(top_10_authors, pd.Series) or isinstance(top_10_authors, pd.DataFrame), \
     "top_10_authors isn't a Series or DataFrame, but of type %s." % type(top_10_authors)
 
-    
+
 def test_is_result_structurally_alright():
-    
+
     top10 = top_10_authors.squeeze()
     # after a squeeze(), the DataFrame with one Series should be converted to a Series
     assert isinstance(top10, pd.Series), \
     "top_10_authors should only contain the data for authors and the number of commits."
-    
+
 
 def test_is_right_number_of_entries():
-    
+
     expected_number_of_entries = 10
     assert len(top_10_authors.squeeze()) is expected_number_of_entries, \
-    "The number of TOP 10 entries should be %r. Be sure to store the result into the 'top_10_authors' variable." % expected_number_of_entries 
-    
-    
+    "The number of TOP 10 entries should be %r. Be sure to store the result into the 'top_10_authors' variable." % expected_number_of_entries
+
+
 def test_is_expected_top_author():
-    
+
     expected_top_author = "Linus Torvalds"
     assert top_10_authors.squeeze().index[0] == expected_top_author, \
     "The number one contributor should be %s." % expected_top_author
-    
-    
-def test_is_expected_top_commits():    
+
+
+def test_is_expected_top_commits():
     expected_top_commits = 23361
     assert top_10_authors.squeeze()[0] == expected_top_commits, \
     "The number of the most commits should be %r." % expected_top_commits
@@ -296,11 +296,11 @@ git_log['timestamp'].describe()
 
 ```python
 def test_timestamps():
-    
+
     START_DATE = '1970-01-01 00:00:01'
     assert START_DATE in str(git_log['timestamp'].min()), \
     'The first timestamp should be %s.' % START_DATE
-    
+
     END_DATE = '2037-04-25 08:08:26'
     assert END_DATE in str(git_log['timestamp'].max()), \
     'The last timestamp should be %s.' % END_DATE
@@ -335,11 +335,11 @@ corrected_log['timestamp'].describe()
 
 ```python
 def test_corrected_timestamps():
-    
+
     FIRST_REAL_COMMIT = '2005-04-16 22:20:36'
     assert FIRST_REAL_COMMIT in str(corrected_log['timestamp'].min()), \
     'The first real commit timestamp should be %s.' % FIRST_REAL_COMMIT
-    
+
     LAST_REAL_COMMIT = '2017-10-03 12:57:00'
     assert LAST_REAL_COMMIT in str(corrected_log['timestamp'].max()), \
     'The last real commit timestamp should be %s.' % LAST_REAL_COMMIT
@@ -395,14 +395,14 @@ commits_per_year.head()
 
 ```python
 def test_number_of_commits_per_year():
-    
+
     YEARS = 13
     assert len(commits_per_year) == YEARS, \
     'Number of years should be %s.' % YEARS
-    
-    
+
+
 def test_new_beginning_of_git_log():
-    
+
     START = '2005-01-01 00:00:00'
     assert START in str(commits_per_year.index[0]), \
     'DataFrame should start at %s' % START
@@ -427,14 +427,14 @@ commits_per_year.plot(title='Commits per year', legend=None);
 
 ```python
 def test_call_to_plot():
-    
+
     # FIXME: Different results local and on build server.
     # - local (expected): AssertionError: Plot type should be a bar chart.
     # - build server: NameError: name '_i20' is not defined
     # deactivating tests
-    
+
     #assert "kind='bar'" in _i20, "Plot type should be a bar chart."
-    
+
     # test currently deactivated: too hard to create a table test case
     assert True
 ```

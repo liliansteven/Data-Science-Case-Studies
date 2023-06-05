@@ -42,9 +42,9 @@ weather.info()
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 15341 entries, 0 to 15340
     Data columns (total 10 columns):
-     #   Column            Non-Null Count  Dtype  
-    ---  ------            --------------  -----  
-     0   date              15341 non-null  int64  
+     #   Column            Non-Null Count  Dtype
+    ---  ------            --------------  -----
+     0   date              15341 non-null  int64
      1   cloud_cover       15322 non-null  float64
      2   sunshine          15341 non-null  float64
      3   global_radiation  15322 non-null  float64
@@ -70,10 +70,10 @@ sns.lineplot(x="year", y="mean_temp", data=weather_per_month, ci=None)
 plt.show()
 ```
 
-    <ipython-input-4-3fbc8dae403c>:1: FutureWarning: 
-    
+    <ipython-input-4-3fbc8dae403c>:1: FutureWarning:
+
     The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
-    
+
       sns.lineplot(x="year", y="mean_temp", data=weather_per_month, ci=None)
 
 ![png](images/output_5_1.png)
@@ -109,26 +109,26 @@ def preprocess_df(df, feature_selection, target_var):
     Split dataframe into X and y, and train and test consecutively. Then impute and scale both train and test features. Returns the train and test ets
     """
     # Subset the data
-    X = df[feature_selection]    
+    X = df[feature_selection]
     y = df[target_var]
-    
+
     # Split the data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1)
-    
+
     # Impute missing values
     imputer = SimpleImputer(strategy="mean")
     # Fit on the training data
     X_train = imputer.fit_transform(X_train)
     # Transform on the test data
     X_test  = imputer.transform(X_test)
-    
+
     # Scale the data
     scaler = StandardScaler()
     # Fit on the training data
     X_train = scaler.fit_transform(X_train)
     # Transform on the test data
     X_test = scaler.transform(X_test)
-    
+
     return X_train, X_test, y_train, y_test
 ```
 
@@ -143,7 +143,7 @@ def predict_and_evaluate(model, x_test, y_test):
     Predict values from test set, calculate and return the root mean squared error.
     """
     y_pred = model.predict(x_test)
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))    
+    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     return rmse
 ```
 
@@ -158,7 +158,7 @@ experiment_id = mlflow.create_experiment(experiment_name)
 for idx, depth in enumerate([1, 2, 5, 10, 20]):
     parameters = {
         'max_depth': depth
-    }    
+    }
     run_name = f"run_{idx}"
     with mlflow.start_run(experiment_id=experiment_id, run_name=run_name):
         # Create models

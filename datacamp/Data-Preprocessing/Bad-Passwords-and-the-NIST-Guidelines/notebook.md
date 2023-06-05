@@ -12,7 +12,7 @@
 # Importing the pandas module
 import pandas as pd
 
-# Loading in datasets/users.csv 
+# Loading in datasets/users.csv
 users = pd.read_csv('datasets/users.csv')
 
 # Printing out how many users we've got
@@ -403,7 +403,7 @@ def test_words_correct():
                     header=None, squeeze=True)
     assert correct_words.equals(words), \
     'datasets/google-10000-english.txt should be read in as a Series and put into words.'
-    
+
 def test_common_words_correct():
     assert users['password'].str.lower().isin(words).sum() == users['common_word'].sum() , \
     "users['common_word'] should be True for each row with a password that is also in words."
@@ -528,7 +528,7 @@ def test_not_same_as_name():
     correct_uses_name = (
         (users['password'].str.lower() == users['first_name']) |
         (users['password'].str.lower() == users['last_name']))
-    
+
     assert correct_uses_name.sum() == users['uses_name'].sum(), \
     "users['uses_name'] should be True for each row with a password which is also the first or last name."
 ```
@@ -708,8 +708,8 @@ users[users['bad_password']]['password'][:25]
 
 ```python
 def test_all_nist_rules():
-    correct_bad_password = ( 
-        users['too_short'] | 
+    correct_bad_password = (
+        users['too_short'] |
         users['common_password'] |
         users['common_word'] |
         users['uses_name'] |
