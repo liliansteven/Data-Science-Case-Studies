@@ -91,7 +91,7 @@ trends.head()
 ```python
 # One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_output = _
@@ -99,7 +99,7 @@ last_output = _
 def test_pandas_loaded():
     assert 'pd' in globals(), \
     'Did you import the pandas library aliased as pd?'
-    
+
 def test_trends_correctly_loaded():
     correct_trends = pd.read_csv('datasets/trends_kj_sisters.csv')
     assert correct_trends.equals(trends), "The variable trends should contain the data in trends_kj_sisters.csv."
@@ -192,9 +192,9 @@ trends.head()
 </table>
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_output = _
@@ -202,7 +202,7 @@ last_output = _
 def test_column_names():
     assert list(trends.columns) == ['month', 'kim', 'khloe', 'kourtney', 'kendall', 'kylie'], \
     'At least one column name is incorrect or out of order.'
-    
+
 def test_head_output():
     try:
         assert "2007-05" in last_output.to_string()
@@ -236,9 +236,9 @@ trends.info()
     memory usage: 7.0+ KB
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def strip_comment_lines(cell_input):
@@ -347,9 +347,9 @@ trends.head()
 </table>
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_output = _
@@ -357,11 +357,11 @@ last_output = _
 def test_removed_sign():
     assert "<" not in trends.to_string(), \
     'The "<" character is still present. Did you remember to overwrite each column with the output of str.replace().'
-    
+
 def test_kim_dtype():
     assert trends.kim.dtype == 'int64', \
     'The kim column is not of dtype int64.'
-    
+
 def test_khloe_dtype():
     assert trends.khloe.dtype == 'int64', \
     'The khloe column is not of dtype int64.'
@@ -369,7 +369,7 @@ def test_khloe_dtype():
 def test_kourtney_dtype():
     assert trends.kourtney.dtype == 'int64', \
     'The kourtney column is not of dtype int64.'
-    
+
 def test_kendall_dtype():
     assert trends.kendall.dtype == 'int64', \
     'The kendall column is not of dtype int64.'
@@ -377,7 +377,7 @@ def test_kendall_dtype():
 def test_kylie_dtype():
     assert trends.kylie.dtype == 'int64', \
     'The kylie column is not of dtype int64.'
-    
+
 def test_head_output():
     try:
         assert "2007-05" in last_output.to_string()
@@ -476,9 +476,9 @@ trends.head()
 </table>
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_output = _
@@ -486,7 +486,7 @@ last_output = _
 def test_month_dtype():
     assert trends.month.dtype == 'datetime64[ns]', \
     'The month column is not of dtype datetime64[ns].'
-    
+
 def test_head_output():
     try:
         assert "2007-05-01" in last_output.to_string()
@@ -573,9 +573,9 @@ trends.head()
 </table>
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_output = _
@@ -583,11 +583,11 @@ last_output = _
 def test_index_name():
     assert trends.index.name == 'month', \
     'The index of the DataFrame is not named month (case-sensitive).'
-    
+
 def test_trends_shape():
     assert trends.shape[1] == 5, \
     'There should be five columns in the DataFrame, one for the first name of each sister.'
-    
+
 def test_head_output():
     try:
         assert "2007-05-01" in last_output.to_string()
@@ -613,9 +613,9 @@ trends.plot()
 ![png](images/output_19_1.png)
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_value = _
@@ -623,11 +623,11 @@ last_value = _
 def test_plot_exists_7():
     assert type(last_value) == type(trends.plot()), \
     'A plot was not the last output of the code cell.'
-    
+
 def test_x_data_7():
     assert len(last_value.get_lines()[0].get_xdata()) == len(list(trends.index)), \
     'The x-axis data looks incorrect.'
-    
+
 def test_y_data_7():
     assert len(last_value.get_lines()[0].get_ydata()) == len(list(trends.kim)), \
     'The y-axis data looks incorrect.'
@@ -642,7 +642,7 @@ def test_y_data_7():
 ![png](images/output_20_2.png)
 
 ## 8. Kylie's rise
-<p>Oh my! There is so much to make sense of here. Kim's <a href="https://en.wikipedia.org/wiki/Kim_Kardashian#2007%E2%80%932009:_Breakthrough_with_reality_television">sharp rise in 2007</a>, with the beginning of <a href="https://en.wikipedia.org/wiki/Keeping_Up_with_the_Kardashians"><em>Keeping Up with the Kardashians</em></a>, among other things. There was no significant search interest for the other four sisters until mid-2009 when Kourtney and Khloé launched the reality television series, <a href="https://en.wikipedia.org/wiki/Kourtney_and_Kim_Take_Miami"><em>Kourtney and Khloé Take Miami</em></a>. Then there was Kim's rise from famous to <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=%2Fm%2F0261x8t,%2Fm%2F0d05l6">literally more famous than God</a> in 2011. This Cosmopolitan <a href="https://www.cosmopolitan.com/uk/entertainment/a12464842/who-is-kim-kardashian/">article</a> covers the timeline that includes the launch of music videos, fragrances,  iPhone and Android games, another television series, joining Instagram, and more. Then there was Kim's ridiculous spike in December 2014: posing naked on the cover of Paper Magazine in a bid to break the internet will do that for you.</p>
+<p>Oh my! There is so much to make sense of here. Kim's <a href="https://en.wikipedia.org/wiki/Kim_Kardashian#2007%E2%80%932009:_Breakthrough_with_reality_television">sharp rise in 2007</a>, with the beginning of <a href="https://en.wikipedia.org/wiki/Keeping_Up_with_the_Kardashians"><em>Keeping Up with the Kardashians</em></a>, among other things. There was no significant search interest for the other four sisters until mid-2009 when Kourtney and Khloé launched the reality television series, <a href="https://en.wikipedia.org/wiki/Kourtney_and_Kim_Take_Miami"><em>Kourtney and Khloé Take Miami</em></a>. Then there was Kim's rise from famous to <a href="https://trends.google.com/trends/explore?date=all&geo=US&q=%2Fm%2F0261x8t,%2Fm%2F0d05l6">literally more famous than God</a> in 2011. This Cosmopolitan <a href="https://cosmopolitan.com/uk/entertainment/a12464842/who-is-kim-kardashian/">article</a> covers the timeline that includes the launch of music videos, fragrances,  iPhone and Android games, another television series, joining Instagram, and more. Then there was Kim's ridiculous spike in December 2014: posing naked on the cover of Paper Magazine in a bid to break the internet will do that for you.</p>
 <p>A curious thing starts to happen after that bid as well. Let's zoom in…</p>
 
 ```python
@@ -655,9 +655,9 @@ trends.loc['2014-01-01':].plot()
 ![png](images/output_22_1.png)
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_value = _
@@ -665,11 +665,11 @@ last_value = _
 def test_plot_exists_8():
     assert type(last_value) == type(trends.loc['2014-01-01':].plot()), \
     'A plot was not the last output of the code cell.'
-    
+
 def test_x_data_8():
     assert len(last_value.get_lines()[0].get_xdata()) == len(list(trends.loc['2014-01-01':].index)), \
     'The x-axis data looks incorrect.'
-    
+
 def test_y_data_8():
     assert len(last_value.get_lines()[0].get_ydata()) == len(list(trends.loc['2014-01-01':].kim)), \
     'The y-axis data looks incorrect.'
@@ -681,7 +681,7 @@ def test_y_data_8():
 
 
 ## 9. Smooth out the fluctuations with rolling means
-<p>It looks like my suspicion may be true: Kim is not always the most searched Kardashian or Jenner sister. Since late-2016, at various months, Kylie overtakes Kim. Two big spikes where she smashed Kim's search interest: in September 2017 when it was reported that Kylie was expecting her first child with rapper <a href="https://en.wikipedia.org/wiki/Travis_Scott">Travis Scott</a> and in February 2018 when she gave birth to her daughter, Stormi Webster. The continued success of Kylie Cosmetics has kept her in the news, not to mention making her the "The Youngest Self-Made Billionaire Ever" <a href="https://www.forbes.com/sites/natalierobehmed/2019/03/05/at-21-kylie-jenner-becomes-the-youngest-self-made-billionaire-ever/#57e612c02794">according to Forbes</a>.</p>
+<p>It looks like my suspicion may be true: Kim is not always the most searched Kardashian or Jenner sister. Since late-2016, at various months, Kylie overtakes Kim. Two big spikes where she smashed Kim's search interest: in September 2017 when it was reported that Kylie was expecting her first child with rapper <a href="https://en.wikipedia.org/wiki/Travis_Scott">Travis Scott</a> and in February 2018 when she gave birth to her daughter, Stormi Webster. The continued success of Kylie Cosmetics has kept her in the news, not to mention making her the "The Youngest Self-Made Billionaire Ever" <a href="https://forbes.com/sites/natalierobehmed/2019/03/05/at-21-kylie-jenner-becomes-the-youngest-self-made-billionaire-ever/#57e612c02794">according to Forbes</a>.</p>
 <p>These fluctuations are descriptive but do not really help us answer our question: is Kim even the most famous sister anymore? We can use rolling means to smooth out short-term fluctuations in time series data and highlight long-term trends. Let's make the window twelve months a.k.a. one year.</p>
 
 ```python
@@ -694,9 +694,9 @@ trends.rolling(window=12).mean().plot()
 ![png](images/output_25_1.png)
 
 ```python
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 last_value = _
@@ -706,7 +706,7 @@ last_value = _
 def test_plot_exists_9():
     assert type(last_value) == type(trends.rolling(window=12).mean().plot()), \
     'A plot was not the last output of the code cell.'
-    
+
 def test_x_data_9():
     assert len(last_value.get_lines()[0].get_xdata()) == len(list(trends.index)), \
     'The x-axis data looks incorrect.'
@@ -721,7 +721,7 @@ def test_y_data_9():
 ![png](images/output_26_2.png)
 
 ## 10. Who's more famous? The Kardashians or the Jenners?
-<p>Whoa, okay! So by this metric, Kim is still the most famous sister despite Kylie being close and nearly taking her crown. Honestly, the biggest takeaway from this whole exercise might be Kendall not showing up that much. It makes sense, though, despite her <a href="http://time.com/money/5033357/kendall-jenner-makes-more-than-gisele-bundchen/">wildly successful modeling career</a>. Some have called her "<a href="https://www.nickiswift.com/5681/kendall-jenner-normal-one-family/">the only normal one in her family</a>" as she tends to shy away from the more dramatic and controversial parts of the media limelight that generate oh so many clicks.</p>
+<p>Whoa, okay! So by this metric, Kim is still the most famous sister despite Kylie being close and nearly taking her crown. Honestly, the biggest takeaway from this whole exercise might be Kendall not showing up that much. It makes sense, though, despite her <a href="http://time.com/money/5033357/kendall-jenner-makes-more-than-gisele-bundchen/">wildly successful modeling career</a>. Some have called her "<a href="https://nickiswift.com/5681/kendall-jenner-normal-one-family/">the only normal one in her family</a>" as she tends to shy away from the more dramatic and controversial parts of the media limelight that generate oh so many clicks.</p>
 <p>Let's end this analysis with one last plot. In it, we will plot (pun!) the Kardashian sisters against the Jenner sisters to see which family line is more popular now. We will use average search interest to make things fair, i.e., total search interest divided by the number of sisters in the family line.</p>
 <p><strong>The answer?</strong> Since 2015, it has been a toss-up. And in the future? With this family and their penchant for big events, who knows?</p>
 
@@ -741,9 +741,9 @@ trends[['kardashian', 'jenner']].plot()
 ```python
 last_value = _
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_kardashian_created():
@@ -761,15 +761,15 @@ def test_kim_remains():
 def test_khloe_remains():
     assert 'khloe' in list(trends.columns), \
     'The khloe column looks like it was removed from the trends DataFrame. It should remain.'
-    
+
 def test_kourtney_remains():
     assert 'kourtney' in list(trends.columns), \
     'The kourtney column looks like it was removed from the trends DataFrame. It should remain.'
-    
+
 def test_kendall_remains():
     assert 'kendall' in list(trends.columns), \
     'The kendall column looks like it was removed from the trends DataFrame. It should remain.'
-    
+
 def test_kylie_remains():
     assert 'kylie' in list(trends.columns), \
     'The kylie column looks like it was removed from the trends DataFrame. It should remain.'
@@ -777,7 +777,7 @@ def test_kylie_remains():
 def test_kardashian_correct():
     assert all(trends['kardashian'].round() == ((trends.kim + trends.khloe + trends.kourtney) / 3).round()), \
     'The data in the kardashian column looks incorrect.'
-    
+
 def test_jenner_correct():
     assert all(trends['jenner'].round() == ((trends.kendall + trends.kylie) / 2).round()), \
     'The data in the kardashian column looks incorrect.'
@@ -785,11 +785,11 @@ def test_jenner_correct():
 def test_plot_exists_10():
     assert type(last_value) == type(trends[['kardashian', 'jenner']].plot()), \
     'A plot was not the last output of the code cell.'
-    
+
 def test_x_data_10():
     assert len(last_value.get_lines()[0].get_xdata()) == len(list(trends.index)), \
     'The x-axis data looks incorrect. It should contain every month from 2007-01-01 through 2019-03-01.'
-    
+
 def test_y_legend_10():
     assert set(last_value.get_legend_handles_labels()[1]) == set(['kardashian', 'jenner']), \
     'The y-axis data looks incorrect. It should contain the average search interest for each family line, i.e., the newly created kardashian and jenner columns.'

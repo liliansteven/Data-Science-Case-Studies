@@ -2,7 +2,7 @@
 ## 1. Tools for text processing
 <p><img style="float: right ; margin: 5px 20px 5px 10px; width: 45%" src="https://assets.datacamp.com/production/project_38/img/Moby_Dick_p510_illustration.jpg"> </p>
 <p>What are the most frequent words in Herman Melville's novel, Moby Dick, and how often do they occur?</p>
-<p>In this notebook, we'll scrape the novel <em>Moby Dick</em> from the website <a href="https://www.gutenberg.org/">Project Gutenberg</a> (which contains a large corpus of books) using the Python package <code>requests</code>. Then we'll extract words from this web data using <code>BeautifulSoup</code>. Finally, we'll dive into analyzing the distribution of words using the Natural Language ToolKit (<code>nltk</code>) and <code>Counter</code>.</p>
+<p>In this notebook, we'll scrape the novel <em>Moby Dick</em> from the website <a href="https://gutenberg.org/">Project Gutenberg</a> (which contains a large corpus of books) using the Python package <code>requests</code>. Then we'll extract words from this web data using <code>BeautifulSoup</code>. Finally, we'll dive into analyzing the distribution of words using the Natural Language ToolKit (<code>nltk</code>) and <code>Counter</code>.</p>
 <p>The <em>Data Science pipeline</em> we'll build in this notebook can be used to visualize the word frequency distributions of any novel that you can find on Project Gutenberg. The natural language processing tools used here apply to much of the data that data scientists encounter as a vast proportion of the world's data is unstructured data and includes a great deal of text.</p>
 <p>Let's start by loading in the three main Python packages we are going to use.</p>
 
@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 import sys
 
 def test_example():
-    assert ('requests' in sys.modules and 
+    assert ('requests' in sys.modules and
             'bs4' in sys.modules and
             'nltk' in sys.modules and
             'collections' in sys.modules), \
@@ -27,13 +27,13 @@ def test_example():
     1/1 tests passed
 
 ## 2. Request Moby Dick
-<p>To analyze Moby Dick, we need to get the contents of Moby Dick from <em>somewhere</em>. Luckily, the text is freely available online at Project Gutenberg as an HTML file: https://www.gutenberg.org/files/2701/2701-h/2701-h.htm .</p>
+<p>To analyze Moby Dick, we need to get the contents of Moby Dick from <em>somewhere</em>. Luckily, the text is freely available online at Project Gutenberg as an HTML file: https://gutenberg.org/files/2701/2701-h/2701-h.htm .</p>
 <p><strong>Note</strong> that HTML stands for Hypertext Markup Language and is the standard markup language for the web.</p>
 <p>To fetch the HTML file with Moby Dick we're going to use the <code>request</code> package to make a <code>GET</code> request for the website, which means we're <em>getting</em> data from it. This is what you're doing through a browser when visiting a webpage, but now we're getting the requested page directly into Python instead. </p>
 
 
 ```python
-# Getting the Moby Dick HTML 
+# Getting the Moby Dick HTML
 r = requests.get('https://s3.amazonaws.com/assets.datacamp.com/production/project_147/datasets/2701-h.htm')
 
 # Setting the correct text encoding of the HTML page
@@ -50,12 +50,12 @@ print(html[:200])
     DEBUG:urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /assets.datacamp.com/production/project_147/datasets/2701-h.htm HTTP/1.1" 200 1501037
 
     <?xml version="1.0" encoding="utf-8"?>
-    
+
     <!DOCTYPE html
        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
-    
-    <html xmlns="http://www.w3.org/1999/
+       "http://w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+
+    <html xmlns="http://w3.org/1999/
 
 ```python
 def test_r_correct():
@@ -129,7 +129,7 @@ import bs4
 def test_text_correct_type():
     assert isinstance(text, str), \
     'text should be a string.'
-    
+
 def test_soup_correct_type():
     assert isinstance(soup, bs4.BeautifulSoup), \
     'soup should be a BeautifulSoup object.'
@@ -148,7 +148,7 @@ tokenizer = nltk.tokenize.RegexpTokenizer('\w+')
 # Tokenizing the text
 tokens = tokenizer.tokenize(text)
 
-# Printing out the first 8 words / tokens 
+# Printing out the first 8 words / tokens
 print(tokens[:8])
 ```
 
@@ -161,7 +161,7 @@ def test_correct_tokenizer():
     correct_tokenizer = nltk.tokenize.RegexpTokenizer('\w+')
     assert isinstance(tokenizer, nltk.tokenize.regexp.RegexpTokenizer), \
     'tokenizer should be created using the function nltk.tokenize.RegexpTokenizer.'
-    
+
 def test_correct_tokens():
     correct_tokenizer = nltk.tokenize.RegexpTokenizer('\w+')
     correct_tokens = correct_tokenizer.tokenize(text)
@@ -182,7 +182,7 @@ words = []
 for word in tokens:
     words.append(word.lower())
 
-# Printing out the first 8 words / tokens 
+# Printing out the first 8 words / tokens
 print(words[:8])
 ```
 

@@ -11,7 +11,7 @@ def load_data(container_path='datasets', folders=['A', 'B', 'C'],
     """
     Loads sign language dataset.
     """
-    
+
     filenames, labels = [], []
 
     for label, folder in enumerate(folders):
@@ -20,14 +20,14 @@ def load_data(container_path='datasets', folders=['A', 'B', 'C'],
                      for d in sorted(listdir(folder_path))]
         labels.extend(len(images) * [label])
         filenames.extend(images)
-    
+
     random.seed(seed)
     data = list(zip(filenames, labels))
     random.shuffle(data)
     data = data[:size]
     filenames, labels = zip(*data)
 
-    
+
     # Get the images
     x = paths_to_tensor(filenames).astype('float32')/255
     # Store the one-hot targets
@@ -46,7 +46,7 @@ def path_to_tensor(img_path, size):
     img = image.load_img(img_path, target_size=(size, size))
     # convert PIL.Image.Image type to 3D tensor
     x = image.img_to_array(img)
-    # convert 3D tensor to 4D tensor 
+    # convert 3D tensor to 4D tensor
     return np.expand_dims(x, axis=0)
 
 def paths_to_tensor(img_paths, size=50):

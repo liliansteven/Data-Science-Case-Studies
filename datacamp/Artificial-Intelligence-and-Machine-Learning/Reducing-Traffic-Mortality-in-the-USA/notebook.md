@@ -56,13 +56,13 @@ from pathlib import Path
 def test_current_dir():
     assert current_dir == [str(Path.cwd())], \
     'The current_dir variable was not correctly assigned.'
-    
-    
+
+
 def test_file_list():
     assert sorted(file_list) == sorted([str(p) for p in list(Path('.').glob('[A-z]*'))]), \
     'The file_list variable was not correctly assigned.'
-    
-    
+
+
 def test_accidents_head():
     with open('datasets/road-accidents.csv') as f:
         accidents_head_test = []
@@ -172,7 +172,7 @@ import sys
 def test_pandas_import():
     assert 'pandas' in list(sys.modules.keys()), \
         'The pandas module has not been imported correctly.'
-    
+
 
 def test_car_acc():
     car_acc_test = pd.read_csv('datasets/road-accidents.csv', comment='#', sep='|')
@@ -180,13 +180,13 @@ def test_car_acc():
         pd.testing.assert_frame_equal(car_acc, car_acc_test)
     except AssertionError:
         assert False, "The car_acc dataset was not read in correctly."
-        
-        
+
+
 def test_car_acc_shape():
     assert rows_and_cols == (51, 5), \
     'The number of rows and variables were not calculated correctly.'
 
-    
+
 def test_car_acc_info():
     assert car_acc_information == car_acc.info(), \
     'The overview does not appear to be have created properly using the info method.'
@@ -211,24 +211,24 @@ sns.pairplot(sum_stat_car)
 ```
 
            drvr_fatl_col_bmiles  perc_fatl_speed  perc_fatl_alcohol  \
-    count             51.000000        51.000000          51.000000   
-    mean              15.790196        31.725490          30.686275   
-    std                4.122002         9.633438           5.132213   
-    min                5.900000        13.000000          16.000000   
-    25%               12.750000        23.000000          28.000000   
-    50%               15.600000        34.000000          30.000000   
-    75%               18.500000        38.000000          33.000000   
-    max               23.900000        54.000000          44.000000   
+    count             51.000000        51.000000          51.000000
+    mean              15.790196        31.725490          30.686275
+    std                4.122002         9.633438           5.132213
+    min                5.900000        13.000000          16.000000
+    25%               12.750000        23.000000          28.000000
+    50%               15.600000        34.000000          30.000000
+    75%               18.500000        38.000000          33.000000
+    max               23.900000        54.000000          44.000000
 
-           perc_fatl_1st_time  
-    count            51.00000  
-    mean             88.72549  
-    std               6.96011  
-    min              76.00000  
-    25%              83.50000  
-    50%              88.00000  
-    75%              95.00000  
-    max             100.00000  
+           perc_fatl_1st_time
+    count            51.00000
+    mean             88.72549
+    std               6.96011
+    min              76.00000
+    25%              83.50000
+    50%              88.00000
+    75%              95.00000
+    max             100.00000
 
     <seaborn.axisgrid.PairGrid at 0x7fb86839ceb8>
 
@@ -242,7 +242,7 @@ import sys
 def test_seaborn_import():
     assert 'seaborn' in list(sys.modules.keys()), \
         'The seaborn module has not been imported correctly.'
-    
+
 
 def test_car_desc():
     try:
@@ -360,22 +360,22 @@ import numpy
 def test_sklearn_import():
     assert 'sklearn' in list(sys.modules.keys()), \
         'The seaborn module has not been imported correctly.'
-    
-    
+
+
 def test_features_df():
     try:
         pd.testing.assert_frame_equal(features, car_acc[['perc_fatl_speed', 'perc_fatl_alcohol', 'perc_fatl_1st_time']])
     except AssertionError:
         assert False, "The features DataFrame was not created correctly."
 
-        
+
 def test_target_df():
     try:
         pd.testing.assert_frame_equal(target.to_frame(), car_acc[['drvr_fatl_col_bmiles']])
     except AssertionError:
         assert False, "The target DataFrame variable was not created correctly."
-        
-        
+
+
 def test_lin_reg():
     assert reg.coef_.round(3).tolist() == [-0.042,  0.191,  0.025], \
      'The linear regression coefficients are not correct.'
@@ -427,12 +427,12 @@ def test_scaler():
     assert scaler.fit_transform(features).round(3).tolist()[-1] == [1.077, 0.259, 0.185], \
         'The scaled features were not calculated properly.'
 
-    
+
 def test_pca():
     assert (pca.explained_variance_ratio_ == PCA().fit(features_scaled).explained_variance_ratio_).all(), \
         'The explained variance ratio for the PCA was not correctly calculated.'
-    
-    
+
+
 def test_pc1_pc2():
     assert two_first_comp_var_exp == PCA().fit(features_scaled).explained_variance_ratio_.cumsum()[1], \
         'The cumulative sum for the explained variance of the two first principal components was not correctly calculated.'
@@ -465,12 +465,12 @@ plt.scatter(p_comp1, p_comp2)
 def test_pca_trans():
     assert (p_comps == PCA(n_components=2).fit_transform(features_scaled)).all(), \
         'The PCA transformation was not performed correctly'
-    
+
 
 def test_pca_comp1():
     assert (p_comp1 == p_comps[:, 0]).all(), \
         'The first principal component was not assigned correctly.'
-    
+
 
 def test_pca_comp2():
     assert (p_comp2 == p_comps[:, 1]).all(), \
@@ -496,7 +496,7 @@ for k in ks:
     km.fit(features_scaled)
     # Append the inertia for `km` to the list of inertias
     inertias.append(km.inertia_)
-    
+
 # Plot the results in a line plot
 plt.plot(ks, inertias, marker='o')
 ```
@@ -511,7 +511,7 @@ def test_inertias():
     assert [round(inertia, 3) for inertia in inertias] ==  test_ins, \
         'The list of inertias was not properly constructed.'
 
-    
+
 def test_km():
     assert (km.labels_ == KMeans(n_clusters=k, random_state=8).fit(features_scaled).labels_).all(), \
         'The KMeans labels were not properly assigned.'
@@ -523,14 +523,14 @@ def test_km():
 <p>Since there wasn't a clear elbow in the scree plot, assigning the states to either two or three clusters is a reasonable choice, and we will resume our analysis using three clusters. Let's see how the PCA scatter plot looks if we color the states according to the cluster to which they are assigned.</p>
 
 ```python
-# Create a KMeans object with 3 clusters, use random_state=8 
+# Create a KMeans object with 3 clusters, use random_state=8
 km = KMeans(n_clusters=3, random_state=8)
 
 # Fit the data to the `km` object
 km.fit(features_scaled)
 
 # Create a scatter plot of the first two principal components
-# and color it according to the KMeans cluster assignment 
+# and color it according to the KMeans cluster assignment
 plt.scatter(p_comp1, p_comp2, c=km.labels_)
 ```
 
@@ -651,8 +651,8 @@ def test_merge_dfs():
         pd.testing.assert_frame_equal(car_acc_miles.drop(columns='num_drvr_fatl_col'), pd.merge(car_acc, miles_driven, on='state'))
     except AssertionError:
         assert False, 'The two DataFrames were not merged correctly.'
-        
-        
+
+
 def test_new_column():
     new_col_df_test = car_acc_miles['drvr_fatl_col_bmiles'] * car_acc_miles['million_miles_annually'] / 1000
     new_col_df_test.name = 'num_drvr_fatl_col'
@@ -660,8 +660,8 @@ def test_new_column():
         pd.testing.assert_series_equal(car_acc_miles['num_drvr_fatl_col'], new_col_df_test)
     except AssertionError:
         assert False, 'The new column "num_drvr_fatl_col" was not computed correctly.'
-        
-        
+
+
 def test_agg():
     count_mean_sum_test = car_acc_miles.groupby('cluster')['num_drvr_fatl_col'].agg(['count', 'mean', 'sum'])
     try:

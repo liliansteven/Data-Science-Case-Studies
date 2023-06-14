@@ -1,8 +1,8 @@
 ## 1. Importing the Data
 <p><img src="https://assets.datacamp.com/production/project_1230/img/nyc.jpg" alt="New York City skyline" width="600px">
 <br>
-Welcome to New York City (NYC), one of the most-visited cities in the world. 
-As a result, there are many <a href="https://www.airbnb.com/"><em>Airbnb</em></a> listings to meet the high demand for temporary lodging for anywhere between a few nights to many months. 
+Welcome to New York City (NYC), one of the most-visited cities in the world.
+As a result, there are many <a href="https://airbnb.com/"><em>Airbnb</em></a> listings to meet the high demand for temporary lodging for anywhere between a few nights to many months.
 In this notebook, we will take a look at the NYC Airbnb market by combining data from multiple file types like <code>.csv</code>, <code>.tsv</code>, and <code>.xlsx</code>.</p>
 <p><br><br>
 We will be working with three datasets:</p>
@@ -52,13 +52,13 @@ print(
     1        3831   89 dollars     Brooklyn, Clinton Hill
     2        5099  200 dollars     Manhattan, Murray Hill
     3        5178   79 dollars  Manhattan, Hell's Kitchen
-    4        5238  150 dollars       Manhattan, Chinatown 
+    4        5238  150 dollars       Manhattan, Chinatown
      room_types:    listing_id                                description        room_type
     0        2595                      Skylit Midtown Castle  Entire home/apt
     1        3831            Cozy Entire Floor of Brownstone  Entire home/apt
     2        5099  Large Cozy 1 BR Apartment In Midtown East  Entire home/apt
     3        5178            Large Furnished Room Near B'way     private room
-    4        5238         Cute & Cozy Lower East Side 1 bdrm  Entire home/apt 
+    4        5238         Cute & Cozy Lower East Side 1 bdrm  Entire home/apt
      reviews:    listing_id    host_name   last_review
     0        2595     Jennifer   May 21 2019
     1        3831  LisaRoxanne  July 05 2019
@@ -190,8 +190,8 @@ def test_avg_price():
     2/2 tests passed
 
 ## 4. Comparing costs to the private rental market
-<p>Now we know how much a listing costs, on average, per night, but it would be useful to have a benchmark for comparison. 
-According to <a href="https://www.zumper.com/rent-research">Zumper</a>, a 1 bedroom apartment in New York City costs, on average, $3,100 per month. Let's convert the per night prices of our listings into monthly costs, so we can compare to the private market. </p>
+<p>Now we know how much a listing costs, on average, per night, but it would be useful to have a benchmark for comparison.
+According to <a href="https://zumper.com/rent-research">Zumper</a>, a 1 bedroom apartment in New York City costs, on average, $3,100 per month. Let's convert the per night prices of our listings into monthly costs, so we can compare to the private market. </p>
 
 ```python
 # Add a new column to the prices DataFrame, price_per_month
@@ -199,8 +199,8 @@ prices["price_per_month"] = prices["price"] * 365 / 12
 # print(type(prices["price_per_month"]))
 
 # Calculate average_price_per_month
-average_price_per_month = round(prices["price_per_month"].mean(),2)                     
-                                                       
+average_price_per_month = round(prices["price_per_month"].mean(),2)
+
 # Compare Airbnb and rental market
 print("Airbnb monthly costs are ${}, while in the private market you would pay {}.".format(average_price_per_month, "$3,100.00"))
 ```
@@ -211,7 +211,7 @@ print("Airbnb monthly costs are ${}, while in the private market you would pay {
 def test_price_per_month_in_df():
     assert 'price_per_month' in prices.columns, \
     "Has 'price_per_month' been added as a column in the 'prices' DataFrame?"
-    
+
 def test_price_per_month_correct_values():
     prices_per_month_copy = prices['price'] * 365 / 12
     assert prices_per_month_copy.equals(prices['price_per_month']), \
@@ -226,7 +226,7 @@ def test_avg_price_per_month_correct_values():
     3/3 tests passed
 
 ## 5. Cleaning the room type column
-<p>Unsurprisingly, using Airbnb appears to be substantially more expensive than the private rental market. We should, however, consider that these Airbnb listings include single private rooms or even rooms to share, as well as entire homes/apartments. 
+<p>Unsurprisingly, using Airbnb appears to be substantially more expensive than the private rental market. We should, however, consider that these Airbnb listings include single private rooms or even rooms to share, as well as entire homes/apartments.
 <br><br>
 Let's dive deeper into the <code>room_type</code> column to find out the breakdown of listings by type of room. The <code>room_type</code> column has several variations for <code>private room</code> listings, specifically: </p>
 <ul>
@@ -319,13 +319,13 @@ def test_last_review_date():
 
 ```python
 # Merge prices and room_types to create rooms_and_prices
-rooms_and_prices = pd.merge(prices, room_types, 
-                            how="outer", 
+rooms_and_prices = pd.merge(prices, room_types,
+                            how="outer",
                             on="listing_id")
 
 # Merge rooms_and_prices with the reviews DataFrame to create airbnb_merged
-airbnb_merged = pd.merge(rooms_and_prices, reviews, 
-                         how="outer", 
+airbnb_merged = pd.merge(rooms_and_prices, reviews,
+                         how="outer",
                          on="listing_id")
 
 # Drop missing values from airbnb_merged
@@ -378,7 +378,7 @@ def test_airbnb_merged():
     4/4 tests passed
 
 ## 8. Analyzing listing prices by NYC borough
-<p>Now we have combined all data into a single DataFrame, we will turn our attention to understanding the difference in listing prices between <a href="https://en.wikipedia.org/wiki/Boroughs_of_New_York_City">New York City boroughs</a>. 
+<p>Now we have combined all data into a single DataFrame, we will turn our attention to understanding the difference in listing prices between <a href="https://en.wikipedia.org/wiki/Boroughs_of_New_York_City">New York City boroughs</a>.
 We can currently see boroughs listed as the first part of a string within the <code>nbhood_full</code> column, e.g., </p>
 <pre><code>Manhattan, Midtown
 Brooklyn, Clinton Hill
@@ -403,7 +403,7 @@ print(boroughs)
 ```
 
                          sum    mean  median  count
-    borough                                        
+    borough
     Manhattan      1898417.0  184.04   149.0  10315
     Brooklyn       1275250.0  122.02    95.0  10451
     Queens          320715.0   92.83    70.0   3455
@@ -431,7 +431,7 @@ correct_boroughs = correct_airbnb_merged.groupby('borough')['price'].agg(['sum',
 def test_borough_column_exists():
     assert 'borough' in airbnb_merged.columns, \
     "Did you add 'borough' as a column to the 'airbnb_merged' DataFrame?"
-    
+
 def test_summary_statistics():
     assert 'sum' in boroughs.columns, \
     "Did you include 'sum' as one of the summary statistics? Can't find this column in 'boroughs'."
@@ -441,12 +441,12 @@ def test_summary_statistics():
     "Did you include 'median' as one of the summary statistics? Can't find this column in 'boroughs'."
     assert 'count' in boroughs.columns, \
     "Did you include 'count' as one of the summary statistics? Can't find this column in 'boroughs'."
-    
+
 def test_borough_column_values():
     borough_list = ['Manhattan', 'Brooklyn', 'Queens', 'Staten Island', 'Bronx']
     assert airbnb_merged['borough'].isin(borough_list).any(), \
     "Did you correctly split the 'nbhood_full' column? Expected different values in the 'borough' column."
-    
+
 def test_boroughs():
     assert boroughs.iloc[-1].values.tolist() == [55156.0, 79.25, 65.0, 696.0], \
     """Did you sort the values by "mean" in descending order? Expected the lowest average price to be in the final row of the DataFrame."""
@@ -457,7 +457,7 @@ def test_boroughs():
     4/4 tests passed
 
 ## 9. Price range by borough
-<p>The above output gives us a summary of prices for listings across the 5 boroughs. In this final task we would like to categorize listings based on whether they fall into specific price ranges, and view this by borough. 
+<p>The above output gives us a summary of prices for listings across the 5 boroughs. In this final task we would like to categorize listings based on whether they fall into specific price ranges, and view this by borough.
 <br><br>
 We can do this using percentiles and labels to create a new column, <code>price_range</code>, in the DataFrame.
 Once we have created the labels, we can then group the data and count frequencies for listings in each price range by borough.
@@ -498,7 +498,7 @@ label_names = ["Budget", "Average", "Expensive", "Extravagant"]
 ranges = [0, 69, 175, 350, np.inf]
 
 # Insert new column, price_range, into DataFrame
-# Useful for going from a continuous variable to a categorical variable 
+# Useful for going from a continuous variable to a categorical variable
 airbnb_merged["price_range"] = pd.cut(airbnb_merged["price"], bins=ranges, labels=label_names)
 
 # Calculate borough and price_range frequencies, prices_by_borough
@@ -538,7 +538,7 @@ def test_ranges():
     correct_ranges = [0, 69, 175, 350, np.inf]
     assert correct_ranges == ranges, \
     "Have you entered the correct values for 'ranges', expected something different?"
-    
+
 def test_budget_prices():
     budget = airbnb_merged[airbnb_merged['price_range'] == 'Budget']
     average = airbnb_merged[airbnb_merged['price_range'] == 'Average']

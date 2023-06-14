@@ -1,7 +1,7 @@
 ## 1. Import Python libraries
 <p><img src="https://assets.datacamp.com/production/project_412/img/92_notebook.jpg" alt="honey bee">
 <em>A honey bee (Apis).</em></p>
-<p>Can a machine identify a bee as a honey bee or a bumble bee? These bees have different <a href="https://www.thesca.org/connect/blog/bumblebees-vs-honeybees-what%E2%80%99s-difference-and-why-does-it-matter">behaviors and appearances</a>, but given the variety of backgrounds, positions, and image resolutions, it can be a challenge for machines to tell them apart.</p>
+<p>Can a machine identify a bee as a honey bee or a bumble bee? These bees have different <a href="https://thesca.org/connect/blog/bumblebees-vs-honeybees-what%E2%80%99s-difference-and-why-does-it-matter">behaviors and appearances</a>, but given the variety of backgrounds, positions, and image resolutions, it can be a challenge for machines to tell them apart.</p>
 <p>Being able to identify bee species from images is a task that ultimately would allow researchers to more quickly and effectively collect field data. Pollinating bees have critical roles in both ecology and agriculture, and diseases like <a href="http://news.harvard.edu/gazette/story/2015/07/pesticide-found-in-70-percent-of-massachusetts-honey-samples/">colony collapse disorder</a> threaten these species. Identifying different species of bees in the wild means that we can better understand the prevalence and growth of these important insects.</p>
 <p><img src="https://assets.datacamp.com/production/project_412/img/20_notebook.jpg" alt="bumble bee">
 <em>A bumble bee (Bombus).</em></p>
@@ -42,15 +42,15 @@ from sklearn.metrics import roc_curve, auc, accuracy_score
 def test_task_1():
     assert 'Image' in globals(), \
     'Did you forget to import `Image` from `PIL`?'
-    
+
 def test_task_2():
     assert 'train_test_split' in globals(), \
     'Did you forget to import `train_test_split` from `sklearn.model_selection`?'
-    
+
 def test_task_3():
     assert 'SVC' in globals(), \
     'Did you forget to import `SVC` from `sklearn.svm`?'
-    
+
 def test_task_4():
     assert 'accuracy_score' in globals(), \
     'Did you forget to import `accuracy_score` from `sklearn.metrics`?'
@@ -72,7 +72,7 @@ display(labels.head())
 
 def get_image(row_id, root="datasets/"):
     """
-    Converts an image number into the file path where the image is located, 
+    Converts an image number into the file path where the image is located,
     opens the image, and returns the image as a numpy array.
     """
     filename = "{}.jpg".format(row_id)
@@ -174,7 +174,7 @@ import numpy
 def test_task3_0():
     assert 'bombus' in globals() and bombus.shape == (100, 100, 3), \
     'Did you load the image corresponding to `bombus_row` using the `get_image` function and assign it to `bombus`?'
-    
+
 def test_task3_1():
     assert gray_bombus.shape == (100, 100) and gray_bombus.max() <= 1, \
     'Did you convert `bombus` to grayscale using `rgb2gray`?'
@@ -207,7 +207,7 @@ plt.imshow(hog_image, cmap=mpl.cm.gray)
 def test_task4_0():
     assert all(hog_image[0] == np.array([0] * 100)), \
     'Did you call `hog` on `gray_bombus`?'
-    
+
 def test_task4_1():
     assert '_' in globals() and isinstance(globals()['_'], mpl.image.AxesImage), \
     'Did you forget to call `plt.imshow` on `hog_image`?'
@@ -243,7 +243,7 @@ print(bombus_features.shape)
 def test_task5_0():
     assert bombus_features[29999] == 118.0 and round(bombus_features[30000], 3) == 0.053, \
     'Did you pass color_features and hog_featuers into the np.hstack function in this order?'
-    
+
 def test_task5_1():
     assert bombus_features.shape == (31296,), \
     '`bombus_features` does not have the correct shape. Did you setup the `create_features` function properly?'
@@ -264,14 +264,14 @@ def test_task5_1():
 ```python
 def create_feature_matrix(label_dataframe):
     features_list = []
-    
+
     for img_id in label_dataframe.index:
         # load image
         img = get_image(img_id)
         # get features for image
         image_features = create_features(img)
         features_list.append(image_features)
-        
+
     # convert list of arrays into a matrix
     feature_matrix = np.array(features_list)
     return feature_matrix
@@ -284,7 +284,7 @@ feature_matrix = create_feature_matrix(labels)
 def test_task6_0():
     assert feature_matrix[0, -1] != feature_matrix[1, -1], \
     'Did you call `create_features` on `img`?'
-    
+
 def test_task6_1():
     assert feature_matrix.shape == (500, 31296), \
     'Did you call `create_feature_matrix` on the dataframe `labels`?'
@@ -314,11 +314,11 @@ pd.Series(y_train).value_counts()
 def test_task7_0():
     assert '_' in globals() and isinstance(globals()['_'], pd.Series), \
     'Did you forget to forget to look at the distribution of labels using `pd.Series(y_train).value_counts()`?'
-    
+
 def test_task7_1():
     assert X_train.shape == (350, 31296), \
     'Did you pass `feature_matrix` as X into train_test_split?'
-                                     
+
 def test_task7_2():
     assert y_train.shape == (350,) and (np.unique(y_train) == [0., 1.,]).all(), \
     'Did you pass `labels.genus.values` as y into train_test_split?'
@@ -356,7 +356,7 @@ print('Standardized test features matrix shape is: ', test_stand.shape)
 def test_task8_0():
     assert round(train_stand[0, 0], 3) == -1.124, \
     'Did you pass in `X_train` to `ss.fit_transform()`?'
-    
+
 def test_task8_1():
     assert round(test_stand[0, 0], 3) == -0.749, \
     'Did you pass in `X_test` to `ss.transform()`?'
@@ -394,7 +394,7 @@ print('Test features matrix is: ', X_test.shape)
 def test_task9_2():
     assert round(X_test[0, 0], 3) == 29.419, \
     'Did you pass in `test_stand` to `pca_test.fit_transform()`?'
-    
+
 def test_task8_2():
     assert X_test.shape == (150, 350), \
     'Did you pass in `test_stand` to `pca_test.fit_transform()`?'
@@ -429,11 +429,11 @@ print('Model accuracy is: ', accuracy)
 def test_task10_0():
     assert svm.kernel == 'linear' and svm.probability == True, \
     'Did you assign define an SVC with a linear kernel and set probability equal to True?'
-    
+
 def test_task10_1():
     assert pd.Series(y_pred).value_counts()[0] == 79, \
     'Did you generate predictions using `svm.predict(X_test)`?'
-    
+
 def test_task10_2():
     assert round(accuracy, 2) == 0.68, \
     'Did you calculate accuracy using `accuracy_score(y_test, y_pred)`?'
@@ -483,11 +483,11 @@ def test_task12_0():
 def test_task12_1():
     assert false_positive_rate.shape == (74,), \
     'Did you pass `y_test, y_proba, pos_label=1` into roc_curve?'
-    
+
 def test_task12_2():
     assert round(roc_auc, 2) == .74, \
     'Did you calculate the roc_auc properly?'
-    
+
 def test_task12_3():
     x, y = roc_plot[0].get_data()
     assert x[10] == 0.08 and round(y[10], 2) == 0.28, \

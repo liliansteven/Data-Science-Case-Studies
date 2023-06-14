@@ -87,7 +87,7 @@ import pandas as pd
 def test_papers_exists():
     assert "papers" in globals(), \
         "The variable papers should be defined."
-        
+
 def test_papers_correctly_loaded():
     correct_papers = pd.read_csv("datasets/papers.csv")
     assert correct_papers.equals(papers), "The variable papers should contain the data in papers.csv"
@@ -161,7 +161,7 @@ import pandas as pd
 def test_papers_exists():
     assert "papers" in globals(), \
         "The variable `papers` should be defined."
-        
+
 def test_papers_columns():
     assert papers.columns.size==4, \
         "The variable `papers` does not contain the right amount of columns."
@@ -191,9 +191,9 @@ counts.plot(kind='bar')
 ![png](images/output_7_1.png)
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_vars_exists():
@@ -201,7 +201,7 @@ def test_vars_exists():
         "The variable groups should be defined."
     assert "counts" in globals(), \
         "The variable counts should be defined."
-        
+
 def test_vars_columns():
     correct_groups = papers.groupby('year')
     correct_counts = correct_groups.size()
@@ -216,7 +216,7 @@ def test_vars_columns():
 ```python
 # Load the regular expression library
 import re
-# Print the titles of the first rows 
+# Print the titles of the first rows
 print(papers['title'].head())
 
 # Remove punctuation
@@ -225,7 +225,7 @@ papers['title_processed'] = papers['title'].map(lambda x: re.sub('[,\.!?]', '', 
 # Convert the titles to lowercase
 papers['title_processed'] = papers['title_processed'].str.lower()
 
-# Print the processed titles of the first rows 
+# Print the processed titles of the first rows
 papers.head(5)
 ```
 
@@ -292,9 +292,9 @@ papers.head(5)
 </table>
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_processed_title_column():
@@ -330,9 +330,9 @@ wc.to_image()
 ![png](images/output_13_0.png)
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_example():
@@ -354,20 +354,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 # Helper function
 def plot_10_most_common_words(count_data, count_vectorizer):
-    
+
     words = count_vectorizer.get_feature_names()
     total_counts = np.zeros(len(words))
     for t in count_data:
         total_counts+=t.toarray()[0]
-    
+
     count_dict = (zip(words, total_counts))
     count_dict = sorted(count_dict, key=lambda x:x[1], reverse=True)[0:10]
     words = [w[0] for w in count_dict]
     counts = [w[1] for w in count_dict]
-    x_pos = np.arange(len(words)) 
+    x_pos = np.arange(len(words))
 
     plt.bar(x_pos, counts,align='center')
-    plt.xticks(x_pos, words, rotation=90) 
+    plt.xticks(x_pos, words, rotation=90)
     plt.xlabel('words')
     plt.ylabel('counts')
     plt.title('10 most common words')
@@ -381,9 +381,9 @@ count_data = count_vectorizer.fit_transform(papers['title'])
 ```
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_count_data():
@@ -403,7 +403,7 @@ warnings.simplefilter("ignore", DeprecationWarning)
 
 # Load the LDA model from sk-learn
 from sklearn.decomposition import LatentDirichletAllocation as LDA
- 
+
 # Helper function
 def print_topics(model, count_vectorizer, n_top_words):
     words = count_vectorizer.get_feature_names()
@@ -411,7 +411,7 @@ def print_topics(model, count_vectorizer, n_top_words):
         print("\nTopic #%d:" % topic_idx)
         print(" ".join([words[i]
                         for i in topic.argsort()[:-n_top_words - 1:-1]]))
-        
+
 # Tweak the two parameters below (use int values below 15)
 number_topics = 10
 number_words = 10
@@ -426,34 +426,34 @@ print_topics(lda, count_vectorizer, number_words)
 ```
 
     Topics found via LDA:
-    
+
     Topic #0:
     gaussian learning regression processes process supervised bounds feature search speech
-    
+
     Topic #1:
     optimization classification gradient high dimensional learning neurons descent policy theory
-    
+
     Topic #2:
     learning multi adaptive approach reinforcement random robust selection decision spectral
-    
+
     Topic #3:
     stochastic optimal non linear modeling convex unsupervised learning problems approximate
-    
+
     Topic #4:
     probabilistic large scale data vector kernels machines support generalized point
-    
+
     Topic #5:
     analysis learning hierarchical model machine human spike brain images natural
-    
+
     Topic #6:
     image time kernel learning application real inverse recovery completion action
-    
+
     Topic #7:
     models learning sparse using recognition visual model structure multiple latent
-    
+
     Topic #8:
     neural networks network efficient clustering recurrent using functions propagation data
-    
+
     Topic #9:
     learning bayesian inference deep estimation information algorithm fast algorithms online
 
@@ -476,9 +476,9 @@ more_papers_published_in_2018 = True
 ```
 
 ```python
-# one or more tests of the students code. 
+# one or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test():

@@ -149,7 +149,7 @@ import pandas as pd
 def test_cc_apps_exists():
     assert "cc_apps" in globals(), \
         "The variable cc_apps should be defined."
-        
+
 def test_cc_apps_correctly_loaded():
     correct_cc_apps = pd.read_csv("datasets/cc_approvals.data", header=None)
     try:
@@ -572,7 +572,7 @@ def test_cc_apps_description_correctly_done():
     correct_cc_apps_description = cc_apps.describe()
     assert str(correct_cc_apps_description) == str(cc_apps_description), \
         "cc_apps_description should contain the output of cc_apps.describe()."
-    
+
 def test_cc_apps_info_exists():
     assert "cc_apps_info" in globals(), \
         "The variable cc_apps_info should be defined."
@@ -733,7 +733,7 @@ def test_cc_apps_correctly_imputed():
 
 ## 6. Handling the missing values (part iii)
 <p>We have successfully taken care of the missing values present in the numeric columns. There are still some missing values to be imputed for columns 0, 1, 3, 4, 5, 6 and 13. All of these columns contain non-numeric data and this is why the mean imputation strategy would not work here. This needs a different treatment. </p>
-<p>We are going to impute these missing values with the most frequent values as present in the respective columns. This is <a href="https://www.datacamp.com/community/tutorials/categorical-data">good practice</a> when it comes to imputing missing values for categorical data in general.</p>
+<p>We are going to impute these missing values with the most frequent values as present in the respective columns. This is <a href="https://datacamp.com/community/tutorials/categorical-data">good practice</a> when it comes to imputing missing values for categorical data in general.</p>
 
 ```python
 # Iterate over each column of cc_apps_train
@@ -894,7 +894,7 @@ def test_logreg_defined_correctly():
 
 ## 10. Making predictions and evaluating performance
 <p>But how well does our model perform? </p>
-<p>We will now evaluate our model on the test set with respect to <a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy">classification accuracy</a>. But we will also take a look the model's <a href="http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/">confusion matrix</a>. In the case of predicting credit card applications, it is important to see if our machine learning model is equally capable of predicting approved and denied status, in line with the frequency of these labels in our original dataset. If our model is not performing well in this aspect, then it might end up approving the application that should have been approved. The confusion matrix helps us to view our model's performance from these aspects.  </p>
+<p>We will now evaluate our model on the test set with respect to <a href="https://developers.google.com/machine-learning/crash-course/classification/accuracy">classification accuracy</a>. But we will also take a look the model's <a href="http://dataschool.io/simple-guide-to-confusion-matrix-terminology/">confusion matrix</a>. In the case of predicting credit card applications, it is important to see if our machine learning model is equally capable of predicting approved and denied status, in line with the frequency of these labels in our original dataset. If our model is not performing well in this aspect, then it might end up approving the application that should have been approved. The confusion matrix helps us to view our model's performance from these aspects.  </p>
 
 ```python
 # Import confusion_matrix
@@ -988,7 +988,7 @@ def test_param_grid_defined_correctly():
 
 ## 12. Finding the best performing model
 <p>We have defined the grid of hyperparameter values and converted them into a single dictionary format which <code>GridSearchCV()</code> expects as one of its parameters. Now, we will begin the grid search to see which values perform best.</p>
-<p>We will instantiate <code>GridSearchCV()</code> with our earlier <code>logreg</code> model with all the data we have. We will also instruct <code>GridSearchCV()</code> to perform a <a href="https://www.dataschool.io/machine-learning-with-scikit-learn/">cross-validation</a> of five folds.</p>
+<p>We will instantiate <code>GridSearchCV()</code> with our earlier <code>logreg</code> model with all the data we have. We will also instruct <code>GridSearchCV()</code> to perform a <a href="https://dataschool.io/machine-learning-with-scikit-learn/">cross-validation</a> of five folds.</p>
 <p>We'll end the notebook by storing the best-achieved score and the respective best parameters.</p>
 <p>While building this credit card predictor, we tackled some of the most widely-known preprocessing steps such as <strong>scaling</strong>, <strong>label encoding</strong>, and <strong>missing value imputation</strong>. We finished with some <strong>machine learning</strong> to predict if a person's application for a credit card would get approved or not given some information about that person.</p>
 

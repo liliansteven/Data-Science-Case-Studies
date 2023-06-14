@@ -13,7 +13,7 @@
 ```python
 # Import packages and set numpy random seed
 import numpy as np
-np.random.seed(5) 
+np.random.seed(5)
 import tensorflow as tf
 tf.set_random_seed(2)
 from datasets import sign_language
@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 
 # One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_1_0():
@@ -61,9 +61,9 @@ plt.show()
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_2_0():
@@ -102,34 +102,34 @@ print("\tA: {}, B: {}, C: {}".format(num_A_test, num_B_test, num_C_test))
 ```
 
     Training set:
-    	A: 540, B: 528, C: 532
+        A: 540, B: 528, C: 532
     Test set:
-    	A: 118, B: 144, C: 138
+        A: 118, B: 144, C: 138
 
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_3_0():
     assert num_A_train == 540 and num_A_test == 118, \
     'Did you leave the values of num_A_train and num_A_test as provided?'
-    
+
 def test_task_3_1():
     assert num_B_train == 528, \
     'Did you set the value of num_B_train?'
-    
+
 def test_task_3_2():
     assert num_C_train == 532, \
     'Did you set the value of num_C_train?'
-    
+
 def test_task_3_3():
     assert num_B_test == 144, \
     'Did you set the value of num_B_test?'
-    
+
 def test_task_3_4():
     assert num_C_test == 138, \
     'Did you set the value of num_C_test?'
@@ -162,15 +162,15 @@ y_test_OH = np_utils.to_categorical(y_test)
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_4_0():
     assert np.all(y_train_OH == np_utils.to_categorical(y_train, 3)), \
     'Did you use `np_utils.to_categorical` to obtain the one-hot training labels?'
-    
+
 def test_task_4_1():
     assert np.all(y_test_OH == np_utils.to_categorical(y_test, 3)), \
     'Did you use `np_utils.to_categorical` to obtain the one-hot test labels?'
@@ -189,7 +189,7 @@ from keras.models import Sequential
 
 model = Sequential()
 # First convolutional layer accepts image input
-model.add(Conv2D(filters=5, kernel_size=5, padding='same', activation='relu', 
+model.add(Conv2D(filters=5, kernel_size=5, padding='same', activation='relu',
                         input_shape=(50, 50, 3)))
 # Add a max pooling layer
 model.add(MaxPooling2D(pool_size=(4, 4)))
@@ -205,19 +205,19 @@ model.add(Dense(3, activation='softmax'))
 model.summary()
 ```
     _________________________________________________________________
-    Layer (type)                 Output Shape              Param #   
+    Layer (type)                 Output Shape              Param #
     =================================================================
-    conv2d_3 (Conv2D)            (None, 50, 50, 5)         380       
+    conv2d_3 (Conv2D)            (None, 50, 50, 5)         380
     _________________________________________________________________
-    max_pooling2d_3 (MaxPooling2 (None, 12, 12, 5)         0         
+    max_pooling2d_3 (MaxPooling2 (None, 12, 12, 5)         0
     _________________________________________________________________
-    conv2d_4 (Conv2D)            (None, 12, 12, 15)        1890      
+    conv2d_4 (Conv2D)            (None, 12, 12, 15)        1890
     _________________________________________________________________
-    max_pooling2d_4 (MaxPooling2 (None, 3, 3, 15)          0         
+    max_pooling2d_4 (MaxPooling2 (None, 3, 3, 15)          0
     _________________________________________________________________
-    flatten_2 (Flatten)          (None, 135)               0         
+    flatten_2 (Flatten)          (None, 135)               0
     _________________________________________________________________
-    dense_2 (Dense)              (None, 3)                 408       
+    dense_2 (Dense)              (None, 3)                 408
     =================================================================
     Total params: 2,678
     Trainable params: 2,678
@@ -227,9 +227,9 @@ model.summary()
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_5_0():
@@ -243,24 +243,24 @@ def test_task_5_0():
 def test_task_5_1():
     assert model.layers[1].pool_size == (4, 4), \
     'Does the first pooling layer pool over windows of size 4x4?'
-    
+
 def test_task_5_2():
     assert model.layers[2].filters == 15, \
     'Does the second convolutional layer have 15 filters?'
-    
+
 def test_task_5_3():
     assert model.layers[2].kernel_size == (5, 5), \
     'Does the second convolutional layer have kernel size 5?'
-    
+
 def test_task_5_4():
     assert model.layers[2].padding == 'same', \
     'Does the second convolutional layer have "same" padding?'
-    
+
 def test_task_5_5():
     from keras.activations import relu
     assert model.layers[2].activation == relu, \
     'Does the second convolutional layer have a "relu" activation function?'
-    
+
 def test_task_5_6():
     assert model.layers[3].pool_size == (4, 4), \
     'Does the second pooling layer pool over windows of size 4x4?'
@@ -273,17 +273,17 @@ def test_task_5_6():
 
 ```python
 # Compile the model
-model.compile(optimizer='rmsprop', 
-              loss='categorical_crossentropy', 
+model.compile(optimizer='rmsprop',
+              loss='categorical_crossentropy',
               metrics=['accuracy'])
 ```
 
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_6_0():
@@ -307,7 +307,7 @@ def test_task_6_2():
 
 ```python
 # Train the model
-hist = model.fit(x_train, y_train_OH, epochs=2, 
+hist = model.fit(x_train, y_train_OH, epochs=2,
                  batch_size=32, validation_split=0.2)
 ```
 
@@ -320,9 +320,9 @@ hist = model.fit(x_train, y_train_OH, epochs=2,
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_7_0():
@@ -342,7 +342,7 @@ def test_task_7_1():
 
 ```python
 # Obtain accuracy on test set
-score = model.evaluate(x=x_test, 
+score = model.evaluate(x=x_test,
                        y=y_test_OH,
                        verbose=0)
 print('Test accuracy:', score[1])
@@ -353,9 +353,9 @@ print('Test accuracy:', score[1])
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_8_0():
@@ -393,19 +393,19 @@ for i, idx in enumerate(bad_test_idxs):
 ```python
 # This needs to be included at the beginning of every @tests cell.
 
-# One or more tests of the students code. 
+# One or more tests of the students code.
 # The @solution should pass the tests.
-# The purpose of the tests is to try to catch common errors and to 
+# The purpose of the tests is to try to catch common errors and to
 # give the student a hint on how to resolve these errors.
 
 def test_task_9_0():
     assert np.all(y_probs == model.predict(x_test)), \
     'Did you calculate the predicted probabilities for the test dataset?'
-    
+
 def test_task_9_1():
     assert np.all(y_preds == np.argmax(y_probs, axis=1)), \
     'Did you calculate the predicted labels for the test dataset?'
-    
+
 def test_task_9_2():
     assert np.all(bad_test_idxs == np.where(y_preds!=y_test)[0]), \
     'Did you find the indices corresponding to images in the test set that were incorrectly classified by the model?'

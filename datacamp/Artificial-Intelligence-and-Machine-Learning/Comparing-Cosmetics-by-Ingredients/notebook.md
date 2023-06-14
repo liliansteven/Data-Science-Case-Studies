@@ -14,7 +14,7 @@ from sklearn.manifold import TSNE
 # Load the data
 df = pd.read_csv("datasets/cosmetics.csv")
 
-# Check the first five rows 
+# Check the first five rows
 display(df.sample(5))
 
 # Inspect the types of products
@@ -169,11 +169,11 @@ def test_importing_data():
 def test_sample_command():
     assert 'df.sample(' in last_input, \
         "Did you use the sample() method to inspect the data?"
-    
+
 def test_sample_command():
     assert 'df.Label.value_counts()' in last_input or "df['Label'].value_counts()" in last_input, \
         "Did you use the value_counts() method on df.Label (or df['Label']) to inspect the cosmetic category counts?"
-    
+
 # def test_head_output():
 #     try:
 #         assert ("Label" in last_output.to_string() and len(last_output) == 5)
@@ -225,7 +225,7 @@ correct_moisturizers = df[df['Label'] == 'Moisturizer']
 def test_columns_list():
     assert list(moisturizers_dry.columns) == ['Label', 'Brand', 'Name', 'Price', 'Rank', 'Ingredients', 'Combination', 'Dry', 'Normal', 'Oily', 'Sensitive'], \
     'At least one column name is incorrect or out of order.'
-    
+
 def test_moisturizers():
     assert correct_moisturizers.equals(moisturizers), 'The intermediate moisturizers DataFrame does not contain the data in cosmetics.csv filtered for the label "Moisturizer".'
 
@@ -233,7 +233,7 @@ def test_moisturizers():
 #     correct_moisturizers_dry = correct_moisturizers[correct_moisturizers['Dry'] == 1]
 #     correct_moisturizers_dry.reset_index(drop = True)
 #     assert correct_moisturizers_dry.equals(moisturizers_dry), 'The moisturizers_dry DataFrame does not contain the data in cosmetics.csv filtered for the label "Moisturizer" then for 1 in the "Dry" column, with the index reset.'
-    
+
 def test_index():
     assert (moisturizers_dry.index == range(0, 190, 1)).all(), \
     'Did you filter the moisturizers DataFrame for 1 in the "Dry" column, then reset the index of the DataFrame? The index should range from 0 to 189.'
@@ -261,7 +261,7 @@ corpus = []
 idx = 0
 
 # For loop for tokenization
-for i in range(len(moisturizers_dry)):    
+for i in range(len(moisturizers_dry)):
     ingredients = moisturizers_dry['Ingredients'][i]
     ingredients_lower = ingredients.lower()
     tokens = ingredients_lower.split(', ')
@@ -270,8 +270,8 @@ for i in range(len(moisturizers_dry)):
         if ingredient not in ingredient_idx:
             ingredient_idx[ingredient ] = idx
             idx += 1
-            
-# Check the result 
+
+# Check the result
 print("The index for decyl oleate is", ingredient_idx['decyl oleate'])
 ```
 
@@ -285,11 +285,11 @@ print("The index for decyl oleate is", ingredient_idx['decyl oleate'])
 def test_ingredient_idx_len():
     assert len(ingredient_idx) == 2233, \
     'The length of ingredient_idx should be 2233, but it isn\'t.'
-    
+
 def test_ingredient_idx_content():
     assert [ingredient_idx['paraffin'], ingredient_idx['niacin'], ingredient_idx['water']] == [20, 22, 23], \
     'The items of ingredient_idx are not what we expected. Did you correctly index each token?'
-    
+
 def test_corpus_len():
     assert (len(corpus) == 190), \
     'The length of corpus should be 190, but it isn\'t.'
@@ -316,7 +316,7 @@ To create this matrix, we'll first make an empty matrix filled with zeros. The l
 
 
 ```python
-# Get the number of items and tokens 
+# Get the number of items and tokens
 M = moisturizers_dry.shape[0]
 N = len(ingredient_idx)
 
@@ -337,7 +337,7 @@ def test_N_num():
 
 def test_A_zeros():
     assert np.sum(A) == 0, 'The values of A do not all sum to 0 and they should.'
-    
+
 def test_A_shape():
     assert A.shape == (190, 2233), 'The shape of the matrix A is not what we expected. It should be (190, 2233).'
 ```
@@ -373,7 +373,7 @@ def oh_encoder(tokens):
 %%nose
 # %%nose needs to be included at the beginning of every tests cell
 
-# First three values by the correctly defined function 
+# First three values by the correctly defined function
 temp = np.asarray(range(2233))
 answer = [861, 282, 4077]
 
@@ -394,7 +394,7 @@ def test_oh_encoder():
 
 
 ## 6. The Cosmetic-Ingredient matrix!
-<p>Now we'll apply the <code>oh_encoder()</code> functon to the tokens in <code>corpus</code> and set the values at each row of this matrix. So the result will tell us what ingredients each item is composed of. For example, if a cosmetic item contains <em>water, niacin, decyl aleate</em> and <em>sh-polypeptide-1</em>, the outcome of this item will be as follows. 
+<p>Now we'll apply the <code>oh_encoder()</code> functon to the tokens in <code>corpus</code> and set the values at each row of this matrix. So the result will tell us what ingredients each item is composed of. For example, if a cosmetic item contains <em>water, niacin, decyl aleate</em> and <em>sh-polypeptide-1</em>, the outcome of this item will be as follows.
 <img src="https://assets.datacamp.com/production/project_695/img/image_3.PNG" style="width:800px;height:400px;">
 This is what we called one-hot encoding. By encoding each ingredient in the items, the <em>Cosmetic-Ingredient</em> matrix will be filled with binary values. </p>
 
@@ -443,7 +443,7 @@ def test_A_matrix():
 model = TSNE(n_components=2, learning_rate=200, random_state=42)
 tsne_features = model.fit_transform(A)
 
-# Make X, Y columns 
+# Make X, Y columns
 moisturizers_dry['X'] = tsne_features[:, 0]
 moisturizers_dry['Y'] = tsne_features[:, 1]
 ```
@@ -462,7 +462,7 @@ answer = '-0.42638'
 def test_tsne_features_value():
     assert '%.5f' % tsne_features[:3].sum() == answer, \
     'The values of tsne_features are not what we expected. Please check the parameters of the model again.'
-    
+
 def test_X_Y_values():
     assert (tsne_features[:, 0] == moisturizers_dry['X']).all(), 'The values for X in moisturizers_dry are not what we expected. Did you correctly assign the columns of tsne_features?'
     assert (tsne_features[:, 1] == moisturizers_dry['Y']).all(), 'The values for Y in moisturizers_dry are not what we expected. Did you correctly assign the columns of tsne_features?'
@@ -488,14 +488,14 @@ from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, HoverTool
 output_notebook()
 
-# Make a source and a scatter plot  
+# Make a source and a scatter plot
 source = ColumnDataSource(moisturizers_dry)
-plot = figure(x_axis_label = 'T-SNE 1', 
-              y_axis_label = 'T-SNE 2', 
+plot = figure(x_axis_label = 'T-SNE 1',
+              y_axis_label = 'T-SNE 2',
               width = 500, height = 400)
-plot.circle(x = 'X', 
-    y = 'Y', 
-    source = source, 
+plot.circle(x = 'X',
+    y = 'Y',
+    source = source,
     size = 10, color = '#FF7373', alpha = .8)
 ```
 
@@ -549,7 +549,7 @@ def test_source():
 def test_x_plot_correct():
     assert curdoc().to_json_string().find('"x":{"field":"X"}') >=0, \
     "The x-argument for plot.circle() should be 'X' and it isn't."
-    
+
 def test_y_plot_correct():
     assert curdoc().to_json_string().find('"y":{"field":"Y"}') >= 0, \
     "The y-argument for plot.circle() should be 'Y' and it isn't."
@@ -599,11 +599,11 @@ correct_hover_tooltips = [('Item', '@Name'),
  ('Brand', '@Brand'),
  ('Price', '$@Price'),
  ('Rank', '@Rank')]
-    
+
 def test_hover_correct():
     assert hover.tooltips == correct_hover_tooltips, \
     "hover is not created correctly. Please reread the instructions and check the hint if necessary."
-    
+
 def test_hover_plot_correct():
     assert curdoc().to_json_string().find('"tooltips":[["Item","@Name"],["Brand","@Brand"],["Price","$@Price"],["Rank","@Rank"]]'), \
     "The hover tool wasn't added to the plot correctly. Please reread the instructions and check the hint if necessary."
@@ -671,7 +671,7 @@ def test_command_syntax():
 
 ## 11. Comparing two products
 <p>Since there are so many cosmetics and so many ingredients, the plot doesn't have many super obvious patterns that simpler t-SNE plots can have (<a href="https://campus.datacamp.com/courses/unsupervised-learning-in-python/visualization-with-hierarchical-clustering-and-t-sne?ex=10">example</a>). Our plot requires some digging to find insights, but that's okay!</p>
-<p>Say we enjoyed a specific product, there's an increased chance we'd enjoy another product that is similar in chemical composition.  Say we enjoyed AmorePacific's <a href="https://www.sephora.com/product/color-control-cushion-compact-broad-spectrum-spf-50-P378121">Color Control Cushion Compact Broad Spectrum SPF 50+</a>. We could find this product on the plot and see if a similar product(s) exist. And it turns out it does! If we look at the points furthest left on the plot, we see  LANEIGE's <a href="https://www.sephora.com/product/bb-cushion-hydra-radiance-P420676">BB Cushion Hydra Radiance SPF 50</a> essentially overlaps with the AmorePacific product. By looking at the ingredients, we can visually confirm the compositions of the products are similar (<em>though it is difficult to do, which is why we did this analysis in the first place!</em>), plus LANEIGE's version is $22 cheaper and actually has higher ratings.</p>
+<p>Say we enjoyed a specific product, there's an increased chance we'd enjoy another product that is similar in chemical composition.  Say we enjoyed AmorePacific's <a href="https://sephora.com/product/color-control-cushion-compact-broad-spectrum-spf-50-P378121">Color Control Cushion Compact Broad Spectrum SPF 50+</a>. We could find this product on the plot and see if a similar product(s) exist. And it turns out it does! If we look at the points furthest left on the plot, we see  LANEIGE's <a href="https://sephora.com/product/bb-cushion-hydra-radiance-P420676">BB Cushion Hydra Radiance SPF 50</a> essentially overlaps with the AmorePacific product. By looking at the ingredients, we can visually confirm the compositions of the products are similar (<em>though it is difficult to do, which is why we did this analysis in the first place!</em>), plus LANEIGE's version is $22 cheaper and actually has higher ratings.</p>
 <p>It's not perfect, but it's useful. In real life, we can actually use our little ingredient-based recommendation engine help us make educated cosmetic purchase choices.</p>
 
 

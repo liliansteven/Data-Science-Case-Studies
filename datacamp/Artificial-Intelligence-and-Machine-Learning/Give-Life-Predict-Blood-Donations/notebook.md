@@ -1,6 +1,6 @@
 ## 1. Inspecting transfusion.data file
 <p><img src="https://assets.datacamp.com/production/project_646/img/blood_donation.png" style="float: right;" alt="A pictogram of a blood bag with blood donation written in it" width="200"></p>
-<p>Blood transfusion saves lives - from replacing lost blood during major surgery or a serious injury to treating various illnesses and blood disorders. Ensuring that there's enough blood in supply whenever needed is a serious challenge for the health professionals. According to <a href="https://www.webmd.com/a-to-z-guides/blood-transfusion-what-to-know#1">WebMD</a>, "about 5 million Americans need a blood transfusion every year".</p>
+<p>Blood transfusion saves lives - from replacing lost blood during major surgery or a serious injury to treating various illnesses and blood disorders. Ensuring that there's enough blood in supply whenever needed is a serious challenge for the health professionals. According to <a href="https://webmd.com/a-to-z-guides/blood-transfusion-what-to-know#1">WebMD</a>, "about 5 million Americans need a blood transfusion every year".</p>
 <p>Our dataset is from a mobile blood donation vehicle in Taiwan. The Blood Transfusion Service Center drives to different universities and collects blood as part of a blood drive. We want to predict whether or not a donor will give blood the next time the vehicle comes to campus.</p>
 <p>The data is stored in <code>datasets/transfusion.data</code> and it is structured according to RFMTC marketing model (a variation of RFM). We'll explore what that means later in this notebook. First, let's inspect the data.</p>
 
@@ -109,7 +109,7 @@ def test_transfusion_loaded():
     correct_transfusion = pd.read_csv("datasets/transfusion.data")
     assert correct_transfusion.equals(transfusion), \
         "transfusion not loaded correctly."
-    
+
 def test_head_output():
     try:
         assert "6000" in last_output.to_string()
@@ -352,7 +352,7 @@ def test_X_train_created():
                                                 stratify=transfusion.target)
     assert correct_X_train.equals(X_train), \
         "'X_train' not created correctly. Did you stratify on the correct column?"
-    
+
 def test_head_output():
     try:
         assert "1750" in last_output.to_string()
@@ -402,9 +402,9 @@ print(f'\nAUC score: {tpot_auc_score:.4f}')
     Generation 3 - Current best internal CV score: 0.7433977184592779
     Generation 4 - Current best internal CV score: 0.7433977184592779
     Generation 5 - Current best internal CV score: 0.7433977184592779
-    
+
     Best pipeline: LogisticRegression(input_matrix, C=0.5, dual=False, penalty=l2)
-    
+
     AUC score: 0.7850
 
 ```python
@@ -417,7 +417,7 @@ last_input = strip_comment_lines(In[-2])
 def test_TPOTClassifier_loaded():
     assert 'TPOTClassifier' in globals(), \
         "'TPOTClassifier' class not found. Please check your import statement."
-    
+
 def test_roc_auc_score_loaded():
     assert 'roc_auc_score' in globals(), \
         "'roc_auc_score' function not found. Please check your import statement."
@@ -563,14 +563,14 @@ logreg.fit(X_train_normed, y_train)
 logreg_auc_score = roc_auc_score(y_test, logreg.predict_proba(X_test_normed)[:, 1])
 print(f'\nAUC score: {logreg_auc_score:.4f}')
 ```
-    
+
     AUC score: 0.7891
 
 ```python
 def test_linear_model_loaded():
     assert 'linear_model' in globals(), \
         "'linear_model' module not found. Please check your import statement."
-    
+
 def test_roc_auc_score_loaded():
     assert 'roc_auc_score' in globals(), \
         "'roc_auc_score' function not found. Please check your import statement."
@@ -592,7 +592,7 @@ def test_logreg_auc_score():
     5/5 tests passed
 
 ## 11. Conclusion
-<p>The demand for blood fluctuates throughout the year. As one <a href="https://www.kjrh.com/news/local-news/red-cross-in-blood-donation-crisis">prominent</a> example, blood donations slow down during busy holiday seasons. An accurate forecast for the future supply of blood allows for an appropriate action to be taken ahead of time and therefore saving more lives.</p>
+<p>The demand for blood fluctuates throughout the year. As one <a href="https://kjrh.com/news/local-news/red-cross-in-blood-donation-crisis">prominent</a> example, blood donations slow down during busy holiday seasons. An accurate forecast for the future supply of blood allows for an appropriate action to be taken ahead of time and therefore saving more lives.</p>
 <p>In this notebook, we explored automatic model selection using TPOT and AUC score we got was 0.7850. This is better than simply choosing <code>0</code> all the time (the target incidence suggests that such a model would have 76% success rate). We then log normalized our training data and improved the AUC score by 0.5%. In the field of machine learning, even small improvements in accuracy can be important, depending on the purpose.</p>
 <p>Another benefit of using logistic regression model is that it is interpretable. We can analyze how much of the variance in the response variable (<code>target</code>) can be explained by other variables in our dataset.</p>
 

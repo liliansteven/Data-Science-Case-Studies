@@ -41,11 +41,11 @@ import matplotlib as mpl
 def test_task1_0():
     assert (test_data.shape == (100, 100, 3)), \
     'The test_data you created is not the right shape! It should be 100, 100, 3'
-    
+
 def test_task_1():
     assert '_' in globals() and isinstance(globals()['_'], mpl.image.AxesImage), \
     'Did you forget to call `plt.imshow` on your test data?'
-    
+
 def test_task_2():
     assert 'Image' in globals(), \
     'Did you forget to import `Image` from `PIL`?'
@@ -154,7 +154,7 @@ img_data_shape = img_data.shape
 
 print("Our NumPy array has the shape: {}".format(img_data_shape))
 
-# plot the data with `imshow` 
+# plot the data with `imshow`
 plt.imshow(img_data)
 plt.show()
 
@@ -199,7 +199,7 @@ def test_task4_0():
 ```python
 def plot_kde(channel, color):
     """ Plots a kernel density estimate for the given data.
-        
+
         `channel` must be a 2d array
         `color` must be a color string, e.g. 'r', 'g', or 'b'
     """
@@ -208,14 +208,14 @@ def plot_kde(channel, color):
 
 # create the list of channels
 channels = ['r', 'g', 'b']
-    
+
 def plot_rgb(image_data):
     # use enumerate to loop over colors and indexes
     for ix, color in enumerate(channels):
         plot_kde(image_data[:, :, ix], color)
 
     plt.show()
-    
+
 plot_rgb(img_data)
 ```
 
@@ -257,7 +257,7 @@ import PIL
 def test_task6_0():
     assert 'honey' in globals() and isinstance(honey, PIL.JpegImagePlugin.JpegImageFile), \
     'Did you load `datasets/bee_12.jpg` using the `open` method and assign it to `honey`?'
-    
+
 def test_task6_1():
     assert 'honey_data' in globals() and (honey_data == np.array(honey)).all(), \
     'Did you create `honey_data` from `honey` with `np.array`?'
@@ -293,7 +293,7 @@ import PIL
 def test_task7_0():
     assert 'bumble' in globals() and isinstance(bumble, PIL.JpegImagePlugin.JpegImageFile), \
     'Did you load `datasets/bee_3.jpg` using the `open` method and assign it to `bumble`?'
-    
+
 def test_task7_1():
     assert 'bumble_data' in globals() and (bumble_data == np.array(bumble)).all(), \
     'Did you create `bumble_data` from `bumble` with `np.array`?'
@@ -340,7 +340,7 @@ plot_kde(honey_bw_arr, 'k')
 def test_task8_0():
     assert honey_bw_arr.shape == (100, 100), \
     'Did you convert `honey_bw` to an array with `np.array` and then get the shape with `.shape`?'
-    
+
     assert honey_bw_arr_shape == (100, 100), \
     'Did you convert `honey_bw` to an array with `np.array` and then get the shape with `.shape`?'
 ```
@@ -388,11 +388,11 @@ def test_task9_0():
 def test_task9_1():
     assert 'honey_bw_flip' in globals() and (np.array(honey_bw_flip)[:, 0] == honey_bw_arr[:, -1]).all(), \
     'Did you use np.maximum(honey_bw_arr, 100) to create a high contrast version?'
-    
+
 def test_task9_2():
     assert os.path.exists("saved_images/bw_flipped.jpg"), \
     'Did you save the flipped image with `honey_bw_flip.save`?'
-    
+
 def test_task9_3():
     assert os.path.exists("saved_images/bw_hc.jpg"), \
     'Did you save the high contrast image with `honey_bw_hc.save`?'
@@ -447,12 +447,12 @@ import os
 
 def test_task10_0():
     image_paths = ['datasets/bee_1.jpg', 'datasets/bee_12.jpg', 'datasets/bee_2.jpg', 'datasets/bee_3.jpg']
-    
+
     for img in image_paths:
         path = Path(img)
         bw_path = "saved_images/bw_{}.jpg".format(path.stem)
         rcz_path = "saved_images/rcz_{}.jpg".format(path.stem)
-        
+
         assert os.path.exists(bw_path), "Did you save the file {}?".format(bw_path)
         assert os.path.exists(rcz_path), "Did you save the file {}?".format(rcz_path)
 ```

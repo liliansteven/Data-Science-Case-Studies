@@ -52,8 +52,8 @@ def test_metrics_read():
         pd.testing.assert_frame_equal(echonest_metrics, ech_met_test)
     except AssertionError:
         assert False, "The echonest_metrics data frame was not read in correctly."
-        
-def test_merged_shape(): 
+
+def test_merged_shape():
     merged_test = echonest_metrics.merge(tracks[['genre_top', 'track_id']], on='track_id')
     try:
         pd.testing.assert_frame_equal(echo_tracks, merged_test)
@@ -101,7 +101,7 @@ features = echo_tracks.drop(["genre_top", "track_id"], axis=1).values
 labels = echo_tracks["genre_top"].values
 
 # Split our data
-train_features, test_features, train_labels, test_labels = train_test_split(features, labels, 
+train_features, test_features, train_labels, test_labels = train_test_split(features, labels,
                                                                             random_state=10)
 ```
 
@@ -117,12 +117,12 @@ def test_features_labels():
 def test_train_test_split_import():
     assert 'sklearn.model_selection' in list(sys.modules.keys()), \
     'Have you imported train_test_split from sklearn.model_selection?'
-        
+
 def test_train_test_split():
     train_test_res = train_test_split(features, labels, random_state=10)
     assert (train_features == train_test_res[0]).all(), \
     'Did you correctly call the train_test_split function?'
-        
+
 def test_correct_split():
     assert train_features.shape == (3601, 8), \
     """Did you correctly split the data? Expected a different shape for train_features."""
@@ -162,11 +162,11 @@ import numpy as np
 #         pd.testing.assert_series_equal(labels, echo_tracks['genre_top'])
 #     except AssertionError:
 #         assert False, 'Does your labels DataFrame only contain the genre_top column?'
-        
+
 def test_standardscaler_import():
     assert 'sklearn.preprocessing' in list(sys.modules.keys()), \
     'The StandardScaler can be imported from sklearn.preprocessing.'
-        
+
 def test_scaled_features():
     assert scaled_train_features[0].tolist() == [-1.3189452160155823,
  -1.748936113215404,
@@ -229,14 +229,14 @@ def test_pca_import():
 def test_pca_obj():
     assert isinstance(pca, sklearn.decomposition.PCA), \
     "Use scikit-learn's PCA() object to create your own PCA object here."
-        
+
 def test_exp_variance():
     rounded_array = exp_variance
     rounder = lambda t: round(t, ndigits = 2)
     vectorized_round = np.vectorize(rounder)
     assert (vectorized_round(exp_variance)).all() == np.array([0.24, 0.18, 0.14, 0.13, 0.11, 0.09, 0.07, 0.05]).all(), \
     'Following the PCA fit, the explained variance ratios can be obtained via the explained_variance_ratio_ method.'
-        
+
 def test_scree_plot():
     expected_xticks = [float(n) for n in list(range(-1, 9))]
     assert list(ax.get_xticks()) == expected_xticks, \
@@ -276,13 +276,13 @@ def test_cumsum():
     cum_exp_variance_correct = np.cumsum(exp_variance)
     assert all(cum_exp_variance == cum_exp_variance_correct), \
     'Use np.cumsum to calculate the cumulative sum of the exp_variance array.'
-    
+
 # def test_n_comp():
 #     assert n_components == 5, \
 #     ('Check the values in cum_exp_variance if it is difficult '
 #     'to determine the number of components from the plot.')
-    
-    
+
+
 # def test_trans_pca():
 #     pca_test = PCA(n_components, random_state=10)
 #     pca_test.fit(scaled_train_features)
@@ -314,11 +314,11 @@ import sklearn
 def test_pca_import():
     assert ('sklearn.decomposition' in list(sys.modules.keys())), \
     'Have you imported the PCA object from sklearn.decomposition?'
-    
+
 def test_pca_obj():
     assert isinstance(pca, sklearn.decomposition.PCA), \
-    "Use scikit-learn's PCA() object to create your own PCA object here."    
-    
+    "Use scikit-learn's PCA() object to create your own PCA object here."
+
 def test_trans_pca():
     pca_copy = PCA(n_components=6, random_state=10)
     pca_copy.fit(scaled_train_features)
@@ -357,28 +357,28 @@ import sys
 #     assert 'sklearn.model_selection' in list(sys.modules.keys()), \
 #         'Have you imported train_test_split from sklearn.model_selection?'
 
-    
+
 def test_decision_tree_import():
     assert 'sklearn.tree' in list(sys.modules.keys()), \
     'Have you imported DecisionTreeClassifier from sklearn.tree?'
-    
-    
+
+
 # def test_train_test_split():
 #     train_test_res = train_test_split(pca_projection, labels, random_state=10)
 #     assert (train_features == train_test_res[0]).all(), \
 #         'Did you correctly call the train_test_split function?'
-    
-    
+
+
 def test_tree():
     assert tree.get_params() == DecisionTreeClassifier(random_state=10).get_params(), \
     'Did you create the decision tree correctly?'
-    
-    
+
+
 def test_tree_fit():
     assert hasattr(tree, 'classes_'), \
     'Did you fit the tree to the training data?'
-    
-    
+
+
 def test_tree_pred():
     assert (pred_labels_tree == 'Rock').sum() == 971, \
     'Did you correctly use the fitted tree object to make a prediction from test_pca?'
@@ -408,20 +408,20 @@ print("Decision Tree: \n", class_rep_tree)
 print("Logistic Regression: \n", class_rep_log)
 ```
 
-    Decision Tree: 
+    Decision Tree:
                   precision    recall  f1-score   support
-    
+
         Hip-Hop       0.70      0.70      0.70       229
            Rock       0.93      0.93      0.93       972
-    
+
     avg / total       0.88      0.88      0.88      1201
-    
-    Logistic Regression: 
+
+    Logistic Regression:
                   precision    recall  f1-score   support
-    
+
         Hip-Hop       0.76      0.57      0.65       229
            Rock       0.90      0.96      0.93       972
-    
+
     avg / total       0.88      0.88      0.88      1201
 
 ```python
@@ -429,17 +429,17 @@ def test_logreg():
     assert logreg.get_params() == LogisticRegression(random_state=10).get_params(), \
     'The logreg variable should be created using LogisticRegression().'
 
-    
+
 def test_logreg_pred():
     assert abs((pred_labels_logit == 'Rock').sum() - 1028) < 7, \
     'The labels should be predicted from the test_features.'
-    
-    
+
+
 def test_class_rep_tree():
     assert isinstance(class_rep_tree, str), \
     'Did you create the classification report correctly for the decision tree?'
-    
-    
+
+
 def test_class_rep_log():
     assert isinstance(class_rep_log, str), \
     'Did you create the classification report correctly for the logistic regression?'
@@ -464,7 +464,7 @@ rock_only = rock_only.sample(hop_only.shape[0], random_state=10)
 rock_hop_bal = pd.concat([rock_only, hop_only])
 
 # The features, labels, and pca projection are created for the balanced dataframe
-features = rock_hop_bal.drop(['genre_top', 'track_id'], axis=1) 
+features = rock_hop_bal.drop(['genre_top', 'track_id'], axis=1)
 labels = rock_hop_bal['genre_top']
 
 # Redefine the train and test set with the pca_projection from the balanced data
@@ -481,7 +481,7 @@ def test_hop_only():
         pd.testing.assert_frame_equal(hop_only, echo_tracks.loc[echo_tracks['genre_top'] == 'Hip-Hop'])
     except AssertionError:
         assert False, "The hop_only data frame was not assigned correctly."
-        
+
 
 def test_rock_only():
     try:
@@ -489,8 +489,8 @@ def test_rock_only():
             rock_only, echo_tracks.loc[echo_tracks['genre_top'] == 'Rock'].sample(hop_only.shape[0], random_state=10))
     except AssertionError:
         assert False, "The rock_only data frame was not assigned correctly."
-        
-        
+
+
 def test_rock_hop_bal():
     hop_only = echo_tracks.loc[echo_tracks['genre_top'] == 'Hip-Hop']
     rock_only = echo_tracks.loc[echo_tracks['genre_top'] == 'Rock'].sample(hop_only.shape[0], random_state=10)
@@ -499,8 +499,8 @@ def test_rock_hop_bal():
             rock_hop_bal, pd.concat([rock_only, hop_only]))
     except AssertionError:
         assert False, "The rock_hop_bal data frame was not assigned correctly."
-        
-        
+
+
 def test_train_features():
     assert round(train_pca[0][0], 4) == -0.6434 and round(test_pca[0][0], 4) == 0.4368, \
     'The train_test_split was not performed correctly.'
@@ -528,28 +528,28 @@ print("Decision Tree: \n", classification_report(test_labels, pred_labels_tree))
 print("Logistic Regression: \n", classification_report(test_labels, pred_labels_logit))
 ```
 
-    Decision Tree: 
+    Decision Tree:
                   precision    recall  f1-score   support
-    
+
         Hip-Hop       0.75      0.79      0.77       230
            Rock       0.77      0.73      0.75       225
-    
+
     avg / total       0.76      0.76      0.76       455
-    
-    Logistic Regression: 
+
+    Logistic Regression:
                   precision    recall  f1-score   support
-    
+
         Hip-Hop       0.81      0.83      0.82       230
            Rock       0.83      0.80      0.82       225
-    
+
     avg / total       0.82      0.82      0.82       455
 
 ```python
 def test_tree_bal():
     assert (pred_labels_tree == 'Rock').sum() == 213, \
     'The pred_labels_tree variable should contain the predicted labels from the test_features.'
-    
-    
+
+
 def test_logit_bal():
     assert (pred_labels_logit == 'Rock').sum() == 219, \
     'The pred_labels_logit variable should contain the predicted labels from the test_features.'
@@ -565,9 +565,9 @@ def test_logit_bal():
 ```python
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.pipeline import Pipeline
-tree_pipe = Pipeline([("scaler", StandardScaler()), ("pca", PCA(n_components=6)), 
+tree_pipe = Pipeline([("scaler", StandardScaler()), ("pca", PCA(n_components=6)),
                       ("tree", DecisionTreeClassifier(random_state=10))])
-logreg_pipe = Pipeline([("scaler", StandardScaler()), ("pca", PCA(n_components=6)), 
+logreg_pipe = Pipeline([("scaler", StandardScaler()), ("pca", PCA(n_components=6)),
                         ("logreg", LogisticRegression(random_state=10))])
 
 # Set up our K-fold cross-validation
@@ -587,13 +587,13 @@ print("Decision Tree:", np.mean(tree_score), "Logistic Regression:", np.mean(log
 def test_kf():
     assert kf.__repr__() == 'KFold(n_splits=10, random_state=None, shuffle=False)', \
     'The k-fold cross-validation was not setup correctly.'
-    
-    
+
+
 def test_tree_score():
     assert np.isclose(round((tree_score.sum() / tree_score.shape[0]), 4), 0.722, atol=1e-3), \
     'The tree_score was not calculated correctly.'
-    
-    
+
+
 def test_log_score():
     assert np.isclose(round((logit_score.sum() / logit_score.shape[0]), 4), 0.7731, atol=1e-3), \
     'The logit_score was not calculated correctly.'

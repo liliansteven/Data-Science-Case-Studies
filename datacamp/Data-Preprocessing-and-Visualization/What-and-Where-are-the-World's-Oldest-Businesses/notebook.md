@@ -162,7 +162,7 @@ def test_bus():
     "Did you create a `businesses` DataFrame using `pd.read_csv()`?"
     assert test_businesses.reset_index().equals(businesses.reset_index()), \
     "Your `businesses` DataFrame is not equal to the expected DataFrame. Did you load your `businesses` DataFrame from `datasets/businesses.csv` using `pd.read_csv()`?"
-    
+
 def test_sorted_bus():
     assert sorted_businesses.iloc[-1:].equals(test_sorted_businesses.iloc[-1:]), \
     "Did you create `sorted_businesses` by sorting `year_founded` in _ascending_ order?"
@@ -296,7 +296,7 @@ def test_bus_countries():
     "Your `businesses_countries` DataFrame should have six columns: `business`, `year_founded`, `category_code`, `country_code`, `country`, and `continent`."
     assert test_businesses_countries.reset_index().equals(businesses_countries.reset_index()), \
     "Your `businesses_countries` DataFrame is not equal to the expected DataFrame."
-    
+
 def test_north_am():
     assert north_america.shape[0] == test_north_america.shape[0], \
     "Did you filter `businesses_countries` to include only countries in North America? It looks like your `north_america` DataFrame has a different number of rows than expected."
@@ -604,7 +604,7 @@ def test_all_bus():
     "Did you create `all_businesses` from `new_businesses` and `businesses` by stacking them _vertically_? It looks like your `all_businesses` DataFrame has a different number of columns than expected."
     assert test_all_businesses.reset_index().equals(all_businesses.reset_index()), \
     "Your `all_businesses` DataFrame is not equal to the expected DataFrame. Did you use `pd.concat()` to stack `new_businesses` and `businesses` vertically?"
-    
+
 def test_new_all_cntries():
     assert {'business', 'year_founded', 'category_code', 'country_code', 'country', 'continent'}.issubset(new_all_countries.columns), \
     "Your `new_all_countries` DataFrame should include the following columns: `business`, `year_founded`, `category_code`, `country_code`, `country`, `continent`, and `_merge`. Did you create the DataFrame using an outer merge with `indicator = True`?"
@@ -789,7 +789,7 @@ def test_count_bus_cats():
     "Did you rename the column in `count_business_cats`?"
     assert test_count_business_cats.equals(count_business_cats), \
     "Did you aggregate the `business` column using `count`?"
-    
+
 def test_years_bus_cats():
     assert isinstance(years_business_cats, pd.DataFrame), \
     "Your `years_business_cats` DataFrame needs to be a DataFrame and not a Series. The index will be category names. You can use the .agg() function to do this."
@@ -944,17 +944,17 @@ def test_bus_cat_countries():
     "It looks like your `businesses_categories_countries` DataFrame has a different number of rows than expected."
     assert test_businesses_categories_countries.iloc[-1:].equals(businesses_categories_countries.iloc[-1:]),\
     "Did you sort `businesses_categories_countries` by `year_founded`?"
-        
+
 def test_grouped():
     assert isinstance(oldest_by_continent_category, pd.DataFrame), \
     "Your `oldest_by_continent_category` DataFrame needs to be a DataFrame and not a Series. The index will be continent and category names since it is grouped by both. You can use the .agg() function to do this."
     assert test_oldest_by_continent_category.index.get_level_values("category").all() == oldest_by_continent_category.sort_index().index.get_level_values("category").all(),\
     "Did you group `oldest_by_continent_category` by `continent` and `category`?"
-        
+
 def test_values():
     assert test_oldest_by_continent_category.equals(oldest_by_continent_category),\
     "Your `old_restaurants` DataFrame is not equal to the expected DataFrame. Did you aggregate the `year_founded` column by finding its minimum?"
-    
+
 ```
 
     3/3 tests passed
