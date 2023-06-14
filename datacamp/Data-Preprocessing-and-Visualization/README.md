@@ -7,60 +7,60 @@
 <table>
     <head>
         <tr>
-<th align="center" width="480px">Case Study Title</th>
-<th align="center" width="600px">Libraries</th>
+<th align="center" width="600px">Case Study Title</th>
+<th align="center" width="480px">Libraries</th>
 <th align="center" width="120px">Solution</th>
         </tr>
     </head>
     <tbody>
         <tr>
 <th align="left"><a href="">A-Network-Analysis-of-Game-of-Thrones</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">pandas, networkx</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Network-Analysis-of-Game-of-Thrones">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Analyze-Your-Runkeeper-Fitness-Data</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">matplotlib, pandas, statsmodels</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyze-Your-Runkeeper-Fitness-Data">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Analyzing-Online-Sports-Revenue</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyzing-Online-Sports-Revenue">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Analyzing-River-Thames-Water-Levels</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">scipy, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyzing-River-Thames-Water-Levels">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Analyzing-TV-Data</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">matplotlib, seaborn, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyzing-TV-Data">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">A-New-Era-of-Data-Analysis-in-Baseball</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">matplotlib, seaborn, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-New-Era-of-Data-Analysis-in-Baseball">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">A-Visual-History-of-Nobel-Prize-Winners</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">numpy, matplotlib, seaborn, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Visual-History-of-Nobel-Prize-Winners">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Bad-Passwords-and-the-NIST-Guidelines</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Bad-Passwords-and-the-NIST-Guidelines">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Book-Recommendations-from-Charles-Darwin</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">glob, pickle, gensim, pandas, matplotlib</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Book-Recommendations-from-Charles-Darwin">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Comparing-Search-Interest-with-Google-Trends</a></th>
-<th align="left">Numpy, Pandas</th>
+<th align="left">pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Comparing-Search-Interest-with-Google-Trends">Solution</a></th>
         </tr>
         <tr>
