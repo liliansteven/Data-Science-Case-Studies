@@ -129,16 +129,6 @@
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Dr-Semmelweis-and-the-Discovery-of-Handwashing">Solution</a></th>
         </tr>
         <tr>
-<th align="left"><a href="">Analyzing-River-Thames-Water-Levels</a></th>
-<th align="left">scipy, pandas</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyzing-River-Thames-Water-Levels">Solution</a></th>
-        </tr>
-        <tr>
-<th align="left"><a href="">A-Network-Analysis-of-Game-of-Thrones</a></th>
-<th align="left">pandas, networkx</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Network-Analysis-of-Game-of-Thrones">Solution</a></th>
-        </tr>
-        <tr>
 <th align="left"><a href="">Data-Driven-Product-Management-Conducting-a-Market-Analysis</a></th>
 <th align="left">pandas, seaborn, matplotlib</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Data-Driven-Product-Management-Conducting-a-Market-Analysis">Solution</a></th>
@@ -154,14 +144,29 @@
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-New-Era-of-Data-Analysis-in-Baseball">Solution</a></th>
         </tr>
         <tr>
-<th align="left"><a href="">Analyze-Your-Runkeeper-Fitness-Data</a></th>
-<th align="left">matplotlib, pandas, statsmodels</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyze-Your-Runkeeper-Fitness-Data">Solution</a></th>
-        </tr>
-        <tr>
 <th align="left"><a href="">Do-Left-handed-People-Really-Die-Young</a></th>
 <th align="left">numpy, pandas, matplotlib</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Do-Left-handed-People-Really-Die-Young">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Streamlining-Employee-Data</a></th>
+<th align="left">pandas, numpy, matplotlib</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Streamlining-Employee-Data">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Analyzing-River-Thames-Water-Levels</a></th>
+<th align="left">scipy, pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyzing-River-Thames-Water-Levels">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">A-Network-Analysis-of-Game-of-Thrones</a></th>
+<th align="left">pandas, networkx</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Network-Analysis-of-Game-of-Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Analyze-Your-Runkeeper-Fitness-Data</a></th>
+<th align="left">matplotlib, pandas, statsmodels</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Analyze-Your-Runkeeper-Fitness-Data">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Exploring-Airbnb-Market-Trends</a></th>
@@ -194,11 +199,6 @@
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Risk-and-Returns-The-Sharpe-Ratio">Solution</a></th>
         </tr>
         <tr>
-<th align="left"><a href="">Streamlining-Employee-Data</a></th>
-<th align="left">pandas, numpy, matplotlib</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Streamlining-Employee-Data">Solution</a></th>
-        </tr>
-        <tr>
 <th align="left"><a href="">A-Visual-History-of-Nobel-Prize-Winners</a></th>
 <th align="left">numpy, matplotlib, seaborn, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Visual-History-of-Nobel-Prize-Winners">Solution</a></th>
@@ -209,11 +209,6 @@
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Book-Recommendations-from-Charles-Darwin">Solution</a></th>
         </tr>
         <tr>
-<th align="left"><a href="">Disney-Movies-and-Box-Office-Success</a></th>
-<th align="left">numpy, pandas, seaborn, sklearn</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Disney-Movies-and-Box-Office-Success">Solution</a></th>
-        </tr>
-        <tr>
 <th align="left"><a href="">The-GitHub-History-of-the-Scala-Language</a></th>
 <th align="left">pandas, numpy, plotly, seaborn, matplotlib</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/The-GitHub-History-of-the-Scala-Language">Solution</a></th>
@@ -222,6 +217,11 @@
 <th align="left"><a href="">Which-Debts-are-Worth-the-Bank's-Effort</a></th>
 <th align="left">pandas, numpy, matplotlib, scipy, statsmodels</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Which-Debts-are-Worth-the-Bank's-Effort">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Disney-Movies-and-Box-Office-Success</a></th>
+<th align="left">numpy, pandas, seaborn, sklearn</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Disney-Movies-and-Box-Office-Success">Solution</a></th>
         </tr>
         <tr>
 <th align="left"><a href="">Who's-Tweeting-Trump-or-Trudeau</a></th>
