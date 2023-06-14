@@ -18,5 +18,230 @@
 <th align="left">Numpy, Pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/A-Network-Analysis-of-Game-of-Thrones">Solution</a></th>
         </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
+        <tr>
+<th align="left"><a href="">Thrones</a></th>
+<th align="left">Numpy, Pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Preprocessing-and-Visualization/Thrones">Solution</a></th>
+        </tr>
     </tbody>
 </table>
