@@ -2,8 +2,6 @@
 
 ## DataCamp - Data Preprocessing and Visualization
 
-### HackerRank - Introduction `20 problems`
-
 <table>
     <head>
         <tr>
