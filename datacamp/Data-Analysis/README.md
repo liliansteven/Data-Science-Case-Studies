@@ -16,9 +16,9 @@
     <tbody>
         <tr>
 <th align="center">01</th>
-<th align="left"><a href="https://app.datacamp.com/learn/projects/analyzing_online_sports_revenue">Analyzing Online Sports Revenue</a></th>
-<th align="left">pandas</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Analyzing-Online-Sports-Revenue">Solution</a></th>
+<th align="left"><a href="https://app.datacamp.com/learn/projects/introduction-to-projects">Introduction to DataCamp Projects</a></th>
+<th align="left">pandas, matplotlib</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Introduction-to-DataCamp-Projects">Solution</a></th>
         </tr>
         <tr>
 <th align="center">02</th>
@@ -106,9 +106,9 @@
         </tr>
         <tr>
 <th align="center">16</th>
-<th align="left"><a href="https://app.datacamp.com/learn/projects/android-app-market">The Android App Market on Google Play</a></th>
-<th align="left">pandas, numpy</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/The-Android-App-Market-on-Google-Play">Solution</a></th>
+<th align="left"><a href="https://app.datacamp.com/learn/projects/analyzing_online_sports_revenue">Analyzing Online Sports Revenue</a></th>
+<th align="left">pandas</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Analyzing-Online-Sports-Revenue">Solution</a></th>
         </tr>
         <tr>
 <th align="center">17</th>
@@ -191,7 +191,7 @@
         <tr>
 <th align="center">30</th>
 <th align="left"><a href="https://app.datacamp.com/learn/projects/76">A Network Analysis of Game of Thrones</a></th>
-<th align="left">pandas, networkx</th>
+<th align="left">pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/A-Network-Analysis-of-Game-of-Thrones">Solution</a></th>
         </tr>
         <tr>
@@ -203,7 +203,7 @@
         <tr>
 <th align="center">32</th>
 <th align="left"><a href="https://app.datacamp.com/learn/projects/exploring-airbnb-market-trends">Exploring Airbnb Market Trends</a></th>
-<th align="left">numpy, pandas, datetime</th>
+<th align="left">numpy, pandas</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Exploring-Airbnb-Market-Trends">Solution</a></th>
         </tr>
         <tr>
@@ -220,20 +220,20 @@
         </tr>
         <tr>
 <th align="center">35</th>
-<th align="left"><a href="https://app.datacamp.com/learn/projects/introduction-to-projects">Introduction to DataCamp Projects</a></th>
-<th align="left">pandas, matplotlib, folium</th>
-<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Introduction-to-DataCamp-Projects">Solution</a></th>
+<th align="left"><a href="https://app.datacamp.com/learn/projects/android-app-market">The Android App Market on Google Play</a></th>
+<th align="left">pandas, numpy</th>
+<th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/The-Android-App-Market-on-Google-Play">Solution</a></th>
         </tr>
         <tr>
 <th align="center">36</th>
 <th align="left"><a href="https://app.datacamp.com/learn/projects/760">Real-Time Insights from Social Media Data</a></th>
-<th align="left">pandas, matplotlib, collections, json</th>
+<th align="left">pandas, matplotlib</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Real-Time-Insights-from-Social-Media-Data">Solution</a></th>
         </tr>
         <tr>
 <th align="center">37</th>
 <th align="left"><a href="https://app.datacamp.com/learn/projects/66">Risk and Returns The Sharpe Ratio</a></th>
-<th align="left">pandas, folium, bokeh</th>
+<th align="left">pandas, bokeh</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Data-Analysis/Risk-and-Returns-The-Sharpe-Ratio">Solution</a></th>
         </tr>
         <tr>
