@@ -1,6 +1,6 @@
-<a href="/datacamp/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
+<a href="/datacamp/Data-Analysis/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
 
-## DataCamp - Data Preprocessing and Visualization `45 case studies`
+## DataCamp - Data Analysis `45 case studies`
 
 <br><br>
 

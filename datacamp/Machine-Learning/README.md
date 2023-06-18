@@ -1,6 +1,6 @@
-<a href="/datacamp/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
+<a href="/datacamp/Machine-Learning/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
 
-## DataCamp - Artificial Intelligence and Machine Learning `12 case studies`
+## DataCamp - Machine Learning `12 case studies`
 
 <br><br>
 
