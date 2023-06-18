@@ -1,6 +1,6 @@
 <a href="/datacamp/Machine-Learning/README.md"><img align="right" width="80" src="/logos/datacamp.png"></img></a>
 
-## DataCamp - Machine Learning `12 case studies`
+## DataCamp - Machine Learning `13 case studies`
 
 <br><br>
 
@@ -89,7 +89,7 @@
         <tr>
 <th align="center">13</th>
 <th align="left"><a href="https://app.datacamp.com/learn/projects/555">Naïve Bees Deep Learning with Images</a></th>
-<th align="left">pandas, matplotlib, numpy, sklearn</th>
+<th align="left">pandas, matplotlib, numpy, sklearn, keras</th>
 <th align="center"><a href="https://github.com/cs-MohamedAyman/Data-Science-Case-Studies/tree/master/datacamp/Machine-Learning/Naïve-Bees-Deep-Learning-with-Images">Solution</a></th>
         </tr>
     </body>
