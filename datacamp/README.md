@@ -22,4 +22,4 @@ Data Science Case Studies for computer science students.
 <a href="/datacamp/SQL/README.md"><img align="right" width="80" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-logos/database-systems.png"></img></a>
 <a href="/datacamp/SQL/README.md"><img align="right" width="80" src="https://github.com/cs-MohamedAyman/cs-MohamedAyman/blob/main/repos-logos/sql.png"></img></a>
 
-## [`SQL`](/datacamp/SQL/README.md) `12 case studies`
+## [`SQL`](/datacamp/SQL/README.md) `11 case studies`
